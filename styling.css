@@ -1,0 +1,361 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to bottom, #000428, #004e92);
+    color: white;
+    padding: 20px;
+}
+
+/* Header Styling */
+header {
+    background-color: #001f3f; /* Navy blue background */
+    color: white;
+    padding: 10px 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: sticky; /* Stays at the top of the page */
+    top: 0;
+    z-index: 1000; /* Ensure it appears above other elements */
+}
+
+.site-title {
+    font-size: 1.5em;
+    margin: 0;
+    display: inline-block;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+nav {
+    margin: 0;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    margin: 0;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 1em;
+    padding: 5px 10px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.nav-links a:hover {
+    background-color: #00d4ff; /* Glowing blue hover effect */
+    color: black;
+    border-radius: 5px;
+}
+/* Highlight the active navigation link */
+.nav-links a.active {
+    background-color: #00d4ff; /* Glowing blue background */
+    color: black; /* Black text for contrast */
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+/* Form Styling */
+form {
+    max-width: 1200px;
+    margin: 0 auto;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 5px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7);
+}
+
+.row {
+    display: flex;
+    gap: 5px;
+    margin-top: 3px;
+}
+
+.four-columns {
+    display: flex;
+    gap: 5px;
+    margin-top: 5px;
+}
+
+.column {
+    flex: 1;
+    background: rgba(0, 0, 0, 0.9);
+    padding: 8px;
+    border-radius: 5px;
+}
+
+.column h3 {
+    text-align: center;
+    color: #00d4ff;
+}
+
+.character-image {
+    display: block;
+    width: 100%;
+    max-width: 200px;
+    margin: 0 auto 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+textarea {
+    width: 100%;
+    resize: vertical;
+    border: none;
+    border-radius: 4px;
+    padding: 8px;
+}
+
+label {
+	margin-top: 3px;
+    font-weight: bold;
+}
+
+input, select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: none;
+    border-radius: 4px;
+}
+
+input[type="text"], select, textarea {
+    width: 100%; /* Default width to fill container */
+    min-width: 100px; /* Prevent shrinking below 100px */
+    margin-top: 5px;
+    padding: 8px;
+    font-size: 1em;
+    border: none;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type="number"] {
+    width: 100%; /* Default width to fill container */
+    max-width: 60px; /* Prevent shrinking below 50px */
+    margin-top: 5px;
+    padding: 8px;
+    font-size: 1em;
+	text-align: center;
+    border: none;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+
+/* Skill Section Styling */
+#initiativeSkillsSection, #saveSkillsSection, #combatSkillsSection, #adventureSkillsSection, #customSkillsSection {
+    margin-top: 1px;
+	text-align: center;
+	display: block;
+}
+
+#initiativeSkillsSection h4, #saveSkillsSection h4, #combatSkillsSection h4, #adventureSkillsSection h4, #customSkillsSection h4{
+    font-size: 1.1em;
+    color: #00d4ff;
+    margin-bottom: 3px;
+    text-align: left;
+	display: flex;
+}
+
+.skill-display label {
+    display: flex;
+	align-items: center;
+    justify-content: space-between;
+    font-size: 0.9em;
+}
+
+.skill-display input {
+    max-width: 40px;
+    text-align: right;
+}
+
+.skill-result {
+    margin-left: 10px;
+    font-weight: bold;
+	font-size: 1.5em;
+	color: #00ff00;
+}
+
+/* Inventory */
+.inventory input {
+    margin-top: 5px;
+}
+
+/* Buttons Styling */
+.buttons {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.json-btn {
+    padding: 10px 20px;
+    background: #00d4ff;
+    color: black;
+    font-weight: bold;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.json-btn:hover {
+    background: #0075b0;
+}
+
+/* Action Dice Styling */
+#actionDiceTracker {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.checkbox-container {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.styled-checkbox {
+    width: 20px;
+    height: 20px;
+    appearance: none; /* Hide default checkbox */
+    border: 2px solid #00d4ff;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s, box-shadow 0.2s;
+}
+
+.styled-checkbox:checked {
+    background-color: #00d4ff;
+    box-shadow: 0 0 5px #00d4ff;
+}
+
+.checkbox-label {
+    font-size: 0.9em;
+    color: white;
+    cursor: pointer;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .nav-links {
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
+
+    .site-title {
+        text-align: center;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
+
+/* Printer-Friendly Section */
+@media print {
+    /* General Styling */
+    body {
+        background: white;
+        color: black;
+        font-family: 'Arial', sans-serif;
+        padding: 0;
+        margin: 0;
+    }
+
+    header {
+        display: none; /* Hide the header section */
+    }
+
+    form {
+        background: none;
+        color: black;
+        border: none;
+        box-shadow: none;
+        max-width: 100%;
+        padding: 5px;
+    }
+
+    .four-columns {
+        display: flex; /* Keep the columns side-by-side */
+        gap: 8px;
+        flex-wrap: nowrap; /* Prevent wrapping */
+    }
+
+    .column {
+        background: none;
+        color: black;
+        padding: 5px;
+        border: 1px solid black;
+        margin: 0;
+        flex: 1; /* Ensure columns take equal space */
+        min-width: 0; /* Prevent overflow */
+    }
+
+    .column h3 {
+        color: black;
+        text-align: left;
+        font-size: 1em;
+        margin-top: 2px;
+    }
+
+    textarea, input, select {
+        width: 100%;
+        margin-top: 2px;
+        border: 1px solid black;
+        color: black;
+        font-size: 10pt; /* Reduce font size to fit content */
+    }
+
+    .picture-area img {
+        display: block; /* Ensure the image is visible */
+        width: 100%; /* Fit image to the available space */
+        max-width: 150px; /* Limit maximum size for print */
+        margin: 0 auto;
+    }
+
+    .inventory input {
+        margin-bottom: 2px;
+        font-size: 11pt; /* Slightly smaller font for inventory */
+    }
+
+    .buttons {
+        display: none; /* Hide buttons during print */
+    }
+
+    .styled-checkbox {
+        width: 15px;
+        height: 15px;
+        border: 1px solid black;
+        background-color: white;
+    }
+
+    .styled-checkbox:checked {
+        background-color: black;
+        box-shadow: none;
+    }
+
+    .checkbox-label {
+        color: black;
+    }
+
+    /* Page constraints */
+    @page {
+        size: A4 landscape; /* Force landscape orientation */
+        margin: 10mm; /* Set small page margins */
+    }
+}

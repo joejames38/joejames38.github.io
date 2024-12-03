@@ -1,0 +1,34 @@
+{
+    "feats": [
+        {
+            "name": "Quick Learner",
+            "cost": 2,
+            "prerequisite": "Intelligence 2+",
+            "description": "Gain an extra skill point to allocate."
+        },
+        {
+            "name": "Sharpshooter",
+            "cost": 3,
+            "prerequisite": "Dexterity 3+",
+            "description": "Gain +2 to attack rolls with ranged weapons."
+        },
+        {
+            "name": "Iron Will",
+            "cost": 1,
+            "prerequisite": "Wisdom 2+",
+            "description": "Gain advantage on saving throws against fear."
+        },
+        {
+            "name": "Power Strike",
+            "cost": 2,
+            "prerequisite": "Strength 3+",
+            "description": "Deal an additional 1d6 damage with melee attacks."
+        },
+        {
+            "name": "Medic's Touch",
+            "cost": 2,
+            "prerequisite": "Medicine Proficiency",
+            "description": "When healing others, restore an additional 5 HP."
+        }
+    ]
+}

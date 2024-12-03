@@ -1,0 +1,39 @@
+{
+    "skills": [
+        { "name": "Initiative", "attribute": "Dexterity", "type": "Initiative" },
+
+		{ "name": "Fortitude", "attribute": "Constitution", "type": "Save" },
+		{ "name": "Reflex", "attribute": "Dexterity", "type": "Save" },
+		{ "name": "Will", "attribute": "Wisdom", "type": "Save" },
+
+        { "name": "Martial Arts", "attribute": "Dexterity", "type": "Combat" },		
+		{ "name": "Melee Weapons", "attribute": "Strength", "type": "Combat" },
+        { "name": "Ranged Weapons", "attribute": "Dexterity", "type": "Combat" },
+		{ "name": "Tactical Melee", "attribute": "Intelligence", "type": "Combat" },
+
+        { "name": "Acrobatics", "attribute": "Dexterity", "type": "Adventure" },
+        { "name": "Athletics", "attribute": "Strength", "type": "Adventure" },
+        { "name": "Cooking", "attribute": "Wisdom", "type": "Adventure" },
+		{ "name": "Culture", "attribute": "Wisdom", "type": "Adventure" },
+        { "name": "Deception", "attribute": "Charisma", "type": "Adventure" },
+		{ "name": "History", "attribute": "Intelligence", "type": "Adventure" },
+        { "name": "Insight", "attribute": "Wisdom", "type": "Adventure" },
+        { "name": "Intimidation", "attribute": "Charisma", "type": "Adventure" },
+        { "name": "Investigation", "attribute": "Intelligence", "type": "Adventure" },
+        { "name": "Medicine", "attribute": "Intelligence", "type": "Adventure" },
+		{ "name": "Nature", "attribute": "Intelligence", "type": "Adventure" },
+        { "name": "Perception", "attribute": "Wisdom", "type": "Adventure" },
+		{ "name": "Persuasion", "attribute": "Charisma", "type": "Adventure" },
+        { "name": "Stealth", "attribute": "Dexterity", "type": "Adventure" },
+        { "name": "Survival", "attribute": "Wisdom", "type": "Adventure" },
+		
+		{ "name": "Computer Use", "attribute": "Intelligence", "type": "Science" },
+        { "name": "Explosives", "attribute": "Intelligence", "type": "Science" },
+        { "name": "Piloting", "attribute": "Dexterity", "type": "Science" },
+        { "name": "Science", "attribute": "Intelligence", "type": "Science" },
+		
+        { "name": "Arcana", "attribute": "Intelligence", "type": "Fanatsy" },
+		{ "name": "Performance", "attribute": "Charisma", "type": "Fanatsy" }
+		
+    ]
+}

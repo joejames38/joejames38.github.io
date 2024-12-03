@@ -1,0 +1,67 @@
+{
+	"ancestries" : [
+	{
+            "Human": "Adaptable - Gain a bonus skill point in any skill",
+            "Elf": "Keen Senses - Advantage on Perception checks",
+            "Dwarf": "Stonecunning - Expertise in stone-related knowledge",
+            "Orc": "Battle Fury - Gain bonus damage when below half health",
+            "Halfling": "Lucky - Can reroll a natural 1 on an ability check, attack roll, or saving throw",
+            "Tiefling": "Infernal Legacy - Resistance to fire damage",
+            "Gnome": "Tinker - Create small mechanical devices",
+            "Dragonborn": "Breath Weapon - Use a cone or line attack of elemental damage",
+            "Tabaxi": "Feline Agility - Double movement speed for one turn",
+            "Triton": "Aquatic Mastery - Can breathe underwater and swim at full speed",
+            "Aarakocra": "Skyborn - Can fly for short distances",
+            "Lizardfolk": "Cold-Blooded - Resistance to cold damage",
+            "Firbolg": "Nature's Friend - Can speak to plants and animals",
+            "Goliath": "Mountain Born - Resistance to cold damage and acclimated to high altitudes",
+            "Kenku": "Mimicry - Can perfectly imitate sounds or voices",
+            "Half-Orc": "Relentless Endurance - When reduced to 0 HP, drop to 1 HP instead",
+            "Genasi": "Elemental Affinity - Gain a minor ability based on elemental heritage (fire, water, earth, air)",
+            "Satyr": "Reveler's Joy - Advantage on saving throws against being frightened or charmed",
+            "Aasimar": "Radiant Soul - Resistance to radiant damage",
+            "Changeling": "Shapechanger - Can alter appearance at will",
+            "Warforged": "Living Construct - Immune to poison and disease",
+            "Goblin": "Nimble Escape - Can disengage or hide as a bonus action",
+            "Hobgoblin": "Martial Discipline - Gain proficiency in one martial weapon",
+            "Kobold": "Pack Tactics - Advantage on attack rolls if an ally is within 5 feet of the target",
+            "Yuan-Ti": "Serpent's Resistance - Immune to poison damage"
+        }
+	],
+
+    "backgrounds": [
+        {
+            "Noble": "Aristocratic Connections - Gain favor when interacting with nobility",
+            "Soldier": "Military Training - Proficiency with one martial weapon",
+            "Scholar": "Arcane Knowledge - Advantage on Arcana checks",
+            "Thief": "Cunning Escape - Advantage on Stealth checks in urban areas",
+            "Merchant": "Silver Tongue - Advantage on Persuasion checks involving trade",
+            "Farmer": "Hard Labor - Advantage on Constitution-based checks",
+            "Hunter": "Keen Tracker - Advantage on Survival checks to track creatures",
+            "Entertainer": "Captivating Performance - Advantage on Performance checks",
+            "Blacksmith": "Forge Expertise - Advantage on crafting checks involving metalwork",
+            "Sailor": "Sea Legs - Advantage on Acrobatics checks aboard ships",
+            "Healer": "Medic's Touch - Gain additional healing when using healing items",
+            "Explorer": "Trailblazer - Ignore difficult terrain",
+            "Hermit": "Inner Peace - Advantage on Insight checks",
+            "Priest": "Divine Insight - Advantage on Religion checks",
+            "Spy": "Secretive - Advantage on Deception checks"
+        },
+        {
+            "Forest": "Woodland Survival - Gain additional food when foraging in forests",
+            "Desert": "Sand Dancer - Resistance to fire damage",
+            "Mountain": "Stone Climber - Advantage on Athletics checks involving climbing",
+            "Swamp": "Mireborn - Resistance to poison damage",
+            "Arctic": "Frost Resilience - Resistance to cold damage",
+            "Plains": "Wide Open Spaces - Advantage on Perception checks in open terrain",
+            "Coastal": "Wave Runner - Swim at full speed without penalties",
+            "Underground": "Darkvision - See in complete darkness within 60 feet",
+            "Urban": "Street Smarts - Advantage on Investigation checks in cities",
+            "Skylands": "Cloudwalker - Can fall up to 20 feet without taking damage",
+            "Jungle": "Dense Survival - Ignore penalties from dense foliage",
+            "Riverlands": "Flow Master - Swim at full speed against currents",
+            "Volcanic": "Lava Walker - Resistance to fire damage and advantage on Acrobatics checks involving heat",
+            "Cave": "Echo Sense - Advantage on Perception checks in caves"
+        }
+    ]
+}

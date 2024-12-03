@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Your Character</title>
+    <link rel="stylesheet" href="styling.css">
+	<script src="common.js" defer></script>
+</head>
+<body>
+	<header>
+    <!-- Navigation Bar Placeholder -->
+    <div id="navbar"></div>
+	</header>
+
+    <form id="characterForm">
+        <!-- Character Details Section -->
+        <div class="section">
+            <h2>Character Details</h2>
+			<div class="row">
+			    <label for="playerName">Player Name</label>
+                <input type="text" id="playerName" name="playerName" placeholder="Enter your name">
+			</div>
+            <div class="row">
+                <label for="charTitle">Title</label>
+                <input type="text" id="charTitle" name="charTitle" placeholder="Enter character title">
+                <label for="charName">Name</label>
+                <input type="text" id="charName" name="charName" placeholder="Enter character name">
+			    <label for="maxSkillPoints">Lifetime SP</label>
+                <input type="number" id="maxSkillPoints" name="maxSkillPoints" min="0" placeholder="Total SP">								
+			    <label for="currentSkillPoints">Avaliable SP</label>
+                <input type="number" id="currentSkillPoints" name="currentSkillPoints" min="0" placeholder="Current SP">
+            </div>
+            <div class="row">
+                <label for="charAncestry">Ancestry</label>
+                <select id="charAncestry" name="charAncestry">
+                    <option value="">Select Ancestry</option>
+                </select>
+                <label for="heritageBackground">Heritage Background</label>
+                <select id="heritageBackground" name="heritageBackground">
+                    <option value="">Select Heritage Background</option>
+                </select>
+
+                <label for="biomeBackground">Biome Background</label>
+                <select id="biomeBackground" name="biomeBackground">
+                    <option value="">Select Biome Background</option>
+                </select>
+            </div>
+            <label for="charConnections">Connections</label>
+            <div class="row">
+                <textarea id="charConnection1" name="charConnection1" rows="3" placeholder="Enter Connection 1"></textarea>
+                <textarea id="charConnection2" name="charConnection2" rows="3" placeholder="Enter Connection 2"></textarea>
+				<textarea id="charConnection3" name="charConnection3" rows="3" placeholder="Enter Connection 3"></textarea>
+            </div>
+        </div>
+
+        <!-- Four Columns Section -->
+        <div class="four-columns">
+            <!-- Column 1: Core Stats, Picture, Background -->
+            <div class="column">
+				<div class="row">
+					<div class="column">
+					    <h3>Appearance</h3>
+						<label for="charEyes">Eyes</label>
+						<input type="text" id="charEyes" name="charEyes" placeholder="Eye Color">
+						<label for="charSkin">Skin</label>
+						<input type="text" id="charSkin" name="charSkin" placeholder="Skin Color">
+						<label for="charHair">Hair</label>
+						<input type="text" id="charHair" name="charHair" placeholder="Hair Style">
+						<label for="charHeight">Height</label>
+						<input type="text" id="charHeight" name="charHeight" placeholder="Height">
+						<label for="charWeight">Weight</label>
+						<input type="text" id="charWeight" name="charWeight" placeholder="Weight">
+						<label for="charAge">Age</label>
+						<input type="number" id="charAge" name="charAge" placeholder="Age">						
+					</div>
+					<div class="column">
+						<h3>Core Stats</h3>
+						<label>Strength</label>
+						<input type="number" id="statStrength" name="statStrength" min="0" max="5" value="0" class="stat-input">
+						<br>
+						<label>Dexterity</label>
+						<input type="number" id="statDexterity" name="statDexterity" min="0" max="5" value="0" class="stat-input">
+						<br>
+						<label>Constitution</label>
+						<input type="number" id="statConstitution" name="statConstitution" min="0" max="5" value="0" class="stat-input">
+						<br>
+						<label>Intelligence</label>
+						<input type="number" id="statIntelligence" name="statIntelligence" min="0" max="5" value="0" class="stat-input">
+						<br>
+						<label>Wisdom</label>
+						<input type="number" id="statWisdom" name="statWisdom" min="0" max="5" value="0" class="stat-input">
+						<br>
+						<label>Charisma</label>
+						<input type="number" id="statCharisma" name="statCharisma" min="0" max="5" value="0" class="stat-input">
+					</div>
+				</div>
+
+				<h3>Picture</h3>
+				<div class="picture-area">
+					<a href="#" id="imageLink" target="_blank">
+						<img id="characterImage" src="sample.png" alt="Character" class="character-image">
+					</a>
+					<input type="file" id="uploadImage" style="display: none;">
+				</div>
+				<label for="charQuirks">Quirks</label>
+                <textarea id="charQuirks" name="charQuirks" rows="2" placeholder="Enter quirks"></textarea>
+                <label for="charInspirations">Inspirations</label>
+                <textarea id="charInspirations" name="charInspirations" rows="2" placeholder="Enter Inspirations"></textarea>
+                <label for="charFlaws">Flaws</label>
+                <textarea id="charFlaws" name="charFlaws" rows="2" placeholder="Enter Flaws"></textarea>
+				<label for="charLanguages">Languages</label>
+                <textarea id="charLanguages" name="charLanguages" rows="1" placeholder="Known Languages"></textarea>
+				<label for="charAlliesText">Allies and Enemies</label>
+                <textarea id="charAlliesText" name="charAlliesText" rows="4" placeholder="You Allies and Enemies"></textarea>
+				<label for="charBackgroundText">Background</label>
+                <textarea id="charBackgroundText" name="charBackgroundText" rows="10" placeholder="Write your character's backstory"></textarea>
+			</div>
+
+			<!-- Column 2: Skills -->
+			<div class="column">
+				<h3>Skills</h3>
+
+				<!-- Initiative -->
+				<div id="initiativeSkillsSection">
+					<!-- Initiative skills dynamically loaded here -->
+				</div>
+
+				<!-- Save Skills -->				
+				<div id="saveSkillsSection">
+					<h4>Saves</h4>
+					<!-- Save skills dynamically loaded here -->
+				</div>
+
+				<!-- Combat Skills -->
+				<div id="combatSkillsSection">
+					<h4>Combat</h4>
+					<!-- Combat skills dynamically loaded here -->
+				</div>
+
+				<!-- Adventure Skills -->
+				<div id="adventureSkillsSection">
+					<h4>Adventure</h4>
+					<!-- Adventure skills dynamically loaded here -->
+				</div>
+
+				<!-- Custom Skills -->
+				<div id="customSkillsSection">
+					<h4>Advanced</h4>
+					<!-- Custom skills dynamically loaded here -->
+				</div>
+			</div>
+
+
+            <!-- Column 3: Combat Stats and Inventory -->
+            <div class="column">
+                <h3>Combat Stats</h3>
+					<div class="row">
+						<label for="actionDiceCount">Action Dice</label>
+						<input type="number" id="actionDiceCount" name="actionDiceCount" min="0" max="9" value="3">
+					</div>
+					<div id="actionDiceTracker">
+						<!-- Checkboxes will be dynamically added here -->
+					</div>
+
+				<label>Max and Curent Hitpoints</label>
+				<div class="row">
+					<input type="number" id="hitPointsMax" name="hitPointsMax" min="0" placeholder="Max Hitpoints">
+					<textarea id="hitPointsCurrent" name="hitPointsCurrent" rows="3" placeholder="Current Hitpoints"></textarea>
+				</div>
+                <label>Temp HP and Defense Rating</label>
+				<div class="row">
+					<textarea id="hitPointsTemp" name="hitPointsTemp" rows="3" placeholder="Temporary Hitpoints"></textarea>
+					<input type="number" id="defenseRating" name="defenseRating" min="0" placeholder="Defense Rating">
+				</div>
+                <label>Armor</label>
+                <input type="text" id="armor" name="armor" placeholder="Enter Armor">
+                <label>Head Gear</label>
+                <input type="text" id="headGear" name="headGear" placeholder="Enter Head Gear">
+                <label>Main Hand</label>
+                <input type="text" id="mainHand" name="mainHand" placeholder="Enter Main Hand Weapon">
+                <label>Off Hand</label>
+                <input type="text" id="offHand" name="offHand" placeholder="Enter Off Hand Weapon">
+
+                <h3>Inventory</h3>
+                <div class="inventory">
+					<label for="freeCarry">Free Carry</label>
+					<textarea id="freeCarry" name="freeCarry" rows="4" placeholder="Enter free Carry Items"></textarea>
+                    <!-- 15 empty inventory slots -->
+					<label for="Inventor Slots">Invetory Slots (10+Strength)</label>
+                    <input type="text" id="inventorySlot1" name="inventorySlot1" placeholder="Item Slot 1">
+                    <input type="text" id="inventorySlot2" name="inventorySlot2" placeholder="Item Slot 2">
+					<input type="text" id="inventorySlot3" name="inventorySlot3" placeholder="Item Slot 3">
+                    <input type="text" id="inventorySlot4" name="inventorySlot4" placeholder="Item Slot 4">
+					<input type="text" id="inventorySlot5" name="inventorySlot5" placeholder="Item Slot 5">
+                    <input type="text" id="inventorySlot6" name="inventorySlot6" placeholder="Item Slot 6">
+					<input type="text" id="inventorySlot7" name="inventorySlot7" placeholder="Item Slot 7">
+                    <input type="text" id="inventorySlot8" name="inventorySlot8" placeholder="Item Slot 8">
+                    <input type="text" id="inventorySlot9" name="inventorySlot9" placeholder="Item Slot 9">
+					<input type="text" id="inventorySlot10" name="inventorySlot10" placeholder="Item Slot 10">
+                    <input type="text" id="inventorySlot11" name="inventorySlot11" placeholder="Item Slot 11">
+                    <input type="text" id="inventorySlot12" name="inventorySlot12" placeholder="Item Slot 12">
+					<input type="text" id="inventorySlot13" name="inventorySlot13" placeholder="Item Slot 13">
+                    <input type="text" id="inventorySlot14" name="inventorySlot14" placeholder="Item Slot 14">
+					<input type="text" id="inventorySlot15" name="inventorySlot15" placeholder="Item Slot 15">
+                </div>
+            </div>
+			<div class="column">
+                <h3>Features</h3>
+                <textarea id="charFeatureText" name="charFeatureText" rows="90" placeholder="Abilities and Feats"></textarea>			
+			</div>
+        </div>
+
+        <!-- Buttons Section -->
+        <div class="buttons">
+            <button type="button" class="json-btn" id="saveJson">Save as JSON</button>
+            <button type="button" class="json-btn" id="uploadJson">Upload JSON</button>
+        </div>
+    </form>
+
+    <script src="scripts.js"></script>
+
+</body>
+</html>
