@@ -1,0 +1,52 @@
+{
+    "equipment": [
+        {
+            "name": "Stone Axe",
+            "techLevel": 1,
+            "locationWorn": "Hand",
+            "purpose": "Weapon",
+            "bulk": 2,
+            "description": "A primitive melee weapon. Range: Close. Damage: 1d6."
+        },
+        {
+            "name": "Leather Armor",
+            "techLevel": 1,
+            "locationWorn": "Armor",
+            "purpose": "Adventure",
+            "bulk": 1,
+            "description": "Basic protection made from leather. Provides minimal defense."
+        },
+        {
+            "name": "Laser Pistol",
+            "techLevel": 5,
+            "locationWorn": "Hand",
+            "purpose": "Weapon",
+            "bulk": 1,
+            "description": "An advanced ranged weapon. Range: Near. Damage: 5d6."
+        },
+        {
+            "name": "Spacesuit",
+            "techLevel": 5,
+            "locationWorn": "Armor",
+            "purpose": "Adventure",
+            "bulk": 2,
+            "description": "Advanced protective gear for space exploration. Includes oxygen supply."
+        },
+        {
+            "name": "Steel Sword",
+            "techLevel": 3,
+            "locationWorn": "Hand",
+            "purpose": "Weapon",
+            "bulk": 1,
+            "description": "A durable melee weapon. Range: Close. Damage: 3d6."
+        },
+        {
+            "name": "Grappling Hook",
+            "techLevel": 2,
+            "locationWorn": "Hand",
+            "purpose": "Adventure",
+            "bulk": 1,
+            "description": "A tool for climbing or pulling objects. Useful for exploration."
+        }
+    ]
+}

@@ -69,7 +69,7 @@ fetch('skills.json')
                 const skillContainer = document.createElement('div');
                 skillContainer.classList.add('skill-display');
                 skillContainer.innerHTML = `
-                    <label>
+                    <label title="Tbd">
                         <input type="number" id="skill${skill.name}" name="skill${skill.name}" min="0" value="0" class="skill-input" data-associated-stat="stat${skill.attribute}">
                         ${skill.name} (${skill.attribute})
 						<span class="skill-result" id="result${skill.name}">0</span>

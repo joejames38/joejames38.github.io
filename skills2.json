@@ -1,0 +1,88 @@
+{
+    "skills": [
+        {
+            "name": "Melee Weapons",
+            "attribute": "Strength",
+            "type": "Combat",
+            "description": "Proficiency in fighting with handheld weapons such as swords, axes, and maces."
+        },
+        {
+            "name": "Ranged Weapons",
+            "attribute": "Dexterity",
+            "type": "Combat",
+            "description": "Skill with ranged weaponry like bows, crossbows, and firearms."
+        },
+        {
+            "name": "Martial Arts",
+            "attribute": "Strength",
+            "type": "Combat",
+            "description": "Training in unarmed combat techniques and specialized fighting styles."
+        },
+        {
+            "name": "Self-Defense",
+            "attribute": "Dexterity",
+            "type": "Combat",
+            "description": "Ability to protect oneself from physical attacks, focusing on evasion and countermeasures."
+        },
+        {
+            "name": "Explosives",
+            "attribute": "Dexterity",
+            "type": "Combat",
+            "description": "Expertise in using and disarming explosive devices."
+        },
+        {
+            "name": "Intimidation",
+            "attribute": "Charisma",
+            "type": "Combat",
+            "description": "Skill in forcing others to act through fear or coercion."
+        },
+        {
+            "name": "Survival",
+            "attribute": "Wisdom",
+            "type": "Adventure",
+            "description": "Knowledge of survival techniques, including foraging, tracking, and navigating the wilderness."
+        },
+        {
+            "name": "Investigation",
+            "attribute": "Intelligence",
+            "type": "Adventure",
+            "description": "Ability to analyze clues, solve puzzles, and uncover hidden information."
+        },
+        {
+            "name": "Perception",
+            "attribute": "Wisdom",
+            "type": "Adventure",
+            "description": "Skill in noticing details in the environment, spotting hidden threats, and detecting ambushes."
+        },
+        {
+            "name": "Athletics",
+            "attribute": "Strength",
+            "type": "Adventure",
+            "description": "Proficiency in physical activities such as climbing, jumping, and swimming."
+        },
+        {
+            "name": "Piloting",
+            "attribute": "Dexterity",
+            "type": "Adventure",
+            "description": "Skill in operating vehicles or spacecraft with precision and efficiency."
+        },
+        {
+            "name": "Stealth",
+            "attribute": "Dexterity",
+            "type": "Adventure",
+            "description": "Ability to move silently and remain unseen, useful for sneaking and evasion."
+        },
+        {
+            "name": "Medicine",
+            "attribute": "Intelligence",
+            "type": "Adventure",
+            "description": "Expertise in treating injuries, diseases, and stabilizing wounded creatures."
+        },
+        {
+            "name": "History",
+            "attribute": "Intelligence",
+            "type": "Adventure",
+            "description": "Knowledge of historical events, ancient civilizations, and significant lore."
+        }
+    ]
+}

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills</title>
+    <link rel="stylesheet" href="styling.css">
+	<script src="common.js" defer></script>
+	<style>
+	/* skills Section Styling */
+	#skillsList {
+		display: flex;
+		flex-direction: column;
+		gap: 15px;
+		margin-top: 20px;
+	}
+
+	.skills {
+		border: 1px solid #00d4ff;
+		padding: 15px;
+		border-radius: 8px;
+		background-color: rgba(0, 0, 0, 0.8);
+		box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+		color: white;
+	}
+
+	.skills h3 {
+		margin: 0;
+		color: #00d4ff;
+	}
+
+	.skills p {
+		margin: 5px 0;
+		font-size: 0.9em;
+	}
+
+	@media print {
+		#skillsList {
+			gap: 10px;
+		}
+
+		.skills {
+			border: 1px solid black;
+			background-color: white;
+			color: black;
+		}
+
+		.skills h3 {
+			color: black;
+		}
+	}
+</style>
+</head>
+<body>
+	<header>
+    <!-- Navigation Bar Placeholder -->
+    <div id="navbar"></div>
+	</header>
+
+    <main>
+        <section>
+            <h2>skills</h2>
+            <p>Below is a list of skills available for your characters. Each skills includes a name, the skill point Attribute, any types, and a description.</p>
+            <div id="skillsList">
+                <!-- skills will be dynamically loaded here -->
+            </div>
+        </section>
+    </main>
+	<script>
+// Load skills from skills.json and display them
+fetch('skills2.json')
+    .then(response => {
+        if (!response.ok) {
+            throw new Error(`HTTP error! Status: ${response.status}`);
+        }
+        return response.json();
+    })
+    .then(data => {
+        const skillsList = document.getElementById('skillsList');
+
+        data.skills.forEach(skills => {
+            // Create container for each skills
+            const skillsContainer = document.createElement('div');
+            skillsContainer.classList.add('skills');
+
+            // Add skills name
+            const skillsName = document.createElement('h3');
+            skillsName.textContent = skills.name;
+            skillsContainer.appendChild(skillsName);
+
+            // Add skills skill point Attribute
+            const skillsAttribute = document.createElement('p');
+            skillsAttribute.innerHTML = `<strong>Attribute:</strong> ${skills.attribute}`;
+            skillsContainer.appendChild(skillsAttribute);
+
+            // Add skills type
+            const skillsType = document.createElement('p');
+            skillsType.innerHTML = `<strong>Type:</strong> ${skills.type}`;
+            skillsContainer.appendChild(skillsType);
+
+            // Add skills description
+            const skillsDescription = document.createElement('p');
+            skillsDescription.innerHTML = `<strong>Description:</strong> ${skills.description}`;
+            skillsContainer.appendChild(skillsDescription);
+
+            // Append the skills to the list
+            skillsList.appendChild(skillsContainer);
+        });
+    })
+    .catch(error => {
+        console.error('Error loading skills.json:', error);
+        const skillsList = document.getElementById('skillsList');
+        skillsList.innerHTML = '<p class="error">Could not load skills. Please try again later.</p>';
+    });
+</script>
+
+
+</body>
+</html>

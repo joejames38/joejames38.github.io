@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Equipment - Character Hub</title>
+    <link rel="stylesheet" href="styling.css">
+    <script src="common.js" defer></script>
+    <script src="equipment.js" defer></script>
+</head>
+<body>
+    <!-- Navigation Bar Placeholder -->
+    <div id="navbar"></div>
+
+    <!-- Main Content -->
+    <main>
+        <section>
+            <h1>Equipment List</h1>
+            <p>
+                Browse through the available equipment, categorized by their tech level, location worn, purpose, and bulk.
+            </p>
+            <div id="equipmentList">
+                <!-- Equipment items will be dynamically loaded here -->
+            </div>
+        </section>
+    </main>
+	<script>
+	// Load equipment from equipment.json and display it
+	document.addEventListener('DOMContentLoaded', () => {
+    const equipmentList = document.getElementById('equipmentList');
+
+    fetch('equipment.json')
+        .then(response => response.json())
+        .then(data => {
+            data.equipment.forEach(item => {
+                // Create container for each equipment item
+                const equipmentContainer = document.createElement('div');
+                equipmentContainer.classList.add('equipment-item');
+
+                // Add equipment details
+                equipmentContainer.innerHTML = `
+                    <h3>${item.name}</h3>
+                    <p><strong>Tech Level:</strong> ${item.techLevel}</p>
+                    <p><strong>Location Worn:</strong> ${item.locationWorn}</p>
+                    <p><strong>Purpose:</strong> ${item.purpose}</p>
+                    <p><strong>Bulk:</strong> ${item.bulk === 1 ? "1 Hand" : "2 Hands"}</p>
+                    <p><strong>Description:</strong> ${item.description}</p>
+                `;
+
+                // Append the equipment item to the list
+                equipmentList.appendChild(equipmentContainer);
+            });
+        })
+        .catch(error => {
+            console.error('Error loading equipment.json:', error);
+            equipmentList.innerHTML = '<p class="error">Failed to load equipment. Please try again later.</p>';
+        });
+});
+
+	</script>
+</body>
+</html>

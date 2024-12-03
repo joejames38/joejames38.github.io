@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Character Creation Guide - Character Hub</title>
+    <link rel="stylesheet" href="styling.css">
+    <script src="common.js" defer></script>
+    <script src="character-slideshow.js" defer></script>
+</head>
+<body>
+    <!-- Navigation Bar Placeholder -->
+    <div id="navbar"></div>
+
+    <!-- Main Content -->
+    <main>
+        <section class="slideshow">
+            <!-- Slideshow Steps -->
+            <nav class="slideshow-steps">
+                <ul>
+                    <li><a href="#" data-slide="0">Step 1: ABC's</a></li>
+                    <li><a href="#" data-slide="1">Step 2: Core Ability Assignment</a></li>
+                </ul>
+            </nav>
+
+            <!-- Slideshow Container -->
+            <div id="slideshow-container">
+                <!-- Slide 1: ABC's -->
+                <div class="slide">
+                    <h2>Step 1: ABC's of Character Creation</h2>
+                    <p>
+                        The ABC's of character creation involve:
+                    </p>
+                    <ul>
+                        <li><strong>A:</strong> Choosing an <strong>Ancestry</strong> that defines your character's race and unique traits.</li>
+                        <li><strong>B:</strong> Picking <strong>two Backgrounds</strong> that reflect your character's history and skills.</li>
+                        <li><strong>C:</strong> Creating <strong>three Connections</strong> that tie your character to people, places, or events.</li>
+                    </ul>
+                    <p>
+                        Example: <strong>Kelsey the Medic</strong> chose the Human ancestry, Medic and Healer backgrounds, and has connections to her hometown hospital, a villain named Dr. Chaos, and a party member named Alex.
+                    </p>
+                </div>
+
+                <!-- Slide 2: Core Ability Assignment -->
+                <div class="slide">
+                    <h2>Step 2: Core Ability Assignment</h2>
+                    <p>
+                        Assign the ability score array <strong>[3, 3, 2, 2, 1, 1]</strong> to the six core stats:
+                    </p>
+                    <ul>
+                        <li><strong>Strength:</strong> Physical power</li>
+                        <li><strong>Dexterity:</strong> Agility and reflexes</li>
+                        <li><strong>Constitution:</strong> Endurance and resilience</li>
+                        <li><strong>Intelligence:</strong> Knowledge and reasoning</li>
+                        <li><strong>Wisdom:</strong> Perception and insight</li>
+                        <li><strong>Charisma:</strong> Influence and charm</li>
+                    </ul>
+                    <p>
+                        Example: Kelsey distributed her scores as follows:
+                        Strength: 1, Dexterity: 2, Constitution: 3, Intelligence: 3, Wisdom: 2, Charisma: 1.
+                    </p>
+                </div>
+
+                <!-- Navigation Buttons -->
+                <button id="prev" class="slideshow-btn">Previous</button>
+                <button id="next" class="slideshow-btn">Next</button>
+            </div>
+        </section>
+    </main>
+	<script>
+	document.addEventListener('DOMContentLoaded', () => {
+    const slides = document.querySelectorAll('.slide');
+    const prevButton = document.getElementById('prev');
+    const nextButton = document.getElementById('next');
+    const stepLinks = document.querySelectorAll('.slideshow-steps a');
+
+    let currentSlide = 0;
+
+    // Function to show a specific slide
+    function showSlide(index) {
+        slides.forEach((slide, i) => {
+            slide.style.display = i === index ? 'block' : 'none';
+        });
+        currentSlide = index;
+    }
+
+    // Show the first slide initially
+    showSlide(currentSlide);
+
+    // Handle "Next" button click
+    nextButton.addEventListener('click', () => {
+        currentSlide = (currentSlide + 1) % slides.length; // Loop to the beginning
+        showSlide(currentSlide);
+    });
+
+    // Handle "Previous" button click
+    prevButton.addEventListener('click', () => {
+        currentSlide = (currentSlide - 1 + slides.length) % slides.length; // Loop to the end
+        showSlide(currentSlide);
+    });
+
+    // Handle step link clicks
+    stepLinks.forEach(link => {
+        link.addEventListener('click', (event) => {
+            event.preventDefault(); // Prevent default anchor behavior
+            const slideIndex = parseInt(link.getAttribute('data-slide'), 10);
+            showSlide(slideIndex);
+        });
+    });
+});
+
+	</script>
+</body>
+</html>
