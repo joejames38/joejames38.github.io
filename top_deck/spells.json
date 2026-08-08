@@ -4,7 +4,6 @@
 "version": "0.1-playtest",
 "spells": [
 
-```
 {
   "id": "arcane-light",
   "name": "Arcane Light",
@@ -321,7 +320,6 @@
   "channel": null,
   "description": "Command the boundary between life and death. Make a Cunning magic attack. On a hit, deal 8 HP damage. If the target is reduced to 0 HP, you may immediately restore 3 HP to an ally within Near range."
 }
-```
 
 ]
 }
