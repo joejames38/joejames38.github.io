@@ -1,0 +1,919 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+```
+<title>Realm & Rune — Magic</title>
+
+<!-- Shared Realm & Rune stylesheet -->
+<link rel="stylesheet" href="realm-and-rune.css">
+```
+
+</head>
+
+<body>
+
+<header class="site-header">
+    <div class="header-inner">
+        <div class="game-title">Realm & Rune</div>
+        <div class="game-subtitle">Magic Rules</div>
+    </div>
+</header>
+
+<!-- =========================================================
+     NAVIGATION
+     ========================================================= -->
+
+<nav class="main-nav">
+    <div class="nav-inner">
+        <a href="core-rules.html">Core Rules</a>
+        <a href="combat.html">Combat</a>
+        <a href="magic.html" class="active">Magic</a>
+        <a href="ancestry.html">Ancestry</a>
+        <a href="backgrounds.html">Backgrounds</a>
+        <a href="classes.html">Classes</a>
+        <a href="feats.html">Feats</a>
+        <a href="character-sheet.html">Character Sheet</a>
+    </div>
+</nav>
+
+<main class="page-container">
+
+<!-- =========================================================
+     MAGIC OVERVIEW
+     ========================================================= -->
+
+<section id="magic-overview" class="rule-section">
+
+```
+<div class="section-heading">
+    <span class="section-number">I</span>
+    <h1>Magic</h1>
+</div>
+
+<p>
+    Magic in <strong>Realm & Rune</strong> is powered by the same
+    cards used for combat and skill checks. Spellcasting therefore
+    creates a meaningful choice between spending cards now and
+    preserving them for later.
+</p>
+
+<p>
+    Unlike ordinary actions, cards used to cast spells are
+    <strong>Burned</strong>. They are removed from the active card
+    cycle and do not return until the character completes a
+    Long Rest.
+</p>
+
+<div class="rule-callout">
+    <strong>The Four Resonances</strong>
+
+    <p>
+        Each magical tradition is associated with one suit.
+        A spell's Resonant Suit determines which cards empower
+        the spell.
+    </p>
+</div>
+```
+
+</section>
+
+<!-- =========================================================
+     FOUR RESONANCES
+     ========================================================= -->
+
+<section id="resonances" class="rule-section">
+
+```
+<div class="section-heading">
+    <span class="section-number">II</span>
+    <h2>The Four Resonances</h2>
+</div>
+
+<table class="rules-table">
+
+    <thead>
+        <tr>
+            <th>Tradition</th>
+            <th>Resonant Suit</th>
+            <th>Theme</th>
+        </tr>
+    </thead>
+
+    <tbody>
+
+        <tr>
+            <td><strong>Arcane</strong></td>
+            <td>♦ Diamonds</td>
+            <td>Knowledge, elemental forces, manipulation of reality</td>
+        </tr>
+
+        <tr>
+            <td><strong>Divine</strong></td>
+            <td>♥ Hearts</td>
+            <td>Faith, healing, protection, divine power</td>
+        </tr>
+
+        <tr>
+            <td><strong>Primal</strong></td>
+            <td>♣ Clubs</td>
+            <td>Nature, beasts, elements, physical transformation</td>
+        </tr>
+
+        <tr>
+            <td><strong>Occult</strong></td>
+            <td>♠ Spades</td>
+            <td>Secrets, curses, spirits, forbidden forces</td>
+        </tr>
+
+    </tbody>
+
+</table>
+```
+
+</section>
+
+<!-- =========================================================
+     SPELL TIERS
+     ========================================================= -->
+
+<section id="spell-tiers" class="rule-section">
+
+```
+<div class="section-heading">
+    <span class="section-number">III</span>
+    <h2>Spell Tiers</h2>
+</div>
+
+<p>
+    Spells are divided into six tiers, from Tier 0 through Tier 5.
+    Higher-tier spells require more cards and produce more powerful
+    effects.
+</p>
+
+<table class="rules-table">
+
+    <thead>
+        <tr>
+            <th>Tier</th>
+            <th>Base Cards Burned</th>
+            <th>Power</th>
+        </tr>
+    </thead>
+
+    <tbody>
+
+        <tr>
+            <td>Tier 0</td>
+            <td>0 outside combat / 1 in combat</td>
+            <td>Simple magical effects and cantrips</td>
+        </tr>
+
+        <tr>
+            <td>Tier 1</td>
+            <td>1</td>
+            <td>Basic combat and utility magic</td>
+        </tr>
+
+        <tr>
+            <td>Tier 2</td>
+            <td>2</td>
+            <td>Strong combat and meaningful utility</td>
+        </tr>
+
+        <tr>
+            <td>Tier 3</td>
+            <td>3</td>
+            <td>Major magical effects</td>
+        </tr>
+
+        <tr>
+            <td>Tier 4</td>
+            <td>4</td>
+            <td>Powerful battlefield and narrative magic</td>
+        </tr>
+
+        <tr>
+            <td>Tier 5</td>
+            <td>5</td>
+            <td>Exceptional magic capable of changing an encounter</td>
+        </tr>
+
+    </tbody>
+
+</table>
+```
+
+</section>
+
+<!-- =========================================================
+     CASTING IN COMBAT
+     ========================================================= -->
+
+<section id="combat-casting" class="rule-section">
+
+```
+<div class="section-heading">
+    <span class="section-number">IV</span>
+    <h2>Casting Spells in Combat</h2>
+</div>
+
+<p>
+    Casting a spell in combat requires the caster to Burn the
+    number of cards specified by the spell's Tier.
+</p>
+
+<p>
+    Only the <strong>first card</strong> Burned for the spell
+    contributes its numerical value to the spell's magic attack.
+</p>
+
+<div class="formula-box">
+
+    <strong>Magic Attack</strong>
+
+    <br><br>
+
+    First Card Value
+    + Caster's Appropriate Attribute
+    + Resonant Suit Bonuses
+
+</div>
+
+<p>
+    Every additional card in the spell's casting cost is normally
+    used only to pay the spell's resource cost.
+</p>
+
+<h3>Resonant Cards</h3>
+
+<p>
+    Each card after the first that matches the spell's Resonant Suit
+    adds <strong>+1 to the spell's attack check</strong>.
+</p>
+
+<p>
+    Cards that do not match the spell's Resonant Suit still count
+    toward the casting cost, but provide no additional attack bonus.
+</p>
+
+<div class="rule-callout">
+
+    <strong>Example: Tier 3 Arcane Spell</strong>
+
+    <p>
+        A Wizard casts a Tier 3 Arcane spell and burns:
+    </p>
+
+    <p>
+        <strong>9♦, 4♦, 2♣</strong>
+    </p>
+
+    <p>
+        The first card, 9♦, provides a +9 card value.
+        The second card, 4♦, resonates with Arcane magic and
+        provides +1 to the attack.
+        The 2♣ pays the casting cost but provides no bonus.
+    </p>
+
+    <p>
+        The final magic attack therefore receives:
+        <strong>9 + Cunning modifier + 1</strong>.
+    </p>
+
+</div>
+```
+
+</section>
+
+<!-- =========================================================
+     CASTING OUTSIDE COMBAT
+     ========================================================= -->
+
+<section id="noncombat-casting" class="rule-section">
+
+```
+<div class="section-heading">
+    <span class="section-number">V</span>
+    <h2>Casting Magic Outside Combat</h2>
+</div>
+
+<p>
+    Magic is easier to control outside the pressure of combat.
+    When casting a spell outside combat, the caster may search
+    their Deck for the cards required to pay the spell's cost.
+</p>
+
+<p>
+    Every card selected must match the spell's
+    <strong>Resonant Suit</strong>.
+</p>
+
+<p>
+    The selected cards are then Burned.
+</p>
+
+<div class="rule-callout">
+
+    <strong>Example</strong>
+
+    <p>
+        A Wizard needs to illuminate a dark ruin using a Tier 1
+        Arcane spell. Because the spell is being cast outside
+        combat, the Wizard may search their Deck for one Diamond
+        and Burn it.
+    </p>
+
+</div>
+
+<p>
+    This rule allows characters to use appropriate utility magic
+    without relying entirely on random card draws, while still
+    making magic consume a finite resource.
+</p>
+```
+
+</section>
+
+<!-- =========================================================
+     TIER 0
+     ========================================================= -->
+
+<section id="tier-0" class="rule-section">
+
+```
+<div class="section-heading">
+    <span class="section-number">VI</span>
+    <h2>Tier 0 — Cantrips</h2>
+</div>
+
+<p>
+    Tier 0 spells are simple magical effects. They do not deal
+    damage and are intended to provide utility, flavor, and
+    creative problem-solving.
+</p>
+
+<p>
+    Outside combat, Tier 0 spells may be cast freely and require
+    no cards.
+</p>
+
+<p>
+    In combat, casting a Tier 0 spell requires Burning one card.
+    Any suit may be used.
+</p>
+
+<div class="rule-callout">
+    <strong>Tier 0 Design Principle</strong>
+    <p>
+        Cantrips should solve small problems without replacing
+        equipment, skills, or higher-tier spells.
+    </p>
+</div>
+```
+
+</section>
+
+<!-- =========================================================
+     CHANNEL
+     ========================================================= -->
+
+<section id="channel" class="rule-section">
+
+```
+<div class="section-heading">
+    <span class="section-number">VII</span>
+    <h2>Channel</h2>
+</div>
+
+<p>
+    Some spells possess the <strong>Channel</strong> property.
+    Channeling allows a caster to Burn additional Resonant Suit
+    cards after paying the spell's initial casting cost.
+</p>
+
+<p>
+    Channeling is applied <strong>after the spell's initial cost
+    has been paid and the spell has been resolved.</strong>
+</p>
+
+<p>
+    Each additional Resonant Suit card Burned through Channel
+    increases the spell's damage by <strong>+1</strong>.
+</p>
+
+<div class="formula-box">
+
+    <strong>Channel Damage</strong>
+
+    <br><br>
+
+    Base Spell Damage
+    \+ 1 damage per additional Resonant card
+
+</div>
+
+<div class="rule-callout">
+
+    <strong>Example: Firebolt</strong>
+
+    <p>
+        Firebolt is a Tier 1 Arcane spell and normally deals 1 HP
+        on a successful hit.
+    </p>
+
+    <p>
+        The Wizard pays the normal casting cost by Burning one card.
+        After the spell is cast, the Wizard may Channel by Burning
+        additional Diamonds.
+    </p>
+
+    <p>
+        Burning two additional Diamonds increases Firebolt's damage
+        from 1 HP to 3 HP.
+    </p>
+
+</div>
+
+<p>
+    Channeling is optional. A caster never has to spend additional
+    cards after paying the spell's normal cost.
+</p>
+```
+
+</section>
+
+<!-- =========================================================
+     MAGIC ATTACKS
+     ========================================================= -->
+
+<section id="magic-attacks" class="rule-section">
+
+```
+<div class="section-heading">
+    <span class="section-number">VIII</span>
+    <h2>Magic Attacks</h2>
+</div>
+
+<p>
+    A spell requiring a magic attack uses the caster's appropriate
+    magical attribute.
+</p>
+
+<table class="rules-table">
+
+    <thead>
+        <tr>
+            <th>Tradition</th>
+            <th>Primary Attribute</th>
+        </tr>
+    </thead>
+
+    <tbody>
+
+        <tr>
+            <td>Arcane</td>
+            <td>Cunning</td>
+        </tr>
+
+        <tr>
+            <td>Divine</td>
+            <td>Spirit</td>
+        </tr>
+
+        <tr>
+            <td>Primal</td>
+            <td>Might or Dexterity, depending on the spell</td>
+        </tr>
+
+        <tr>
+            <td>Occult</td>
+            <td>Cunning</td>
+        </tr>
+
+    </tbody>
+
+</table>
+
+<p>
+    Unless a spell specifically states otherwise, a successful
+    magic attack deals the spell's listed effect.
+</p>
+```
+
+</section>
+
+<!-- =========================================================
+     SPELL COMPONENTS
+     ========================================================= -->
+
+<section id="spell-components" class="rule-section">
+
+```
+<div class="section-heading">
+    <span class="section-number">IX</span>
+    <h2>Reading a Spell</h2>
+</div>
+
+<p>
+    Every spell in the Realm & Rune spell library contains the
+    following information.
+</p>
+
+<table class="rules-table">
+
+    <thead>
+        <tr>
+            <th>Field</th>
+            <th>Meaning</th>
+        </tr>
+    </thead>
+
+    <tbody>
+
+        <tr>
+            <td>Name</td>
+            <td>The spell's name.</td>
+        </tr>
+
+        <tr>
+            <td>Tier</td>
+            <td>The spell's power level and casting cost.</td>
+        </tr>
+
+        <tr>
+            <td>Resonance</td>
+            <td>The suit associated with the spell.</td>
+        </tr>
+
+        <tr>
+            <td>Range</td>
+            <td>Close, Near, or Far.</td>
+        </tr>
+
+        <tr>
+            <td>Target</td>
+            <td>Self, Enemy, Ally, or another listed target.</td>
+        </tr>
+
+        <tr>
+            <td>Duration</td>
+            <td>How long the spell's effect persists.</td>
+        </tr>
+
+        <tr>
+            <td>Classes</td>
+            <td>Classes that can learn or cast the spell.</td>
+        </tr>
+
+        <tr>
+            <td>Channel</td>
+            <td>
+                Indicates whether additional Resonant cards can
+                increase the spell's damage.
+            </td>
+        </tr>
+
+        <tr>
+            <td>Description</td>
+            <td>The spell's mechanical and narrative effect.</td>
+        </tr>
+
+    </tbody>
+
+</table>
+```
+
+</section>
+
+<!-- =========================================================
+     RANGE
+     ========================================================= -->
+
+<section id="spell-range" class="rule-section">
+
+```
+<div class="section-heading">
+    <span class="section-number">X</span>
+    <h2>Spell Range</h2>
+</div>
+
+<table class="rules-table">
+
+    <thead>
+        <tr>
+            <th>Range</th>
+            <th>Distance</th>
+        </tr>
+    </thead>
+
+    <tbody>
+
+        <tr>
+            <td>Close</td>
+            <td>Melee range</td>
+        </tr>
+
+        <tr>
+            <td>Near</td>
+            <td>Approximately 30 feet</td>
+        </tr>
+
+        <tr>
+            <td>Far</td>
+            <td>Approximately 100 feet</td>
+        </tr>
+
+    </tbody>
+
+</table>
+```
+
+</section>
+
+<!-- =========================================================
+     SPELL LIBRARY
+     ========================================================= -->
+
+<section id="spell-library" class="rule-section">
+
+```
+<div class="section-heading">
+    <span class="section-number">XI</span>
+    <h2>Spell Library</h2>
+</div>
+
+<p>
+    The spell library below is loaded from
+    <strong>spells.json</strong>. The JSON file is the master
+    reference for individual spell entries.
+</p>
+
+<div id="spell-library-status" class="rule-callout">
+    Loading spell library...
+</div>
+
+<div id="spell-library-container"></div>
+```
+
+</section>
+
+<!-- =========================================================
+     PLAYTEST NOTES
+     ========================================================= -->
+
+<section id="magic-playtest" class="rule-section">
+
+```
+<div class="section-heading">
+    <span class="section-number">XII</span>
+    <h2>Magic Playtest Questions</h2>
+</div>
+
+<ul>
+
+    <li>
+        Does Burning multiple cards make high-tier spells
+        appropriately rare?
+    </li>
+
+    <li>
+        Does the first-card-only attack value produce an appropriate
+        hit rate?
+    </li>
+
+    <li>
+        Are Resonant Suit bonuses strong enough to encourage
+        thematic card management?
+    </li>
+
+    <li>
+        Is Channel powerful enough to be exciting without making
+        low-tier spells outperform higher-tier spells?
+    </li>
+
+    <li>
+        Does searching the Deck for Resonant cards outside combat
+        create useful utility without making resource management
+        irrelevant?
+    </li>
+
+    <li>
+        Are Tier 0 cantrips useful without invalidating mundane
+        equipment or skills?
+    </li>
+
+    <li>
+        How often can characters realistically cast Tier 3–5 spells
+        during a typical adventure?
+    </li>
+
+    <li>
+        Does the Burn Pile create meaningful long-term resource
+        pressure?
+    </li>
+
+</ul>
+```
+
+</section>
+
+</main>
+
+<!-- =========================================================
+     FOOTER
+     ========================================================= -->
+
+<footer class="site-footer">
+
+```
+<div class="footer-inner">
+
+    <strong>Realm & Rune</strong>
+
+    <p>
+        Magic Rules — Playtest Edition
+    </p>
+
+    <p class="footer-links">
+
+        <a href="core-rules.html">Core Rules</a> ·
+        <a href="combat.html">Combat</a> ·
+        <a href="magic.html">Magic</a> ·
+        <a href="ancestry.html">Ancestry</a> ·
+        <a href="backgrounds.html">Backgrounds</a> ·
+        <a href="classes.html">Classes</a> ·
+        <a href="feats.html">Feats</a> ·
+        <a href="character-sheet.html">Character Sheet</a>
+
+    </p>
+
+</div>
+```
+
+</footer>
+
+<!-- =========================================================
+     SPELL LIBRARY JAVASCRIPT
+     ========================================================= -->
+
+<script>
+
+async function loadSpellLibrary() {
+
+    const container =
+        document.getElementById("spell-library-container");
+
+    const status =
+        document.getElementById("spell-library-status");
+
+    try {
+
+        const response = await fetch("spells.json");
+
+        if (!response.ok) {
+            throw new Error(
+                "Unable to load spells.json (" +
+                response.status +
+                ")"
+            );
+        }
+
+        const data = await response.json();
+
+        status.remove();
+
+        renderSpells(data.spells, container);
+
+    } catch (error) {
+
+        status.innerHTML =
+            "<strong>Spell Library Error</strong>" +
+            "<p>" +
+            error.message +
+            "</p>" +
+            "<p>" +
+            "If you are opening this page directly from your computer, " +
+            "run the site through a local web server such as VS Code " +
+            "Live Server." +
+            "</p>";
+
+        console.error(error);
+
+    }
+
+}
+
+
+function renderSpells(spells, container) {
+
+    const tiers = [0, 1, 2, 3, 4, 5];
+
+    tiers.forEach(tier => {
+
+        const tierSpells =
+            spells.filter(spell => spell.tier === tier);
+
+        if (tierSpells.length === 0) {
+            return;
+        }
+
+        const section =
+            document.createElement("section");
+
+        section.className =
+            "spell-tier-section";
+
+        const heading =
+            document.createElement("h3");
+
+        heading.textContent =
+            "Tier " + tier;
+
+        section.appendChild(heading);
+
+        tierSpells.forEach(spell => {
+
+            const card =
+                document.createElement("article");
+
+            card.className =
+                "ability-box spell-card";
+
+            const title =
+                document.createElement("h4");
+
+            title.textContent =
+                spell.name;
+
+            card.appendChild(title);
+
+            const metadata =
+                document.createElement("div");
+
+            metadata.className =
+                "spell-metadata";
+
+            metadata.innerHTML =
+                "<strong>Resonance:</strong> " +
+                spell.resonance +
+                " &nbsp; | &nbsp; " +
+
+                "<strong>Range:</strong> " +
+                spell.range +
+                " &nbsp; | &nbsp; " +
+
+                "<strong>Target:</strong> " +
+                spell.target +
+                " &nbsp; | &nbsp; " +
+
+                "<strong>Duration:</strong> " +
+                spell.duration +
+                " &nbsp; | &nbsp; " +
+
+                "<strong>Classes:</strong> " +
+                spell.classes.join(", ");
+
+            card.appendChild(metadata);
+
+            if (spell.channel) {
+
+                const channel =
+                    document.createElement("p");
+
+                channel.innerHTML =
+                    "<strong>Channel:</strong> " +
+                    spell.channel;
+
+                card.appendChild(channel);
+
+            }
+
+            const description =
+                document.createElement("p");
+
+            description.textContent =
+                spell.description;
+
+            card.appendChild(description);
+
+            section.appendChild(card);
+
+        });
+
+        container.appendChild(section);
+
+    });
+
+}
+
+
+loadSpellLibrary();
+
+</script>
+
+</body>
+</html>

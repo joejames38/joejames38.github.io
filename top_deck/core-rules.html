@@ -1,0 +1,1356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Realm & Rune — Core Rules</title>
+
+    <!-- Common stylesheet shared by all Realm & Rune pages -->
+    <link rel="stylesheet" href="realm-and-rune.css">
+</head>
+
+<body>
+
+<header class="site-header">
+    <div class="header-inner">
+        <div class="game-title">Realm & Rune</div>
+        <div class="game-subtitle">A Card-Driven Fantasy Roleplaying Game</div>
+    </div>
+</header>
+
+<nav class="main-nav">
+    <div class="nav-inner">
+        <a href="core-rules.html" class="active">Core Rules</a>
+        <a href="combat.html">Combat</a>
+        <a href="magic.html">Magic</a>
+        <a href="ancestry.html">Ancestry</a>
+        <a href="backgrounds.html">Backgrounds</a>
+        <a href="classes.html">Classes</a>
+        <a href="feats.html">Feats</a>
+        <a href="realm_and_rune_character_sheet.html">Character Sheet</a>
+    </div>
+</nav>
+
+<main class="page-container">
+
+    <!-- =====================================================
+         INTRODUCTION
+         ===================================================== -->
+
+    <section id="overview" class="rule-section">
+        <div class="section-heading">
+            <span class="section-number">I</span>
+            <h1>Core Rules</h1>
+        </div>
+
+        <p>
+            <strong>Realm & Rune</strong> is a lightweight heroic fantasy
+            tabletop roleplaying game built around standard playing cards
+            instead of dice.
+        </p>
+
+        <p>
+            Each player has their own deck of cards. Cards represent both
+            uncertainty and resources. Players must decide whether to spend
+            powerful cards now or preserve them for a future challenge.
+        </p>
+
+        <div class="rule-callout">
+            <strong>Core Design Principle</strong>
+            <p>
+                The game is built around simple arithmetic, meaningful card
+                choices, asymmetric characters, and fast resolution.
+            </p>
+        </div>
+    </section>
+
+
+    <!-- =====================================================
+         WHAT YOU NEED
+         ===================================================== -->
+
+    <section id="equipment" class="rule-section">
+
+        <div class="section-heading">
+            <span class="section-number">II</span>
+            <h2>What You Need</h2>
+        </div>
+
+        <ul>
+            <li>One standard 52-card deck for each player.</li>
+            <li>Optional Jokers for the optional critical-fumble rule.</li>
+            <li>Character sheets.</li>
+            <li>Pencils or other writing tools.</li>
+            <li>A way to track HP and other temporary effects.</li>
+        </ul>
+
+        <div class="rule-callout">
+            <strong>Playtest Rule:</strong>
+            Starting deck composition remains a playtest variable.
+            New or low-level characters may use a reduced deck containing
+            only number cards.
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         CARD SYSTEM
+         ===================================================== -->
+
+    <section id="cards" class="rule-section">
+
+        <div class="section-heading">
+            <span class="section-number">III</span>
+            <h2>The Card System</h2>
+        </div>
+
+        <p>
+            Every player maintains a personal deck throughout the game.
+            Cards move between several zones as they are used.
+        </p>
+
+        <table class="rules-table">
+
+            <thead>
+                <tr>
+                    <th>Card</th>
+                    <th>Value</th>
+                    <th>Rule</th>
+                </tr>
+            </thead>
+
+            <tbody>
+
+                <tr>
+                    <td>2–10</td>
+                    <td>Printed value</td>
+                    <td>
+                        Used normally for attacks, checks, and abilities.
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Jack</td>
+                    <td>10</td>
+                    <td>
+                        May trigger a face-card effect.
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Queen</td>
+                    <td>10</td>
+                    <td>
+                        May trigger a face-card effect.
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>King</td>
+                    <td>10</td>
+                    <td>
+                        May trigger a face-card effect.
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Ace</td>
+                    <td>Automatic Failure</td>
+                    <td>
+                        An Ace is a <strong>Snake-Eye</strong>.
+                        It automatically fails when used for a check
+                        or attack, but causes no additional consequence.
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Joker</td>
+                    <td>Optional</td>
+                    <td>
+                        Jokers are not part of the core rules.
+                        They may be added as critical fumbles.
+                    </td>
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </section>
+
+
+    <!-- =====================================================
+         CARD ZONES
+         ===================================================== -->
+
+    <section id="card-zones" class="rule-section">
+
+        <div class="section-heading">
+            <span class="section-number">IV</span>
+            <h2>Card Zones</h2>
+        </div>
+
+        <div class="card-grid">
+
+            <div class="card-panel">
+                <h3>Deck</h3>
+                <p>
+                    The active draw pile. Cards are drawn from the Deck
+                    whenever a rule calls for a draw.
+                </p>
+            </div>
+
+            <div class="card-panel">
+                <h3>Hand</h3>
+                <p>
+                    Cards currently available for the player to spend.
+                    Hand size increases as characters become more powerful.
+                </p>
+            </div>
+
+            <div class="card-panel">
+                <h3>Shuffle Pile</h3>
+                <p>
+                    Cards used for ordinary actions, attacks, reactions,
+                    and skill checks are placed here.
+                </p>
+            </div>
+
+            <div class="card-panel">
+                <h3>Burn Pile</h3>
+                <p>
+                    Cards used to cast spells are permanently removed from
+                    normal circulation until recovered by resting.
+                </p>
+            </div>
+
+        </div>
+
+        <div class="rule-callout">
+            <strong>Deck Depletion</strong>
+            <p>
+                When the Deck is empty, shuffle the Shuffle Pile and make
+                it the new Deck. Cards in the Burn Pile remain unavailable.
+            </p>
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         HAND SIZE
+         ===================================================== -->
+
+    <section id="hand-size" class="rule-section">
+
+        <div class="section-heading">
+            <span class="section-number">V</span>
+            <h2>Hand Size</h2>
+        </div>
+
+        <p>
+            A character's Hand Size determines how many cards they may
+            retain between turns.
+        </p>
+
+        <table class="rules-table">
+
+            <thead>
+                <tr>
+                    <th>Level</th>
+                    <th>Maximum Hand Size</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>1–2</td>
+                    <td>2</td>
+                </tr>
+
+                <tr>
+                    <td>3–4</td>
+                    <td>3</td>
+                </tr>
+
+                <tr>
+                    <td>5</td>
+                    <td>4</td>
+                </tr>
+            </tbody>
+
+        </table>
+
+        <p>
+            Certain ancestry feats, class features, subclass feats, and
+            other abilities may temporarily or permanently modify the
+            number of cards a character can draw or retain.
+        </p>
+
+    </section>
+
+
+    <!-- =====================================================
+         SCENE FLOW
+         ===================================================== -->
+
+    <section id="scenes" class="rule-section">
+
+        <div class="section-heading">
+            <span class="section-number">VI</span>
+            <h2>Scenes</h2>
+        </div>
+
+        <p>
+            The game uses a flexible scene structure rather than requiring
+            every situation to be combat.
+        </p>
+
+        <div class="card-grid">
+
+            <div class="card-panel">
+                <h3>Combat</h3>
+                <p>
+                    Characters fight enemies while managing movement,
+                    attacks, abilities, and card resources.
+                </p>
+            </div>
+
+            <div class="card-panel">
+                <h3>Social Scenes</h3>
+                <p>
+                    Characters use Spirit-based skills and other abilities
+                    to influence NPCs and navigate relationships.
+                </p>
+            </div>
+
+            <div class="card-panel">
+                <h3>Exploration</h3>
+                <p>
+                    Characters investigate locations, overcome obstacles,
+                    discover secrets, and manage resources.
+                </p>
+            </div>
+
+            <div class="card-panel">
+                <h3>Skill Challenges</h3>
+                <p>
+                    Characters use their skills to overcome difficult
+                    situations where failure has meaningful consequences.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         SCENE START
+         ===================================================== -->
+
+    <section id="scene-start" class="rule-section">
+
+        <div class="section-heading">
+            <span class="section-number">VII</span>
+            <h2>Starting a Scene</h2>
+        </div>
+
+        <p>
+            At the beginning of a structured scene, each player draws cards
+            until their Hand reaches their maximum Hand Size.
+        </p>
+
+        <p>
+            These cards become the character's available resources for
+            the scene.
+        </p>
+
+        <div class="rule-callout">
+            <strong>Important:</strong>
+            A character does not automatically refill their Hand at the
+            beginning of every turn.
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         TURN STRUCTURE
+         ===================================================== -->
+
+    <section id="turns" class="rule-section">
+
+        <div class="section-heading">
+            <span class="section-number">VIII</span>
+            <h2>Turn Structure</h2>
+        </div>
+
+        <ol class="numbered-list">
+
+            <li>
+                <strong>Start of Turn:</strong>
+                Draw one card from your Deck.
+            </li>
+
+            <li>
+                <strong>Move:</strong>
+                You may move. Movement does not require a card.
+            </li>
+
+            <li>
+                <strong>Actions:</strong>
+                You may play cards to perform actions.
+                Normally, each card played provides one action.
+            </li>
+
+            <li>
+                <strong>Reactions:</strong>
+                Reactions may be used when their triggering condition occurs.
+                A card must normally be played to trigger a reaction.
+            </li>
+
+            <li>
+                <strong>End of Turn:</strong>
+                If you have more cards than your Hand Size,
+                discard cards until you reach your maximum.
+            </li>
+
+        </ol>
+
+        <div class="rule-callout">
+            <strong>Explosive Turns</strong>
+            <p>
+                Players are allowed to spend multiple cards during their
+                turn. Drawing additional cards through abilities can create
+                powerful turns, but spending those cards also reduces the
+                player's future options.
+            </p>
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         ACTION ECONOMY
+         ===================================================== -->
+
+    <section id="actions" class="rule-section">
+
+        <div class="section-heading">
+            <span class="section-number">IX</span>
+            <h2>Action Economy</h2>
+        </div>
+
+        <table class="rules-table">
+
+            <thead>
+                <tr>
+                    <th>Resource</th>
+                    <th>Cost</th>
+                </tr>
+            </thead>
+
+            <tbody>
+
+                <tr>
+                    <td>Move</td>
+                    <td>No card required.</td>
+                </tr>
+
+                <tr>
+                    <td>Action</td>
+                    <td>Normally one card.</td>
+                </tr>
+
+                <tr>
+                    <td>Reaction</td>
+                    <td>Normally one card.</td>
+                </tr>
+
+                <tr>
+                    <td>Free Activity</td>
+                    <td>
+                        Only when specifically allowed by a rule.
+                    </td>
+                </tr>
+
+            </tbody>
+
+        </table>
+
+        <p>
+            Unless an ability says otherwise, every action or reaction
+            requires a card to be played.
+        </p>
+
+    </section>
+
+
+    <!-- =====================================================
+         ATTRIBUTES
+         ===================================================== -->
+
+    <section id="attributes" class="rule-section">
+
+        <div class="section-heading">
+            <span class="section-number">X</span>
+            <h2>Core Attributes</h2>
+        </div>
+
+        <p>
+            Every character has four core attributes ranging from
+            <strong>-1 to +3</strong>.
+        </p>
+
+        <table class="rules-table">
+
+            <thead>
+                <tr>
+                    <th>Attribute</th>
+                    <th>Suit</th>
+                    <th>General Uses</th>
+                </tr>
+            </thead>
+
+            <tbody>
+
+                <tr>
+                    <td><strong>Might</strong></td>
+                    <td class="suit-spades">♠ Spades</td>
+                    <td>
+                        Strength, endurance, melee combat, physical force.
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><strong>Spirit</strong></td>
+                    <td class="suit-hearts">♥ Hearts</td>
+                    <td>
+                        Courage, leadership, healing, social actions.
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><strong>Dexterity</strong></td>
+                    <td class="suit-clubs">♣ Clubs</td>
+                    <td>
+                        Agility, precision, movement, risk.
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><strong>Cunning</strong></td>
+                    <td class="suit-diamonds">♦ Diamonds</td>
+                    <td>
+                        Knowledge, quick thinking, investigation,
+                        magical prowess.
+                    </td>
+                </tr>
+
+            </tbody>
+
+        </table>
+
+        <div class="rule-callout">
+            <strong>Suit Affinity:</strong>
+            Suits determine the abilities, skills, weapons, and magical
+            domains associated with an attribute. Suits do not automatically
+            provide an additional numerical modifier.
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         CHECKS
+         ===================================================== -->
+
+    <section id="checks" class="rule-section">
+
+        <div class="section-heading">
+            <span class="section-number">XI</span>
+            <h2>Checks</h2>
+        </div>
+
+        <p>
+            When a character attempts something uncertain where failure
+            matters, the GM calls for a check.
+        </p>
+
+        <p>
+            A check normally consists of a card value plus the appropriate
+            attribute modifier.
+        </p>
+
+        <div class="formula-box">
+            <strong>Check Total</strong>
+            <br>
+            Card Value + Attribute Modifier
+        </div>
+
+        <p>
+            The GM determines the Difficulty of the check based on the
+            circumstances.
+        </p>
+
+    </section>
+
+
+    <!-- =====================================================
+         SKILLS
+         ===================================================== -->
+
+    <section id="skills" class="rule-section">
+
+        <div class="section-heading">
+            <span class="section-number">XII</span>
+            <h2>Skills</h2>
+        </div>
+
+        <h3>Might — ♠</h3>
+        <ul>
+            <li>Athletics</li>
+            <li>Intimidation</li>
+            <li>Survival</li>
+        </ul>
+
+        <h3>Spirit — ♥</h3>
+        <ul>
+            <li>Insight</li>
+            <li>Persuasion</li>
+            <li>Deception</li>
+            <li>Religion / Occult</li>
+            <li>Performance</li>
+        </ul>
+
+        <h3>Dexterity — ♣</h3>
+        <ul>
+            <li>Acrobatics</li>
+            <li>Thievery</li>
+            <li>Animal Handling</li>
+        </ul>
+
+        <h3>Cunning — ♦</h3>
+        <ul>
+            <li>Perception</li>
+            <li>Arcana</li>
+            <li>Investigation</li>
+            <li>Medicine</li>
+            <li>History</li>
+        </ul>
+
+    </section>
+
+
+    <!-- =====================================================
+         TRAINING
+         ===================================================== -->
+
+    <section id="training" class="rule-section">
+
+        <div class="section-heading">
+            <span class="section-number">XIII</span>
+            <h2>Skill Training</h2>
+        </div>
+
+        <table class="rules-table">
+
+            <thead>
+                <tr>
+                    <th>Training</th>
+                    <th>Procedure</th>
+                </tr>
+            </thead>
+
+            <tbody>
+
+                <tr>
+                    <td><strong>Untrained</strong></td>
+                    <td>
+                        Draw two cards and use the lower value.
+                        Add the appropriate attribute modifier.
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><strong>Proficient</strong></td>
+                    <td>
+                        Draw one card and play one card from your Hand.
+                        Add the played card's value and the appropriate
+                        attribute modifier.
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><strong>Expertise</strong></td>
+                    <td>
+                        Draw one card and play up to two cards from your Hand.
+                        If two cards are played, the second card must match
+                        the skill's suit affinity. Add both card values and
+                        the attribute modifier.
+                    </td>
+                </tr>
+
+            </tbody>
+
+        </table>
+
+        <div class="rule-callout">
+            <strong>Skill Cards:</strong>
+            All cards used during skill checks are placed in the
+            <strong>Shuffle Pile</strong>.
+        </div>
+
+        <div class="rule-callout danger">
+            <strong>Snake-Eye:</strong>
+            An Ace used as part of a skill check automatically fails the
+            check. It causes no additional consequence.
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         FACE CARDS
+         ===================================================== -->
+
+    <section id="face-cards" class="rule-section">
+
+        <div class="section-heading">
+            <span class="section-number">XIV</span>
+            <h2>Face Cards</h2>
+        </div>
+
+        <p>
+            Jacks, Queens, and Kings always have a value of <strong>10</strong>.
+        </p>
+
+        <p>
+            In addition to their value, a face card may activate a special
+            effect when an ability specifically references a face card.
+        </p>
+
+        <div class="rule-callout">
+            A face card is therefore both a strong numerical card and a
+            potential source of special effects.
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         COMBAT SUMMARY
+         ===================================================== -->
+
+    <section id="combat-summary" class="rule-section">
+
+        <div class="section-heading">
+            <span class="section-number">XV</span>
+            <h2>Combat Summary</h2>
+        </div>
+
+        <p>
+            Combat follows the same card mechanics as other scenes.
+            Detailed combat rules are maintained on the dedicated
+            <a href="combat.html">Combat</a> page.
+        </p>
+
+        <div class="formula-box">
+            <strong>Attack Total</strong>
+            <br>
+            Card Value + Relevant Attribute Modifier
+        </div>
+
+        <p>
+            If the Attack Total equals or exceeds the target's Armor Class,
+            the attack hits.
+        </p>
+
+        <p>
+            Aces automatically fail.
+            Face cards have a value of 10 and may activate special effects.
+        </p>
+
+    </section>
+
+
+    <!-- =====================================================
+         DEFENSE
+         ===================================================== -->
+
+    <section id="defense" class="rule-section">
+
+        <div class="section-heading">
+            <span class="section-number">XVI</span>
+            <h2>Armor Class</h2>
+        </div>
+
+        <table class="rules-table">
+
+            <thead>
+                <tr>
+                    <th>Defense</th>
+                    <th>AC</th>
+                </tr>
+            </thead>
+
+            <tbody>
+
+                <tr>
+                    <td>Unarmored</td>
+                    <td>5 + Dexterity</td>
+                </tr>
+
+                <tr>
+                    <td>Light Armor</td>
+                    <td>6 + Dexterity</td>
+                </tr>
+
+                <tr>
+                    <td>Medium Armor</td>
+                    <td>7</td>
+                </tr>
+
+                <tr>
+                    <td>Heavy Armor</td>
+                    <td>9</td>
+                </tr>
+
+                <tr>
+                    <td>Shield</td>
+                    <td>+1 AC</td>
+                </tr>
+
+            </tbody>
+
+        </table>
+
+        <h3>Examples</h3>
+
+        <ul>
+            <li>Unarmored character with Dexterity +0: <strong>AC 5</strong></li>
+            <li>Unarmored character with Dexterity +3: <strong>AC 8</strong></li>
+            <li>Light Armor with Dexterity +3: <strong>AC 9</strong></li>
+            <li>Medium Armor with Shield: <strong>AC 8</strong></li>
+            <li>Heavy Armor with Shield: <strong>AC 10</strong></li>
+        </ul>
+
+        <p>
+            Most ordinary enemies should generally fall within an AC range
+            of approximately 5–8. AC 9–10 represents strong mundane defense.
+            Higher AC should generally be reserved for exceptional or
+            supernatural defenses.
+        </p>
+
+    </section>
+
+
+    <!-- =====================================================
+         DEFEND
+         ===================================================== -->
+
+    <section id="defend" class="rule-section">
+
+        <div class="section-heading">
+            <span class="section-number">XVII</span>
+            <h2>Defend & Dodge</h2>
+        </div>
+
+        <div class="ability-box">
+
+            <h3>Defend</h3>
+
+            <p>
+                <strong>Action:</strong>
+                Discard a card and add its value to your AC until the
+                beginning of your next turn.
+            </p>
+
+            <p>
+                The card is placed in the Shuffle Pile.
+            </p>
+
+        </div>
+
+        <div class="ability-box">
+
+            <h3>Dodge</h3>
+
+            <p>
+                <strong>Reaction:</strong>
+                When hit, discard one Reserve card to negate 1 HP of damage.
+            </p>
+
+            <p>
+                The Reserve terminology is currently under development and
+                will be standardized in the next rules pass.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         REST
+         ===================================================== -->
+
+    <section id="rest" class="rule-section">
+
+        <div class="section-heading">
+            <span class="section-number">XVIII</span>
+            <h2>Rest</h2>
+        </div>
+
+        <div class="card-grid">
+
+            <div class="card-panel">
+                <h3>Short Rest</h3>
+                <p>
+                    Shuffle all cards in the Shuffle Pile and Burn Pile
+                    back into the Deck.
+                </p>
+            </div>
+
+            <div class="card-panel">
+                <h3>Long Rest</h3>
+                <p>
+                    Recover HP and shuffle all cards from the Shuffle Pile
+                    and Burn Pile back into the Deck.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         MAGIC SUMMARY
+         ===================================================== -->
+
+    <section id="magic-summary" class="rule-section">
+
+        <div class="section-heading">
+            <span class="section-number">XIX</span>
+            <h2>Magic</h2>
+        </div>
+
+        <p>
+            Magic is divided into four domains. Detailed spellcasting rules
+            and spell lists are maintained on the dedicated
+            <a href="magic.html">Magic</a> page.
+        </p>
+
+        <table class="rules-table">
+
+            <thead>
+                <tr>
+                    <th>Domain</th>
+                    <th>Suit</th>
+                    <th>Theme</th>
+                </tr>
+            </thead>
+
+            <tbody>
+
+                <tr>
+                    <td>Arcane</td>
+                    <td class="suit-diamonds">♦</td>
+                    <td>Knowledge, elements, force, magical manipulation.</td>
+                </tr>
+
+                <tr>
+                    <td>Divine</td>
+                    <td class="suit-hearts">♥</td>
+                    <td>Healing, protection, blessings, judgment.</td>
+                </tr>
+
+                <tr>
+                    <td>Primal</td>
+                    <td class="suit-clubs">♣</td>
+                    <td>Nature, beasts, storms, transformation.</td>
+                </tr>
+
+                <tr>
+                    <td>Occult</td>
+                    <td class="suit-spades">♠</td>
+                    <td>Secrets, spirits, curses, shadows, forbidden power.</td>
+                </tr>
+
+            </tbody>
+
+        </table>
+
+        <div class="rule-callout">
+            <strong>Spell Resource:</strong>
+            Cards used to cast spells are placed in the
+            <strong>Burn Pile</strong>.
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         CHARACTER CREATION
+         ===================================================== -->
+
+    <section id="character-creation" class="rule-section">
+
+        <div class="section-heading">
+            <span class="section-number">XX</span>
+            <h2>Character Creation</h2>
+        </div>
+
+        <ol class="numbered-list">
+
+            <li>
+                Choose an <strong>Ancestry</strong>.
+            </li>
+
+            <li>
+                Choose two available <strong>Ancestry Feats</strong>.
+            </li>
+
+            <li>
+                Choose a <strong>Background</strong>.
+            </li>
+
+            <li>
+                Apply the Background's skill proficiencies and feature.
+            </li>
+
+            <li>
+                Choose a <strong>Class</strong>.
+            </li>
+
+            <li>
+                Apply the Level 1 class features.
+            </li>
+
+            <li>
+                Determine your core attributes.
+            </li>
+
+            <li>
+                Record starting equipment, weapons, armor, skills,
+                spells, and other abilities.
+            </li>
+
+        </ol>
+
+        <p>
+            Ancestry does not modify core attributes.
+        </p>
+
+    </section>
+
+
+    <!-- =====================================================
+         ADVANCEMENT
+         ===================================================== -->
+
+    <section id="advancement" class="rule-section">
+
+        <div class="section-heading">
+            <span class="section-number">XXI</span>
+            <h2>Advancement</h2>
+        </div>
+
+        <p>
+            The maximum character level is <strong>Level 5</strong>.
+        </p>
+
+        <table class="rules-table">
+
+            <thead>
+                <tr>
+                    <th>Level</th>
+                    <th>Universal Advancement</th>
+                    <th>Hand Size</th>
+                </tr>
+            </thead>
+
+            <tbody>
+
+                <tr>
+                    <td><strong>1</strong></td>
+                    <td>
+                        Gain class identity features.
+                    </td>
+                    <td>2</td>
+                </tr>
+
+                <tr>
+                    <td><strong>2</strong></td>
+                    <td>
+                        Gain a subclass feature.
+                    </td>
+                    <td>2</td>
+                </tr>
+
+                <tr>
+                    <td><strong>3</strong></td>
+                    <td>
+                        Gain a class identity feature.
+                    </td>
+                    <td>3</td>
+                </tr>
+
+                <tr>
+                    <td><strong>4</strong></td>
+                    <td>
+                        Gain a subclass feature.
+                    </td>
+                    <td>3</td>
+                </tr>
+
+                <tr>
+                    <td><strong>5</strong></td>
+                    <td>
+                        Increase one core attribute by +1.
+                    </td>
+                    <td>4</td>
+                </tr>
+
+            </tbody>
+
+        </table>
+
+        <div class="rule-callout">
+            <strong>Asymmetric Growth</strong>
+            <p>
+                Characters do not need to follow identical development paths.
+                Class identity provides the foundation, while subclass feats
+                and other feats allow characters with the same class to
+                develop substantially different play styles.
+            </p>
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         SUBCLASSES
+         ===================================================== -->
+
+    <section id="subclasses" class="rule-section">
+
+        <div class="section-heading">
+            <span class="section-number">XXII</span>
+            <h2>Subclass Growth</h2>
+        </div>
+
+        <p>
+            Subclasses are a major source of asymmetric character growth.
+        </p>
+
+        <p>
+            Rather than requiring every member of a subclass to receive
+            exactly the same feature at the same level, each subclass is
+            designed around a pool of independent subclass feats.
+        </p>
+
+        <div class="rule-callout">
+            <strong>Subclass Design Principle</strong>
+            <p>
+                Each subclass should eventually contain approximately
+                <strong>10 independent features</strong>. Characters choose
+                from those features as they advance, allowing two characters
+                with the same class and subclass to play differently.
+            </p>
+        </div>
+
+        <p>
+            The exact acquisition rules for subclass feats will be defined
+            on the dedicated <a href="feats.html">Feats</a> page.
+        </p>
+
+    </section>
+
+
+    <!-- =====================================================
+         LEVEL CAP
+         ===================================================== -->
+
+    <section id="level-cap" class="rule-section">
+
+        <div class="section-heading">
+            <span class="section-number">XXIII</span>
+            <h2>The Level Cap</h2>
+        </div>
+
+        <p>
+            Level 5 represents the end of traditional character leveling.
+            The intent is for characters to become increasingly differentiated
+            through feats rather than continually increasing numerical power.
+        </p>
+
+        <p>
+            Once a character reaches Level 5, future advancement comes from
+            acquiring and spending <strong>Feat Points</strong>.
+        </p>
+
+        <p>
+            Feat Points may eventually be used to purchase:
+        </p>
+
+        <ul>
+            <li>Subclass feats</li>
+            <li>Ancestry feats</li>
+            <li>General feats</li>
+            <li>Additional skill proficiencies</li>
+            <li>Expertise</li>
+            <li>Weapon or armor proficiencies</li>
+            <li>New abilities</li>
+            <li>Other specialized character options</li>
+        </ul>
+
+    </section>
+
+
+    <!-- =====================================================
+         DESIGN PHILOSOPHY
+         ===================================================== -->
+
+    <section id="design-philosophy" class="rule-section">
+
+        <div class="section-heading">
+            <span class="section-number">XXIV</span>
+            <h2>Design Philosophy</h2>
+        </div>
+
+        <div class="card-grid">
+
+            <div class="card-panel">
+                <h3>Low Math</h3>
+                <p>
+                    Most resolutions should require little more than adding
+                    a card value and an attribute modifier.
+                </p>
+            </div>
+
+            <div class="card-panel">
+                <h3>Meaningful Choices</h3>
+                <p>
+                    Spending a strong card now should matter because that
+                    card will not be immediately available later.
+                </p>
+            </div>
+
+            <div class="card-panel">
+                <h3>Asymmetric Characters</h3>
+                <p>
+                    Characters of the same class should be able to feel
+                    substantially different through feats and subclasses.
+                </p>
+            </div>
+
+            <div class="card-panel">
+                <h3>Heroic Fantasy</h3>
+                <p>
+                    Characters should feel capable and powerful while still
+                    facing meaningful danger in combat and dungeon exploration.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         DEVELOPMENT STATUS
+         ===================================================== -->
+
+    <section id="development" class="rule-section">
+
+        <div class="section-heading">
+            <span class="section-number">XXV</span>
+            <h2>Current Development Status</h2>
+        </div>
+
+        <p>
+            Realm & Rune is currently a playtest ruleset. The following
+            systems are established enough for early testing but remain
+            subject to revision:
+        </p>
+
+        <ul>
+
+            <li>
+                Card values and card zones.
+            </li>
+
+            <li>
+                Hand size and card economy.
+            </li>
+
+            <li>
+                Core attributes.
+            </li>
+
+            <li>
+                Skill proficiency and expertise.
+            </li>
+
+            <li>
+                Basic action economy.
+            </li>
+
+            <li>
+                Armor Class.
+            </li>
+
+            <li>
+                Spell resource management.
+            </li>
+
+            <li>
+                Level 1–5 advancement structure.
+            </li>
+
+        </ul>
+
+        <p>
+            Exact balance, starting deck composition, HP scaling,
+            enemy design, spell balance, feat costs, and encounter
+            difficulty require playtesting.
+        </p>
+
+    </section>
+
+
+</main>
+
+
+<footer class="site-footer">
+
+    <div class="footer-inner">
+
+        <strong>Realm & Rune</strong>
+
+        <p>
+            Core Rules — Playtest Edition
+        </p>
+
+        <p class="footer-links">
+            <a href="core-rules.html">Core Rules</a> ·
+            <a href="combat.html">Combat</a> ·
+            <a href="magic.html">Magic</a> ·
+            <a href="ancestry.html">Ancestry</a> ·
+            <a href="backgrounds.html">Backgrounds</a> ·
+            <a href="classes.html">Classes</a> ·
+            <a href="feats.html">Feats</a> ·
+            <a href="character-sheet.html">Character Sheet</a>
+        </p>
+
+    </div>
+
+</footer>
+
+</body>
+</html>

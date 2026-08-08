@@ -1,0 +1,979 @@
+/* =========================================================
+   REALM & RUNE
+   COMMON STYLESHEET
+   ========================================================= */
+
+:root {
+
+    /* ---- Core Palette ---- */
+
+    --ink: #241a11;
+    --ink-light: #4f402e;
+
+    --paper: #f4ecd9;
+    --paper-light: #fbf6e9;
+    --paper-dark: #e4d4b4;
+
+    --brown-dark: #302116;
+    --brown: #563c25;
+    --brown-light: #765638;
+
+    --gold: #a47b38;
+    --gold-light: #c9a35d;
+
+    --red: #7e302b;
+    --red-light: #a44a42;
+
+    --green: #315b45;
+    --blue: #36566d;
+    --purple: #64436b;
+
+    --border: #907754;
+    --shadow: rgba(30, 20, 10, 0.28);
+
+    /* ---- Typography ---- */
+
+    --font-body:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    --font-display:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    --font-ui:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    /* ---- Layout ---- */
+
+    --page-width: 1150px;
+    --content-padding: 42px;
+
+}
+
+
+/* =========================================================
+   RESET
+   ========================================================= */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+
+    color: var(--ink);
+
+    background:
+        radial-gradient(
+            circle at 20% 10%,
+            #fff8e6 0,
+            transparent 32%
+        ),
+        linear-gradient(
+            135deg,
+            #21170f,
+            #4b351f 50%,
+            #21170f
+        );
+
+    font-family: var(--font-body);
+
+    line-height: 1.6;
+}
+
+
+/* =========================================================
+   GLOBAL LINKS
+   ========================================================= */
+
+a {
+    color: var(--brown);
+}
+
+a:hover {
+    color: var(--red);
+}
+
+
+/* =========================================================
+   HEADER
+   ========================================================= */
+
+.site-header {
+
+    color: #fff2d2;
+
+    background:
+        linear-gradient(
+            rgba(31, 22, 14, 0.94),
+            rgba(75, 52, 28, 0.94)
+        );
+
+    border-bottom:
+        6px solid var(--gold);
+
+    box-shadow:
+        0 4px 12px rgba(0,0,0,.35);
+}
+
+
+.header-inner {
+
+    max-width: var(--page-width);
+
+    margin: auto;
+
+    padding:
+        46px
+        var(--content-padding)
+        34px;
+
+    text-align: center;
+}
+
+
+.game-title {
+
+    font-size:
+        clamp(2.8rem, 7vw, 5rem);
+
+    font-weight: bold;
+
+    letter-spacing:
+        .08em;
+
+    text-transform:
+        uppercase;
+
+    font-variant:
+        small-caps;
+}
+
+
+.game-subtitle {
+
+    margin-top: 8px;
+
+    color: #d8bb82;
+
+    font-family: var(--font-ui);
+
+    font-size: .85rem;
+
+    letter-spacing:
+        .18em;
+
+    text-transform:
+        uppercase;
+}
+
+
+/* =========================================================
+   NAVIGATION
+   ========================================================= */
+
+.main-nav {
+
+    position: sticky;
+
+    top: 0;
+
+    z-index: 100;
+
+    background:
+        #2c2015;
+
+    border-bottom:
+        2px solid var(--gold);
+
+    box-shadow:
+        0 2px 8px rgba(0,0,0,.3);
+}
+
+
+.nav-inner {
+
+    max-width:
+        var(--page-width);
+
+    margin:
+        auto;
+
+    display:
+        flex;
+
+    flex-wrap:
+        wrap;
+
+    justify-content:
+        center;
+
+    gap:
+        4px;
+}
+
+
+.main-nav a {
+
+    display:
+        block;
+
+    padding:
+        11px 12px;
+
+    color:
+        #f3dfae;
+
+    text-decoration:
+        none;
+
+    font-family:
+        var(--font-ui);
+
+    font-size:
+        .78rem;
+
+    font-weight:
+        bold;
+
+    letter-spacing:
+        .04em;
+
+    text-transform:
+        uppercase;
+
+    border-bottom:
+        3px solid transparent;
+
+    transition:
+        background .15s,
+        border-color .15s;
+}
+
+
+.main-nav a:hover {
+
+    background:
+        #ffffff12;
+
+    border-bottom-color:
+        var(--gold-light);
+}
+
+
+.main-nav a.active {
+
+    background:
+        #ffffff10;
+
+    border-bottom-color:
+        var(--gold);
+}
+
+
+/* =========================================================
+   PAGE
+   ========================================================= */
+
+.page-container {
+
+    max-width:
+        var(--page-width);
+
+    min-height:
+        100vh;
+
+    margin:
+        auto;
+
+    padding:
+        35px var(--content-padding) 70px;
+
+    background:
+        var(--paper);
+
+    box-shadow:
+        0 0 35px rgba(0,0,0,.45);
+}
+
+
+/* =========================================================
+   SECTIONS
+   ========================================================= */
+
+.rule-section {
+
+    scroll-margin-top:
+        75px;
+
+    margin-bottom:
+        52px;
+}
+
+
+.section-heading {
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    gap:
+        12px;
+
+    margin-top:
+        48px;
+
+    margin-bottom:
+        18px;
+
+    padding-bottom:
+        7px;
+
+    border-bottom:
+        3px double var(--gold);
+}
+
+
+.section-heading h1,
+.section-heading h2 {
+
+    margin:
+        0;
+
+    font-family:
+        var(--font-display);
+
+    font-variant:
+        small-caps;
+
+    line-height:
+        1.2;
+}
+
+
+.section-heading h1 {
+    font-size:
+        2.3rem;
+}
+
+
+.section-heading h2 {
+    font-size:
+        2rem;
+}
+
+
+.section-number {
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    justify-content:
+        center;
+
+    width:
+        42px;
+
+    height:
+        42px;
+
+    flex:
+        0 0 42px;
+
+    color:
+        #fff3d5;
+
+    background:
+        var(--brown-dark);
+
+    border:
+        2px solid var(--gold);
+
+    border-radius:
+        50%;
+
+    font-size:
+        .8rem;
+
+    font-family:
+        var(--font-ui);
+}
+
+
+/* =========================================================
+   HEADINGS
+   ========================================================= */
+
+h3 {
+
+    color:
+        var(--brown);
+
+    margin-top:
+        26px;
+
+    margin-bottom:
+        7px;
+
+    font-size:
+        1.3rem;
+}
+
+
+h4 {
+
+    color:
+        var(--brown);
+
+    margin-bottom:
+        5px;
+}
+
+
+/* =========================================================
+   TABLES
+   ========================================================= */
+
+.rules-table {
+
+    width:
+        100%;
+
+    margin:
+        20px 0 26px;
+
+    border-collapse:
+        collapse;
+
+    background:
+        var(--paper-light);
+
+    border:
+        1px solid var(--border);
+
+    box-shadow:
+        2px 3px 0 var(--paper-dark);
+}
+
+
+.rules-table th {
+
+    color:
+        #fff0cf;
+
+    background:
+        var(--brown-dark);
+
+    font-family:
+        var(--font-ui);
+
+    font-size:
+        .85rem;
+
+    text-align:
+        left;
+}
+
+
+.rules-table th,
+.rules-table td {
+
+    padding:
+        9px 11px;
+
+    border:
+        1px solid var(--border);
+
+    vertical-align:
+        top;
+}
+
+
+.rules-table tr:nth-child(even) {
+
+    background:
+        #efe4cc;
+}
+
+
+/* =========================================================
+   CALLOUTS
+   ========================================================= */
+
+.rule-callout {
+
+    margin:
+        20px 0;
+
+    padding:
+        15px 18px;
+
+    background:
+        #eadcc1;
+
+    border-left:
+        6px solid var(--gold);
+
+    box-shadow:
+        1px 2px 0 var(--paper-dark);
+}
+
+
+.rule-callout strong {
+
+    color:
+        var(--brown);
+
+}
+
+
+.rule-callout p:last-child {
+
+    margin-bottom:
+        0;
+
+}
+
+
+.rule-callout.danger {
+
+    border-left-color:
+        var(--red);
+
+    background:
+        #ead5ce;
+}
+
+
+/* =========================================================
+   CARD PANELS
+   ========================================================= */
+
+.card-grid {
+
+    display:
+        grid;
+
+    grid-template-columns:
+        repeat(
+            auto-fit,
+            minmax(230px, 1fr)
+        );
+
+    gap:
+        17px;
+
+    margin:
+        20px 0;
+}
+
+
+.card-panel {
+
+    padding:
+        17px;
+
+    background:
+        var(--paper-light);
+
+    border:
+        1px solid var(--border);
+
+    box-shadow:
+        3px 4px 0 var(--paper-dark);
+}
+
+
+.card-panel h3 {
+
+    margin-top:
+        0;
+
+    border-bottom:
+        1px solid var(--gold);
+
+    padding-bottom:
+        5px;
+}
+
+
+/* =========================================================
+   ABILITY BOX
+   ========================================================= */
+
+.ability-box {
+
+    margin:
+        20px 0;
+
+    padding:
+        18px;
+
+    background:
+        #fbf4e4;
+
+    border:
+        1px solid var(--border);
+
+    position:
+        relative;
+}
+
+
+.ability-box::before {
+
+    content:
+        "";
+
+    position:
+        absolute;
+
+    top:
+        0;
+
+    left:
+        0;
+
+    width:
+        7px;
+
+    height:
+        100%;
+
+    background:
+        var(--gold);
+}
+
+
+.ability-box h3 {
+
+    margin-top:
+        0;
+}
+
+
+/* =========================================================
+   FORMULA BOX
+   ========================================================= */
+
+.formula-box {
+
+    margin:
+        20px auto;
+
+    padding:
+        18px;
+
+    max-width:
+        620px;
+
+    text-align:
+        center;
+
+    background:
+        #e5d6b7;
+
+    border:
+        2px solid var(--gold);
+
+    font-family:
+        "Courier New",
+        monospace;
+
+    font-size:
+        1.1rem;
+}
+
+
+/* =========================================================
+   LISTS
+   ========================================================= */
+
+.numbered-list {
+
+    padding-left:
+        30px;
+}
+
+
+.numbered-list li {
+
+    margin-bottom:
+        11px;
+}
+
+
+li {
+
+    margin-bottom:
+        4px;
+}
+
+
+/* =========================================================
+   SUIT COLORS
+   ========================================================= */
+
+.suit-spades {
+    color:
+        #222;
+    font-weight:
+        bold;
+}
+
+
+.suit-hearts {
+    color:
+        #9a2d2d;
+    font-weight:
+        bold;
+}
+
+
+.suit-clubs {
+    color:
+        #285d42;
+    font-weight:
+        bold;
+}
+
+
+.suit-diamonds {
+    color:
+        #8c2832;
+    font-weight:
+        bold;
+}
+
+
+/* =========================================================
+   FOOTER
+   ========================================================= */
+
+.site-footer {
+
+    color:
+        #e8d1a0;
+
+    background:
+        var(--brown-dark);
+
+    border-top:
+        4px solid var(--gold);
+}
+
+
+.footer-inner {
+
+    max-width:
+        var(--page-width);
+
+    margin:
+        auto;
+
+    padding:
+        28px var(--content-padding);
+
+    text-align:
+        center;
+}
+
+
+.footer-links a {
+
+    color:
+        #e8d1a0;
+
+    text-decoration:
+        none;
+}
+
+
+.footer-links a:hover {
+
+    color:
+        #fff1c9;
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 750px) {
+
+    :root {
+        --content-padding: 19px;
+    }
+
+    .header-inner {
+        padding:
+            35px 19px 27px;
+    }
+
+    .main-nav {
+        position:
+            static;
+    }
+
+    .nav-inner {
+        gap:
+            0;
+    }
+
+    .main-nav a {
+        padding:
+            9px 7px;
+
+        font-size:
+            .68rem;
+    }
+
+    .section-heading {
+        align-items:
+            flex-start;
+    }
+
+    .section-number {
+        width:
+            34px;
+
+        height:
+            34px;
+
+        flex-basis:
+            34px;
+    }
+
+    .section-heading h2 {
+        font-size:
+            1.65rem;
+    }
+
+    .rules-table {
+        font-size:
+            .88rem;
+    }
+
+}
+
+
+/* =========================================================
+   PRINT / A4
+   ========================================================= */
+
+@media print {
+
+    @page {
+        size:
+            A4;
+
+        margin:
+            13mm;
+    }
+
+    body {
+        background:
+            white;
+    }
+
+    .site-header {
+        color:
+            black;
+
+        background:
+            white;
+
+        border:
+            2px solid black;
+
+        box-shadow:
+            none;
+    }
+
+    .game-subtitle {
+        color:
+            black;
+    }
+
+    .main-nav {
+        display:
+            none;
+    }
+
+    .page-container {
+
+        max-width:
+            none;
+
+        padding:
+            0;
+
+        box-shadow:
+            none;
+
+        background:
+            white;
+    }
+
+    .rule-section {
+        break-inside:
+            auto;
+    }
+
+    .card-panel,
+    .ability-box,
+    .rule-callout,
+    .rules-table,
+    .formula-box {
+        break-inside:
+            avoid;
+    }
+
+    .site-footer {
+
+        color:
+            black;
+
+        background:
+            white;
+
+        border-top:
+            1px solid black;
+    }
+
+    .footer-links a {
+        color:
+            black;
+    }
+
+}
+
+
+/* =========================================================
+   OPTIONAL PAGE-SPECIFIC CLASSES
+   These can be reused by future pages.
+   ========================================================= */
+
+.character-card {}
+.enemy-card {}
+.spell-card {}
+.ancestry-card {}
+.background-card {}
+.class-card {}
+.feat-card {}

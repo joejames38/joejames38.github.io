@@ -1,0 +1,327 @@
+{
+"game": "Realm & Rune",
+"library": "Spells",
+"version": "0.1-playtest",
+"spells": [
+
+```
+{
+  "id": "arcane-light",
+  "name": "Arcane Light",
+  "tier": 0,
+  "resonance": "Diamonds",
+  "range": "Near",
+  "target": "Self",
+  "duration": "1 hour",
+  "classes": ["Wizard"],
+  "channel": null,
+  "description": "Create a small floating magical light that illuminates the surrounding area. The light follows you until the duration ends or you dismiss it."
+},
+
+{
+  "id": "divine-sign",
+  "name": "Divine Sign",
+  "tier": 0,
+  "resonance": "Hearts",
+  "range": "Close",
+  "target": "Self",
+  "duration": "Instant",
+  "classes": ["Priest"],
+  "channel": null,
+  "description": "Create a harmless, visible sign of your faith such as a glowing symbol, whispered prayer, or brief holy radiance."
+},
+
+{
+  "id": "primal-whisper",
+  "name": "Primal Whisper",
+  "tier": 0,
+  "resonance": "Clubs",
+  "range": "Near",
+  "target": "Self",
+  "duration": "Instant",
+  "classes": ["Wizard"],
+  "channel": null,
+  "description": "Produce a harmless natural effect such as rustling leaves, a faint animal call, a small breeze, or the scent of a nearby plant."
+},
+
+{
+  "id": "occult-mark",
+  "name": "Occult Mark",
+  "tier": 0,
+  "resonance": "Spades",
+  "range": "Close",
+  "target": "Object",
+  "duration": "1 hour",
+  "classes": ["Priest"],
+  "channel": null,
+  "description": "Place a harmless supernatural mark on an object or surface. The mark is visible only to creatures capable of perceiving magical effects."
+},
+
+
+{
+  "id": "firebolt",
+  "name": "Firebolt",
+  "tier": 1,
+  "resonance": "Diamonds",
+  "range": "Far",
+  "target": "Enemy",
+  "duration": "Instant",
+  "classes": ["Wizard"],
+  "channel": "Yes — Burn additional Diamonds after casting. Each additional Diamond deals +1 damage.",
+  "description": "Hurl a bolt of magical fire at an enemy. Make a Cunning magic attack. On a hit, deal 1 HP damage."
+},
+
+{
+  "id": "healing-touch",
+  "name": "Healing Touch",
+  "tier": 1,
+  "resonance": "Hearts",
+  "range": "Close",
+  "target": "Ally",
+  "duration": "Instant",
+  "classes": ["Priest"],
+  "channel": null,
+  "description": "Restore 2 HP to an ally you can touch."
+},
+
+{
+  "id": "primal-snare",
+  "name": "Primal Snare",
+  "tier": 1,
+  "resonance": "Clubs",
+  "range": "Near",
+  "target": "Enemy",
+  "duration": "Until end of target's next turn",
+  "classes": ["Wizard"],
+  "channel": null,
+  "description": "Roots, vines, or grasping natural energy restrain an enemy. Make a Dexterity magic attack. On a hit, the target's movement is reduced to 0 until the end of its next turn."
+},
+
+{
+  "id": "whispering-curse",
+  "name": "Whispering Curse",
+  "tier": 1,
+  "resonance": "Spades",
+  "range": "Near",
+  "target": "Enemy",
+  "duration": "Until end of target's next turn",
+  "classes": ["Priest"],
+  "channel": null,
+  "description": "Whisper a fragment of supernatural dread into an enemy's mind. Make a Cunning magic attack. On a hit, the target suffers -1 on its next attack."
+},
+
+
+{
+  "id": "arcane-burst",
+  "name": "Arcane Burst",
+  "tier": 2,
+  "resonance": "Diamonds",
+  "range": "Near",
+  "target": "Enemy",
+  "duration": "Instant",
+  "classes": ["Wizard"],
+  "channel": "Yes — Each additional Diamond Burned after casting deals +1 damage.",
+  "description": "Release a concentrated blast of magical energy. Make a Cunning magic attack. On a hit, deal 3 HP damage."
+},
+
+{
+  "id": "blessing-of-courage",
+  "name": "Blessing of Courage",
+  "tier": 2,
+  "resonance": "Hearts",
+  "range": "Near",
+  "target": "Ally",
+  "duration": "Until next Long Rest",
+  "classes": ["Priest"],
+  "channel": null,
+  "description": "Bless an ally with supernatural courage. The target gains +1 Spirit until the next Long Rest."
+},
+
+{
+  "id": "beast-strength",
+  "name": "Beast Strength",
+  "tier": 2,
+  "resonance": "Clubs",
+  "range": "Close",
+  "target": "Ally",
+  "duration": "Until next Long Rest",
+  "classes": ["Wizard"],
+  "channel": null,
+  "description": "Infuse an ally with primal strength. The target gains +1 Might until the next Long Rest."
+},
+
+{
+  "id": "shadow-grasp",
+  "name": "Shadow Grasp",
+  "tier": 2,
+  "resonance": "Spades",
+  "range": "Near",
+  "target": "Enemy",
+  "duration": "Until end of target's next turn",
+  "classes": ["Priest"],
+  "channel": null,
+  "description": "Spectral shadows seize an enemy. Make a Cunning magic attack. On a hit, deal 2 HP damage and prevent the target from taking Reactions until the end of its next turn."
+},
+
+
+{
+  "id": "chain-lightning",
+  "name": "Chain Lightning",
+  "tier": 3,
+  "resonance": "Diamonds",
+  "range": "Far",
+  "target": "Enemy",
+  "duration": "Instant",
+  "classes": ["Wizard"],
+  "channel": "Yes — Each additional Diamond Burned after casting deals +1 damage to the primary target.",
+  "description": "Lightning leaps from your hand into an enemy. Make a Cunning magic attack. On a hit, deal 4 HP damage. A second nearby enemy takes 2 HP damage."
+},
+
+{
+  "id": "greater-restoration",
+  "name": "Greater Restoration",
+  "tier": 3,
+  "resonance": "Hearts",
+  "range": "Close",
+  "target": "Ally",
+  "duration": "Instant",
+  "classes": ["Priest"],
+  "channel": null,
+  "description": "Restore 5 HP to an ally and end one ongoing harmful magical effect affecting them."
+},
+
+{
+  "id": "wildshape",
+  "name": "Wildshape",
+  "tier": 3,
+  "resonance": "Clubs",
+  "range": "Close",
+  "target": "Self",
+  "duration": "Until next Long Rest or dismissed",
+  "classes": ["Wizard"],
+  "channel": null,
+  "description": "Transform into a powerful natural form. Gain +2 Might and +1 HP, but you cannot use weapons or cast spells while transformed."
+},
+
+{
+  "id": "spectral-bind",
+  "name": "Spectral Bind",
+  "tier": 3,
+  "resonance": "Spades",
+  "range": "Near",
+  "target": "Enemy",
+  "duration": "Until end of target's next turn",
+  "classes": ["Priest"],
+  "channel": null,
+  "description": "Spectral chains bind an enemy in place. Make a Cunning magic attack. On a hit, deal 3 HP damage and prevent the target from moving."
+},
+
+
+{
+  "id": "meteor",
+  "name": "Meteor",
+  "tier": 4,
+  "resonance": "Diamonds",
+  "range": "Far",
+  "target": "Enemy",
+  "duration": "Instant",
+  "classes": ["Wizard"],
+  "channel": "Yes — Each additional Diamond Burned after casting deals +1 damage.",
+  "description": "Call down a devastating fragment of celestial fire. Make a Cunning magic attack. On a hit, deal 7 HP damage to the target and 3 HP damage to nearby enemies."
+},
+
+{
+  "id": "divine-sanctuary",
+  "name": "Divine Sanctuary",
+  "tier": 4,
+  "resonance": "Hearts",
+  "range": "Near",
+  "target": "Ally",
+  "duration": "Until end of next round",
+  "classes": ["Priest"],
+  "channel": null,
+  "description": "Surround an ally with protective divine power. The target cannot lose HP from the next attack that hits them."
+},
+
+{
+  "id": "ancient-titan",
+  "name": "Ancient Titan",
+  "tier": 4,
+  "resonance": "Clubs",
+  "range": "Close",
+  "target": "Self",
+  "duration": "Until end of scene",
+  "classes": ["Wizard"],
+  "channel": null,
+  "description": "Invoke the strength of an ancient primal giant. Gain +3 Might and increase your maximum HP by 3 for the duration."
+},
+
+{
+  "id": "nightmare",
+  "name": "Nightmare",
+  "tier": 4,
+  "resonance": "Spades",
+  "range": "Far",
+  "target": "Enemy",
+  "duration": "Until end of target's next turn",
+  "classes": ["Priest"],
+  "channel": null,
+  "description": "Flood an enemy's mind with supernatural terror. Make a Cunning magic attack. On a hit, deal 5 HP damage and the target cannot willingly move toward you until the end of its next turn."
+},
+
+
+{
+  "id": "arcane-apocalypse",
+  "name": "Arcane Apocalypse",
+  "tier": 5,
+  "resonance": "Diamonds",
+  "range": "Far",
+  "target": "Enemy",
+  "duration": "Instant",
+  "classes": ["Wizard"],
+  "channel": "Yes — Each additional Diamond Burned after casting deals +1 damage.",
+  "description": "Unleash an overwhelming eruption of arcane energy. Make a Cunning magic attack. On a hit, deal 10 HP damage to the target and 5 HP damage to every nearby enemy."
+},
+
+{
+  "id": "miracle",
+  "name": "Miracle",
+  "tier": 5,
+  "resonance": "Hearts",
+  "range": "Near",
+  "target": "Ally",
+  "duration": "Instant",
+  "classes": ["Priest"],
+  "channel": null,
+  "description": "Call upon overwhelming divine power. Restore an ally to full HP and end all harmful conditions and magical effects affecting them."
+},
+
+{
+  "id": "avatar-of-the-wild",
+  "name": "Avatar of the Wild",
+  "tier": 5,
+  "resonance": "Clubs",
+  "range": "Self",
+  "target": "Self",
+  "duration": "Until end of scene",
+  "classes": ["Wizard"],
+  "channel": null,
+  "description": "Become a towering avatar of primal power. Gain +3 Might, +2 Dexterity, +5 HP, and your successful attacks deal +2 damage."
+},
+
+{
+  "id": "death's-command",
+  "name": "Death's Command",
+  "tier": 5,
+  "resonance": "Spades",
+  "range": "Near",
+  "target": "Enemy",
+  "duration": "Until end of target's next turn",
+  "classes": ["Priest"],
+  "channel": null,
+  "description": "Command the boundary between life and death. Make a Cunning magic attack. On a hit, deal 8 HP damage. If the target is reduced to 0 HP, you may immediately restore 3 HP to an ally within Near range."
+}
+```
+
+]
+}
