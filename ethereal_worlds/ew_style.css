@@ -1,0 +1,736 @@
+/* =========================================
+   ARCANA COLLEGE
+   Whimsical Wizarding RPG Theme
+   ========================================= */
+
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Libre+Baskerville:wght@400;700&display=swap');
+
+
+/* -----------------------------------------
+   VARIABLES
+   ----------------------------------------- */
+
+:root {
+    --ink: #29233a;
+    --muted-ink: #655e73;
+
+    --parchment: #f5ecd8;
+    --paper: #fffaf0;
+    --paper-dark: #e7d9bd;
+
+    --purple: #4b356d;
+    --purple-dark: #302040;
+    --gold: #b38a3d;
+    --gold-light: #d8bd76;
+
+    --shadow: rgba(48, 32, 64, 0.16);
+
+    --max-width: 1150px;
+}
+
+
+/* -----------------------------------------
+   GENERAL
+   ----------------------------------------- */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+
+    background:
+        radial-gradient(
+            circle at 20% 10%,
+            rgba(255, 255, 255, 0.55),
+            transparent 30%
+        ),
+        radial-gradient(
+            circle at 80% 70%,
+            rgba(179, 138, 61, 0.08),
+            transparent 30%
+        ),
+        var(--parchment);
+
+    color: var(--ink);
+
+    font-family:
+        "Libre Baskerville",
+        Georgia,
+        serif;
+
+    line-height: 1.7;
+}
+
+
+/* -----------------------------------------
+   TYPOGRAPHY
+   ----------------------------------------- */
+
+h1,
+h2,
+h3 {
+    font-family:
+        "Cinzel",
+        Georgia,
+        serif;
+
+    line-height: 1.2;
+}
+
+h1 {
+    margin: 0;
+
+    color: #fff;
+
+    font-size: clamp(3rem, 8vw, 6rem);
+
+    letter-spacing: 0.04em;
+
+    text-shadow:
+        2px 3px 0 #24172f,
+        0 0 25px rgba(255, 255, 255, 0.15);
+}
+
+h2 {
+    position: relative;
+
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+
+    color: var(--purple-dark);
+
+    font-size: 2rem;
+}
+
+h2::after {
+    content: "✦";
+
+    display: block;
+
+    margin-top: 0.5rem;
+
+    color: var(--gold);
+
+    font-size: 1rem;
+}
+
+h3 {
+    color: var(--purple);
+}
+
+
+/* -----------------------------------------
+   HERO
+   ----------------------------------------- */
+
+.hero {
+    min-height: 430px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    padding: 5rem 1.5rem;
+
+    background:
+        radial-gradient(
+            circle at 50% 45%,
+            rgba(119, 91, 153, 0.45),
+            transparent 45%
+        ),
+        linear-gradient(
+            135deg,
+            #25182f,
+            #493264,
+            #281b38
+        );
+
+    position: relative;
+
+    overflow: hidden;
+}
+
+.hero::before {
+    content: "✦   ✧       ⋆        ✦      ⋆     ✧       ✦";
+
+    position: absolute;
+
+    inset: 0;
+
+    color: rgba(255, 255, 255, 0.25);
+
+    font-size: 2rem;
+
+    letter-spacing: 3rem;
+
+    line-height: 7rem;
+
+    transform: rotate(-8deg);
+
+    pointer-events: none;
+}
+
+.hero::after {
+    content: "";
+
+    position: absolute;
+
+    bottom: -1px;
+    left: 0;
+
+    width: 100%;
+    height: 80px;
+
+    background: var(--parchment);
+
+    clip-path: polygon(
+        0 70%,
+        5% 58%,
+        10% 72%,
+        15% 48%,
+        20% 68%,
+        25% 52%,
+        30% 73%,
+        35% 55%,
+        40% 69%,
+        45% 45%,
+        50% 68%,
+        55% 51%,
+        60% 70%,
+        65% 48%,
+        70% 68%,
+        75% 53%,
+        80% 71%,
+        85% 48%,
+        90% 67%,
+        95% 53%,
+        100% 68%,
+        100% 100%,
+        0 100%
+    );
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+
+    max-width: 850px;
+}
+
+.eyebrow {
+    margin-bottom: 1rem;
+
+    color: var(--gold-light);
+
+    font-family: "Cinzel", serif;
+
+    font-size: 1rem;
+
+    text-transform: uppercase;
+
+    letter-spacing: 0.2em;
+}
+
+.tagline {
+    margin-top: 1.5rem;
+
+    color: #f5eeda;
+
+    font-size: 1.2rem;
+
+    font-style: italic;
+}
+
+
+/* -----------------------------------------
+   LAYOUT
+   ----------------------------------------- */
+
+.container {
+    width: min(
+        calc(100% - 2rem),
+        var(--max-width)
+    );
+
+    margin: 0 auto;
+
+    padding: 2rem 0 5rem;
+}
+
+
+/* -----------------------------------------
+   CARDS
+   ----------------------------------------- */
+
+.card {
+    position: relative;
+
+    margin: 2rem 0;
+
+    padding: 2.5rem;
+
+    background: var(--paper);
+
+    border: 1px solid var(--paper-dark);
+
+    border-radius: 6px;
+
+    box-shadow:
+        0 8px 20px var(--shadow),
+        0 2px 4px rgba(48, 32, 64, 0.08);
+}
+
+.card::before {
+    content: "";
+
+    position: absolute;
+
+    inset: 7px;
+
+    border: 1px solid rgba(179, 138, 61, 0.18);
+
+    pointer-events: none;
+}
+
+.introduction {
+    margin-top: -1rem;
+}
+
+
+/* -----------------------------------------
+   DICE PROGRESSION
+   ----------------------------------------- */
+
+.dice-progression {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 0.7rem;
+
+    margin: 2rem 0;
+
+    font-family: "Cinzel", serif;
+
+    color: var(--purple);
+}
+
+.dice-progression span:not(:nth-child(even)) {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    min-width: 55px;
+    height: 55px;
+
+    border: 2px solid var(--gold);
+
+    border-radius: 50%;
+
+    background: #fffdf6;
+
+    box-shadow: 0 3px 8px var(--shadow);
+
+    font-weight: bold;
+}
+
+.dice-progression span:nth-child(even) {
+    color: var(--gold);
+
+    font-size: 1.3rem;
+}
+
+
+/* -----------------------------------------
+   RULES
+   ----------------------------------------- */
+
+.rules-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, 1fr);
+
+    gap: 1.5rem;
+}
+
+.rule {
+    display: flex;
+
+    gap: 1rem;
+
+    padding: 1.25rem;
+
+    background: #f8f0df;
+
+    border-left: 4px solid var(--gold);
+
+    border-radius: 4px;
+}
+
+.rule-number {
+    flex-shrink: 0;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    width: 42px;
+    height: 42px;
+
+    border-radius: 50%;
+
+    background: var(--purple);
+
+    color: white;
+
+    font-family: "Cinzel", serif;
+
+    font-weight: bold;
+}
+
+.rule h3 {
+    margin-top: 0;
+    margin-bottom: 0.25rem;
+}
+
+.rule p {
+    margin: 0;
+}
+
+
+/* -----------------------------------------
+   EXAMPLE
+   ----------------------------------------- */
+
+.example {
+    margin-top: 2rem;
+
+    padding: 1.75rem;
+
+    background:
+        linear-gradient(
+            135deg,
+            #f4ead2,
+            #fffaf0
+        );
+
+    border: 1px dashed var(--gold);
+
+    border-radius: 5px;
+}
+
+.example h3 {
+    margin-top: 0;
+}
+
+.growth {
+    padding: 0.75rem;
+
+    color: var(--purple);
+
+    background: rgba(179, 138, 61, 0.1);
+
+    border-radius: 4px;
+
+    font-family: "Cinzel", serif;
+
+    font-weight: bold;
+
+    text-align: center;
+}
+
+
+/* -----------------------------------------
+   SKILLS
+   ----------------------------------------- */
+
+.section-intro {
+    max-width: 750px;
+
+    margin-bottom: 2rem;
+}
+
+.skills-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 1rem;
+}
+
+.skill {
+    min-height: 235px;
+
+    padding: 1.5rem;
+
+    background: #fffdf7;
+
+    border: 1px solid var(--paper-dark);
+
+    border-radius: 5px;
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.skill:hover {
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 10px 22px var(--shadow);
+}
+
+.skill-icon {
+    margin-bottom: 0.5rem;
+
+    color: var(--gold);
+
+    font-size: 2rem;
+
+    line-height: 1;
+}
+
+.skill h3 {
+    margin: 0.5rem 0;
+
+    font-size: 1.15rem;
+}
+
+.skill p {
+    margin: 0;
+
+    color: var(--muted-ink);
+
+    font-size: 0.9rem;
+
+    line-height: 1.55;
+}
+
+
+/* -----------------------------------------
+   DICE MASTERY
+   ----------------------------------------- */
+
+.dice-table {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 0.5rem;
+
+    overflow-x: auto;
+
+    padding: 2rem 0 1rem;
+}
+
+.dice-stage {
+    flex: 0 0 130px;
+
+    text-align: center;
+}
+
+.die {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    width: 75px;
+    height: 75px;
+
+    margin: 0 auto 1rem;
+
+    background: var(--purple);
+
+    color: white;
+
+    border: 3px solid var(--gold);
+
+    border-radius: 14px;
+
+    box-shadow:
+        0 5px 12px var(--shadow);
+
+    font-family: "Cinzel", serif;
+
+    font-size: 1.4rem;
+
+    font-weight: bold;
+
+    transform: rotate(-2deg);
+}
+
+.dice-stage:nth-child(even) .die {
+    transform: rotate(3deg);
+}
+
+.dice-stage h3 {
+    margin-bottom: 0.3rem;
+
+    font-size: 1rem;
+}
+
+.dice-stage p {
+    margin: 0;
+
+    color: var(--muted-ink);
+
+    font-size: 0.75rem;
+
+    line-height: 1.4;
+}
+
+.arrow {
+    flex-shrink: 0;
+
+    color: var(--gold);
+
+    font-size: 1.5rem;
+}
+
+
+/* -----------------------------------------
+   PHILOSOPHY
+   ----------------------------------------- */
+
+.philosophy {
+    text-align: center;
+}
+
+.philosophy p {
+    max-width: 750px;
+
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.quote {
+    margin-top: 2rem;
+
+    padding: 1.5rem;
+
+    color: var(--purple);
+
+    border-top: 1px solid var(--gold);
+    border-bottom: 1px solid var(--gold);
+
+    font-family: "Cinzel", serif;
+
+    font-size: 1.25rem;
+
+    font-style: italic;
+}
+
+
+/* -----------------------------------------
+   FOOTER
+   ----------------------------------------- */
+
+footer {
+    padding: 3rem 1rem;
+
+    background: var(--purple-dark);
+
+    color: #f5eeda;
+
+    text-align: center;
+
+    font-family: "Cinzel", serif;
+}
+
+footer p {
+    margin: 0.25rem;
+}
+
+.footer-small {
+    color: #c9bdd3;
+
+    font-family: "Libre Baskerville", serif;
+
+    font-size: 0.8rem;
+}
+
+
+/* -----------------------------------------
+   RESPONSIVE DESIGN
+   ----------------------------------------- */
+
+@media (max-width: 950px) {
+
+    .skills-grid {
+        grid-template-columns:
+            repeat(3, 1fr);
+    }
+
+    .dice-table {
+        justify-content: flex-start;
+    }
+}
+
+
+@media (max-width: 700px) {
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    .card {
+        padding: 1.5rem;
+    }
+
+    .rules-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .skills-grid {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+    .dice-progression {
+        gap: 0.4rem;
+    }
+
+    .dice-progression span:not(:nth-child(even)) {
+        min-width: 45px;
+        height: 45px;
+    }
+}
+
+
+@media (max-width: 450px) {
+
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero {
+        min-height: 350px;
+    }
+
+    .eyebrow {
+        font-size: 0.75rem;
+    }
+
+    .tagline {
+        font-size: 1rem;
+    }
+}
