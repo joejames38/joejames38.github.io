@@ -1,0 +1,1714 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0">
+
+<title>Realm &amp; Rune — Gear</title>
+
+<link rel="stylesheet"
+      href="realm-and-rune.css">
+
+
+<style>
+
+    /*
+     * =====================================================
+     * GEAR PAGE
+     * =====================================================
+     */
+
+    .site-header-frame,
+    .site-footer-frame {
+
+        display: block;
+        width: 100%;
+        border: none;
+
+    }
+
+    .gear-table {
+
+        width: 100%;
+
+        border-collapse: collapse;
+
+        margin: 1.5rem 0;
+
+    }
+
+
+    .gear-table th,
+    .gear-table td {
+
+        border: 1px solid
+            var(--border-color, #777);
+
+        padding: 0.65rem;
+
+        vertical-align: top;
+
+        text-align: left;
+
+    }
+
+
+    .gear-table th {
+
+        font-weight: bold;
+
+    }
+
+
+    .gear-table td.price {
+
+        white-space: nowrap;
+
+    }
+
+
+    .gear-table tr:nth-child(even) {
+
+        background:
+            rgba(0, 0, 0, 0.03);
+
+    }
+
+
+    .gear-summary {
+
+        display: grid;
+
+        grid-template-columns:
+            repeat(auto-fit, minmax(180px, 1fr));
+
+        gap: 1rem;
+
+        margin: 1.5rem 0;
+
+    }
+
+
+    .summary-box {
+
+        border: 1px solid
+            var(--border-color, #777);
+
+        padding: 1rem;
+
+        border-radius: 6px;
+
+    }
+
+
+    .summary-box strong {
+
+        display: block;
+
+        margin-bottom: 0.25rem;
+
+    }
+
+
+    .gear-note {
+
+        border-left: 4px solid
+            var(--border-color, #777);
+
+        padding: 0.75rem 1rem;
+
+        margin: 1rem 0;
+
+    }
+
+
+    .category-note {
+
+        font-style: italic;
+
+        margin-bottom: 1rem;
+
+    }
+
+
+    @media print {
+
+        .gear-table {
+
+            font-size: 0.85rem;
+
+        }
+
+        .gear-table tr {
+
+            break-inside: avoid;
+
+        }
+
+    }
+
+</style>
+
+
+</head>
+
+<body>
+<header class="site-header">
+    <div class="header-inner">
+        <div class="game-title">Realm & Rune</div>
+        <div class="game-subtitle">Gear</div>
+    </div>
+</header>
+<!-- =========================================================
+     SHARED HEADER
+     ========================================================= -->
+
+<iframe
+    src="header.html"
+    class="site-header-frame"
+    title="Realm & Rune navigation">
+</iframe>
+
+<main class="page-container">
+
+
+<!-- =====================================================
+     INTRODUCTION
+     ===================================================== -->
+
+<section class="rule-section">
+
+    <h1>Adventuring Gear</h1>
+
+    <p>
+
+        Adventurers rely on more than weapons and magic.
+
+        Rope, lanterns, food, tools, clothing, and other
+        equipment allow characters to survive the wilderness,
+        explore dangerous ruins, and solve problems that
+        cannot be handled with a sword or spell.
+
+    </p>
+
+
+    <div class="rule-callout">
+
+        <strong>Equipment Philosophy</strong>
+
+        <p>
+
+            Realm &amp; Rune uses relatively simple equipment
+            rules.
+
+            Gear should create interesting choices without
+            requiring players to track dozens of minor
+            statistics.
+
+        </p>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     CURRENCY
+     ===================================================== -->
+
+<section class="rule-section">
+
+    <div class="section-heading">
+
+        <span class="section-number">I</span>
+
+        <h2>Currency</h2>
+
+    </div>
+
+
+    <p>
+
+        The standard currency of Realm &amp; Rune is divided
+        into four denominations.
+
+        Each denomination is worth ten of the denomination
+        immediately below it.
+
+    </p>
+
+
+    <div class="gear-summary">
+
+        <div class="summary-box">
+
+            <strong>Copper Piece (cp)</strong>
+
+            1 cp
+
+        </div>
+
+
+        <div class="summary-box">
+
+            <strong>Silver Piece (sp)</strong>
+
+            10 cp
+
+        </div>
+
+
+        <div class="summary-box">
+
+            <strong>Gold Piece (gp)</strong>
+
+            100 cp
+
+        </div>
+
+
+        <div class="summary-box">
+
+            <strong>Platinum Piece (pp)</strong>
+
+            1,000 cp
+
+        </div>
+
+    </div>
+
+
+    <table class="gear-table">
+
+        <thead>
+
+            <tr>
+
+                <th>Coin</th>
+                <th>Value</th>
+                <th>Common Uses</th>
+
+            </tr>
+
+        </thead>
+
+
+        <tbody>
+
+            <tr>
+
+                <td>1 cp</td>
+
+                <td>1 copper</td>
+
+                <td>
+                    Cheap food, small goods, minor services
+                </td>
+
+            </tr>
+
+
+            <tr>
+
+                <td>1 sp</td>
+
+                <td>10 cp</td>
+
+                <td>
+                    Meals, lodging, common equipment
+                </td>
+
+            </tr>
+
+
+            <tr>
+
+                <td>1 gp</td>
+
+                <td>10 sp</td>
+
+                <td>
+                    Weapons, armor, skilled services
+                </td>
+
+            </tr>
+
+
+            <tr>
+
+                <td>1 pp</td>
+
+                <td>10 gp</td>
+
+                <td>
+                    Major purchases, magical goods, valuable
+                    services
+                </td>
+
+            </tr>
+
+        </tbody>
+
+    </table>
+
+
+    <div class="gear-note">
+
+        <strong>Currency Conversion</strong>
+
+        <p>
+
+            10 cp = 1 sp<br>
+
+            10 sp = 1 gp<br>
+
+            10 gp = 1 pp
+
+        </p>
+
+        <p>
+
+            Therefore:
+
+            <strong>
+                1 pp = 100 gp = 1,000 sp = 10,000 cp
+            </strong>
+
+        </p>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     WEAPONS
+     ===================================================== -->
+
+<section class="rule-section">
+
+    <div class="section-heading">
+
+        <span class="section-number">II</span>
+
+        <h2>Weapons</h2>
+
+    </div>
+
+
+    <p>
+
+        Weapons are divided into four broad categories
+        corresponding to the four suits.
+
+        Any character can use any weapon they are proficient
+        with.
+
+    </p>
+
+
+    <table class="gear-table">
+
+        <thead>
+
+            <tr>
+
+                <th>Suit</th>
+                <th>Weapon Family</th>
+                <th>Examples</th>
+                <th>Typical Cost</th>
+                <th>Typical Use</th>
+
+            </tr>
+
+        </thead>
+
+
+        <tbody>
+
+            <tr>
+
+                <td><strong>Spades</strong></td>
+
+                <td>Blades &amp; Heavy Weapons</td>
+
+                <td>
+                    Longsword, greatsword, battleaxe,
+                    warhammer
+                </td>
+
+                <td>10–25 gp</td>
+
+                <td>
+                    Powerful melee attacks
+                </td>
+
+            </tr>
+
+
+            <tr>
+
+                <td><strong>Hearts</strong></td>
+
+                <td>Guard &amp; Support Weapons</td>
+
+                <td>
+                    Mace, flail, morningstar, staff
+                </td>
+
+                <td>5–15 gp</td>
+
+                <td>
+                    Defensive and supportive combat
+                </td>
+
+            </tr>
+
+
+            <tr>
+
+                <td><strong>Clubs</strong></td>
+
+                <td>Agile Weapons</td>
+
+                <td>
+                    Shortsword, rapier, dagger,
+                    bow
+                </td>
+
+                <td>5–25 gp</td>
+
+                <td>
+                    Precision and mobility
+                </td>
+
+            </tr>
+
+
+            <tr>
+
+                <td><strong>Diamonds</strong></td>
+
+                <td>Specialist Weapons</td>
+
+                <td>
+                    Crossbow, wand, arcane blade,
+                    throwing weapons
+                </td>
+
+                <td>10–30 gp</td>
+
+                <td>
+                    Ranged, technical, or magical combat
+                </td>
+
+            </tr>
+
+        </tbody>
+
+    </table>
+
+
+    <h3>Basic Weapons</h3>
+
+
+    <table class="gear-table">
+
+        <thead>
+
+            <tr>
+
+                <th>Weapon</th>
+                <th>Suit</th>
+                <th>Range</th>
+                <th>Cost</th>
+                <th>Notes</th>
+
+            </tr>
+
+        </thead>
+
+
+        <tbody>
+
+            <tr>
+
+                <td>Dagger</td>
+
+                <td>Clubs</td>
+
+                <td>Close / Near</td>
+
+                <td>2 gp</td>
+
+                <td>
+                    Light, concealable
+                </td>
+
+            </tr>
+
+
+            <tr>
+
+                <td>Shortsword</td>
+
+                <td>Clubs</td>
+
+                <td>Close</td>
+
+                <td>8 gp</td>
+
+                <td>
+                    Fast and versatile
+                </td>
+
+            </tr>
+
+
+            <tr>
+
+                <td>Rapier</td>
+
+                <td>Clubs</td>
+
+                <td>Close</td>
+
+                <td>15 gp</td>
+
+                <td>
+                    Precision weapon
+                </td>
+
+            </tr>
+
+
+            <tr>
+
+                <td>Longsword</td>
+
+                <td>Spades</td>
+
+                <td>Close</td>
+
+                <td>15 gp</td>
+
+                <td>
+                    Standard martial weapon
+                </td>
+
+            </tr>
+
+
+            <tr>
+
+                <td>Greatsword</td>
+
+                <td>Spades</td>
+
+                <td>Close</td>
+
+                <td>25 gp</td>
+
+                <td>
+                    Heavy two-handed weapon
+                </td>
+
+            </tr>
+
+
+            <tr>
+
+                <td>Battleaxe</td>
+
+                <td>Spades</td>
+
+                <td>Close</td>
+
+                <td>12 gp</td>
+
+                <td>
+                    Heavy melee weapon
+                </td>
+
+            </tr>
+
+
+            <tr>
+
+                <td>Mace</td>
+
+                <td>Hearts</td>
+
+                <td>Close</td>
+
+                <td>5 gp</td>
+
+                <td>
+                    Simple blunt weapon
+                </td>
+
+            </tr>
+
+
+            <tr>
+
+                <td>Warhammer</td>
+
+                <td>Hearts</td>
+
+                <td>Close</td>
+
+                <td>15 gp</td>
+
+                <td>
+                    Powerful blunt weapon
+                </td>
+
+            </tr>
+
+
+            <tr>
+
+                <td>Quarterstaff</td>
+
+                <td>Hearts</td>
+
+                <td>Close</td>
+
+                <td>1 gp</td>
+
+                <td>
+                    Simple and inexpensive
+                </td>
+
+            </tr>
+
+
+            <tr>
+
+                <td>Bow</td>
+
+                <td>Clubs</td>
+
+                <td>Far</td>
+
+                <td>20 gp</td>
+
+                <td>
+                    Requires arrows
+                </td>
+
+            </tr>
+
+
+            <tr>
+
+                <td>Crossbow</td>
+
+                <td>Diamonds</td>
+
+                <td>Far</td>
+
+                <td>25 gp</td>
+
+                <td>
+                    Requires bolts
+                </td>
+
+            </tr>
+
+
+            <tr>
+
+                <td>Throwing Knife</td>
+
+                <td>Clubs</td>
+
+                <td>Near</td>
+
+                <td>3 gp</td>
+
+                <td>
+                    Can be thrown
+                </td>
+
+            </tr>
+
+        </tbody>
+
+    </table>
+
+
+    <div class="gear-note">
+
+        <strong>Weapon Suit Affinity</strong>
+
+        <p>
+
+            When a player plays a card matching their weapon's
+            suit, the weapon may gain its associated bonus or
+            mastery effect.
+
+            Exact weapon mastery effects are defined by
+            character abilities and feats.
+
+        </p>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     ARMOR
+     ===================================================== -->
+
+<section class="rule-section">
+
+    <div class="section-heading">
+
+        <span class="section-number">III</span>
+
+        <h2>Armor</h2>
+
+    </div>
+
+
+    <p>
+
+        Armor determines a character's base protection.
+
+        Armor does not replace Dexterity or other defensive
+        abilities unless its category specifically says so.
+
+    </p>
+
+
+    <table class="gear-table">
+
+        <thead>
+
+            <tr>
+
+                <th>Armor</th>
+                <th>AC Bonus</th>
+                <th>Dexterity</th>
+                <th>Cost</th>
+                <th>Notes</th>
+
+            </tr>
+
+        </thead>
+
+
+        <tbody>
+
+            <tr>
+
+                <td>Clothing</td>
+
+                <td>+0</td>
+
+                <td>Full Dex</td>
+
+                <td>—</td>
+
+                <td>
+                    Unarmored
+                </td>
+
+            </tr>
+
+
+            <tr>
+
+                <td>Leather Armor</td>
+
+                <td>+1</td>
+
+                <td>Full Dex</td>
+
+                <td>10 gp</td>
+
+                <td>
+                    Light armor
+                </td>
+
+            </tr>
+
+
+            <tr>
+
+                <td>Chain Shirt</td>
+
+                <td>+2</td>
+
+                <td>None</td>
+
+                <td>25 gp</td>
+
+                <td>
+                    Medium armor
+                </td>
+
+            </tr>
+
+
+            <tr>
+
+                <td>Scale Armor</td>
+
+                <td>+2</td>
+
+                <td>None</td>
+
+                <td>40 gp</td>
+
+                <td>
+                    Medium armor
+                </td>
+
+            </tr>
+
+
+            <tr>
+
+                <td>Chainmail</td>
+
+                <td>+4</td>
+
+                <td>None</td>
+
+                <td>75 gp</td>
+
+                <td>
+                    Heavy armor
+                </td>
+
+            </tr>
+
+
+            <tr>
+
+                <td>Plate Armor</td>
+
+                <td>+4</td>
+
+                <td>None</td>
+
+                <td>150 gp</td>
+
+                <td>
+                    Heavy armor
+                </td>
+
+            </tr>
+
+
+            <tr>
+
+                <td>Shield</td>
+
+                <td>+1</td>
+
+                <td>—</td>
+
+                <td>10 gp</td>
+
+                <td>
+                    Requires shield proficiency
+                </td>
+
+            </tr>
+
+        </tbody>
+
+    </table>
+
+
+    <div class="gear-note">
+
+        <strong>Defense Reminder</strong>
+
+        <p>
+
+            Base AC is:
+
+            <strong>5 + Dexterity</strong>
+
+            when unarmored.
+
+        </p>
+
+        <p>
+
+            Light Armor:
+
+            <strong>5 + Armor Bonus + Dexterity</strong>
+
+        </p>
+
+        <p>
+
+            Medium Armor:
+
+            <strong>5 + Armor Bonus</strong>
+
+        </p>
+
+        <p>
+
+            Heavy Armor:
+
+            <strong>5 + Armor Bonus</strong>
+
+        </p>
+
+        <p>
+
+            Shields add <strong>+1 AC</strong>.
+
+        </p>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     ADVENTURING GEAR
+     ===================================================== -->
+
+<section class="rule-section">
+
+    <div class="section-heading">
+
+        <span class="section-number">IV</span>
+
+        <h2>Adventuring Gear</h2>
+
+    </div>
+
+
+    <p class="category-note">
+
+        Prices are intended as starting values and may be
+        adjusted during playtesting.
+
+    </p>
+
+
+    <table class="gear-table">
+
+        <thead>
+
+            <tr>
+
+                <th>Item</th>
+                <th>Cost</th>
+                <th>Description</th>
+
+            </tr>
+
+        </thead>
+
+
+        <tbody>
+
+            <tr>
+                <td>Backpack</td>
+                <td>2 gp</td>
+                <td>Holds adventuring equipment.</td>
+            </tr>
+
+            <tr>
+                <td>Bedroll</td>
+                <td>1 sp</td>
+                <td>Basic sleeping equipment.</td>
+            </tr>
+
+            <tr>
+                <td>Blanket</td>
+                <td>5 cp</td>
+                <td>Warm covering.</td>
+            </tr>
+
+            <tr>
+                <td>Bucket</td>
+                <td>5 cp</td>
+                <td>Useful for carrying liquids or materials.</td>
+            </tr>
+
+            <tr>
+                <td>Candle</td>
+                <td>1 cp</td>
+                <td>Provides dim light.</td>
+            </tr>
+
+            <tr>
+                <td>Climber's Kit</td>
+                <td>5 gp</td>
+                <td>Rope, hooks, pitons, and climbing tools.</td>
+            </tr>
+
+            <tr>
+                <td>Flint &amp; Steel</td>
+                <td>5 sp</td>
+                <td>Allows fires to be started.</td>
+            </tr>
+
+            <tr>
+                <td>Grappling Hook</td>
+                <td>2 gp</td>
+                <td>Used with rope for climbing and securing lines.</td>
+            </tr>
+
+            <tr>
+                <td>Hammer</td>
+                <td>5 sp</td>
+                <td>General-purpose tool.</td>
+            </tr>
+
+            <tr>
+                <td>Holy Symbol</td>
+                <td>5 gp</td>
+                <td>Religious symbol used by divine spellcasters.</td>
+            </tr>
+
+            <tr>
+                <td>Ink</td>
+                <td>1 gp</td>
+                <td>Used for writing.</td>
+            </tr>
+
+            <tr>
+                <td>Lantern</td>
+                <td>5 gp</td>
+                <td>Provides reliable light.</td>
+            </tr>
+
+            <tr>
+                <td>Manacles</td>
+                <td>2 gp</td>
+                <td>Restrain a creature.</td>
+            </tr>
+
+            <tr>
+                <td>Mess Kit</td>
+                <td>2 sp</td>
+                <td>Basic eating utensils.</td>
+            </tr>
+
+            <tr>
+                <td>Mirror</td>
+                <td>5 gp</td>
+                <td>Small polished metal mirror.</td>
+            </tr>
+
+            <tr>
+                <td>Oil</td>
+                <td>1 sp</td>
+                <td>Fuel for lamps or useful for other tasks.</td>
+            </tr>
+
+            <tr>
+                <td>Pick</td>
+                <td>2 gp</td>
+                <td>Mining and excavation tool.</td>
+            </tr>
+
+            <tr>
+                <td>Piton</td>
+                <td>5 cp</td>
+                <td>Metal spike used for climbing.</td>
+            </tr>
+
+            <tr>
+                <td>Rope, 50 ft.</td>
+                <td>1 gp</td>
+                <td>Strong adventuring rope.</td>
+            </tr>
+
+            <tr>
+                <td>Sack</td>
+                <td>1 cp</td>
+                <td>Simple carrying sack.</td>
+            </tr>
+
+            <tr>
+                <td>Shovel</td>
+                <td>5 sp</td>
+                <td>Useful for digging.</td>
+            </tr>
+
+            <tr>
+                <td>Tent</td>
+                <td>2 gp</td>
+                <td>Shelter for one or two people.</td>
+            </tr>
+
+            <tr>
+                <td>Torch</td>
+                <td>1 cp</td>
+                <td>Provides bright light for a short period.</td>
+            </tr>
+
+            <tr>
+                <td>Waterskin</td>
+                <td>1 sp</td>
+                <td>Holds drinking water.</td>
+            </tr>
+
+            <tr>
+                <td>Writing Kit</td>
+                <td>2 gp</td>
+                <td>Ink, quills, and basic parchment.</td>
+            </tr>
+
+        </tbody>
+
+    </table>
+
+
+    <h3>Tools &amp; Specialist Equipment</h3>
+
+
+    <table class="gear-table">
+
+        <thead>
+
+            <tr>
+
+                <th>Item</th>
+                <th>Cost</th>
+                <th>Common Uses</th>
+
+            </tr>
+
+        </thead>
+
+
+        <tbody>
+
+            <tr>
+
+                <td>Alchemist's Supplies</td>
+
+                <td>10 gp</td>
+
+                <td>
+                    Crafting, identifying substances,
+                    handling reagents
+                </td>
+
+            </tr>
+
+
+            <tr>
+
+                <td>Disguise Kit</td>
+
+                <td>5 gp</td>
+
+                <td>
+                    Creating disguises
+                </td>
+
+            </tr>
+
+
+            <tr>
+
+                <td>Healer's Kit</td>
+
+                <td>5 gp</td>
+
+                <td>
+                    Treating wounds and assisting Medicine
+                    checks
+                </td>
+
+            </tr>
+
+
+            <tr>
+
+                <td>Lockpicks</td>
+
+                <td>10 gp</td>
+
+                <td>
+                    Opening locks and manipulating mechanisms
+                </td>
+
+            </tr>
+
+
+            <tr>
+
+                <td>Navigator's Tools</td>
+
+                <td>10 gp</td>
+
+                <td>
+                    Navigation and wilderness travel
+                </td>
+
+            </tr>
+
+
+            <tr>
+
+                <td>Thieves' Tools</td>
+
+                <td>10 gp</td>
+
+                <td>
+                    Locks, traps, and delicate mechanisms
+                </td>
+
+            </tr>
+
+        </tbody>
+
+    </table>
+
+</section>
+
+
+
+<!-- =====================================================
+     FOOD
+     ===================================================== -->
+
+<section class="rule-section">
+
+    <div class="section-heading">
+
+        <span class="section-number">V</span>
+
+        <h2>Food</h2>
+
+    </div>
+
+
+    <p>
+
+        Food is more than simple survival in Realm &amp; Rune.
+
+        Certain food and drink can be consumed through the
+        <strong>Gobble</strong> action when a player burns
+        an Ace.
+
+    </p>
+
+
+    <div class="rule-callout">
+
+        <strong>Gobble</strong>
+
+        <p>
+
+            Burn an Ace to consume one food or drink item.
+
+            Some items restore HP while others provide
+            temporary benefits.
+
+        </p>
+
+
+        <p>
+
+            Only <strong>one persistent food effect</strong>
+            may be active at a time.
+
+            Consuming another food with a persistent effect
+            removes the previous effect and replaces it.
+
+        </p>
+
+    </div>
+
+
+    <table class="gear-table">
+
+        <thead>
+
+            <tr>
+
+                <th>Food / Drink</th>
+                <th>Cost</th>
+                <th>Effect</th>
+
+            </tr>
+
+        </thead>
+
+
+        <tbody>
+
+            <tr>
+
+                <td>Bread</td>
+
+                <td>2 cp</td>
+
+                <td>
+                    Recover 1 HP.
+                </td>
+
+            </tr>
+
+
+            <tr>
+
+                <td>Dried Meat</td>
+
+                <td>5 cp</td>
+
+                <td>
+                    Recover 1 HP.
+                </td>
+
+            </tr>
+
+
+            <tr>
+
+                <td>Cheese</td>
+
+                <td>5 cp</td>
+
+                <td>
+                    Recover 1 HP.
+                </td>
+
+            </tr>
+
+
+            <tr>
+
+                <td>Hearty Stew</td>
+
+                <td>1 sp</td>
+
+                <td>
+                    Recover 2 HP.
+                </td>
+
+            </tr>
+
+
+            <tr>
+
+                <td>Health Potion</td>
+
+                <td>10 gp</td>
+
+                <td>
+                    Recover 3 HP.
+                </td>
+
+            </tr>
+
+
+            <tr>
+
+                <td>Protein Bar</td>
+
+                <td>5 sp</td>
+
+                <td>
+                    Gain +1 Might until the next long rest.
+                </td>
+
+            </tr>
+
+
+            <tr>
+
+                <td>Fizzy Drink</td>
+
+                <td>5 sp</td>
+
+                <td>
+                    Gain +1 Dexterity until the next long rest.
+                </td>
+
+            </tr>
+
+
+            <tr>
+
+                <td>Fortifying Tea</td>
+
+                <td>5 sp</td>
+
+                <td>
+                    Gain +1 Spirit until the next long rest.
+                </td>
+
+            </tr>
+
+
+            <tr>
+
+                <td>Brain Brew</td>
+
+                <td>5 sp</td>
+
+                <td>
+                    Gain +1 Cunning until the next long rest.
+                </td>
+
+            </tr>
+
+
+            <tr>
+
+                <td>Hunter's Jerky</td>
+
+                <td>1 sp</td>
+
+                <td>
+                    Gain advantage on your next Survival check.
+                </td>
+
+            </tr>
+
+
+            <tr>
+
+                <td>Sweet Roll</td>
+
+                <td>5 cp</td>
+
+                <td>
+                    Gain advantage on your next social skill
+                    check.
+                </td>
+
+            </tr>
+
+
+            <tr>
+
+                <td>Spiced Sausage</td>
+
+                <td>5 cp</td>
+
+                <td>
+                    Gain +1 to your next Might attack.
+                </td>
+
+            </tr>
+
+
+            <tr>
+
+                <td>Traveler's Rations</td>
+
+                <td>5 sp</td>
+
+                <td>
+                    Provides enough food for one day.
+                </td>
+
+            </tr>
+
+
+            <tr>
+
+                <td>Lucky Cookie</td>
+
+                <td>1 sp</td>
+
+                <td>
+                    Gain advantage on your next skill check.
+                </td>
+
+            </tr>
+
+
+            <tr>
+
+                <td>Herbal Tonic</td>
+
+                <td>2 gp</td>
+
+                <td>
+                    Gain advantage on your next Medicine check.
+                </td>
+
+            </tr>
+
+
+            <tr>
+
+                <td>Strong Coffee</td>
+
+                <td>5 cp</td>
+
+                <td>
+                    Gain advantage on your next Initiative
+                    or Dexterity check.
+                </td>
+
+            </tr>
+
+
+            <tr>
+
+                <td>Spiced Cider</td>
+
+                <td>1 sp</td>
+
+                <td>
+                    Gain advantage on your next Spirit check.
+                </td>
+
+            </tr>
+
+
+            <tr>
+
+                <td>Wizard's Biscuit</td>
+
+                <td>2 sp</td>
+
+                <td>
+                    Gain advantage on your next Arcana check.
+                </td>
+
+            </tr>
+
+
+            <tr>
+
+                <td>Hunter's Pie</td>
+
+                <td>2 sp</td>
+
+                <td>
+                    Gain advantage on your next Perception check.
+                </td>
+
+            </tr>
+
+
+            <tr>
+
+                <td>Dragon Pepper</td>
+
+                <td>1 gp</td>
+
+                <td>
+                    Gain +1 damage on your next successful
+                    attack.
+                </td>
+
+            </tr>
+
+        </tbody>
+
+    </table>
+
+
+    <div class="gear-note">
+
+        <strong>Food Design Note</strong>
+
+        <p>
+
+            Food effects are intentionally modest.
+
+            The Gobble mechanic turns Aces into a secondary
+            resource that can compete with other reasons to
+            hold cards without becoming a replacement for
+            healing, magic, or class abilities.
+
+        </p>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     ENCUMBRANCE / FUTURE RULES
+     ===================================================== -->
+
+<section class="rule-section">
+
+    <div class="section-heading">
+
+        <span class="section-number">VI</span>
+
+        <h2>Equipment Rules</h2>
+
+    </div>
+
+
+    <p>
+
+        Detailed encumbrance rules are intentionally omitted
+        from the current playtest rules.
+
+        Characters are assumed to be able to carry a
+        reasonable amount of adventuring equipment.
+
+    </p>
+
+
+    <p>
+
+        The GM may impose a limitation when a character is
+        attempting to carry an obviously unreasonable amount
+        of equipment.
+
+    </p>
+
+
+    <div class="rule-callout">
+
+        <strong>Future Development</strong>
+
+        <p>
+
+            Future versions may add rules for ammunition,
+            equipment durability, crafting, mounts, vehicles,
+            magical equipment, and item rarity.
+
+        </p>
+
+    </div>
+
+</section>
+
+
+</main>
+
+<!-- =========================================================
+     SHARED FOOTER
+     ========================================================= -->
+
+<iframe
+    src="footer.html"
+    class="site-footer-frame"
+    title="Realm & Rune footer">
+</iframe>
+
+</body>
+
+</html>

@@ -1,31 +1,176 @@
 <!DOCTYPE html>
 
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 
-<title>Realm & Rune — Classes</title>
+<meta charset="UTF-8">
 
-<!-- Shared Realm & Rune stylesheet -->
-<link rel="stylesheet" href="realm-and-rune.css">
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0">
+
+<title>Realm &amp; Rune — Classes</title>
+
+<link rel="stylesheet"
+      href="realm-and-rune.css">
+
+
+<style>
+
+    /*
+     * =====================================================
+     * CLASS INDEX
+     * =====================================================
+     */
+
+    .site-header-frame,
+    .site-footer-frame {
+
+        display: block;
+        width: 100%;
+        border: none;
+
+    }
+
+    .class-index {
+
+        display: grid;
+
+        grid-template-columns:
+            repeat(auto-fit, minmax(280px, 1fr));
+
+        gap: 1.5rem;
+
+        margin-top: 2rem;
+
+    }
+
+
+    .class-card {
+
+        display: block;
+
+        border: 1px solid
+            var(--border-color, #777);
+
+        border-radius: 8px;
+
+        padding: 1.5rem;
+
+        text-decoration: none;
+
+        color: inherit;
+
+        background:
+            var(--panel-background,
+            rgba(0, 0, 0, 0.03));
+
+        transition:
+            transform 0.15s ease,
+            box-shadow 0.15s ease;
+
+    }
+
+
+    .class-card:hover {
+
+        transform: translateY(-3px);
+
+        box-shadow:
+            0 4px 12px
+            rgba(0, 0, 0, 0.15);
+
+    }
+
+
+    .class-card h2 {
+
+        margin-top: 0;
+
+        margin-bottom: 0.5rem;
+
+    }
+
+
+    .class-role {
+
+        font-style: italic;
+
+        margin-bottom: 1rem;
+
+    }
+
+
+    .class-card p {
+
+        margin-bottom: 0;
+
+    }
+
+
+    .class-card .class-link {
+
+        display: block;
+
+        margin-top: 1rem;
+
+        font-weight: bold;
+
+    }
+
+
+    .coming-soon {
+
+        opacity: 0.65;
+
+        cursor: default;
+
+    }
+
+
+    .coming-soon:hover {
+
+        transform: none;
+
+        box-shadow: none;
+
+    }
+
+
+    .class-note {
+
+        margin-top: 2rem;
+
+    }
+
+
+    @media print {
+
+        .class-card {
+
+            break-inside: avoid;
+
+        }
+
+    }
+
+</style>
 
 
 </head>
 
 <body>
-
 <header class="site-header">
     <div class="header-inner">
         <div class="game-title">Realm & Rune</div>
-        <div class="game-subtitle">Class Rules</div>
+        <div class="game-subtitle">Classes</div>
     </div>
 </header>
-
 <!-- =========================================================
-     NAVIGATION
+     SHARED HEADER
      ========================================================= -->
+
 <iframe
     src="header.html"
     class="site-header-frame"
@@ -34,1189 +179,371 @@
 
 <main class="page-container">
 
-<!-- =========================================================
-     CLASS OVERVIEW
-     ========================================================= -->
 
-<section id="class-overview" class="rule-section">
+<!-- =====================================================
+     PAGE INTRODUCTION
+     ===================================================== -->
 
+<section class="rule-section">
 
-<div class="section-heading">
-    <span class="section-number">I</span>
     <h1>Classes</h1>
-</div>
-
-<p>
-    Your class defines your character's primary role, abilities,
-    and approach to adventure. Classes provide the strongest
-    mechanical identity for a character.
-</p>
-
-<p>
-    <strong>Realm & Rune</strong> has four core classes:
-    <strong>Fighter, Rogue, Cleric, and Wizard.</strong>
-</p>
-
-<div class="rule-callout">
-
-    <strong>Maximum Level: 5</strong>
 
     <p>
-        Characters advance from Level 1 through Level 5.
-        Class features are gained at each level, while subclass
-        features provide additional opportunities for asymmetrical
-        character development.
+
+        A character's class defines their primary abilities,
+        combat style, and approach to challenges.
+
+        Each class has its own page containing its level
+        progression, core features, subclasses, and
+        class-specific feats.
+
     </p>
 
-</div>
 
+    <div class="rule-callout">
+
+        <strong>Maximum Level: 5</strong>
+
+        <p>
+
+            Characters advance through five levels of class
+            progression.
+
+            After reaching level 5, characters continue to
+            develop by acquiring Feat Points and purchasing
+            additional abilities.
+
+        </p>
+
+    </div>
 
 </section>
 
-<!-- =========================================================
-     LEVELING
-     ========================================================= -->
-
-<section id="leveling" class="rule-section">
 
 
-<div class="section-heading">
-    <span class="section-number">II</span>
-    <h2>Level Advancement</h2>
-</div>
+<!-- =====================================================
+     CLASS INDEX
+     ===================================================== -->
 
-<p>
-    Every character follows the same basic level progression,
-    although the actual abilities gained at each level differ
-    significantly between classes.
-</p>
+<section class="rule-section">
 
-<table class="rules-table">
+    <div class="section-heading">
 
-    <thead>
+        <span class="section-number">I</span>
 
-        <tr>
-            <th>Level</th>
-            <th>Class Progression</th>
-        </tr>
+        <h2>Available Classes</h2>
 
-    </thead>
+    </div>
 
-    <tbody>
 
-        <tr>
-            <td><strong>1</strong></td>
+    <div class="class-index">
 
-            <td>
-                Gain class identity features.
-                Starting Hand Size: <strong>2</strong>.
-            </td>
-        </tr>
 
-        <tr>
-            <td><strong>2</strong></td>
+        <!-- =================================================
+             FIGHTER
+             ================================================= -->
 
-            <td>
-                Gain a subclass feature.
-            </td>
-        </tr>
+        <a
+            href="classes/fighter.html"
+            class="class-card">
 
-        <tr>
-            <td><strong>3</strong></td>
+            <h2>Fighter</h2>
 
-            <td>
-                Gain a class identity feature.
-                Hand Size increases to <strong>3</strong>.
-            </td>
-        </tr>
+            <div class="class-role">
 
-        <tr>
-            <td><strong>4</strong></td>
+                The versatile martial combatant.
 
-            <td>
-                Gain a subclass feature.
-            </td>
-        </tr>
+            </div>
 
-        <tr>
-            <td><strong>5</strong></td>
+            <p>
 
-            <td>
-                Increase one Core Attribute by <strong>+1</strong>.
-                Hand Size increases to <strong>4</strong>.
-            </td>
-        </tr>
+                Masters of weapons and armor who can adapt
+                to almost any battlefield.
 
-    </tbody>
+                Fighters excel at durability, reliable
+                attacks, and tactical flexibility.
 
-</table>
+            </p>
 
-<div class="rule-callout">
+            <span class="class-link">
 
-    <strong>Beyond Level 5</strong>
+                View Fighter →
+
+            </span>
+
+        </a>
+
+
+
+        <!-- =================================================
+             ROGUE
+             ================================================= -->
+
+        <a
+            href="classes/rogue.html"
+            class="class-card">
+
+            <h2>Rogue</h2>
+
+            <div class="class-role">
+
+                The agile specialist and opportunist.
+
+            </div>
+
+            <p>
+
+                Rogues rely on precision, stealth, deception,
+                and exploiting enemy weaknesses.
+
+            </p>
+
+            <span class="class-link">
+
+                View Rogue →
+
+            </span>
+
+        </a>
+
+
+
+        <!-- =================================================
+             CLERIC
+             ================================================= -->
+
+        <a
+            href="classes/cleric.html"
+            class="class-card">
+
+            <h2>Cleric</h2>
+
+            <div class="class-role">
+
+                The divine spellcaster and spiritual champion.
+
+            </div>
+
+            <p>
+
+                Clerics wield Divine magic to heal allies,
+                protect companions, and bring the power of
+                their faith to the battlefield.
+
+            </p>
+
+            <span class="class-link">
+
+                View Cleric →
+
+            </span>
+
+        </a>
+
+
+
+        <!-- =================================================
+             WIZARD
+             ================================================= -->
+
+        <a
+            href="classes/wizard.html"
+            class="class-card">
+
+            <h2>Wizard</h2>
+
+            <div class="class-role">
+
+                The scholarly master of Arcane magic.
+
+            </div>
+
+            <p>
+
+                Wizards use spellbooks, research, and
+                preparation to build an extensive collection
+                of Arcane spells.
+
+            </p>
+
+            <span class="class-link">
+
+                View Wizard →
+
+            </span>
+
+        </a>
+
+
+
+        <!-- =================================================
+             FUTURE CLASS
+             ================================================= -->
+
+        <div
+            class="class-card coming-soon">
+
+            <h2>New Class</h2>
+
+            <div class="class-role">
+
+                Expansion space.
+
+            </div>
+
+            <p>
+
+                Future classes can be added here as the
+                system expands.
+
+            </p>
+
+            <span class="class-link">
+
+                Coming Soon
+
+            </span>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     CLASS DESIGN
+     ===================================================== -->
+
+<section class="rule-section">
+
+    <div class="section-heading">
+
+        <span class="section-number">II</span>
+
+        <h2>Class Design</h2>
+
+    </div>
+
 
     <p>
-        Level advancement ends at Level 5. Further character
-        development comes through <strong>Feat Points</strong>,
-        which can be spent to acquire additional abilities.
+
+        Each class follows the same basic progression while
+        maintaining a distinct identity.
+
     </p>
 
-</div>
 
+    <ul>
 
-</section>
+        <li>
 
-<!-- =========================================================
-     SUBCLASSES
-     ========================================================= -->
+            <strong>Level 1:</strong>
+            Core class identity and starting proficiencies.
 
-<section id="subclasses" class="rule-section">
+        </li>
 
+        <li>
 
-<div class="section-heading">
-    <span class="section-number">III</span>
-    <h2>Subclasses</h2>
-</div>
+            <strong>Level 2:</strong>
+            Gain a subclass feature.
 
-<p>
-    Each core class contains multiple subclasses. A character
-    chooses a subclass and gains subclass features at Levels 2
-    and 4.
-</p>
+        </li>
 
-<p>
-    Subclasses are intentionally designed to support
-    <strong>asymmetrical growth</strong>. Two characters can share
-    the same class and subclass while still developing very
-    differently.
-</p>
+        <li>
 
-<div class="rule-callout">
+            <strong>Level 3:</strong>
+            Gain a major class feature and increase hand size
+            to 3.
 
-    <strong>Subclass Feat Design</strong>
+        </li>
+
+        <li>
+
+            <strong>Level 4:</strong>
+            Gain another subclass feature.
+
+        </li>
+
+        <li>
+
+            <strong>Level 5:</strong>
+            Increase one Core Attribute by +1 and increase
+            hand size to 4.
+
+        </li>
+
+    </ul>
+
 
     <p>
-        Each subclass will eventually contain approximately
-        <strong>10 independent features</strong>.
+
+        Subclasses are built from independent features rather
+        than a fixed linear progression.
+
+        This allows two characters using the same class and
+        subclass to develop differently.
+
     </p>
+
+</section>
+
+
+
+<!-- =====================================================
+     FUTURE CLASSES
+     ===================================================== -->
+
+<section class="rule-section">
+
+    <div class="section-heading">
+
+        <span class="section-number">III</span>
+
+        <h2>Future Classes</h2>
+
+    </div>
+
 
     <p>
-        These features are not locked to specific levels. When a
-        character gains a subclass feature, they select an
-        available feature from their subclass.
+
+        New classes can be added to this index without
+        changing the existing class pages.
+
+        Each new class should receive its own HTML page using
+        the same shared stylesheet, header, and footer.
+
     </p>
 
-</div>
-
-<p>
-    This means two Fighters of the same subclass may select
-    completely different combinations of subclass features,
-    creating distinct characters without requiring a large number
-    of separate subclasses.
-</p>
-
-
-</section>
-
-<!-- =========================================================
-     FIGHTER
-     ========================================================= -->
-
-<section id="fighter" class="rule-section">
-
-
-<div class="section-heading">
-    <span class="section-number">IV</span>
-    <h2>Fighter</h2>
-</div>
-
-<p>
-    Fighters are masters of weapons and armor. They excel at
-    direct confrontation and are capable of adapting their
-    tactics to almost any battlefield.
-</p>
-
-<div class="rule-callout">
-
-    <strong>Class Identity</strong>
 
     <p>
-        The Fighter is the most broadly capable martial class.
-        Fighters have access to every weapon and armor category
-        and gain powerful ways to manipulate their card resources
-        during combat.
+
+        Potential future classes might include specialized
+        martial, magical, or hybrid archetypes.
+
+        New classes should introduce a distinct relationship
+        with the card economy rather than simply duplicating
+        an existing class's role.
+
     </p>
 
-</div>
-
-
-<h3>Level Progression</h3>
-
-<table class="rules-table">
-
-    <thead>
-
-        <tr>
-            <th>Level</th>
-            <th>Features</th>
-        </tr>
-
-    </thead>
-
-    <tbody>
-
-        <tr>
-
-            <td><strong>1</strong></td>
-
-            <td>
-
-                <strong>Martial Mastery</strong>
-
-                <ul>
-                    <li>
-                        Gain Proficiency with all weapons.
-                    </li>
-
-                    <li>
-                        Gain Proficiency with all armor.
-                    </li>
-
-                    <li>
-                        Gain Proficiency with shields.
-                    </li>
-
-                    <li>
-                        Gain Proficiency in any 2 skills.
-                    </li>
-
-                    <li>
-                        Gain one Weapon Mastery Feat.
-                    </li>
-                </ul>
-
-
-                <strong>Second Wind</strong>
-
-                <p>
-                    Once per Short Rest, discard a card to recover
-                    <strong>1 HP</strong>.
-                </p>
-
-            </td>
-
-        </tr>
-
-
-        <tr>
-
-            <td><strong>2</strong></td>
-
-            <td>
-                Gain one Subclass Feature.
-            </td>
-
-        </tr>
-
-
-        <tr>
-
-            <td><strong>3</strong></td>
-
-            <td>
-
-                <strong>Action Surge</strong>
-
-                <p>
-                    Once per Short Rest, discard any face card and
-                    draw cards until you reach your current hand
-                    size.
-                </p>
-
-            </td>
-
-        </tr>
-
-
-        <tr>
-
-            <td><strong>4</strong></td>
-
-            <td>
-                Gain one Subclass Feature.
-            </td>
-
-        </tr>
-
-
-        <tr>
-
-            <td><strong>5</strong></td>
-
-            <td>
-
-                <strong>Attribute Increase</strong>
-
-                <p>
-                    Increase one Core Attribute by +1.
-                </p>
-
-                <p>
-                    Hand Size increases to 4.
-                </p>
-
-            </td>
-
-        </tr>
-
-    </tbody>
-
-</table>
-
-
 </section>
 
-<!-- =========================================================
-     ROGUE
-     ========================================================= -->
-
-<section id="rogue" class="rule-section">
-
-
-<div class="section-heading">
-    <span class="section-number">V</span>
-    <h2>Rogue</h2>
-</div>
-
-<p>
-    Rogues rely on speed, precision, deception, and opportunistic
-    attacks. They are highly skilled characters capable of
-    excelling in and out of combat.
-</p>
-
-<div class="rule-callout">
-
-    <strong>Class Identity</strong>
-
-    <p>
-        The Rogue specializes in skill checks, mobility, stealth,
-        and precise attacks. Rather than overpowering an enemy,
-        the Rogue looks for the right moment to strike.
-    </p>
-
-</div>
-
-
-<h3>Level Progression</h3>
-
-<table class="rules-table">
-
-    <thead>
-
-        <tr>
-            <th>Level</th>
-            <th>Features</th>
-        </tr>
-
-    </thead>
-
-    <tbody>
-
-        <tr>
-
-            <td><strong>1</strong></td>
-
-            <td>
-
-                <strong>Roguish Training</strong>
-
-                <ul>
-
-                    <li>
-                        Gain Proficiency with Club weapons.
-                    </li>
-
-                    <li>
-                        Gain Proficiency with Light Armor.
-                    </li>
-
-                    <li>
-                        Gain Proficiency in any 3 skills.
-                    </li>
-
-                    <li>
-                        Gain Expertise in 1 skill.
-                    </li>
-
-                </ul>
-
-
-                <strong>Backstab</strong>
-
-                <p>
-                    Play a Club card to make a Backstab attack.
-                    On a hit, deal 2 HP damage.
-                </p>
-
-                <p>
-                    If the card played is a face card, deal
-                    an additional 1 HP damage.
-                </p>
-
-            </td>
-
-        </tr>
-
-
-        <tr>
-
-            <td><strong>2</strong></td>
-
-            <td>
-                Gain one Subclass Feature.
-            </td>
-
-        </tr>
-
-
-        <tr>
-
-            <td><strong>3</strong></td>
-
-            <td>
-
-                <strong>Hide</strong>
-
-                <p>
-                    Discard a card to Hide.
-                </p>
-
-                <p>
-                    While Hidden, the Rogue can take advantage of
-                    opportunities to make attacks or perform actions
-                    from concealment as determined by the situation.
-                </p>
-
-            </td>
-
-        </tr>
-
-
-        <tr>
-
-            <td><strong>4</strong></td>
-
-            <td>
-                Gain one Subclass Feature.
-            </td>
-
-        </tr>
-
-
-        <tr>
-
-            <td><strong>5</strong></td>
-
-            <td>
-
-                <strong>Attribute Increase</strong>
-
-                <p>
-                    Increase one Core Attribute by +1.
-                </p>
-
-                <p>
-                    Hand Size increases to 4.
-                </p>
-
-            </td>
-
-        </tr>
-
-    </tbody>
-
-</table>
-
-
-</section>
-
-<!-- =========================================================
-     CLERIC
-     ========================================================= -->
-
-<section id="cleric" class="rule-section">
-
-
-<div class="section-heading">
-    <span class="section-number">VI</span>
-    <h2>Cleric</h2>
-</div>
-
-<p>
-    Clerics wield Divine magic through faith, conviction, and
-    supernatural power. They combine martial capability with
-    healing and magical support.
-</p>
-
-<div class="rule-callout">
-
-    <strong>Class Identity</strong>
-
-    <p>
-        The Cleric is the primary Divine spellcasting class.
-        Clerics gain access to the full Divine spell list as they
-        advance and can support allies while remaining capable
-        combatants.
-    </p>
-
-</div>
-
-
-<h3>Level Progression</h3>
-
-<table class="rules-table">
-
-    <thead>
-
-        <tr>
-            <th>Level</th>
-            <th>Features</th>
-        </tr>
-
-    </thead>
-
-    <tbody>
-
-        <tr>
-
-            <td><strong>1</strong></td>
-
-            <td>
-
-                <strong>Divine Training</strong>
-
-                <ul>
-
-                    <li>
-                        Gain Proficiency with Heart weapons.
-                    </li>
-
-                    <li>
-                        Gain Proficiency with Light Armor.
-                    </li>
-
-                    <li>
-                        Gain Proficiency with Medium Armor.
-                    </li>
-
-                    <li>
-                        Gain Proficiency with shields.
-                    </li>
-
-                    <li>
-                        Gain Proficiency in any 2 skills.
-                    </li>
-
-                    <li>
-                        Gain access to all Tier 1 Divine Spells.
-                    </li>
-
-                </ul>
-
-            </td>
-
-        </tr>
-
-
-        <tr>
-
-            <td><strong>2</strong></td>
-
-            <td>
-                Gain one Subclass Feature.
-            </td>
-
-        </tr>
-
-
-        <tr>
-
-            <td><strong>3</strong></td>
-
-            <td>
-
-                <strong>Divine Advancement</strong>
-
-                <p>
-                    Gain access to all Tier 2 Divine Spells.
-                </p>
-
-            </td>
-
-        </tr>
-
-
-        <tr>
-
-            <td><strong>4</strong></td>
-
-            <td>
-                Gain one Subclass Feature.
-            </td>
-
-        </tr>
-
-
-        <tr>
-
-            <td><strong>5</strong></td>
-
-            <td>
-
-                <strong>Divine Mastery</strong>
-
-                <p>
-                    Increase one Core Attribute by +1.
-                </p>
-
-                <p>
-                    Gain access to all Tier 3 Divine Spells.
-                </p>
-
-                <p>
-                    Hand Size increases to 4.
-                </p>
-
-            </td>
-
-        </tr>
-
-    </tbody>
-
-</table>
-
-
-</section>
-
-<!-- =========================================================
-     WIZARD
-     ========================================================= -->
-
-<section id="wizard" class="rule-section">
-
-
-<div class="section-heading">
-    <span class="section-number">VII</span>
-    <h2>Wizard</h2>
-</div>
-
-<p>
-    Wizards are dedicated students of Arcane magic. They possess
-    the broadest ability to learn and customize their spell
-    selection, making them highly adaptable magical specialists.
-</p>
-
-<div class="rule-callout">
-
-    <strong>Class Identity</strong>
-
-    <p>
-        Wizards are flexible Arcane spellcasters. Unlike Clerics,
-        who automatically gain access to entire tiers of Divine
-        magic, Wizards build a personal spell library by learning
-        individual spells.
-    </p>
-
-</div>
-
-
-<h3>Level Progression</h3>
-
-<table class="rules-table">
-
-    <thead>
-
-        <tr>
-            <th>Level</th>
-            <th>Features</th>
-        </tr>
-
-    </thead>
-
-    <tbody>
-
-        <tr>
-
-            <td><strong>1</strong></td>
-
-            <td>
-
-                <strong>Arcane Training</strong>
-
-                <ul>
-
-                    <li>
-                        Gain Proficiency in any 2 skills.
-                    </li>
-
-                    <li>
-                        Learn 3 Tier 1 Arcane Spells.
-                    </li>
-
-                </ul>
-
-            </td>
-
-        </tr>
-
-
-        <tr>
-
-            <td><strong>2</strong></td>
-
-            <td>
-
-                <strong>Arcane Study</strong>
-
-                <p>
-                    Gain one Subclass Feature.
-                </p>
-
-                <p>
-                    Learn 1 additional Tier 1 Arcane Spell.
-                </p>
-
-            </td>
-
-        </tr>
-
-
-        <tr>
-
-            <td><strong>3</strong></td>
-
-            <td>
-
-                <strong>Advanced Arcana</strong>
-
-                <p>
-                    Gain access to all Tier 2 Arcane Spells.
-                </p>
-
-                <p>
-                    Learn 1 additional Arcane Spell.
-                </p>
-
-            </td>
-
-        </tr>
-
-
-        <tr>
-
-            <td><strong>4</strong></td>
-
-            <td>
-
-                <strong>Arcane Study</strong>
-
-                <p>
-                    Gain one Subclass Feature.
-                </p>
-
-                <p>
-                    Learn 1 Tier 1 or Tier 2 Arcane Spell.
-                </p>
-
-            </td>
-
-        </tr>
-
-
-        <tr>
-
-            <td><strong>5</strong></td>
-
-            <td>
-
-                <strong>Arcane Mastery</strong>
-
-                <p>
-                    Increase one Core Attribute by +1.
-                </p>
-
-                <p>
-                    Learn 1 Tier 1, Tier 2, or Tier 3 Arcane Spell.
-                </p>
-
-                <p>
-                    Hand Size increases to 4.
-                </p>
-
-            </td>
-
-        </tr>
-
-    </tbody>
-
-</table>
-
-
-</section>
-
-<!-- =========================================================
-     CLASS COMPARISON
-     ========================================================= -->
-
-<section id="class-comparison" class="rule-section">
-
-
-<div class="section-heading">
-    <span class="section-number">VIII</span>
-    <h2>Class Comparison</h2>
-</div>
-
-<table class="rules-table">
-
-    <thead>
-
-        <tr>
-            <th>Class</th>
-            <th>Primary Role</th>
-            <th>Starting Hand</th>
-            <th>Armor</th>
-            <th>Key Strength</th>
-        </tr>
-
-    </thead>
-
-    <tbody>
-
-        <tr>
-
-            <td><strong>Fighter</strong></td>
-
-            <td>
-                Martial combatant
-            </td>
-
-            <td>
-                2
-            </td>
-
-            <td>
-                All
-            </td>
-
-            <td>
-                Weapons, armor, resource recovery
-            </td>
-
-        </tr>
-
-
-        <tr>
-
-            <td><strong>Rogue</strong></td>
-
-            <td>
-                Skirmisher / Specialist
-            </td>
-
-            <td>
-                2
-            </td>
-
-            <td>
-                Light
-            </td>
-
-            <td>
-                Skills, Expertise, precision
-            </td>
-
-        </tr>
-
-
-        <tr>
-
-            <td><strong>Cleric</strong></td>
-
-            <td>
-                Divine support / Spellcaster
-            </td>
-
-            <td>
-                2
-            </td>
-
-            <td>
-                Light, Medium, Shield
-            </td>
-
-            <td>
-                Healing, support, Divine magic
-            </td>
-
-        </tr>
-
-
-        <tr>
-
-            <td><strong>Wizard</strong></td>
-
-            <td>
-                Arcane spellcaster
-            </td>
-
-            <td>
-                2
-            </td>
-
-            <td>
-                None by class
-            </td>
-
-            <td>
-                Spell selection and magical versatility
-            </td>
-
-        </tr>
-
-    </tbody>
-
-</table>
-
-
-</section>
-
-<!-- =========================================================
-     CLASS DESIGN PHILOSOPHY
-     ========================================================= -->
-
-<section id="class-design" class="rule-section">
-
-
-<div class="section-heading">
-    <span class="section-number">IX</span>
-    <h2>Class Design Philosophy</h2>
-</div>
-
-<p>
-    The four classes are intentionally asymmetrical. They should
-    not simply be four different ways of performing the same
-    actions.
-</p>
-
-<ul>
-
-    <li>
-        <strong>Fighter</strong> should excel at direct combat,
-        equipment flexibility, and recovering combat resources.
-    </li>
-
-    <li>
-        <strong>Rogue</strong> should excel at skills, Expertise,
-        positioning, stealth, and high-value attacks.
-    </li>
-
-    <li>
-        <strong>Cleric</strong> should excel at healing, support,
-        protection, and reliable access to Divine magic.
-    </li>
-
-    <li>
-        <strong>Wizard</strong> should excel at magical flexibility,
-        spell selection, and adapting their capabilities to the
-        situation.
-    </li>
-
-</ul>
-
-<div class="rule-callout">
-
-    <strong>Asymmetrical Growth</strong>
-
-    <p>
-        Class balance does not require every class to receive the
-        same number or type of abilities. Instead, each class
-        should have a distinct way of converting cards into
-        meaningful actions.
-    </p>
-
-</div>
-
-
-</section>
-
-<!-- =========================================================
-     CLASS / CARD INTERACTION
-     ========================================================= -->
-
-<section id="card-interaction" class="rule-section">
-
-
-<div class="section-heading">
-    <span class="section-number">X</span>
-    <h2>Classes and the Card Economy</h2>
-</div>
-
-<p>
-    Every class uses the same fundamental card economy, but class
-    features manipulate that economy differently.
-</p>
-
-<table class="rules-table">
-
-    <thead>
-
-        <tr>
-            <th>Class</th>
-            <th>Card Economy Identity</th>
-        </tr>
-
-    </thead>
-
-    <tbody>
-
-        <tr>
-
-            <td><strong>Fighter</strong></td>
-
-            <td>
-                Can recover cards and convert face cards into
-                additional opportunities through Action Surge.
-            </td>
-
-        </tr>
-
-
-        <tr>
-
-            <td><strong>Rogue</strong></td>
-
-            <td>
-                Uses cards for precise attacks and skill
-                specialization.
-            </td>
-
-        </tr>
-
-
-        <tr>
-
-            <td><strong>Cleric</strong></td>
-
-            <td>
-                Converts Hearts into healing, protection, and
-                Divine magic.
-            </td>
-
-        </tr>
-
-
-        <tr>
-
-            <td><strong>Wizard</strong></td>
-
-            <td>
-                Burns cards as a limited magical resource and
-                benefits strongly from managing Resonant suits.
-            </td>
-
-        </tr>
-
-    </tbody>
-
-</table>
-
-
-</section>
-
-<!-- =========================================================
-     OPEN DESIGN QUESTIONS
-     ========================================================= -->
-
-<section id="class-playtest" class="rule-section">
-
-
-<div class="section-heading">
-    <span class="section-number">XI</span>
-    <h2>Class Playtest Questions</h2>
-</div>
-
-<ul>
-
-    <li>
-        Does each class feel meaningfully different after only
-        one or two sessions?
-    </li>
-
-    <li>
-        Is Fighter's universal weapon and armor proficiency too
-        broad compared with the other classes?
-    </li>
-
-    <li>
-        Does Action Surge create enough excitement to justify
-        requiring a face card?
-    </li>
-
-    <li>
-        Does Rogue's Expertise create a sufficiently noticeable
-        advantage over normal proficiency?
-    </li>
-
-    <li>
-        Does Hide require additional rules for defining when a
-        character is Hidden?
-    </li>
-
-    <li>
-        Is Cleric's automatic access to entire spell tiers too
-        powerful compared with the Wizard's individual spell
-        learning?
-    </li>
-
-    <li>
-        Should Wizards eventually gain access to Tier 4 and Tier 5
-        spells through later Feat Points rather than normal class
-        progression?
-    </li>
-
-    <li>
-        Are the four classes sufficiently distinct without
-        subclasses?
-    </li>
-
-    <li>
-        Do subclass features provide enough room for two characters
-        of the same class to develop differently?
-    </li>
-
-    <li>
-        Does the Level 5 cap provide enough class progression before
-        characters transition entirely to Feat Points?
-    </li>
-
-</ul>
-
-
-</section>
 
 </main>
 
 <!-- =========================================================
-     FOOTER
+     SHARED FOOTER
      ========================================================= -->
 
-<footer class="site-footer">
 <iframe
     src="footer.html"
     class="site-footer-frame"
-    title="Realm & Rune navigation">
+    title="Realm & Rune footer">
 </iframe>
-</footer>
 
 </body>
+
 </html>
