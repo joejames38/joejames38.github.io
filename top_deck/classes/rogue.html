@@ -1,0 +1,1199 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0">
+
+<title>Realm &amp; Rune — Rogue</title>
+
+<link rel="stylesheet"
+      href="../realm-and-rune.css">
+
+
+<style>
+
+    /*
+     * =====================================================
+     * CLASS PAGE
+     * =====================================================
+     */
+
+    .site-header-frame,
+    .site-footer-frame {
+
+        display: block;
+
+        width: 100%;
+
+        border: none;
+
+    }
+
+    .class-title {
+        margin-bottom: 0.5rem;
+    }
+
+
+    .class-subtitle {
+
+        font-style: italic;
+
+        margin-bottom: 2rem;
+
+    }
+
+
+    .class-summary {
+
+        display: grid;
+
+        grid-template-columns:
+            repeat(auto-fit, minmax(180px, 1fr));
+
+        gap: 1rem;
+
+        margin: 1.5rem 0;
+
+    }
+
+
+    .summary-box {
+
+        border: 1px solid
+            var(--border-color, #777);
+
+        padding: 1rem;
+
+        border-radius: 6px;
+
+        background:
+            var(--panel-background,
+            rgba(0, 0, 0, 0.03));
+
+    }
+
+
+    .summary-box strong {
+
+        display: block;
+
+        margin-bottom: 0.25rem;
+
+    }
+
+
+    .level-table {
+
+        width: 100%;
+
+        border-collapse: collapse;
+
+        margin: 1.5rem 0;
+
+    }
+
+
+    .level-table th,
+    .level-table td {
+
+        border: 1px solid
+            var(--border-color, #777);
+
+        padding: 0.75rem;
+
+        vertical-align: top;
+
+        text-align: left;
+
+    }
+
+
+    .level-table th {
+
+        font-weight: bold;
+
+    }
+
+
+    .subclass-grid {
+
+        display: grid;
+
+        grid-template-columns:
+            repeat(auto-fit, minmax(320px, 1fr));
+
+        gap: 1.5rem;
+
+        margin-top: 1.5rem;
+
+    }
+
+
+    .subclass-card {
+
+        border: 1px solid
+            var(--border-color, #777);
+
+        border-radius: 6px;
+
+        padding: 1.25rem;
+
+    }
+
+
+    .subclass-card h3 {
+
+        margin-top: 0;
+
+    }
+
+
+    .subclass-feature {
+
+        margin-bottom: 1.25rem;
+
+    }
+
+
+    .subclass-feature h4 {
+
+        margin-bottom: 0.25rem;
+
+    }
+
+
+    .class-note {
+
+        border-left: 4px solid
+            var(--border-color, #777);
+
+        padding: 0.75rem 1rem;
+
+        margin: 1rem 0;
+
+    }
+
+
+    .feat-list {
+
+        display: grid;
+
+        grid-template-columns:
+            repeat(auto-fit, minmax(280px, 1fr));
+
+        gap: 1rem;
+
+    }
+
+
+    .feat-card {
+
+        border: 1px solid
+            var(--border-color, #777);
+
+        padding: 1rem;
+
+        border-radius: 6px;
+
+    }
+
+
+    .feat-card h4 {
+
+        margin-top: 0;
+
+        margin-bottom: 0.5rem;
+
+    }
+
+
+    @media print {
+
+        .subclass-card,
+        .feat-card {
+
+            break-inside: avoid;
+
+        }
+
+    }
+
+</style>
+
+
+</head>
+
+<body>
+<header class="site-header">
+    <div class="header-inner">
+        <div class="game-title">Realm & Rune</div>
+        <div class="game-subtitle">Rogue</div>
+    </div>
+</header>
+<!-- =========================================================
+     SHARED HEADER
+     ========================================================= -->
+
+<iframe
+    src="../header.html"
+    class="site-header-frame"
+    title="Realm & Rune navigation">
+</iframe>
+
+<main class="page-container">
+
+
+<!-- =====================================================
+     CLASS INTRODUCTION
+     ===================================================== -->
+
+<section class="rule-section">
+
+    <h1 class="class-title">
+        Rogue
+    </h1>
+
+    <p class="class-subtitle">
+        Agile specialists who rely on precision, deception,
+        positioning, and opportunistic attacks.
+    </p>
+
+
+    <div class="class-summary">
+
+        <div class="summary-box">
+
+            <strong>Primary Attribute</strong>
+
+            Dexterity
+
+        </div>
+
+
+        <div class="summary-box">
+
+            <strong>Resonant Suit</strong>
+
+            Clubs
+
+        </div>
+
+
+        <div class="summary-box">
+
+            <strong>Armor</strong>
+
+            Light Armor
+
+        </div>
+
+
+        <div class="summary-box">
+
+            <strong>Weapons</strong>
+
+            Club Weapons
+
+        </div>
+
+
+        <div class="summary-box">
+
+            <strong>Role</strong>
+
+            Striker / Specialist
+
+        </div>
+
+    </div>
+
+
+    <p>
+
+        Rogues are specialists in precision, mobility,
+        deception, and exploiting weaknesses.
+
+        They are particularly effective when they can choose
+        the time and place of an engagement.
+
+    </p>
+
+
+    <div class="rule-callout">
+
+        <strong>Rogue Identity</strong>
+
+        <p>
+
+            Rogues are not simply weaker fighters.
+
+            Their strength comes from choosing advantageous
+            situations, exploiting enemy weaknesses, and
+            turning a small number of cards into highly
+            effective actions.
+
+        </p>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     PROFICIENCIES
+     ===================================================== -->
+
+<section class="rule-section">
+
+    <div class="section-heading">
+
+        <span class="section-number">I</span>
+
+        <h2>Starting Proficiencies</h2>
+
+    </div>
+
+
+    <ul>
+
+        <li>
+            <strong>Weapons:</strong>
+            Club weapons
+        </li>
+
+        <li>
+            <strong>Armor:</strong>
+            Light Armor
+        </li>
+
+        <li>
+            <strong>Skills:</strong>
+            Choose any 3 skills
+        </li>
+
+        <li>
+            <strong>Expertise:</strong>
+            Choose 1 proficient skill
+        </li>
+
+    </ul>
+
+
+    <p>
+
+        Rogues excel at skills and gain more initial skill
+        proficiencies than most classes.
+
+    </p>
+
+</section>
+
+
+
+<!-- =====================================================
+     CLASS LEVEL PROGRESSION
+     ===================================================== -->
+
+<section class="rule-section">
+
+    <div class="section-heading">
+
+        <span class="section-number">II</span>
+
+        <h2>Rogue Level Progression</h2>
+
+    </div>
+
+
+    <p>
+
+        Characters reach a maximum level of 5.
+
+        Further development comes through Feat Points,
+        equipment, and other campaign rewards.
+
+    </p>
+
+
+    <table class="level-table">
+
+        <thead>
+
+            <tr>
+
+                <th>Level</th>
+
+                <th>HP</th>
+
+                <th>Hand Size</th>
+
+                <th>Features</th>
+
+            </tr>
+
+        </thead>
+
+
+        <tbody>
+
+            <tr>
+
+                <td><strong>1</strong></td>
+
+                <td>+1</td>
+
+                <td>2</td>
+
+                <td>
+
+                    Gain proficiency with Club weapons.<br>
+
+                    Gain proficiency with Light Armor.<br>
+
+                    Gain proficiency in any 3 skills.<br>
+
+                    Gain Expertise in 1 skill.<br>
+
+                    Gain Backstab.
+
+                </td>
+
+            </tr>
+
+
+            <tr>
+
+                <td><strong>2</strong></td>
+
+                <td>+1</td>
+
+                <td>2</td>
+
+                <td>
+
+                    Choose a Rogue subclass feature.
+
+                </td>
+
+            </tr>
+
+
+            <tr>
+
+                <td><strong>3</strong></td>
+
+                <td>+1</td>
+
+                <td>3</td>
+
+                <td>
+
+                    Gain Hide.
+
+                </td>
+
+            </tr>
+
+
+            <tr>
+
+                <td><strong>4</strong></td>
+
+                <td>+1</td>
+
+                <td>3</td>
+
+                <td>
+
+                    Choose a Rogue subclass feature.
+
+                </td>
+
+            </tr>
+
+
+            <tr>
+
+                <td><strong>5</strong></td>
+
+                <td>+1</td>
+
+                <td>4</td>
+
+                <td>
+
+                    Increase one Core Attribute by +1.
+
+                </td>
+
+            </tr>
+
+        </tbody>
+
+    </table>
+
+</section>
+
+
+
+<!-- =====================================================
+     ROGUE CORE FEATURES
+     ===================================================== -->
+
+<section class="rule-section">
+
+    <div class="section-heading">
+
+        <span class="section-number">III</span>
+
+        <h2>Rogue Features</h2>
+
+    </div>
+
+
+    <div class="class-note">
+
+        <strong>Backstab</strong>
+
+        <p>
+
+            Play a Club to make a Backstab attack.
+
+            If the attack hits, deal 2 HP damage.
+
+            If the card played is a face card, deal an
+            additional 1 HP damage.
+
+        </p>
+
+        <p>
+
+            Backstab represents the Rogue's ability to exploit
+            an opening rather than simply making a stronger
+            version of a normal attack.
+
+        </p>
+
+    </div>
+
+
+    <div class="class-note">
+
+        <strong>Hide</strong>
+
+        <p>
+
+            Discard a card to attempt to hide.
+
+            Make an appropriate Dexterity-based check,
+            normally using Stealth.
+
+        </p>
+
+        <p>
+
+            The GM determines whether the environment
+            provides enough cover, concealment, darkness,
+            or distraction to allow the attempt.
+
+        </p>
+
+    </div>
+
+
+    <div class="rule-callout">
+
+        <strong>Rogue Expertise</strong>
+
+        <p>
+
+            When making a skill check in a skill in which
+            you have Expertise, draw one card and play up to
+            two cards from your hand.
+
+        </p>
+
+        <p>
+
+            If you play two cards, the second card must share
+            the suit affinity of the skill.
+
+            Add both card values together, then add the
+            appropriate Core Attribute modifier.
+
+        </p>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     ASSASSIN
+     ===================================================== -->
+
+<section class="rule-section">
+
+    <div class="section-heading">
+
+        <span class="section-number">IV</span>
+
+        <h2>Assassin</h2>
+
+    </div>
+
+
+    <p>
+
+        Assassins specialize in choosing the right moment to
+        strike.
+
+        They use stealth, surprise, and preparation to deliver
+        devastating opening attacks before an enemy can react.
+
+    </p>
+
+
+    <div class="class-note">
+
+        <strong>Play Style:</strong>
+
+        Stealth, ambushes, first-turn burst damage,
+        target selection, and rapid elimination of dangerous
+        enemies.
+
+    </div>
+
+
+    <div class="subclass-grid">
+
+
+        <div class="subclass-card">
+
+            <h3>
+                Assassin Features
+            </h3>
+
+
+            <div class="subclass-feature">
+
+                <h4>Ambush</h4>
+
+                <p>
+
+                    During the first round of combat, your
+                    first successful attack against a creature
+                    that has not yet acted deals +1 damage.
+
+                </p>
+
+            </div>
+
+
+            <div class="subclass-feature">
+
+                <h4>Deadly Opening</h4>
+
+                <p>
+
+                    When you successfully attack a creature
+                    while hidden, you may burn a second Club
+                    to deal +2 damage.
+
+                </p>
+
+            </div>
+
+
+            <div class="subclass-feature">
+
+                <h4>Executioner</h4>
+
+                <p>
+
+                    When attacking an enemy with 2 HP or less,
+                    deal +1 damage on a successful attack.
+
+                </p>
+
+            </div>
+
+
+            <div class="subclass-feature">
+
+                <h4>Vanish</h4>
+
+                <p>
+
+                    After reducing an enemy to 0 HP, you may
+                    immediately discard a card to attempt to
+                    Hide.
+
+                </p>
+
+            </div>
+
+
+            <div class="subclass-feature">
+
+                <h4>Silent Step</h4>
+
+                <p>
+
+                    You gain advantage on Stealth checks made
+                    to move without being detected.
+
+                </p>
+
+            </div>
+
+
+            <div class="subclass-feature">
+
+                <h4>Marked Target</h4>
+
+                <p>
+
+                    At the beginning of combat, choose one
+                    enemy you can see.
+
+                    Your first successful attack against that
+                    enemy deals +1 damage.
+
+                </p>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     MASTERMIND
+     ===================================================== -->
+
+<section class="rule-section">
+
+    <div class="section-heading">
+
+        <span class="section-number">V</span>
+
+        <h2>Mastermind</h2>
+
+    </div>
+
+
+    <p>
+
+        Masterminds turn information into battlefield
+        advantage.
+
+        Rather than relying exclusively on personal damage,
+        they coordinate allies, expose weaknesses, and
+        manipulate enemies into making mistakes.
+
+    </p>
+
+
+    <div class="class-note">
+
+        <strong>Play Style:</strong>
+
+        Battlefield support, enemy debuffs, information,
+        tactical coordination, and resource manipulation.
+
+    </div>
+
+
+    <div class="subclass-grid">
+
+
+        <div class="subclass-card">
+
+            <h3>
+                Mastermind Features
+            </h3>
+
+
+            <div class="subclass-feature">
+
+                <h4>Analyze Target</h4>
+
+                <p>
+
+                    Play a Diamond or Club and study an enemy.
+
+                    Until the beginning of your next turn,
+                    the next ally to attack that enemy gains
+                    +1 to their attack check.
+
+                </p>
+
+            </div>
+
+
+            <div class="subclass-feature">
+
+                <h4>Coordinated Strike</h4>
+
+                <p>
+
+                    When an ally attacks an enemy you have
+                    analyzed, you may burn a card to allow
+                    that ally to draw one additional card
+                    for the attack.
+
+                </p>
+
+            </div>
+
+
+            <div class="subclass-feature">
+
+                <h4>Exploit Weakness</h4>
+
+                <p>
+
+                    When you successfully identify an enemy's
+                    weakness, choose one ally.
+
+                    That ally deals +1 damage the next time
+                    they exploit that weakness.
+
+                </p>
+
+            </div>
+
+
+            <div class="subclass-feature">
+
+                <h4>Distracting Feint</h4>
+
+                <p>
+
+                    Play a Club to distract an enemy.
+
+                    Until the beginning of your next turn,
+                    that enemy suffers -1 to its next attack
+                    against a target other than you.
+
+                </p>
+
+            </div>
+
+
+            <div class="subclass-feature">
+
+                <h4>Commanding Presence</h4>
+
+                <p>
+
+                    When you use Rallying Cry, one affected
+                    ally may draw one additional card.
+
+                </p>
+
+            </div>
+
+
+            <div class="subclass-feature">
+
+                <h4>Calculated Retreat</h4>
+
+                <p>
+
+                    When an ally within Near range is hit,
+                    you may burn a card to allow that ally
+                    to immediately move Close range without
+                    provoking an additional attack.
+
+                </p>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     ROGUE FEATS
+     ===================================================== -->
+
+<section class="rule-section">
+
+    <div class="section-heading">
+
+        <span class="section-number">VI</span>
+
+        <h2>Rogue Feats</h2>
+
+    </div>
+
+
+    <p>
+
+        These feats support continued development of Rogue
+        characters after reaching level 5.
+
+    </p>
+
+
+    <div class="feat-list">
+
+
+        <article class="feat-card">
+
+            <h4>
+                Improved Backstab
+            </h4>
+
+            <p>
+                <strong>Cost:</strong>
+                2 Feat Points
+            </p>
+
+            <p>
+                <strong>Prerequisite:</strong>
+                Rogue
+            </p>
+
+            <p>
+
+                Your Backstab deals +1 additional damage when
+                the attack card is a face card.
+
+            </p>
+
+        </article>
+
+
+        <article class="feat-card">
+
+            <h4>
+                Shadow Step
+            </h4>
+
+            <p>
+                <strong>Cost:</strong>
+                3 Feat Points
+            </p>
+
+            <p>
+                <strong>Prerequisite:</strong>
+                Rogue, Stealth proficiency
+            </p>
+
+            <p>
+
+                After successfully hiding, you may move
+                immediately without breaking Hide until
+                you attack or take an obviously hostile action.
+
+            </p>
+
+        </article>
+
+
+        <article class="feat-card">
+
+            <h4>
+                Opportunist
+            </h4>
+
+            <p>
+                <strong>Cost:</strong>
+                2 Feat Points
+            </p>
+
+            <p>
+                <strong>Prerequisite:</strong>
+                Rogue
+            </p>
+
+            <p>
+
+                Once per round, when an enemy becomes
+                vulnerable because of another character's
+                action, you may draw one card.
+
+            </p>
+
+        </article>
+
+
+        <article class="feat-card">
+
+            <h4>
+                Master of Disguise
+            </h4>
+
+            <p>
+                <strong>Cost:</strong>
+                2 Feat Points
+            </p>
+
+            <p>
+                <strong>Prerequisite:</strong>
+                Rogue
+            </p>
+
+            <p>
+
+                Gain proficiency in Deception.
+
+                When creating a mundane disguise, you may
+                make a Deception check instead of relying
+                on equipment or a disguise kit.
+
+            </p>
+
+        </article>
+
+
+        <article class="feat-card">
+
+            <h4>
+                Tactical Assessment
+            </h4>
+
+            <p>
+                <strong>Cost:</strong>
+                2 Feat Points
+            </p>
+
+            <p>
+                <strong>Prerequisite:</strong>
+                Mastermind
+            </p>
+
+            <p>
+
+                When you successfully analyze an enemy,
+                you may also determine which of its known
+                attacks deals the most damage.
+
+            </p>
+
+        </article>
+
+
+        <article class="feat-card">
+
+            <h4>
+                Deadly Precision
+            </h4>
+
+            <p>
+                <strong>Cost:</strong>
+                3 Feat Points
+            </p>
+
+            <p>
+                <strong>Prerequisite:</strong>
+                Assassin
+            </p>
+
+            <p>
+
+                Once per scene, when you successfully hit
+                an enemy from Hide, treat the attack card
+                as a face card for determining additional
+                damage.
+
+            </p>
+
+        </article>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     PLAYTEST NOTES
+     ===================================================== -->
+
+<section class="rule-section">
+
+    <div class="section-heading">
+
+        <span class="section-number">VII</span>
+
+        <h2>Playtest Notes</h2>
+
+    </div>
+
+
+    <p>
+
+        The Assassin and Mastermind intentionally approach
+        the Rogue's core mechanics from opposite directions.
+
+        The Assassin converts positioning and stealth into
+        personal burst damage.
+
+        The Mastermind converts information and cards into
+        advantages for the entire party.
+
+    </p>
+
+
+    <p>
+
+        Assassin burst damage should be monitored carefully
+        during playtesting because the card system already
+        allows players to spend their entire hand in a single
+        turn.
+
+    </p>
+
+
+    <p>
+
+        Mastermind abilities should be monitored for
+        excessive card generation.
+
+        Drawing additional cards is particularly valuable
+        because cards represent both actions and future
+        resource availability.
+
+    </p>
+
+</section>
+
+
+</main>
+
+<!-- =========================================================
+     SHARED FOOTER
+     ========================================================= -->
+
+<iframe
+    src="../footer.html"
+    class="site-footer-frame"
+    title="Realm & Rune footer">
+</iframe>
+
+</body>
+
+</html>

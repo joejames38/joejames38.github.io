@@ -11,7 +11,7 @@ body{margin:0;background:#ddd;color:#17130e;font-family:Georgia,"Times New Roman
 .sheet{width:350mm;min-height:210mm;margin:auto;padding:5mm;background:#f7f0df;
 background-image:radial-gradient(#d8c9aa55 1px,transparent 1px);background-size:5px 5px}
 h1,h2,h3{margin:0;text-align:center;font-variant:small-caps}
-h1{font-size:25pt;letter-spacing:2px}.subtitle{text-align:center;font-size:9pt;letter-spacing:3px;margin-bottom:3mm}
+h1{font-size:25pt;letter-spacing:2px}.subtitle{text-align:center;font-size:9pt;letter-spacing:3px;margin-bottom:2mm}
 .grid{display:grid;grid-template-columns:1fr 1.05fr 1fr;gap:3mm}
 .box{border:1.2px solid #34291d;padding:2.5mm;break-inside:avoid}
 .box h2{font-size:11pt;border-bottom:1px solid #806b4d;padding-bottom:1mm;margin-bottom:2mm}
@@ -22,7 +22,7 @@ h1{font-size:25pt;letter-spacing:2px}.subtitle{text-align:center;font-size:9pt;l
 .full{display:block;width:100%;margin:1.3mm 0}.small{font-size:8pt}.tiny{font-size:7pt}
 .attr{display:grid;grid-template-columns:repeat(4,1fr);gap:1.5mm;text-align:center}
 .attr b{font-size:9pt}.score{height:15mm;border:1px solid #4d4030;margin:1mm 0}.mod{font-size:8pt}
-.two{display:grid;grid-template-columns:1fr 1fr;gap:2mm}.shield{font-size:20pt;text-align:center;border:1px solid #4d4030;padding:5mm;margin:2mm auto;width:27mm}
+.two{display:grid;grid-template-columns:repeat(3,1fr) 1fr;gap:2mm}.shield{font-size:14pt;text-align:center;border:1px solid #4d4030;padding:3mm;margin:2mm auto;width:27mm}
 .hp{font-size:9pt}.skill{display:grid;grid-template-columns:5mm 1fr 11mm 32mm;gap:1mm;align-items:end;margin:1.5mm 0}
 .check{width:4mm;height:4mm;border:1px solid #333}.rule{border-bottom:1px solid #74634b;height:6mm}
 .listline{border-bottom:1px solid #74634b;height:6mm;margin:1mm 0}
@@ -43,31 +43,41 @@ table{width:100%;border-collapse:collapse;font-size:7pt}th,td{border-bottom:1px 
 <div>Ancestry: <span class="line" style="min-width:24mm"></span>
 <br> Background: <span class="line" style="min-width:24mm"></span></div>
 <div>Class: <span class="line"></span> Level: <span class="line" style="min-width:12mm"></span></div>
+<div>Subclass: <span class="line"></span></div>
 <div>Feat Points: <span class="line"></span></div>
 <div>Hand Size: <span class="line" style="min-width:15mm"></span></div>
 </div>
 
-<div class="box attributes"><h2>Core Attributes</h2><div class="attr">
+<div class="box attributes"><h2>Core Attributes</h2>
+<div class="attr">
 <div><b>Might</b><div class="score"></div><span class="mod">Modifier</span></div>
 <div><b>Spirit</b><div class="score"></div><span class="mod">Modifier</span></div>
 <div><b>Dexterity</b><div class="score"></div><span class="mod">Modifier</span></div>
 <div><b>Cunning</b><div class="score"></div><span class="mod">Modifier</span></div></div>
-<div class="small">Attribute range: −1 to +3</div></div>
+<div class="small">Attribute range: −1 to +3</div>
+<br>
+<div>Food Buff: <span class="line"></span></div>
+</div>
 
-<div class="box defense"><h2>Defense &amp; Health</h2><div class="two"><div class="shield">AC<br><span class="small">_____</span></div>
-<div class="tiny"><b>AC:</b><br>Unarmored 5 + Dex<br>Light 6 + Dex<br>Medium 7<br>Heavy 9<br>Shield +1</div></div>
-<div class="hp">MAX HP: <span class="line" style="min-width:18mm"></span> / Current HP: <span class="line" style="min-width:18mm"></span></div>
-<div class="hp">Temp HP ?: <span class="line" style="min-width:40mm"></span></div></div>
+<div class="box defense"><h2>Defense &amp; Health</h2><div class="two">
+<div class="shield">Init<br><br><span class="small">_____</span></div>
+<div class="shield">AC<br><br><span class="small">_____</span></div>
+<div class="shield">MAX HP<br><br><span class="small">_____</span></div>
+<div class="shield">Current<br><br><span class="small">_____</span></div>
+</div>
+<div><b>AC: </b> Unarmored 5 + Dex, Light 6 + Dex, Medium 7, Heavy 9<br>Shield +1</div>
+</div>
+</div>
 
 <div class="box skills"><h2>Skills</h2>
-<div class="tiny"><b>Untrained:</b> Draw 2, use lower + Mod<br><b>Proficient:</b> Draw 1, play 1 hand card + Mod<br><b>Expertise:</b> Draw 1, play up to 2 hand cards; second must match skill suit + Mod</div>
+<div class="tiny"><b>Untrained:</b> Disadvantage + Mod<br><b>Proficient:</b> Play 1 hand card + Mod<br><b>Expertise:</b> Play up to 2 hand cards; second must match skill suit + Mod</div>
 
-<h3 class="small">Might — ♠</h3>
+<h3>Might — ♠</h3>
 <div class="skill"><span class="check"></span><span>Athletics</span><span>P / E</span><span class="rule"></span></div>
 <div class="skill"><span class="check"></span><span>Intimidation</span><span>P / E</span><span class="rule"></span></div>
 <div class="skill"><span class="check"></span><span>Survival</span><span>P / E</span><span class="rule"></span></div>
 
-<h3 class="small">Spirit — ♥</h3>
+<h3>Spirit — ♥</h3>
 <div class="skill"><span class="check"></span><span>Animal Handling</span><span>P / E</span><span class="rule"></span></div>
 <div class="skill"><span class="check"></span><span>Deception</span><span>P / E</span><span class="rule"></span></div>
 <div class="skill"><span class="check"></span><span>Insight</span><span>P / E</span><span class="rule"></span></div>
@@ -75,12 +85,12 @@ table{width:100%;border-collapse:collapse;font-size:7pt}th,td{border-bottom:1px 
 <div class="skill"><span class="check"></span><span>Persuasion</span><span>P / E</span><span class="rule"></span></div>
 <div class="skill"><span class="check"></span><span>Religion / Occult</span><span>P / E</span><span class="rule"></span></div>
 
-<h3 class="small">Dexterity — ♣</h3>
+<h3>Dexterity — ♣</h3>
 <div class="skill"><span class="check"></span><span>Acrobatics</span><span>P / E</span><span class="rule"></span></div>
 <div class="skill"><span class="check"></span><span>Sleight of Hand</span><span>P / E</span><span class="rule"></span></div>
 <div class="skill"><span class="check"></span><span>Stealth</span><span>P / E</span><span class="rule"></span></div>
 
-<h3 class="small">Cunning — ♦</h3>
+<h3>Cunning — ♦</h3>
 <div class="skill"><span class="check"></span><span>Arcana</span><span>P / E</span><span class="rule"></span></div>
 <div class="skill"><span class="check"></span><span>History</span><span>P / E</span><span class="rule"></span></div>
 <div class="skill"><span class="check"></span><span>Investigation</span><span>P / E</span><span class="rule"></span></div>
@@ -99,7 +109,7 @@ table{width:100%;border-collapse:collapse;font-size:7pt}th,td{border-bottom:1px 
 <div class="listline"></div>
 
 <br>
-<h2>Notes</h2><div class="listline"></div><div class="listline"></div><div class="listline"></div><div class="listline"></div>
+<h2>Proficiencies &amp; Notes</h2><div class="listline"></div><div class="listline"></div><div class="listline"></div><div class="listline"></div> Languages: <div class="listline"></div>
 <br>
 
 <h2>Equipment &amp; Gear</h2><div class="listline"></div><div class="listline"></div><div class="listline"></div><div class="listline"></div><div class="listline"></div><div class="listline"></div><div class="listline"></div><div class="listline"></div><div class="listline"></div><div class="listline"></div>
@@ -110,7 +120,7 @@ table{width:100%;border-collapse:collapse;font-size:7pt}th,td{border-bottom:1px 
 <h2>Class Features</h2><div class="listline"></div><div class="listline"></div><div class="listline"></div><div class="listline"></div><div class="listline"></div><div class="listline"></div><div class="listline"></div><div class="listline"></div><div class="listline"></div>
 <br>
 <h2>Spellcasting - Known Spells</h2>
-<div class="listline"></div><div class="listline"></div><div class="listline"></div><div class="listline"></div><div class="listline"></div><div class="listline"></div><div class="listline"></div><div class="listline"></div><div class="listline"></div>
+<div class="listline"></div><div class="listline"></div><div class="listline"></div><div class="listline"></div><div class="listline"></div><div class="listline"></div><div class="listline"></div><div class="listline"></div><div class="listline"></div><div class="listline"></div><div class="listline"></div>
 <h3 class="small">Domains</h3><div class="tiny">♦ Arcane — Diamond &nbsp; ♥ Divine — Heart &nbsp; ♣ Primal — Club &nbsp; ♠ Occult — Spade</div>
 
 </div>

@@ -1,0 +1,1403 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0">
+
+<title>Realm &amp; Rune — Wizard</title>
+
+<link rel="stylesheet"
+      href="../realm-and-rune.css">
+
+
+<style>
+
+    /*
+     * =====================================================
+     * CLASS PAGE
+     * =====================================================
+     */
+
+    .site-header-frame,
+    .site-footer-frame {
+
+        display: block;
+
+        width: 100%;
+
+        border: none;
+
+    }
+
+
+    .class-title {
+        margin-bottom: 0.5rem;
+    }
+
+
+    .class-subtitle {
+
+        font-style: italic;
+
+        margin-bottom: 2rem;
+
+    }
+
+
+    .class-summary {
+
+        display: grid;
+
+        grid-template-columns:
+            repeat(auto-fit, minmax(180px, 1fr));
+
+        gap: 1rem;
+
+        margin: 1.5rem 0;
+
+    }
+
+
+    .summary-box {
+
+        border: 1px solid
+            var(--border-color, #777);
+
+        padding: 1rem;
+
+        border-radius: 6px;
+
+        background:
+            var(--panel-background,
+            rgba(0, 0, 0, 0.03));
+
+    }
+
+
+    .summary-box strong {
+
+        display: block;
+
+        margin-bottom: 0.25rem;
+
+    }
+
+
+    .level-table {
+
+        width: 100%;
+
+        border-collapse: collapse;
+
+        margin: 1.5rem 0;
+
+    }
+
+
+    .level-table th,
+    .level-table td {
+
+        border: 1px solid
+            var(--border-color, #777);
+
+        padding: 0.75rem;
+
+        vertical-align: top;
+
+        text-align: left;
+
+    }
+
+
+    .level-table th {
+
+        font-weight: bold;
+
+    }
+
+
+    .subclass-grid {
+
+        display: grid;
+
+        grid-template-columns:
+            repeat(auto-fit, minmax(320px, 1fr));
+
+        gap: 1.5rem;
+
+        margin-top: 1.5rem;
+
+    }
+
+
+    .subclass-card {
+
+        border: 1px solid
+            var(--border-color, #777);
+
+        border-radius: 6px;
+
+        padding: 1.25rem;
+
+    }
+
+
+    .subclass-card h3 {
+
+        margin-top: 0;
+
+    }
+
+
+    .subclass-feature {
+
+        margin-bottom: 1.25rem;
+
+    }
+
+
+    .subclass-feature h4 {
+
+        margin-bottom: 0.25rem;
+
+    }
+
+
+    .spellbook-rule {
+
+        border-left: 4px solid
+            var(--border-color, #777);
+
+        padding: 0.75rem 1rem;
+
+        margin: 1rem 0;
+
+    }
+
+
+    .feat-list {
+
+        display: grid;
+
+        grid-template-columns:
+            repeat(auto-fit, minmax(280px, 1fr));
+
+        gap: 1rem;
+
+    }
+
+
+    .feat-card {
+
+        border: 1px solid
+            var(--border-color, #777);
+
+        padding: 1rem;
+
+        border-radius: 6px;
+
+    }
+
+
+    .feat-card h4 {
+
+        margin-top: 0;
+
+    }
+
+
+    @media print {
+
+        .subclass-card,
+        .feat-card,
+        .spellbook-rule {
+
+            break-inside: avoid;
+
+        }
+
+    }
+
+</style>
+
+
+</head>
+
+<body>
+<header class="site-header">
+    <div class="header-inner">
+        <div class="game-title">Realm & Rune</div>
+        <div class="game-subtitle">Wizard</div>
+    </div>
+</header>
+<!-- =========================================================
+     SHARED HEADER
+     ========================================================= -->
+
+<iframe
+    src="../header.html"
+    class="site-header-frame"
+    title="Realm & Rune navigation">
+</iframe>
+
+<main class="page-container">
+
+
+<!-- =====================================================
+     CLASS INTRODUCTION
+     ===================================================== -->
+
+<section class="rule-section">
+
+    <h1 class="class-title">
+        Wizard
+    </h1>
+
+    <p class="class-subtitle">
+        Arcane scholars who manipulate magic through study,
+        preparation, and mastery of the spellbook.
+    </p>
+
+
+    <div class="class-summary">
+
+        <div class="summary-box">
+
+            <strong>Primary Attribute</strong>
+
+            Cunning
+
+        </div>
+
+
+        <div class="summary-box">
+
+            <strong>Resonant Suit</strong>
+
+            Diamonds
+
+        </div>
+
+
+        <div class="summary-box">
+
+            <strong>Armor</strong>
+
+            None
+
+        </div>
+
+
+        <div class="summary-box">
+
+            <strong>Weapons</strong>
+
+            None
+
+        </div>
+
+
+        <div class="summary-box">
+
+            <strong>Spell Tradition</strong>
+
+            Arcane
+
+        </div>
+
+    </div>
+
+
+    <p>
+
+        Wizards manipulate the fundamental forces of magic
+        through knowledge and careful preparation. Their
+        spellbooks allow them to accumulate a broad collection
+        of spells and prepare for different challenges.
+
+    </p>
+
+
+    <div class="rule-callout">
+
+        <strong>Wizard Identity</strong>
+
+        <p>
+
+            Wizards are flexible arcane spellcasters. Their
+            greatest strength is not a single powerful ability,
+            but the breadth of magical tools they can collect
+            and bring into an adventure.
+
+        </p>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     PROFICIENCIES
+     ===================================================== -->
+
+<section class="rule-section">
+
+    <div class="section-heading">
+
+        <span class="section-number">I</span>
+
+        <h2>Starting Proficiencies</h2>
+
+    </div>
+
+
+    <ul>
+
+        <li>
+            <strong>Weapons:</strong>
+            None
+        </li>
+
+        <li>
+            <strong>Armor:</strong>
+            None
+        </li>
+
+        <li>
+            <strong>Skills:</strong>
+            Choose any 2 skills
+        </li>
+
+        <li>
+            <strong>Magic:</strong>
+            Arcane spellcasting
+        </li>
+
+    </ul>
+
+
+    <p>
+
+        A Wizard without armor or weapon proficiency is
+        expected to rely on positioning, defensive magic,
+        allies, and clever use of their spellbook.
+
+    </p>
+
+</section>
+
+
+
+<!-- =====================================================
+     CLASS LEVEL PROGRESSION
+     ===================================================== -->
+
+<section class="rule-section">
+
+    <div class="section-heading">
+
+        <span class="section-number">II</span>
+
+        <h2>Wizard Level Progression</h2>
+
+    </div>
+
+
+    <p>
+
+        Characters reach a maximum level of 5.
+        Further development comes through Feat Points,
+        equipment, discoveries, and other campaign rewards.
+
+    </p>
+
+
+    <table class="level-table">
+
+        <thead>
+
+            <tr>
+
+                <th>Level</th>
+
+                <th>HP</th>
+
+                <th>Hand Size</th>
+
+                <th>Features</th>
+
+            </tr>
+
+        </thead>
+
+
+        <tbody>
+
+            <tr>
+
+                <td><strong>1</strong></td>
+
+                <td>+1</td>
+
+                <td>2</td>
+
+                <td>
+
+                    Gain proficiency in any 2 skills.<br><br>
+
+                    Learn 3 Tier 0 Arcane spells.<br>
+
+                    Learn 3 Tier 1 Arcane spells.<br><br>
+
+                    Gain Arcane Spellbook.
+
+                </td>
+
+            </tr>
+
+
+            <tr>
+
+                <td><strong>2</strong></td>
+
+                <td>+1</td>
+
+                <td>2</td>
+
+                <td>
+
+                    Choose a Wizard subclass feature.<br><br>
+
+                    Learn 1 additional Arcane spell that
+                    you have access to.
+
+                </td>
+
+            </tr>
+
+
+            <tr>
+
+                <td><strong>3</strong></td>
+
+                <td>+1</td>
+
+                <td>3</td>
+
+                <td>
+
+                    Gain access to Tier 2 Arcane spells.<br><br>
+
+                    Learn 1 additional Arcane spell that
+                    you have access to.
+
+                </td>
+
+            </tr>
+
+
+            <tr>
+
+                <td><strong>4</strong></td>
+
+                <td>+1</td>
+
+                <td>3</td>
+
+                <td>
+
+                    Choose a Wizard subclass feature.<br><br>
+
+                    Learn 1 additional Arcane spell that
+                    you have access to.
+
+                </td>
+
+            </tr>
+
+
+            <tr>
+
+                <td><strong>5</strong></td>
+
+                <td>+1</td>
+
+                <td>4</td>
+
+                <td>
+
+                    Increase one Core Attribute by +1.<br><br>
+
+                    Gain access to Tier 3 Arcane spells.<br><br>
+
+                    Learn 1 additional Arcane spell that
+                    you have access to.
+
+                </td>
+
+            </tr>
+
+        </tbody>
+
+    </table>
+
+
+    <div class="rule-callout">
+
+        <strong>Learning Spells</strong>
+
+        <p>
+
+            A Wizard learns one additional spell whenever
+            they gain a level, provided the spell is of a tier
+            they currently have access to.
+
+        </p>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     SPELLBOOK
+     ===================================================== -->
+
+<section class="rule-section">
+
+    <div class="section-heading">
+
+        <span class="section-number">III</span>
+
+        <h2>The Wizard's Spellbook</h2>
+
+    </div>
+
+
+    <p>
+
+        A Wizard's spellbook is the foundation of their
+        magical practice. Spells recorded in the spellbook
+        can be studied, prepared, and used by the Wizard.
+
+    </p>
+
+
+    <div class="spellbook-rule">
+
+        <strong>Starting Spellbook</strong>
+
+        <p>
+
+            At level 1, a Wizard begins with:
+
+        </p>
+
+        <ul>
+
+            <li>
+                3 Tier 0 Arcane spells
+            </li>
+
+            <li>
+                3 Tier 1 Arcane spells
+            </li>
+
+        </ul>
+
+    </div>
+
+
+    <div class="spellbook-rule">
+
+        <strong>Learning a Spell</strong>
+
+        <p>
+
+            Whenever a Wizard gains a level, they learn
+            one Arcane spell of a tier they currently have
+            access to.
+
+        </p>
+
+        <p>
+
+            The Wizard chooses the spell and records it
+            permanently in their spellbook.
+
+        </p>
+
+    </div>
+
+
+    <div class="spellbook-rule">
+
+        <strong>Copying from a Scroll</strong>
+
+        <p>
+
+            A Wizard may copy a spell from a magical scroll
+            into their spellbook.
+
+        </p>
+
+        <p>
+
+            The process costs
+            <strong>50 gold per spell tier</strong>.
+
+            Tier 0 spells have no copying cost.
+
+        </p>
+
+        <p>
+
+            The scroll is consumed during the copying process.
+
+        </p>
+
+        <ul>
+
+            <li>
+                Tier 0: Free
+            </li>
+
+            <li>
+                Tier 1: 50 gold
+            </li>
+
+            <li>
+                Tier 2: 100 gold
+            </li>
+
+            <li>
+                Tier 3: 150 gold
+            </li>
+
+            <li>
+                Tier 4: 200 gold
+            </li>
+
+            <li>
+                Tier 5: 250 gold
+            </li>
+
+        </ul>
+
+    </div>
+
+
+    <div class="spellbook-rule">
+
+        <strong>Copying from Another Wizard</strong>
+
+        <p>
+
+            A Wizard may copy a spell from another Wizard's
+            spellbook.
+
+        </p>
+
+        <p>
+
+            The same
+            <strong>50 gold per spell tier</strong>
+            cost applies.
+
+        </p>
+
+        <p>
+
+            Unlike copying from a scroll, copying from
+            another spellbook does not consume or damage
+            the original spellbook.
+
+        </p>
+
+    </div>
+
+
+    <div class="rule-callout">
+
+        <strong>Spellbook Expansion</strong>
+
+        <p>
+
+            There is no stated maximum number of spells that
+            can be recorded in a Wizard's spellbook.
+
+            A Wizard who invests time and money into research
+            can therefore become an extremely versatile
+            spellcaster.
+
+        </p>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     ARCANE SPELLCASTING
+     ===================================================== -->
+
+<section class="rule-section">
+
+    <div class="section-heading">
+
+        <span class="section-number">IV</span>
+
+        <h2>Arcane Spellcasting</h2>
+
+    </div>
+
+
+    <p>
+
+        Wizards use <strong>Diamonds</strong> as their
+        resonant suit for Arcane magic.
+
+    </p>
+
+
+    <p>
+
+        When casting a spell during combat, burn the required
+        number of cards.
+
+        The first card contributes to the spell's magic
+        attack check.
+
+    </p>
+
+
+    <p>
+
+        Additional cards used to pay the casting cost do not
+        normally contribute to the attack check.
+
+        However, each additional card matching the spell's
+        resonant suit provides <strong>+1</strong> to the
+        check.
+
+    </p>
+
+
+    <p>
+
+        Spells with the <strong>Channel</strong> property
+        may burn additional resonant cards after the initial
+        casting cost has been paid.
+
+        Channeling increases the spell's effect according
+        to its description.
+
+    </p>
+
+
+    <div class="rule-callout">
+
+        <strong>Wizard Spell Access</strong>
+
+        <p>
+
+            Wizards gain access to:
+
+        </p>
+
+        <ul>
+
+            <li>
+                Tier 0 spells at level 1
+            </li>
+
+            <li>
+                Tier 1 spells at level 1
+            </li>
+
+            <li>
+                Tier 2 spells at level 3
+            </li>
+
+            <li>
+                Tier 3 spells at level 5
+            </li>
+
+        </ul>
+
+        <p>
+
+            Higher-tier spells may be added through future
+            class features, feats, or campaign progression.
+
+        </p>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     EVOKER
+     ===================================================== -->
+
+<section class="rule-section">
+
+    <div class="section-heading">
+
+        <span class="section-number">V</span>
+
+        <h2>Evoker</h2>
+
+    </div>
+
+
+    <p>
+
+        Evokers specialize in direct magical force.
+        They manipulate elemental energy, increase spell
+        damage, and reshape spells to suit the battlefield.
+
+    </p>
+
+
+    <div class="class-note">
+
+        <strong>Play Style:</strong>
+
+        High-impact spells, damage enhancement,
+        elemental manipulation, and battlefield control.
+
+    </div>
+
+
+    <div class="subclass-grid">
+
+
+        <div class="subclass-card">
+
+            <h3>
+                Evoker Features
+            </h3>
+
+
+            <div class="subclass-feature">
+
+                <h4>Elemental Scholar</h4>
+
+                <p>
+
+                    When you learn a damaging Arcane spell,
+                    you may choose its damage type from the
+                    types available to that spell.
+
+                </p>
+
+            </div>
+
+
+            <div class="subclass-feature">
+
+                <h4>Empowered Spell</h4>
+
+                <p>
+
+                    Once per turn when an Arcane spell deals
+                    damage, you may burn an additional Diamond
+                    to deal +1 damage.
+
+                </p>
+
+            </div>
+
+
+            <div class="subclass-feature">
+
+                <h4>Elemental Substitution</h4>
+
+                <p>
+
+                    When casting a damaging spell, you may
+                    change its damage type to another
+                    appropriate elemental type.
+
+                </p>
+
+            </div>
+
+
+            <div class="subclass-feature">
+
+                <h4>Overchannel</h4>
+
+                <p>
+
+                    Once per scene, burn an additional Diamond
+                    when casting a damaging spell to increase
+                    its damage by +2.
+
+                </p>
+
+            </div>
+
+
+            <div class="subclass-feature">
+
+                <h4>Careful Evocation</h4>
+
+                <p>
+
+                    When one of your area spells would damage
+                    an ally, you may exclude one ally from
+                    the effect.
+
+                </p>
+
+            </div>
+
+
+            <div class="subclass-feature">
+
+                <h4>Arcane Momentum</h4>
+
+                <p>
+
+                    When you reduce an enemy to 0 HP with
+                    an Arcane spell, draw one card.
+
+                </p>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     ILLUSIONIST
+     ===================================================== -->
+
+<section class="rule-section">
+
+    <div class="section-heading">
+
+        <span class="section-number">VI</span>
+
+        <h2>Illusionist</h2>
+
+    </div>
+
+
+    <p>
+
+        Illusionists manipulate perception rather than
+        relying solely on raw magical force.
+
+        Their magic creates distractions, false targets,
+        altered appearances, and opportunities for their
+        allies.
+
+    </p>
+
+
+    <div class="class-note">
+
+        <strong>Play Style:</strong>
+
+        Flexible spell management, deception, distraction,
+        battlefield manipulation, and creative problem solving.
+
+    </div>
+
+
+    <div class="subclass-grid">
+
+
+        <div class="subclass-card">
+
+            <h3>
+                Illusionist Features
+            </h3>
+
+
+            <div class="subclass-feature">
+
+                <h4>Flexible Illusion</h4>
+
+                <p>
+
+                    Once per scene, you may describe a minor
+                    alteration to an illusion spell without
+                    changing its mechanical effect.
+
+                </p>
+
+            </div>
+
+
+            <div class="subclass-feature">
+
+                <h4>Phantom Target</h4>
+
+                <p>
+
+                    When you successfully create an illusion
+                    that distracts an enemy, that enemy suffers
+                    a penalty to its next attack against a
+                    target other than the illusion.
+
+                </p>
+
+            </div>
+
+
+            <div class="subclass-feature">
+
+                <h4>False Opening</h4>
+
+                <p>
+
+                    When an enemy is distracted by one of
+                    your illusions, the next ally to attack
+                    that enemy may draw one additional card
+                    for the attack check.
+
+                </p>
+
+            </div>
+
+
+            <div class="subclass-feature">
+
+                <h4>Illusory Escape</h4>
+
+                <p>
+
+                    When targeted by an attack, burn a card
+                    to create a convincing illusion of yourself
+                    somewhere nearby.
+
+                    The attack misses if the GM determines
+                    the illusion could reasonably fool the
+                    attacker.
+
+                </p>
+
+            </div>
+
+
+            <div class="subclass-feature">
+
+                <h4>Borrowed Appearance</h4>
+
+                <p>
+
+                    You may use illusion magic to temporarily
+                    mimic the appearance, clothing, or voice
+                    of another creature.
+
+                </p>
+
+            </div>
+
+
+            <div class="subclass-feature">
+
+                <h4>Spell Mirage</h4>
+
+                <p>
+
+                    Once per scene, when you cast an Arcane
+                    spell, you may create a harmless visual
+                    duplicate of the spell's effect elsewhere
+                    within Near range.
+
+                    The duplicate is purely illusory but may
+                    distract creatures.
+
+                </p>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     WIZARD FEATS
+     ===================================================== -->
+
+<section class="rule-section">
+
+    <div class="section-heading">
+
+        <span class="section-number">VII</span>
+
+        <h2>Wizard Feats</h2>
+
+    </div>
+
+
+    <p>
+
+        These feats support continued development of the
+        Wizard after reaching level 5.
+
+    </p>
+
+
+    <div class="feat-list">
+
+
+        <article class="feat-card">
+
+            <h4>
+                Spellbook Adept
+            </h4>
+
+            <p>
+                <strong>Cost:</strong>
+                2 Feat Points
+            </p>
+
+            <p>
+                <strong>Prerequisite:</strong>
+                Wizard
+            </p>
+
+            <p>
+
+                Reduce the gold cost of copying spells by
+                25%.
+
+            </p>
+
+        </article>
+
+
+        <article class="feat-card">
+
+            <h4>
+                Expanded Spellbook
+            </h4>
+
+            <p>
+                <strong>Cost:</strong>
+                2 Feat Points
+            </p>
+
+            <p>
+                <strong>Prerequisite:</strong>
+                Wizard
+            </p>
+
+            <p>
+
+                Learn two additional Arcane spells that you
+                currently have access to.
+
+            </p>
+
+        </article>
+
+
+        <article class="feat-card">
+
+            <h4>
+                Evocation Mastery
+            </h4>
+
+            <p>
+                <strong>Cost:</strong>
+                3 Feat Points
+            </p>
+
+            <p>
+                <strong>Prerequisite:</strong>
+                Evoker
+            </p>
+
+            <p>
+
+                Once per turn, when you channel a damaging
+                spell, the first additional Channel card
+                deals +2 damage instead of +1.
+
+            </p>
+
+        </article>
+
+
+        <article class="feat-card">
+
+            <h4>
+                Master of Illusions
+            </h4>
+
+            <p>
+                <strong>Cost:</strong>
+                3 Feat Points
+            </p>
+
+            <p>
+                <strong>Prerequisite:</strong>
+                Illusionist
+            </p>
+
+            <p>
+
+                Once per scene, cast a Tier 1 illusion spell
+                without burning a card.
+
+            </p>
+
+        </article>
+
+
+        <article class="feat-card">
+
+            <h4>
+                Ritualist
+            </h4>
+
+            <p>
+                <strong>Cost:</strong>
+                2 Feat Points
+            </p>
+
+            <p>
+                <strong>Prerequisite:</strong>
+                Wizard
+            </p>
+
+            <p>
+
+                When casting a non-combat spell outside
+                combat, reduce its effective casting cost
+                by 1 card, to a minimum of 0.
+
+            </p>
+
+        </article>
+
+
+        <article class="feat-card">
+
+            <h4>
+                Arcane Reservoir
+            </h4>
+
+            <p>
+                <strong>Cost:</strong>
+                3 Feat Points
+            </p>
+
+            <p>
+                <strong>Prerequisite:</strong>
+                Wizard
+            </p>
+
+            <p>
+
+                Once per short rest, when you burn the last
+                card in your hand to cast a spell, immediately
+                draw one card.
+
+            </p>
+
+        </article>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     PLAYTEST NOTES
+     ===================================================== -->
+
+<section class="rule-section">
+
+    <div class="section-heading">
+
+        <span class="section-number">VIII</span>
+
+        <h2>Playtest Notes</h2>
+
+    </div>
+
+
+    <p>
+
+        The Wizard's spellbook is intended to be one of the
+        major long-term progression systems for the class.
+
+        The absence of a hard spellbook limit allows the
+        Wizard to become increasingly versatile through
+        exploration, treasure, research, and interaction
+        with other spellcasters.
+
+    </p>
+
+
+    <p>
+
+        The cost of copying spells should be monitored during
+        playtesting. The current value is 50 gold per spell
+        tier, with Tier 0 spells being free.
+
+    </p>
+
+
+    <p>
+
+        Evoker and Illusionist are intentionally designed to
+        encourage very different uses of the same spell
+        library.
+
+        Evokers should feel mechanically powerful and direct,
+        while Illusionists should have more freedom to solve
+        encounters creatively.
+
+    </p>
+
+</section>
+
+
+</main>
+
+<!-- =========================================================
+     SHARED FOOTER
+     ========================================================= -->
+
+<iframe
+    src="../footer.html"
+    class="site-footer-frame"
+    title="Realm & Rune footer">
+</iframe>
+
+</body>
+
+</html>
