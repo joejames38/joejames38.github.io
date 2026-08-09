@@ -12,17 +12,48 @@
 
 <title>Realm &amp; Rune — Feats</title>
 
-<!-- Shared stylesheet -->
 <link rel="stylesheet"
       href="realm-and-rune.css">
+
 
 <style>
 
     /*
      * =====================================================
-     * FEATS PAGE
+     * FEAT PAGE
      * =====================================================
      */
+
+    .site-header-frame,
+    .site-footer-frame {
+
+        display: block;
+
+        width: 100%;
+
+        border: none;
+
+    }
+
+    .site-header-frame {
+
+        height: 105px;
+
+    }
+
+    .site-footer-frame {
+
+        height: 120px;
+
+    }
+
+
+    .feat-intro {
+
+        margin-bottom: 2rem;
+
+    }
+
 
     .feat-library {
 
@@ -40,14 +71,16 @@
 
     .feat-card {
 
-        border: 1px solid var(--border-color, #777);
+        border: 1px solid
+            var(--border-color, #777);
 
         padding: 1rem;
 
         border-radius: 6px;
 
         background:
-            var(--panel-background, rgba(0, 0, 0, 0.03));
+            var(--panel-background,
+            rgba(0, 0, 0, 0.03));
 
     }
 
@@ -56,7 +89,7 @@
 
         margin-top: 0;
 
-        margin-bottom: 0.35rem;
+        margin-bottom: 0.5rem;
 
     }
 
@@ -83,18 +116,18 @@
     }
 
 
-    .feat-prerequisite {
+    .feat-type {
 
-        font-style: italic;
+        text-transform: capitalize;
 
     }
 
 
-    .feat-type {
+    .feat-prerequisite {
 
-        font-weight: bold;
+        margin-bottom: 0.75rem;
 
-        text-transform: capitalize;
+        font-style: italic;
 
     }
 
@@ -114,9 +147,7 @@
 
         gap: 0.5rem;
 
-        margin-top: 1rem;
-
-        margin-bottom: 1rem;
+        margin: 1rem 0;
 
     }
 
@@ -125,7 +156,21 @@
 
         cursor: pointer;
 
-        padding: 0.4rem 0.75rem;
+        padding: 0.45rem 0.8rem;
+
+        border: 1px solid
+            var(--border-color, #777);
+
+        background: transparent;
+
+        border-radius: 4px;
+
+    }
+
+
+    .feat-filter button:hover {
+
+        opacity: 0.8;
 
     }
 
@@ -137,11 +182,28 @@
     }
 
 
-    .feat-empty {
+    .feat-status {
 
         padding: 1rem;
 
-        font-style: italic;
+        border: 1px solid
+            var(--border-color, #777);
+
+        margin-top: 1rem;
+
+    }
+
+
+    .feat-error {
+
+        border-color: #8b0000;
+
+    }
+
+
+    .feat-error code {
+
+        word-break: break-word;
 
     }
 
@@ -189,10 +251,10 @@
 
 ```
 <!-- =====================================================
-     PAGE INTRODUCTION
+     INTRODUCTION
      ===================================================== -->
 
-<section class="rule-section">
+<section class="rule-section feat-intro">
 
     <div class="section-heading">
 
@@ -206,40 +268,34 @@
     <p>
 
         Feats represent abilities learned through experience,
-        training, experimentation, and adventure. Unlike class
-        features, feats can be acquired independently and allow
-        characters to develop in unusual directions.
+        training, experimentation, and adventure.
+
+        They provide characters with additional ways to
+        customize their abilities after reaching the level cap.
 
     </p>
 
 
     <div class="rule-callout">
 
-        <strong>Feat Points:</strong>
+        <strong>Feat Points</strong>
 
-        The standard starting cost for a feat is
-        <strong>2 Feat Points</strong>.
+        <p>
 
-        <br><br>
+            The standard starting cost for a feat is
+            <strong>2 Feat Points</strong>.
 
-        Characters may acquire additional Feat Points as the
-        campaign progresses. The GM may award Feat Points for
-        milestones, discoveries, major accomplishments, or other
-        campaign achievements.
+        </p>
+
+        <p>
+
+            More powerful feats may have higher costs.
+
+        </p>
 
     </div>
 
-
-    <p>
-
-        Feats are intentionally independent of level. Once a
-        character has access to enough Feat Points and meets a
-        feat's prerequisite, the feat may be purchased.
-
-    </p>
-
 </section>
-
 
 
 <!-- =====================================================
@@ -258,7 +314,7 @@
 
 
     <p>
-        Feats are organized into broad categories to make the
+        Feats are divided into broad categories to make the
         growing feat library easier to navigate.
     </p>
 
@@ -266,37 +322,33 @@
     <ul>
 
         <li>
-            <strong>Combat:</strong>
-            Improve attacks, defense, weapons, or battlefield
-            tactics.
+            <strong>Combat</strong> — Weapons, attacks,
+            defense, and battlefield abilities.
         </li>
 
         <li>
-            <strong>Skill:</strong>
-            Improve skill checks, proficiency, or expertise.
+            <strong>Skill</strong> — Skills, proficiency,
+            and expertise.
         </li>
 
         <li>
-            <strong>Magic:</strong>
-            Expand spellcasting or magical capabilities.
+            <strong>Magic</strong> — Spellcasting and
+            magical abilities.
         </li>
 
         <li>
-            <strong>Exploration:</strong>
-            Improve travel, investigation, survival, and
-            interaction with the environment.
+            <strong>Exploration</strong> — Travel, survival,
+            investigation, and dungeon abilities.
         </li>
 
         <li>
-            <strong>Social:</strong>
-            Improve persuasion, leadership, deception, and
-            relationships.
+            <strong>Social</strong> — Persuasion, deception,
+            leadership, and social interaction.
         </li>
 
         <li>
-            <strong>Utility:</strong>
-            Provide unusual abilities that do not fit neatly
-            into another category.
+            <strong>Utility</strong> — General-purpose
+            abilities and unusual tricks.
         </li>
 
     </ul>
@@ -304,9 +356,8 @@
 </section>
 
 
-
 <!-- =====================================================
-     FEAT FILTER
+     FEAT LIBRARY
      ===================================================== -->
 
 <section class="rule-section">
@@ -320,12 +371,14 @@
     </div>
 
 
+    <!-- Filter buttons are generated from feats.json -->
+
     <div id="feat-filter"
          class="feat-filter">
 
         <button
             type="button"
-            data-filter="all"
+            data-category="all"
             class="active">
 
             All
@@ -335,12 +388,20 @@
     </div>
 
 
+    <!-- Status message -->
+
+    <div id="feat-status"
+         class="feat-status">
+
+        Loading feat library...
+
+    </div>
+
+
+    <!-- Feats are inserted here -->
+
     <div id="feat-library"
          class="feat-library">
-
-        <p>
-            Loading feats...
-        </p>
 
     </div>
 
@@ -359,285 +420,550 @@
     title="Realm & Rune footer">
 </iframe>
 
-<!-- =========================================================
-     FEAT LIBRARY SCRIPT
-     ========================================================= -->
-
 <script>
 
-    let feats = [];
+/*
+ * ============================================================
+ * REALM & RUNE — FEAT LIBRARY
+ *
+ * This page expects:
+ *
+ *     feats.html
+ *     feats.json
+ *
+ * to exist in the same directory.
+ *
+ * IMPORTANT:
+ *
+ * Most browsers will NOT allow fetch() to load feats.json
+ * when this page is opened directly using:
+ *
+ *     file:///...
+ *
+ * Run the project through a local web server instead.
+ * ============================================================
+ */
 
-    let currentFilter = "all";
+
+let feats = [];
+
+let currentCategory = "all";
 
 
-    /*
-     * ---------------------------------------------------------
-     * LOAD FEATS
-     * ---------------------------------------------------------
-     */
+/*
+ * ============================================================
+ * LOAD JSON
+ * ============================================================
+ */
 
-    async function loadFeats() {
+async function loadFeats() {
 
-        const library = document.getElementById("feat-library");
+    const status =
+        document.getElementById("feat-status");
 
-        try {
 
-            const response = await fetch("feats.json");
+    try {
 
-            if (!response.ok) {
+        const response =
+            await fetch("feats.json", {
+                cache: "no-cache"
+            });
 
-                throw new Error(
-                    `Unable to load feats.json: ${response.status}`
+
+        /*
+         * HTTP errors such as 404 do not automatically cause
+         * fetch() to throw an error, so check response.ok.
+         */
+
+        if (!response.ok) {
+
+            throw new Error(
+                "HTTP " +
+                response.status +
+                " — feats.json could not be loaded."
+            );
+
+        }
+
+
+        /*
+         * Convert JSON into a JavaScript array.
+         */
+
+        const data =
+            await response.json();
+
+
+        /*
+         * Make sure the JSON contains an array.
+         */
+
+        if (!Array.isArray(data)) {
+
+            throw new Error(
+                "feats.json must contain a JSON array."
+            );
+
+        }
+
+
+        feats = data;
+
+
+        /*
+         * Make sure each feat has the expected fields.
+         */
+
+        feats.forEach((feat, index) => {
+
+            if (!feat.name) {
+
+                console.warn(
+                    "Feat " +
+                    index +
+                    " is missing a name."
                 );
 
             }
 
-            feats = await response.json();
+            if (feat.cost === undefined) {
 
-            createFilters();
+                console.warn(
+                    "Feat " +
+                    index +
+                    " is missing a cost."
+                );
+
+            }
+
+            if (!feat.description) {
+
+                console.warn(
+                    "Feat " +
+                    index +
+                    " is missing a description."
+                );
+
+            }
+
+        });
+
+
+        status.style.display = "none";
+
+
+        createCategoryButtons();
+
+        displayFeats();
+
+    }
+
+
+    catch (error) {
+
+        console.error(
+            "Unable to load feat library:",
+            error
+        );
+
+
+        /*
+         * Detect the most common problem when developing
+         * a static HTML project locally.
+         */
+
+        const openedLocally =
+            window.location.protocol === "file:";
+
+
+        if (openedLocally) {
+
+            status.innerHTML = `
+
+                <strong>Unable to load feats.json.</strong>
+
+                <p>
+
+                    The page is being opened directly from your
+                    computer using <code>file://</code>.
+
+                    Most browsers block JavaScript from loading
+                    local JSON files this way.
+
+                </p>
+
+                <p>
+
+                    Start a small local web server and open the
+                    page through <code>http://localhost</code>.
+
+                </p>
+
+                <p>
+
+                    Your files should remain together:
+
+                </p>
+
+                <pre>feats.html
+feats.json
+realm-and-rune.css
+header.html
+footer.html</pre>
+
+
+        `;
+
+    }
+
+    else {
+
+        status.innerHTML = `
+
+            <strong>Unable to load feats.json.</strong>
+
+            <p>
+
+                ${escapeHTML(error.message)}
+
+            </p>
+
+            <p>
+
+                Verify that <code>feats.json</code> is in the
+                same directory as <code>feats.html</code>.
+
+            </p>
+
+        `;
+
+    }
+
+
+    status.classList.add("feat-error");
+
+}
+
+
+}
+
+/*
+
+* ============================================================
+* CREATE CATEGORY BUTTONS
+* ============================================================
+  */
+
+function createCategoryButtons() {
+
+```
+const filter =
+    document.getElementById("feat-filter");
+
+
+/*
+ * Get every unique feat type.
+ */
+
+const categories = [
+    ...new Set(
+        feats
+            .map(feat => feat.type)
+            .filter(type => type)
+    )
+];
+
+
+categories.sort();
+
+
+categories.forEach(category => {
+
+    const button =
+        document.createElement("button");
+
+
+    button.type = "button";
+
+    button.dataset.category = category;
+
+    button.textContent =
+        capitalize(category);
+
+
+    button.addEventListener(
+        "click",
+        function () {
+
+            currentCategory =
+                category;
+
+            updateActiveButton();
 
             displayFeats();
 
         }
-
-        catch (error) {
-
-            console.error(error);
-
-            library.innerHTML = `
-                <div class="feat-empty">
-                    Unable to load the feat library.
-                    Check that <strong>feats.json</strong>
-                    is in the same directory as this page.
-                </div>
-            `;
-
-        }
-
-    }
+    );
 
 
-    /*
-     * ---------------------------------------------------------
-     * CREATE CATEGORY FILTERS
-     * ---------------------------------------------------------
-     */
+    filter.appendChild(button);
 
-    function createFilters() {
-
-        const filterContainer =
-            document.getElementById("feat-filter");
-
-        const types = [
-            ...new Set(
-                feats.map(feat => feat.type)
-            )
-        ];
-
-        types.sort();
+});
 
 
-        types.forEach(type => {
+/*
+ * "All" button.
+ */
 
-            const button =
-                document.createElement("button");
-
-            button.type = "button";
-
-            button.dataset.filter = type;
-
-            button.textContent =
-                capitalize(type);
+const allButton =
+    filter.querySelector(
+        '[data-category="all"]'
+    );
 
 
-            button.addEventListener(
-                "click",
-                () => {
+allButton.addEventListener(
+    "click",
+    function () {
 
-                    currentFilter = type;
+        currentCategory = "all";
 
-                    updateActiveFilter();
+        updateActiveButton();
 
-                    displayFeats();
-
-                }
-            );
-
-
-            filterContainer.appendChild(button);
-
-        });
-
-
-        filterContainer
-            .querySelector('[data-filter="all"]')
-            .addEventListener(
-                "click",
-                () => {
-
-                    currentFilter = "all";
-
-                    updateActiveFilter();
-
-                    displayFeats();
-
-                }
-            );
+        displayFeats();
 
     }
+);
+```
+
+}
+
+/*
+
+* ============================================================
+* UPDATE ACTIVE FILTER
+* ============================================================
+  */
+
+function updateActiveButton() {
+
+```
+const buttons =
+    document.querySelectorAll(
+        "#feat-filter button"
+    );
 
 
-    /*
-     * ---------------------------------------------------------
-     * UPDATE ACTIVE FILTER
-     * ---------------------------------------------------------
-     */
+buttons.forEach(button => {
 
-    function updateActiveFilter() {
+    button.classList.toggle(
+        "active",
+        button.dataset.category ===
+            currentCategory
+    );
 
-        const buttons =
-            document.querySelectorAll(
-                "#feat-filter button"
-            );
+});
+```
 
+}
 
-        buttons.forEach(button => {
+/*
 
-            button.classList.toggle(
-                "active",
-                button.dataset.filter === currentFilter
-            );
+* ============================================================
+* DISPLAY FEATS
+* ============================================================
+  */
 
-        });
+function displayFeats() {
 
-    }
-
-
-    /*
-     * ---------------------------------------------------------
-     * DISPLAY FEATS
-     * ---------------------------------------------------------
-     */
-
-    function displayFeats() {
-
-        const library =
-            document.getElementById("feat-library");
+```
+const library =
+    document.getElementById(
+        "feat-library"
+    );
 
 
-        library.innerHTML = "";
+library.innerHTML = "";
 
 
-        const filteredFeats =
-            currentFilter === "all"
+const visibleFeats =
+    currentCategory === "all"
 
-                ? feats
+        ? feats
 
-                : feats.filter(
-                    feat =>
-                        feat.type === currentFilter
-                );
-
-
-        if (filteredFeats.length === 0) {
-
-            library.innerHTML = `
-                <div class="feat-empty">
-                    No feats are available in this category.
-                </div>
-            `;
-
-            return;
-
-        }
+        : feats.filter(
+            feat =>
+                feat.type ===
+                currentCategory
+        );
 
 
-        filteredFeats.forEach(feat => {
+if (visibleFeats.length === 0) {
 
-            const card =
-                document.createElement("article");
+    library.innerHTML = `
 
-            card.className = "feat-card";
+        <div class="feat-status">
 
+            No feats found in this category.
 
-            const prerequisite =
-                feat.prerequisite || "None";
+        </div>
 
+    `;
 
-            card.innerHTML = `
+    return;
 
-                <h3>
-                    ${escapeHTML(feat.name)}
-                </h3>
-
-                <div class="feat-meta">
-
-                    <span class="feat-cost">
-                        Cost: ${feat.cost} Feat Points
-                    </span>
-
-                    <span class="feat-type">
-                        ${escapeHTML(feat.type)}
-                    </span>
-
-                </div>
-
-                <div class="feat-prerequisite">
-
-                    <strong>Prerequisite:</strong>
-                    ${escapeHTML(prerequisite)}
-
-                </div>
-
-                <p class="feat-description">
-
-                    ${escapeHTML(feat.description)}
-
-                </p>
-
-            `;
+}
 
 
-            library.appendChild(card);
+visibleFeats.forEach(feat => {
 
-        });
+    library.appendChild(
+        createFeatCard(feat)
+    );
 
-    }
+});
+```
 
+}
 
-    /*
-     * ---------------------------------------------------------
-     * UTILITY FUNCTIONS
-     * ---------------------------------------------------------
-     */
+/*
 
-    function capitalize(text) {
+* ============================================================
+* CREATE A FEAT CARD
+* ============================================================
+  */
 
-        return text.charAt(0).toUpperCase()
-            + text.slice(1);
+function createFeatCard(feat) {
 
-    }
-
-
-    function escapeHTML(text) {
-
-        return String(text)
-            .replace(/&/g, "&amp;")
-            .replace(/</g, "&lt;")
-            .replace(/>/g, "&gt;")
-            .replace(/"/g, "&quot;")
-            .replace(/'/g, "&#039;");
-
-    }
+```
+const card =
+    document.createElement("article");
 
 
-    /*
-     * ---------------------------------------------------------
-     * START
-     * ---------------------------------------------------------
-     */
+card.className =
+    "feat-card";
 
-    loadFeats();
+
+const name =
+    feat.name || "Unnamed Feat";
+
+
+const cost =
+    feat.cost !== undefined
+        ? feat.cost
+        : "—";
+
+
+const prerequisite =
+    feat.prerequisite || "None";
+
+
+const type =
+    feat.type || "General";
+
+
+const description =
+    feat.description ||
+    "No description provided.";
+
+
+card.innerHTML = `
+
+    <h3>
+        ${escapeHTML(name)}
+    </h3>
+
+    <div class="feat-meta">
+
+        <span class="feat-cost">
+            Cost: ${escapeHTML(cost)}
+            Feat Points
+        </span>
+
+        <span class="feat-type">
+            ${escapeHTML(
+                capitalize(type)
+            )}
+        </span>
+
+    </div>
+
+
+    <div class="feat-prerequisite">
+
+        <strong>Prerequisite:</strong>
+
+        ${escapeHTML(
+            prerequisite
+        )}
+
+    </div>
+
+
+    <div class="feat-description">
+
+        ${escapeHTML(
+            description
+        )}
+
+    </div>
+
+`;
+
+
+return card;
+```
+
+}
+
+/*
+
+* ============================================================
+* TEXT UTILITIES
+* ============================================================
+  */
+
+function capitalize(text) {
+
+```
+if (!text) {
+
+    return "";
+
+}
+
+
+return text.charAt(0).toUpperCase()
+    + text.slice(1);
+```
+
+}
+
+function escapeHTML(value) {
+
+```
+return String(value)
+
+    .replace(/&/g, "&amp;")
+
+    .replace(/</g, "&lt;")
+
+    .replace(/>/g, "&gt;")
+
+    .replace(/"/g, "&quot;")
+
+    .replace(/'/g, "&#039;");
+```
+
+}
+
+/*
+
+* ============================================================
+* START APPLICATION
+* ============================================================
+  */
+
+loadFeats();
 
 </script>
 
