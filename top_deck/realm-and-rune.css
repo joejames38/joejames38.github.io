@@ -51,7 +51,7 @@
     /* ---- Layout ---- */
 
     --page-width: 1150px;
-    --content-padding: 42px;
+    --content-padding: 40px;
 
 }
 
@@ -123,7 +123,7 @@ a:hover {
         6px solid var(--gold);
 
     box-shadow:
-        0 4px 12px rgba(0,0,0,.35);
+        0 4px 5px rgba(0,0,0,.35);
 }
 
 
@@ -134,9 +134,9 @@ a:hover {
     margin: auto;
 
     padding:
-        46px
+        10px
         var(--content-padding)
-        34px;
+        10px;
 
     text-align: center;
 }
@@ -145,7 +145,7 @@ a:hover {
 .game-title {
 
     font-size:
-        clamp(2.8rem, 7vw, 5rem);
+        clamp(2.2rem, 7vw, 5rem);
 
     font-weight: bold;
 
@@ -229,7 +229,7 @@ a:hover {
         block;
 
     padding:
-        11px 12px;
+        5px 5px;
 
     color:
         #f3dfae;
@@ -297,13 +297,13 @@ a:hover {
         auto;
 
     padding:
-        35px var(--content-padding) 70px;
+        5px var(--content-padding) 5px;
 
     background:
         var(--paper);
 
     box-shadow:
-        0 0 35px rgba(0,0,0,.45);
+        0 0 5px rgba(0,0,0,.45);
 }
 
 
@@ -813,14 +813,14 @@ li {
 .site-header-frame {
         display: block;
         width: 100%;
-        height: 105px;
+        height: 35px;  /* Set for rows */
         border: none;
 }
 
 .site-footer-frame {
         display: block;
         width: 100%;
-        height: 105px;
+        height: 35px;
         border: none;
 }
 

@@ -24,30 +24,6 @@
      * =====================================================
      */
 
-    .site-header-frame,
-    .site-footer-frame {
-
-        display: block;
-
-        width: 100%;
-
-        border: none;
-
-    }
-
-    .site-header-frame {
-
-        height: 105px;
-
-    }
-
-    .site-footer-frame {
-
-        height: 120px;
-
-    }
-
-
     .feat-intro {
 
         margin-bottom: 2rem;
@@ -236,10 +212,17 @@
 
 <body>
 
-<!-- =========================================================
-     SHARED HEADER
-     ========================================================= -->
+<header class="site-header">
+    <div class="header-inner">
+        <div class="game-title">Realm & Rune</div>
+        <div class="game-subtitle">Feat Rules</div>
+    </div>
 
+</header>
+
+<!-- =========================================================
+     NAVIGATION
+     ========================================================= -->
 <iframe
     src="header.html"
     class="site-header-frame"
@@ -413,15 +396,13 @@
 
 </main>
 
-<!-- =========================================================
-     SHARED FOOTER
-     ========================================================= -->
-
+<footer class="site-footer">
 <iframe
     src="footer.html"
     class="site-footer-frame"
-    title="Realm & Rune footer">
+    title="Realm & Rune navigation">
 </iframe>
+</footer>
 
 <!-- =========================================================
      FEAT JAVASCRIPT

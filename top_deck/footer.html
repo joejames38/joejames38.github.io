@@ -4,7 +4,7 @@
 
 <head>
 
-```
+
 <meta charset="UTF-8">
 
 <meta name="viewport"
@@ -15,7 +15,7 @@
 <!--
     Shared stylesheet.
 
-    This path assumes header.html and realm-and-rune.css
+    This path assumes footer.html and realm-and-rune.css
     are located in the same directory.
 -->
 
@@ -26,7 +26,7 @@
 
     /*
      * =====================================================
-     * IFRAME HEADER OVERRIDES
+     * IFRAME footer OVERRIDES
      *
      * These are intentionally minimal.
      * Most visual styling should come from
@@ -49,19 +49,19 @@
 
     }
 
-    .iframe-header {
+    .iframe-footer {
 
         width: 100%;
 
     }
 
-    .header-inner {
+    .footer-inner {
 
         display: flex;
         align-items: center;
         justify-content: space-between;
 
-        padding: 10px 20px;
+        padding: 1px 1px;
 
     }
 
@@ -121,7 +121,7 @@
 
     @media (max-width: 700px) {
 
-        .header-inner {
+        .footer-inner {
 
             flex-direction: column;
 
@@ -159,30 +159,10 @@
 <body>
 
 <!-- =========================================================
-     SHARED HEADER
+     SHARED footer
      ========================================================= -->
 
-<header class="iframe-header">
-
-<div class="header-inner">
-
-    <a href="core-rules.html"
-       class="site-title"
-       target="_top">
-
-        Realm &amp; Rune
-
-    </a>
-
-
-    <div class="site-subtitle">
-
-        A Card-Based Fantasy Roleplaying Game
-
-    </div>
-
-</div>
-
+<footer class="iframe-footer">
 
 <!-- =====================================================
      MAIN NAVIGATION
@@ -266,7 +246,7 @@
 </nav>
 
 
-</header>
+</footer>
 
 </body>
 

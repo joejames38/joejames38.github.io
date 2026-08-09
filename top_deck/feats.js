@@ -7,36 +7,36 @@
 *
 * Required files:
 *
-* ```
+*    
   feats.html
-  ```
-* ```
+     
+*    
   feats.json
-  ```
-* ```
+     
+*    
   feats.js
-  ```
+     
 *
 * feats.json must contain an array of feat objects.
 *
 * Example:
 *
 * {
-* ```
+*    
   "name": "Skilled",
-  ```
-* ```
+     
+*    
   "type": "skill",
-  ```
-* ```
+     
+*    
   "cost": 2,
-  ```
-* ```
+     
+*    
   "prerequisite": "None",
-  ```
-* ```
+     
+*    
   "description": "Gain proficiency in one skill."
-  ```
+     
 * }
 *
 * ============================================================
@@ -55,7 +55,6 @@ let currentCategory = "all";
 
 async function loadFeats() {
 
-```
 const status =
     document.getElementById("feat-status");
 
@@ -143,7 +142,7 @@ catch (error) {
     );
 
 }
-```
+
 
 }
 
@@ -156,7 +155,7 @@ catch (error) {
 
 function validateFeats() {
 
-```
+
 feats.forEach(
     (feat, index) => {
 
@@ -205,7 +204,7 @@ feats.forEach(
 
     }
 );
-```
+
 
 }
 
@@ -221,14 +220,14 @@ status,
 error
 ) {
 
-```
+
 const openedLocally =
     window.location.protocol === "file:";
 
 
 if (openedLocally) {
 
-    status.innerHTML = `
+    status.innerHTML =  
 
         <strong>
             Unable to load feats.json.
@@ -254,13 +253,13 @@ if (openedLocally) {
 
         <pre>python -m http.server 8000</pre>
 
-    `;
+     ;
 
 }
 
 else {
 
-    status.innerHTML = `
+    status.innerHTML =  
 
         <strong>
             Unable to load feats.json.
@@ -278,7 +277,7 @@ else {
 
         </p>
 
-    `;
+     ;
 
 }
 
@@ -286,7 +285,7 @@ else {
 status.classList.add(
     "feat-error"
 );
-```
+   
 
 }
 
@@ -299,7 +298,7 @@ status.classList.add(
 
 function createCategoryButtons() {
 
-```
+
 const filter =
     document.getElementById(
         "feat-filter"
@@ -412,7 +411,7 @@ categories.forEach(
 
     }
 );
-```
+
 
 }
 
@@ -425,7 +424,7 @@ categories.forEach(
 
 function updateActiveButton() {
 
-```
+
 const buttons =
     document.querySelectorAll(
         "#feat-filter button"
@@ -443,7 +442,7 @@ buttons.forEach(
 
     }
 );
-```
+
 
 }
 
@@ -456,7 +455,7 @@ buttons.forEach(
 
 function displayFeats() {
 
-```
+
 const library =
     document.getElementById(
         "feat-library"
@@ -493,7 +492,7 @@ else {
 
 if (visibleFeats.length === 0) {
 
-    library.innerHTML = `
+    library.innerHTML =  
 
         <div class="feat-status">
 
@@ -501,7 +500,7 @@ if (visibleFeats.length === 0) {
 
         </div>
 
-    `;
+     ;
 
     return;
 
@@ -525,7 +524,7 @@ visibleFeats.forEach(
 
     }
 );
-```
+   
 
 }
 
@@ -538,7 +537,7 @@ visibleFeats.forEach(
 
 function createFeatCard(feat) {
 
-```
+   
 const card =
     document.createElement(
         "article"
@@ -575,7 +574,7 @@ const description =
     "No description provided.";
 
 
-card.innerHTML = `
+card.innerHTML =  
 
     <h3>
         ${escapeHTML(name)}
@@ -625,11 +624,11 @@ card.innerHTML = `
 
     </div>
 
-`;
+ ;
 
 
 return card;
-```
+   
 
 }
 
@@ -642,7 +641,7 @@ return card;
 
 function capitalize(text) {
 
-```
+   
 if (!text) {
 
     return "";
@@ -654,13 +653,13 @@ return (
     text.charAt(0).toUpperCase() +
     text.slice(1)
 );
-```
+   
 
 }
 
 function escapeHTML(value) {
 
-```
+   
 return String(value)
 
     .replace(
@@ -687,7 +686,7 @@ return String(value)
         /'/g,
         "&#039;"
     );
-```
+   
 
 }
 
