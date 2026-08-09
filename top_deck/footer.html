@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+```
+<meta charset="UTF-8">
+
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0">
+
+<title>Realm &amp; Rune Navigation</title>
+
+<!--
+    Shared stylesheet.
+
+    This path assumes header.html and realm-and-rune.css
+    are located in the same directory.
+-->
+
+<link rel="stylesheet"
+      href="realm-and-rune.css">
+
+<style>
+
+    /*
+     * =====================================================
+     * IFRAME HEADER OVERRIDES
+     *
+     * These are intentionally minimal.
+     * Most visual styling should come from
+     * realm-and-rune.css.
+     * =====================================================
+     */
+
+    html,
+    body {
+
+        margin: 0;
+        padding: 0;
+        width: 100%;
+
+    }
+
+    body {
+
+        overflow: hidden;
+
+    }
+
+    .iframe-header {
+
+        width: 100%;
+
+    }
+
+    .header-inner {
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        padding: 10px 20px;
+
+    }
+
+    .site-title {
+
+        text-decoration: none;
+        font-weight: bold;
+
+    }
+
+    .site-subtitle {
+
+        font-size: 0.85em;
+        opacity: 0.8;
+
+    }
+
+    .main-nav {
+
+        width: 100%;
+
+    }
+
+    .nav-inner {
+
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0;
+
+    }
+
+    .nav-inner a {
+
+        display: block;
+
+        padding: 7px 11px;
+
+        text-decoration: none;
+
+        white-space: nowrap;
+
+    }
+
+    .nav-inner a:hover {
+
+        text-decoration: underline;
+
+    }
+
+
+    /*
+     * =====================================================
+     * SMALL SCREEN SUPPORT
+     * =====================================================
+     */
+
+    @media (max-width: 700px) {
+
+        .header-inner {
+
+            flex-direction: column;
+
+            text-align: center;
+
+            gap: 4px;
+
+        }
+
+        .nav-inner {
+
+            justify-content: flex-start;
+
+            overflow-x: auto;
+
+            flex-wrap: nowrap;
+
+        }
+
+        .nav-inner a {
+
+            font-size: 0.85em;
+
+            padding: 7px 9px;
+
+        }
+
+    }
+
+</style>
+
+
+</head>
+
+<body>
+
+<!-- =========================================================
+     SHARED HEADER
+     ========================================================= -->
+
+<header class="iframe-header">
+
+<div class="header-inner">
+
+    <a href="core-rules.html"
+       class="site-title"
+       target="_top">
+
+        Realm &amp; Rune
+
+    </a>
+
+
+    <div class="site-subtitle">
+
+        A Card-Based Fantasy Roleplaying Game
+
+    </div>
+
+</div>
+
+
+<!-- =====================================================
+     MAIN NAVIGATION
+
+     target="_top" is important because this page is being
+     displayed inside an iframe. It causes the destination
+     page to replace the parent page rather than loading
+     inside the iframe.
+     ===================================================== -->
+
+<nav class="main-nav"
+     aria-label="Main Navigation">
+
+    <div class="nav-inner">
+
+        <a href="core-rules.html"
+           target="_top">
+
+            Core Rules
+
+        </a>
+
+
+        <a href="combat.html"
+           target="_top">
+
+            Combat
+
+        </a>
+
+
+        <a href="magic.html"
+           target="_top">
+
+            Magic
+
+        </a>
+
+
+        <a href="ancestry.html"
+           target="_top">
+
+            Ancestry
+
+        </a>
+
+
+        <a href="backgrounds.html"
+           target="_top">
+
+            Backgrounds
+
+        </a>
+
+
+        <a href="classes.html"
+           target="_top">
+
+            Classes
+
+        </a>
+
+
+        <a href="feats.html"
+           target="_top">
+
+            Feats
+
+        </a>
+
+
+        <a href="character-sheet.html"
+           target="_top">
+
+            Character Sheet
+
+        </a>
+
+    </div>
+
+</nav>
+
+
+</header>
+
+</body>
+
+</html>

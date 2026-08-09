@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+```
+<meta charset="UTF-8">
+
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0">
+
+<title>Realm &amp; Rune — Feats</title>
+
+<!-- Shared stylesheet -->
+<link rel="stylesheet"
+      href="realm-and-rune.css">
+
+<style>
+
+    /*
+     * =====================================================
+     * FEATS PAGE
+     * =====================================================
+     */
+
+    .feat-library {
+
+        display: grid;
+
+        grid-template-columns:
+            repeat(auto-fit, minmax(280px, 1fr));
+
+        gap: 1.25rem;
+
+        margin-top: 1.5rem;
+
+    }
+
+
+    .feat-card {
+
+        border: 1px solid var(--border-color, #777);
+
+        padding: 1rem;
+
+        border-radius: 6px;
+
+        background:
+            var(--panel-background, rgba(0, 0, 0, 0.03));
+
+    }
+
+
+    .feat-card h3 {
+
+        margin-top: 0;
+
+        margin-bottom: 0.35rem;
+
+    }
+
+
+    .feat-meta {
+
+        display: flex;
+
+        flex-wrap: wrap;
+
+        gap: 0.5rem;
+
+        margin-bottom: 0.75rem;
+
+        font-size: 0.9rem;
+
+    }
+
+
+    .feat-cost {
+
+        font-weight: bold;
+
+    }
+
+
+    .feat-prerequisite {
+
+        font-style: italic;
+
+    }
+
+
+    .feat-type {
+
+        font-weight: bold;
+
+        text-transform: capitalize;
+
+    }
+
+
+    .feat-description {
+
+        line-height: 1.5;
+
+    }
+
+
+    .feat-filter {
+
+        display: flex;
+
+        flex-wrap: wrap;
+
+        gap: 0.5rem;
+
+        margin-top: 1rem;
+
+        margin-bottom: 1rem;
+
+    }
+
+
+    .feat-filter button {
+
+        cursor: pointer;
+
+        padding: 0.4rem 0.75rem;
+
+    }
+
+
+    .feat-filter button.active {
+
+        font-weight: bold;
+
+    }
+
+
+    .feat-empty {
+
+        padding: 1rem;
+
+        font-style: italic;
+
+    }
+
+
+    @media print {
+
+        .feat-filter {
+
+            display: none;
+
+        }
+
+        .feat-library {
+
+            grid-template-columns: 1fr 1fr;
+
+        }
+
+        .feat-card {
+
+            break-inside: avoid;
+
+        }
+
+    }
+
+</style>
+```
+
+</head>
+
+<body>
+
+<!-- =========================================================
+     SHARED HEADER
+     ========================================================= -->
+
+<iframe
+    src="header.html"
+    class="site-header-frame"
+    title="Realm & Rune navigation">
+</iframe>
+
+<main class="page-container">
+
+```
+<!-- =====================================================
+     PAGE INTRODUCTION
+     ===================================================== -->
+
+<section class="rule-section">
+
+    <div class="section-heading">
+
+        <span class="section-number">I</span>
+
+        <h1>Feats</h1>
+
+    </div>
+
+
+    <p>
+
+        Feats represent abilities learned through experience,
+        training, experimentation, and adventure. Unlike class
+        features, feats can be acquired independently and allow
+        characters to develop in unusual directions.
+
+    </p>
+
+
+    <div class="rule-callout">
+
+        <strong>Feat Points:</strong>
+
+        The standard starting cost for a feat is
+        <strong>2 Feat Points</strong>.
+
+        <br><br>
+
+        Characters may acquire additional Feat Points as the
+        campaign progresses. The GM may award Feat Points for
+        milestones, discoveries, major accomplishments, or other
+        campaign achievements.
+
+    </div>
+
+
+    <p>
+
+        Feats are intentionally independent of level. Once a
+        character has access to enough Feat Points and meets a
+        feat's prerequisite, the feat may be purchased.
+
+    </p>
+
+</section>
+
+
+
+<!-- =====================================================
+     FEAT TYPES
+     ===================================================== -->
+
+<section class="rule-section">
+
+    <div class="section-heading">
+
+        <span class="section-number">II</span>
+
+        <h2>Feat Types</h2>
+
+    </div>
+
+
+    <p>
+        Feats are organized into broad categories to make the
+        growing feat library easier to navigate.
+    </p>
+
+
+    <ul>
+
+        <li>
+            <strong>Combat:</strong>
+            Improve attacks, defense, weapons, or battlefield
+            tactics.
+        </li>
+
+        <li>
+            <strong>Skill:</strong>
+            Improve skill checks, proficiency, or expertise.
+        </li>
+
+        <li>
+            <strong>Magic:</strong>
+            Expand spellcasting or magical capabilities.
+        </li>
+
+        <li>
+            <strong>Exploration:</strong>
+            Improve travel, investigation, survival, and
+            interaction with the environment.
+        </li>
+
+        <li>
+            <strong>Social:</strong>
+            Improve persuasion, leadership, deception, and
+            relationships.
+        </li>
+
+        <li>
+            <strong>Utility:</strong>
+            Provide unusual abilities that do not fit neatly
+            into another category.
+        </li>
+
+    </ul>
+
+</section>
+
+
+
+<!-- =====================================================
+     FEAT FILTER
+     ===================================================== -->
+
+<section class="rule-section">
+
+    <div class="section-heading">
+
+        <span class="section-number">III</span>
+
+        <h2>Feat Library</h2>
+
+    </div>
+
+
+    <div id="feat-filter"
+         class="feat-filter">
+
+        <button
+            type="button"
+            data-filter="all"
+            class="active">
+
+            All
+
+        </button>
+
+    </div>
+
+
+    <div id="feat-library"
+         class="feat-library">
+
+        <p>
+            Loading feats...
+        </p>
+
+    </div>
+
+</section>
+```
+
+</main>
+
+<!-- =========================================================
+     SHARED FOOTER
+     ========================================================= -->
+
+<iframe
+    src="footer.html"
+    class="site-footer-frame"
+    title="Realm & Rune footer">
+</iframe>
+
+<!-- =========================================================
+     FEAT LIBRARY SCRIPT
+     ========================================================= -->
+
+<script>
+
+    let feats = [];
+
+    let currentFilter = "all";
+
+
+    /*
+     * ---------------------------------------------------------
+     * LOAD FEATS
+     * ---------------------------------------------------------
+     */
+
+    async function loadFeats() {
+
+        const library = document.getElementById("feat-library");
+
+        try {
+
+            const response = await fetch("feats.json");
+
+            if (!response.ok) {
+
+                throw new Error(
+                    `Unable to load feats.json: ${response.status}`
+                );
+
+            }
+
+            feats = await response.json();
+
+            createFilters();
+
+            displayFeats();
+
+        }
+
+        catch (error) {
+
+            console.error(error);
+
+            library.innerHTML = `
+                <div class="feat-empty">
+                    Unable to load the feat library.
+                    Check that <strong>feats.json</strong>
+                    is in the same directory as this page.
+                </div>
+            `;
+
+        }
+
+    }
+
+
+    /*
+     * ---------------------------------------------------------
+     * CREATE CATEGORY FILTERS
+     * ---------------------------------------------------------
+     */
+
+    function createFilters() {
+
+        const filterContainer =
+            document.getElementById("feat-filter");
+
+        const types = [
+            ...new Set(
+                feats.map(feat => feat.type)
+            )
+        ];
+
+        types.sort();
+
+
+        types.forEach(type => {
+
+            const button =
+                document.createElement("button");
+
+            button.type = "button";
+
+            button.dataset.filter = type;
+
+            button.textContent =
+                capitalize(type);
+
+
+            button.addEventListener(
+                "click",
+                () => {
+
+                    currentFilter = type;
+
+                    updateActiveFilter();
+
+                    displayFeats();
+
+                }
+            );
+
+
+            filterContainer.appendChild(button);
+
+        });
+
+
+        filterContainer
+            .querySelector('[data-filter="all"]')
+            .addEventListener(
+                "click",
+                () => {
+
+                    currentFilter = "all";
+
+                    updateActiveFilter();
+
+                    displayFeats();
+
+                }
+            );
+
+    }
+
+
+    /*
+     * ---------------------------------------------------------
+     * UPDATE ACTIVE FILTER
+     * ---------------------------------------------------------
+     */
+
+    function updateActiveFilter() {
+
+        const buttons =
+            document.querySelectorAll(
+                "#feat-filter button"
+            );
+
+
+        buttons.forEach(button => {
+
+            button.classList.toggle(
+                "active",
+                button.dataset.filter === currentFilter
+            );
+
+        });
+
+    }
+
+
+    /*
+     * ---------------------------------------------------------
+     * DISPLAY FEATS
+     * ---------------------------------------------------------
+     */
+
+    function displayFeats() {
+
+        const library =
+            document.getElementById("feat-library");
+
+
+        library.innerHTML = "";
+
+
+        const filteredFeats =
+            currentFilter === "all"
+
+                ? feats
+
+                : feats.filter(
+                    feat =>
+                        feat.type === currentFilter
+                );
+
+
+        if (filteredFeats.length === 0) {
+
+            library.innerHTML = `
+                <div class="feat-empty">
+                    No feats are available in this category.
+                </div>
+            `;
+
+            return;
+
+        }
+
+
+        filteredFeats.forEach(feat => {
+
+            const card =
+                document.createElement("article");
+
+            card.className = "feat-card";
+
+
+            const prerequisite =
+                feat.prerequisite || "None";
+
+
+            card.innerHTML = `
+
+                <h3>
+                    ${escapeHTML(feat.name)}
+                </h3>
+
+                <div class="feat-meta">
+
+                    <span class="feat-cost">
+                        Cost: ${feat.cost} Feat Points
+                    </span>
+
+                    <span class="feat-type">
+                        ${escapeHTML(feat.type)}
+                    </span>
+
+                </div>
+
+                <div class="feat-prerequisite">
+
+                    <strong>Prerequisite:</strong>
+                    ${escapeHTML(prerequisite)}
+
+                </div>
+
+                <p class="feat-description">
+
+                    ${escapeHTML(feat.description)}
+
+                </p>
+
+            `;
+
+
+            library.appendChild(card);
+
+        });
+
+    }
+
+
+    /*
+     * ---------------------------------------------------------
+     * UTILITY FUNCTIONS
+     * ---------------------------------------------------------
+     */
+
+    function capitalize(text) {
+
+        return text.charAt(0).toUpperCase()
+            + text.slice(1);
+
+    }
+
+
+    function escapeHTML(text) {
+
+        return String(text)
+            .replace(/&/g, "&amp;")
+            .replace(/</g, "&lt;")
+            .replace(/>/g, "&gt;")
+            .replace(/"/g, "&quot;")
+            .replace(/'/g, "&#039;");
+
+    }
+
+
+    /*
+     * ---------------------------------------------------------
+     * START
+     * ---------------------------------------------------------
+     */
+
+    loadFeats();
+
+</script>
+
+</body>
+
+</html>

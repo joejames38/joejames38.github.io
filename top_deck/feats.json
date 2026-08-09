@@ -1,0 +1,142 @@
+[
+{
+"name": "Weapon Specialist",
+"type": "combat",
+"cost": 2,
+"prerequisite": "Proficiency with at least one weapon set",
+"description": "Gain proficiency with one additional weapon set."
+},
+{
+"name": "Shield Master",
+"type": "combat",
+"cost": 2,
+"prerequisite": "Shield proficiency",
+"description": "When you use Shield Bash, you may choose to push the target farther instead of knocking it prone."
+},
+{
+"name": "Second Wind",
+"type": "combat",
+"cost": 2,
+"prerequisite": "None",
+"description": "Once per Short Rest, discard a card to recover 1 HP."
+},
+{
+"name": "Quick Reflexes",
+"type": "combat",
+"cost": 2,
+"prerequisite": "Dexterity +1",
+"description": "Once per round, you may draw a card when combat begins before the normal scene draw."
+},
+{
+"name": "Tough",
+"type": "combat",
+"cost": 2,
+"prerequisite": "None",
+"description": "Increase your maximum HP by 1."
+},
+{
+"name": "Skilled",
+"type": "skill",
+"cost": 2,
+"prerequisite": "None",
+"description": "Gain proficiency in one skill."
+},
+{
+"name": "Skill Training",
+"type": "skill",
+"cost": 2,
+"prerequisite": "Proficiency in the chosen skill",
+"description": "Gain proficiency in one additional skill."
+},
+{
+"name": "Expertise",
+"type": "skill",
+"cost": 2,
+"prerequisite": "Proficiency in the chosen skill",
+"description": "Gain Expertise in one skill."
+},
+{
+"name": "Keen Eye",
+"type": "skill",
+"cost": 2,
+"prerequisite": "Cunning +1",
+"description": "Gain a bonus when making Perception checks to notice hidden creatures, objects, or hazards."
+},
+{
+"name": "Silver Tongue",
+"type": "social",
+"cost": 2,
+"prerequisite": "Spirit +1",
+"description": "Once per scene, after failing a Persuasion or Deception check, you may discard a card to attempt the check again."
+},
+{
+"name": "Iron Will",
+"type": "social",
+"cost": 2,
+"prerequisite": "Spirit +1",
+"description": "Gain an advantage when resisting intimidation, fear, or magical effects that attempt to influence your behavior."
+},
+{
+"name": "Battlefield Medic",
+"type": "utility",
+"cost": 2,
+"prerequisite": "Medicine proficiency",
+"description": "When you restore HP to an ally during a scene, they recover 1 additional HP."
+},
+{
+"name": "Lucky Draw",
+"type": "utility",
+"cost": 2,
+"prerequisite": "None",
+"description": "Once per Short Rest, discard a card to draw one additional card."
+},
+{
+"name": "Resourceful",
+"type": "utility",
+"cost": 2,
+"prerequisite": "None",
+"description": "Once per scene, when you would discard a card, you may instead place it on the bottom of your deck."
+},
+{
+"name": "Dungeon Delver",
+"type": "exploration",
+"cost": 2,
+"prerequisite": "None",
+"description": "Gain an advantage when detecting or avoiding mundane traps and hazards inside a dungeon."
+},
+{
+"name": "Pathfinder",
+"type": "exploration",
+"cost": 2,
+"prerequisite": "Survival proficiency",
+"description": "When traveling through wilderness, your group can move at normal pace while you actively navigate."
+},
+{
+"name": "Fast Hands",
+"type": "utility",
+"cost": 2,
+"prerequisite": "Dexterity +1",
+"description": "You may draw or stow a small item as part of your Move Action."
+},
+{
+"name": "Arcane Initiate",
+"type": "magic",
+"cost": 2,
+"prerequisite": "Cunning +1",
+"description": "Learn one Tier 1 Arcane spell."
+},
+{
+"name": "Divine Initiate",
+"type": "magic",
+"cost": 2,
+"prerequisite": "Spirit +1",
+"description": "Learn one Tier 1 Divine spell."
+},
+{
+"name": "Channel Adept",
+"type": "magic",
+"cost": 2,
+"prerequisite": "Ability to cast at least one spell with Channel",
+"description": "Once per scene, your first Channel card matching a spell's resonant suit provides an additional benefit determined by the spell."
+}
+]
