@@ -403,7 +403,7 @@
             <li>
                 <strong>Reactions:</strong>
                 Reactions may be used when their triggering condition occurs.
-                A card must normally be played to trigger a reaction.
+                A card must normally be played to trigger a reaction. Players only get <strong>one reaction</strong> per turn.
             </li>
 
             <li>
@@ -461,7 +461,7 @@
 
                 <tr>
                     <td>Reaction</td>
-                    <td>Normally one card.</td>
+                    <td>Normally one card. Only one Reaction per turn.</td>
                 </tr>
 
                 <tr>
@@ -584,6 +584,13 @@
             <br>
             Card Value + Attribute Modifier
         </div>
+		<p>
+		Classically, a check resolves with a <strong>"Meets it, Beats it"</strong> resolution.  
+		<ul>
+			<li>An enemies armor class is 8, so a Might check resulting in an 8 meets the requirement to hit.
+			</li>
+		</ul>
+		</p>
 
         <p>
             The GM determines the Difficulty of the check based on the
@@ -769,7 +776,7 @@
         </div>
 
         <p>
-            If the Attack Total equals or exceeds the target's Armor Class,
+            If the Attack Total equals or exceeds the target's Armor Class (AC),
             the attack hits.
         </p>
 
@@ -852,46 +859,74 @@
 
 
     <!-- =====================================================
-         DEFEND
+         General Actions and Reactions in Combat
          ===================================================== -->
 
-    <section id="defend" class="rule-section">
+    <section id="general-actions" class="rule-section">
 
         <div class="section-heading">
             <span class="section-number">XVII</span>
-            <h2>Defend & Dodge</h2>
+            <h2>General Actions</h2>
         </div>
 
         <div class="ability-box">
-
-            <h3>Defend</h3>
-
+            <h3>Melee Attack</h3>
             <p>
                 <strong>Action:</strong>
-                Discard a card and add its value to your AC until the
-                beginning of your next turn.
+                On your turn when you are close to an enemy, you may discard a card and add its value and your Might score or Dexterity score depending on the weapon. You do 1hp of damage when you meet or exceed the enemy's AC.
             </p>
 
             <p>
                 The card is placed in the Shuffle Pile.
             </p>
-
         </div>
 
         <div class="ability-box">
+            <h3>Ranged Attack</h3>
+            <p>
+                <strong>Action:</strong>
+                On your turn when you are within range to an enemy, you may discard a card and add its value and add your Dexterity score. You do 1hp of damage when you meet or exceed the enemy's AC.
+            </p>
+            <p>
+                The card is placed in the Shuffle Pile.
+            </p>
+        </div>
+		
+		<div class="ability-box">
+            <h3>Magic Attack</h3>
+            <p>
+                <strong>Action:</strong>
+                On your turn when you are within range to an enemy, you may burn a card resonating with your spell type and add its value and add your Cunning score. You do 1hp of damage when you meet or exceed the enemy's AC.
+            </p>
+            <p>
+                Card played involving magic are placed in the Burn Pile.
+            </p>
+			<p>
+			    Many Spells will have channel effects and face card effects. 
+			</p>
+        </div>
+		
+        <div class="ability-box">
+            <h3>Defend</h3>
+            <p>
+                <strong>Action:</strong>
+                Discard a card and add its value to your AC until the
+                beginning of your next turn.
+            </p>
+            <p>
+                The card is placed in the Shuffle Pile.  When using a Face card for the Defend Action, it is place in your Burn Pile.
+            </p>
+        </div>
 
-            <h3>Dodge</h3>
-
+        <div class="ability-box">
+            <h3>Parry</h3>
             <p>
                 <strong>Reaction:</strong>
-                When hit, discard one Reserve card to negate 1 HP of damage.
+                When hit, burn any one card from your hand to negate 1 HP of damage.
             </p>
-
             <p>
-                The Reserve terminology is currently under development and
-                will be standardized in the next rules pass.
+                When cards are used to Parry an attack, they are always placed in the Burn Pile.
             </p>
-
         </div>
 
     </section>
@@ -913,8 +948,7 @@
             <div class="card-panel">
                 <h3>Short Rest</h3>
                 <p>
-                    Shuffle all cards in the Shuffle Pile and Burn Pile
-                    back into the Deck.
+                    Add a number of cards from your burn pile into your shuffle pile equal to your hand size. Shuffle the Shuffle pile and it becomes your new Deck.
                 </p>
             </div>
 
@@ -1048,6 +1082,15 @@
         <p>
             Ancestry does not modify core attributes.
         </p>
+        <div class="rule-callout">
+            <strong><center>Starting Attributes</center></strong>
+			<br>
+            <strong>Standard Array:</strong> -1,0,+1,+2
+			<br>
+			<strong>Allocation:</strong> All Attribubtes start at -1. You have 6 points to allocate to each of the attributes not to exceed +2. 
+			<br>
+			<strong>GM Discretion:</strong> You Gamemaster may have their own preferred way to determine starting core attributes. 			
+        </div>
 
     </section>
 
