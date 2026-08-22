@@ -12,10 +12,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
     // Load spell library
-    fetch("spells.json")
+    fetch("magic-spells.json")
         .then(response => {
             if (!response.ok) {
-                throw new Error("Unable to load spells.json");
+                throw new Error("Unable to load magic-spells.json");
             }
 
             return response.json();
