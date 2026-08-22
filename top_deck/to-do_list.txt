@@ -10,3 +10,16 @@ Rules glossary
 Playtest
 Balance pass
 Content expansion
+
+Damage Types
+Physical Damage
+
+Light
+
+Spades - Air/Force
+Heart - Water/Ice
+Clubs  - Earth/Green/Poison 
+Diamond - Fire/Lightning/Energy
+
+Dark
+

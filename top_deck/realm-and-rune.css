@@ -887,6 +887,137 @@ li {
 
 }
 
+.spell-filters {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(auto-fit, minmax(160px, 1fr));
+
+    gap: 1rem;
+
+    margin: 1.5rem 0;
+
+    padding: 1rem;
+
+    border: 1px solid var(--border-color, #777);
+
+    border-radius: 8px;
+
+}
+
+
+.spell-filters label {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 0.35rem;
+
+    font-weight: bold;
+
+}
+
+
+.spell-filters input,
+.spell-filters select,
+.spell-filters button {
+
+    padding: 0.5rem;
+
+    font: inherit;
+
+}
+
+
+.spell-filters button {
+
+    align-self: end;
+
+    cursor: pointer;
+
+}
+
+
+.spell-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+
+    gap: 1.25rem;
+
+}
+
+
+.spell-card {
+
+    padding: 1.25rem;
+
+    border: 1px solid var(--border-color, #777);
+
+    border-radius: 8px;
+
+    background:
+        var(--panel-background, rgba(0, 0, 0, 0.03));
+
+}
+
+
+.spell-card h3 {
+
+    margin-top: 0;
+
+    margin-bottom: 0.5rem;
+
+}
+
+
+.spell-meta {
+
+    display: flex;
+
+    gap: 0.5rem;
+
+    flex-wrap: wrap;
+
+    margin-bottom: 1rem;
+
+}
+
+
+.spell-meta span {
+
+    padding: 0.25rem 0.5rem;
+
+    border: 1px solid var(--border-color, #777);
+
+    border-radius: 4px;
+
+    font-size: 0.9rem;
+
+}
+
+
+#result-count {
+
+    font-style: italic;
+
+}
+
+
+@media (max-width: 700px) {
+
+    .spell-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+}
+
 
 /* =========================================================
    PRINT / A4
