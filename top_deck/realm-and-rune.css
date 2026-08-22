@@ -825,6 +825,77 @@ li {
 }
 
 
+.rules-section {
+	margin-bottom: 3rem;
+}
+
+.rules-section h2 {
+	border-bottom: 2px solid var(--accent-color, #8b6f47);
+	padding-bottom: 0.4rem;
+}
+
+.rules-section h3 {
+	margin-top: 1.5rem;
+}
+
+.rules-table {
+	width: 100%;
+	border-collapse: collapse;
+	margin: 1rem 0 2rem 0;
+}
+
+.rules-table th,
+.rules-table td {
+	border: 1px solid var(--border-color, #777);
+	padding: 0.6rem;
+	text-align: left;
+	vertical-align: top;
+}
+
+.rule-box {
+	border-left: 4px solid var(--accent-color, #8b6f47);
+	padding: 0.8rem 1rem;
+	margin: 1rem 0;
+	background: var(--panel-background, #f5f5f5);
+}
+
+.important {
+	font-weight: bold;
+}
+
+.suit-list {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 1rem;
+}
+
+.suit-card {
+	border: 1px solid var(--border-color, #777);
+	padding: 1rem;
+	border-radius: 6px;
+}
+
+.combat-action {
+	margin: 1rem 0;
+	padding: 1rem;
+	border: 1px solid var(--border-color, #777);
+	border-radius: 6px;
+}
+
+.combat-action h4 {
+	margin-top: 0;
+}
+
+@media (max-width: 700px) {
+	.suit-list {
+		grid-template-columns: 1fr;
+	}
+
+	.rules-table {
+		font-size: 0.9rem;
+	}
+}
+
 
 /* =========================================================
    MOBILE

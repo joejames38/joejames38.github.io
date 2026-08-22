@@ -1,1038 +1,157 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-
-<title>Realm & Rune — Quick Start Guide</title>
-
-<!-- Shared stylesheet used by the rest of the rules site -->
-<link rel="stylesheet" href="realm-and-rune.css">
-
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Realm & Rune — Quick Start</title>
+<link rel="stylesheet" href="..\realm-and-rune.css">
 <style>
-    /* =========================================================
-       QUICK START PRINT OVERRIDES
-       Designed for one-page A4 / Letter printing.
-       ========================================================= */
-
-    @page {
-        size: auto;
-        margin: 0.35in;
-    }
-
-    * {
-        box-sizing: border-box;
-    }
-
-    body {
-        margin: 0;
-        background: #fff;
-    }
-
-    .quickstart {
-        max-width: 1100px;
-        margin: 0 auto;
-        padding: 18px;
-        font-size: 11px;
-        line-height: 1.28;
-    }
-
-    .quick-header {
-        text-align: center;
-        border-bottom: 2px solid currentColor;
-        padding-bottom: 6px;
-        margin-bottom: 8px;
-    }
-
-    .quick-header h1 {
-        margin: 0;
-        font-size: 25px;
-    }
-
-    .quick-header p {
-        margin: 2px 0 0;
-        font-size: 10px;
-    }
-
-    .quick-grid {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 7px;
-    }
-
-    .quick-section {
-        border: 1px solid #777;
-        padding: 7px;
-        break-inside: avoid;
-    }
-
-    .quick-section h2 {
-        margin: -7px -7px 5px;
-        padding: 4px 6px;
-        border-bottom: 1px solid #777;
-        font-size: 13px;
-    }
-
-    .quick-section h3 {
-        margin: 5px 0 2px;
-        font-size: 11px;
-    }
-
-    .quick-section p {
-        margin: 2px 0 5px;
-    }
-
-    .quick-section ul,
-    .quick-section ol {
-        margin: 3px 0 4px;
-        padding-left: 17px;
-    }
-
-    .quick-section li {
-        margin-bottom: 2px;
-    }
-
-    .rule {
-        margin: 3px 0;
-    }
-
-    .keyword {
-        font-weight: bold;
-    }
-
-    .card-table {
-        width: 100%;
-        border-collapse: collapse;
-        margin: 4px 0;
-    }
-
-    .card-table th,
-    .card-table td {
-        border: 1px solid #999;
-        padding: 3px 4px;
-        text-align: left;
-        vertical-align: top;
-    }
-
-    .card-table th {
-        font-weight: bold;
-    }
-
-    .callout {
-        border: 1px solid #777;
-        padding: 5px;
-        margin: 5px 0;
-    }
-
-    .class-line {
-        margin: 2px 0;
-    }
-
-    .class-line strong {
-        display: inline-block;
-        min-width: 58px;
-    }
-
-    .suit {
-        font-weight: bold;
-    }
-
-    .footer-note {
-        text-align: center;
-        font-size: 8px;
-        margin-top: 6px;
-        border-top: 1px solid #777;
-        padding-top: 4px;
-    }
-
-    @media screen {
-        .quickstart {
-            margin-top: 20px;
-            margin-bottom: 20px;
-        }
-
-        .print-only {
-            display: none;
-        }
-    }
-
-    @media print {
-        .site-header,
-        .main-nav,
-        .site-footer {
-            display: none !important;
-        }
-
-        .quickstart {
-            width: 100%;
-            max-width: none;
-            padding: 0;
-            font-size: 9.5px;
-            line-height: 1.18;
-        }
-
-        .quick-header {
-            margin-bottom: 5px;
-            padding-bottom: 4px;
-        }
-
-        .quick-header h1 {
-            font-size: 20px;
-        }
-
-        .quick-header p {
-            font-size: 8px;
-        }
-
-        .quick-grid {
-            gap: 5px;
-        }
-
-        .quick-section {
-            padding: 5px;
-        }
-
-        .quick-section h2 {
-            margin: -5px -5px 3px;
-            padding: 3px 4px;
-            font-size: 11px;
-        }
-
-        .quick-section h3 {
-            margin: 3px 0 1px;
-            font-size: 9.5px;
-        }
-
-        .quick-section p {
-            margin: 1px 0 3px;
-        }
-
-        .quick-section ul,
-        .quick-section ol {
-            margin: 2px 0 3px;
-            padding-left: 14px;
-        }
-
-        .quick-section li {
-            margin-bottom: 1px;
-        }
-
-        .card-table {
-            margin: 2px 0;
-        }
-
-        .card-table th,
-        .card-table td {
-            padding: 2px 3px;
-        }
-
-        .callout {
-            padding: 4px;
-            margin: 3px 0;
-        }
-
-        .footer-note {
-            font-size: 7px;
-            margin-top: 3px;
-            padding-top: 2px;
-        }
-    }
+@page{size:A4;margin:.45in}
+*{box-sizing:border-box}
+body{font-size:10.2pt;line-height:1.22;margin:0}
+.quick-start{max-width:7.3in;margin:auto}
+.page{min-height:9.85in;position:relative}
+.page+.page{page-break-before:always;break-before:page}
+.qs-header{text-align:center;border-bottom:2px solid #333;padding-bottom:.08in;margin-bottom:.08in}
+.qs-header h1{margin:0;font-size:23pt}.qs-header p{margin:0;font-size:9pt}
+h2{font-size:14pt;margin:.07in 0 .03in;border-bottom:1px solid #777;padding-bottom:.02in}
+h3{font-size:11pt;margin:.06in 0 .02in}p{margin:.025in 0 .055in}
+ul,ol{margin:.02in 0 .05in;padding-left:.22in}li{margin-bottom:.025in}
+.columns{display:grid;grid-template-columns:1fr 1fr;gap:.12in}
+.box,.action{border:1px solid #777;border-radius:4px;padding:.055in .07in;margin:.035in 0;break-inside:avoid}
+.box strong.title{display:block;font-size:10.5pt;margin-bottom:.015in}
+.formula{text-align:center;border:1px solid #444;background:#f2f2f2;padding:.045in;margin:.04in 0;font-weight:bold}
+table{width:100%;border-collapse:collapse;margin:.03in 0 .055in;font-size:9pt}
+th,td{border:1px solid #777;padding:.025in .045in;text-align:left;vertical-align:top}th{background:#e9e9e9}
+.combat-grid{display:grid;grid-template-columns:1fr 1fr;gap:.04in}.action{margin:0;padding:.045in .06in}.action h4{margin:0 0 .01in;font-size:9.6pt}
+.small{font-size:8.5pt}.footer-note{position:absolute;bottom:0;width:100%;border-top:1px solid #888;padding-top:.02in;font-size:7.5pt;text-align:center}
+@media screen{body{background:#ddd}.quick-start{background:white;padding:.3in;margin:.2in auto;box-shadow:0 0 8px #999}}
+@media print{.site-header,.site-header-frame{display:none!important}body{background:#fff}.quick-start{width:100%;max-width:none;margin:0}a{color:inherit;text-decoration:none}}
 </style>
-
-
 </head>
-
 <body>
-
-<div class="quickstart">
-
-
-<!-- =====================================================
-     HEADER
-     ===================================================== -->
-
-<header class="quick-header">
-
-    <h1>REALM &amp; RUNE</h1>
-
-    <p>
-        QUICK START GUIDE • PLAYTEST EDITION
-    </p>
-
-    <p>
-        A lightweight heroic fantasy roleplaying game played with standard cards.
-    </p>
-
-</header>
-
-
-<div class="quick-grid">
-
-
-    <!-- =================================================
-         CHARACTER CREATION
-         ================================================= -->
-
-    <section class="quick-section">
-
-        <h2>1. CHARACTER CREATION</h2>
-
-        <ol>
-
-            <li>
-                <strong>Choose an Ancestry.</strong>
-                Choose two ancestry feats.
-            </li>
-
-            <li>
-                <strong>Choose a Background.</strong>
-                Gain its listed skill proficiencies and special ability.
-            </li>
-
-            <li>
-                <strong>Choose a Class.</strong>
-                Record your class features and starting proficiencies.
-            </li>
-
-            <li>
-                <strong>Set Core Attributes.</strong>
-                Might, Spirit, Dexterity, and Cunning range from
-                <strong>-1 to +3</strong>.
-            </li>
-
-            <li>
-                <strong>Choose equipment.</strong>
-                Record weapons, armor, shield, and other equipment.
-            </li>
-
-            <li>
-                <strong>Prepare your card deck.</strong>
-                Each player uses their own 52-card deck.
-            </li>
-
-        </ol>
-
-        <div class="callout">
-
-            <strong>Starting Hand:</strong> 2 cards.
-
-            <br>
-
-            <strong>Level 3:</strong> Hand Size 3.
-
-            <br>
-
-            <strong>Level 5:</strong> Hand Size 4 and +1 Core Attribute.
-
-        </div>
-
-    </section>
-
-
-    <!-- =================================================
-         CORE ATTRIBUTES
-         ================================================= -->
-
-    <section class="quick-section">
-
-        <h2>2. CORE ATTRIBUTES &amp; SUITS</h2>
-
-        <table class="card-table">
-
-            <tr>
-                <th>Suit</th>
-                <th>Attribute</th>
-                <th>Associated Concepts</th>
-            </tr>
-
-            <tr>
-                <td>♠ Spades</td>
-                <td><strong>Might</strong></td>
-                <td>Strength, endurance, melee combat</td>
-            </tr>
-
-            <tr>
-                <td>♥ Hearts</td>
-                <td><strong>Spirit</strong></td>
-                <td>Courage, leadership, healing, social actions</td>
-            </tr>
-
-            <tr>
-                <td>♣ Clubs</td>
-                <td><strong>Dexterity</strong></td>
-                <td>Agility, risk, precision</td>
-            </tr>
-
-            <tr>
-                <td>♦ Diamonds</td>
-                <td><strong>Cunning</strong></td>
-                <td>Knowledge, quick thinking, magic</td>
-            </tr>
-
-        </table>
-
-        <p>
-            Suits normally determine the type of ability being used.
-            They do <strong>not</strong> automatically add an attribute
-            modifier.
-        </p>
-
-        <p>
-            Add the appropriate Core Attribute modifier to attacks
-            and skill checks.
-        </p>
-
-    </section>
-
-
-    <!-- =================================================
-         CARD SYSTEM
-         ================================================= -->
-
-    <section class="quick-section">
-
-        <h2>3. THE CARD SYSTEM</h2>
-
-        <p>
-            Your deck is your action resource. Cards are drawn,
-            played, burned, and recycled throughout the adventure.
-        </p>
-
-        <h3>Scene Start</h3>
-
-        <p>
-            At the beginning of a scene, draw cards until you reach
-            your current Hand Size.
-        </p>
-
-        <h3>Start of Turn</h3>
-
-        <p>
-            Draw <strong>1 card</strong>.
-        </p>
-
-        <h3>Playing Cards</h3>
-
-        <p>
-            You may play as many cards as you can afford during your
-            turn. You may spend your entire hand.
-        </p>
-
-        <p>
-            At the end of your turn, discard down to your maximum
-            Hand Size.
-        </p>
-
-        <div class="callout">
-
-            <strong>Action Economy:</strong>
-
-            <br>
-
-            1 Move Action + 1 Action for each card played.
-
-            <br><br>
-
-            You always draw at least one card each turn, guaranteeing
-            that you can take an action.
-
-        </div>
-
-    </section>
-
-
-    <!-- =================================================
-         CARD VALUES
-         ================================================= -->
-
-    <section class="quick-section">
-
-        <h2>4. CARD VALUES &amp; PILES</h2>
-
-        <table class="card-table">
-
-            <tr>
-                <th>Card</th>
-                <th>Value / Function</th>
-            </tr>
-
-            <tr>
-                <td>2–9</td>
-                <td>Normal numerical value.</td>
-            </tr>
-
-            <tr>
-                <td>10</td>
-                <td>Value 10.</td>
-            </tr>
-
-            <tr>
-                <td>J / Q / K</td>
-                <td>
-                    Value 10 or activate a special feature.
-                </td>
-            </tr>
-
-            <tr>
-                <td>Ace</td>
-                <td>
-                    Enables <strong>Gobble</strong>.
-                </td>
-            </tr>
-
-        </table>
-
-        <h3>Shuffle Pile</h3>
-
-        <p>
-            Most played number cards and skill-check cards go here.
-            When your deck is empty, shuffle the Shuffle Pile back
-            into your deck.
-        </p>
-
-        <h3>Burn Pile</h3>
-
-        <p>
-            Face cards used for abilities and cards burned for magic
-            are permanently removed from the current cycle.
-        </p>
-
-        <p>
-            A <strong>Short Rest</strong> shuffles all cards back
-            into the deck.
-        </p>
-
-    </section>
-
-
-    <!-- =================================================
-         SKILL CHECKS
-         ================================================= -->
-
-    <section class="quick-section">
-
-        <h2>5. SKILL CHECKS</h2>
-
-        <p>
-            When the GM calls for a skill check, use the skill's
-            associated attribute and follow the appropriate
-            proficiency rule.
-        </p>
-
-        <h3>Not Proficient</h3>
-
-        <p>
-            Draw <strong>2 cards</strong> and use the lower value.
-        </p>
-
-        <h3>Proficient</h3>
-
-        <p>
-            Draw <strong>1 card</strong> and play any one card from
-            your hand. Resolve the check using the played card.
-        </p>
-
-        <h3>Expertise</h3>
-
-        <p>
-            Draw <strong>1 card</strong> and play up to
-            <strong>2 cards</strong>. Add their values together,
-            but the second card must match the suit affinity of the
-            skill.
-        </p>
-
-        <p>
-            Add the relevant Core Attribute modifier.
-        </p>
-
-        <div class="callout">
-
-            <strong>Common Skills</strong>
-
-            <br>
-
-            Might: Athletics, Intimidation, Survival
-
-            <br>
-
-            Spirit: Insight, Persuasion, Deception,
-            Religion/Occult, Performance
-
-            <br>
-
-            Dexterity: Acrobatics, Thievery, Animal Handling
-
-            <br>
-
-            Cunning: Perception, Arcana, Investigation,
-            Medicine, History
-
-        </div>
-
-    </section>
-
-
-    <!-- =================================================
-         COMBAT
-         ================================================= -->
-
-    <section class="quick-section">
-
-        <h2>6. COMBAT</h2>
-
-        <h3>Turn</h3>
-
-        <p>
-            On your turn, draw 1 card. You have
-            <strong>1 Move Action</strong> and may perform
-            <strong>1 Action per card played</strong>.
-        </p>
-
-        <h3>Might Strike</h3>
-
-        <p>
-            Play a card and make a Might attack with a weapon.
-            On a hit, deal 1 HP damage.
-            If the card matches the weapon's suit, deal 2 HP instead.
-        </p>
-
-        <h3>Ranged Strike</h3>
-
-        <p>
-            Play a card and make a Dexterity attack with a ranged
-            weapon. On a hit, deal 1 HP damage.
-            Matching the weapon's suit deals 2 HP.
-        </p>
-
-        <h3>Defense</h3>
-
-        <p>
-            Base AC = <strong>5 + Dexterity</strong> when unarmored.
-        </p>
-
-        <ul>
-
-            <li>Light Armor: +1 AC + Dexterity</li>
-
-            <li>Medium Armor: +2 AC</li>
-
-            <li>Heavy Armor: +4 AC</li>
-
-            <li>Shield: +1 AC</li>
-
-        </ul>
-
-        <h3>Defend</h3>
-
-        <p>
-            Discard a card to add its value to your AC until the
-            start of your next turn.
-        </p>
-
-    </section>
-
-
-    <!-- =================================================
-         GENERAL ABILITIES
-         ================================================= -->
-
-    <section class="quick-section">
-
-        <h2>7. GENERAL ACTIONS &amp; REACTIONS</h2>
-
-        <h3>Shield Bash — Action</h3>
-
-        <p>
-            Play a <strong>Spade</strong> while using a shield.
-            Make an attack. On a hit, deal 1 HP damage and either
-            push the target back or knock it prone.
-        </p>
-
-        <p>
-            If a face card is played, the target is both
-            <strong>knocked back and knocked prone</strong>.
-        </p>
-
-        <h3>Rallying Cry — Action</h3>
-
-        <p>
-            Play a <strong>Heart</strong>.
-            One ally may draw a Reserve Card.
-        </p>
-
-        <p>
-            If a face card is played, <strong>two allies</strong>
-            may each draw a Reserve Card.
-        </p>
-
-        <h3>Dodge — Reaction</h3>
-
-        <p>
-            When hit, discard a Reserve Card to negate
-            <strong>1 HP</strong> of damage.
-        </p>
-
-        <h3>Gobble — Special Action</h3>
-
-        <p>
-            Burn an <strong>Ace</strong> to consume a food or drink
-            item. Resolve the item's effect.
-        </p>
-
-        <p>
-            Only <strong>one persistent food effect</strong> may be
-            active at a time. Consuming another persistent food
-            replaces the previous effect.
-        </p>
-
-    </section>
-
-
-    <!-- =================================================
-         MAGIC
-         ================================================= -->
-
-    <section class="quick-section">
-
-        <h2>8. MAGIC</h2>
-
-        <p>
-            Magic is divided into four resonant domains:
-        </p>
-
-        <ul>
-
-            <li>
-                <strong>Arcane — ♦ Diamonds</strong>
-            </li>
-
-            <li>
-                <strong>Divine — ♥ Hearts</strong>
-            </li>
-
-            <li>
-                <strong>Primal — ♣ Clubs</strong>
-            </li>
-
-            <li>
-                <strong>Occult — ♠ Spades</strong>
-            </li>
-
-        </ul>
-
-        <h3>Casting in Combat</h3>
-
-        <p>
-            Burn the required number of cards for the spell.
-            The <strong>first burned card</strong> is added to the
-            spell's to-hit check.
-        </p>
-
-        <p>
-            Each additional burned card that matches the spell's
-            resonant suit provides <strong>+1 to the check</strong>.
-        </p>
-
-        <h3>Casting Outside Combat</h3>
-
-        <p>
-            Burn the required number of cards. You may search your
-            deck for the cards you want to burn as long as they
-            match the spell's resonant suit.
-        </p>
-
-        <h3>Spell Tiers</h3>
-
-        <table class="card-table">
-
-            <tr>
-                <th>Tier</th>
-                <th>Cost</th>
-            </tr>
-
-            <tr>
-                <td>0</td>
-                <td>Free outside combat; any card burned in combat.</td>
-            </tr>
-
-            <tr>
-                <td>1</td>
-                <td>1 card</td>
-            </tr>
-
-            <tr>
-                <td>2</td>
-                <td>2 cards</td>
-            </tr>
-
-            <tr>
-                <td>3</td>
-                <td>3 cards</td>
-            </tr>
-
-            <tr>
-                <td>4</td>
-                <td>4 cards</td>
-            </tr>
-
-            <tr>
-                <td>5</td>
-                <td>5 cards</td>
-            </tr>
-
-        </table>
-
-    </section>
-
-
-    <!-- =================================================
-         SPELL RULES
-         ================================================= -->
-
-    <section class="quick-section">
-
-        <h2>9. SPELL RESONANCE &amp; CHANNEL</h2>
-
-        <p>
-            Spell cards are burned rather than placed in the
-            Shuffle Pile. Magic therefore consumes cards as a
-            meaningful resource.
-        </p>
-
-        <h3>Resonant Suit</h3>
-
-        <p>
-            Every spell has a resonant suit. Additional cards
-            matching that suit improve the spell's casting check.
-        </p>
-
-        <h3>Channel</h3>
-
-        <p>
-            Some spells have <strong>Channel</strong>. After paying
-            the spell's normal casting cost, burn additional cards
-            to increase the spell's effect.
-        </p>
-
-        <p>
-            Each additional resonant card used to Channel adds
-            <strong>+1 damage</strong> or the listed Channel effect.
-        </p>
-
-        <div class="callout">
-
-            <strong>Example — Firebolt</strong>
-
-            <p>
-                Tier 1 Arcane spell. Burn 1 card to cast it.
-                Make a Magic attack. On a hit, deal 1 HP damage.
-            </p>
-
-            <p>
-                Firebolt has Channel. After paying its normal cost,
-                burn additional Diamonds to deal +1 HP damage per
-                additional Diamond.
-            </p>
-
-        </div>
-
-    </section>
-
-
-    <!-- =================================================
-         CLASSES
-         ================================================= -->
-
-    <section class="quick-section">
-
-        <h2>10. CLASSES</h2>
-
-        <div class="class-line">
-            <strong>Fighter</strong>
-            All weapons, armor, shields; 2 skills; Weapon Mastery;
-            Second Wind. At Level 3, Action Surge.
-        </div>
-
-        <div class="class-line">
-            <strong>Rogue</strong>
-            Club weapons, Light Armor; 3 skills; Expertise;
-            Backstab. At Level 3, Hide.
-        </div>
-
-        <div class="class-line">
-            <strong>Cleric</strong>
-            Heart weapons, Light/Medium Armor, Shields; 2 skills;
-            Divine magic. Gains full access to Divine spell tiers.
-        </div>
-
-        <div class="class-line">
-            <strong>Wizard</strong>
-            2 skills; learns individual Arcane spells and expands
-            spell access as levels increase.
-        </div>
-
-        <div class="callout">
-
-            <strong>Level Cap: 5</strong>
-
-            <br>
-
-            Level 1 — Class Identity, Hand Size 2
-
-            <br>
-
-            Level 2 — Subclass Feature
-
-            <br>
-
-            Level 3 — Class Feature, Hand Size 3
-
-            <br>
-
-            Level 4 — Subclass Feature
-
-            <br>
-
-            Level 5 — +1 Attribute, Hand Size 4
-
-        </div>
-
-    </section>
-
-
-    <!-- =================================================
-         FOOD & ITEMS
-         ================================================= -->
-
-    <section class="quick-section">
-
-        <h2>11. FOOD, POTIONS &amp; REST</h2>
-
-        <p>
-            Aces enable the Gobble action. Food and drink can
-            restore health or provide temporary benefits.
-        </p>
-
-        <table class="card-table">
-
-            <tr>
-                <th>Item</th>
-                <th>Effect</th>
-            </tr>
-
-            <tr>
-                <td>Bread</td>
-                <td>Recover 1 HP.</td>
-            </tr>
-
-            <tr>
-                <td>Health Potion</td>
-                <td>Recover 3 HP.</td>
-            </tr>
-
-            <tr>
-                <td>Protein Bar</td>
-                <td>+1 Might until the next Long Rest.</td>
-            </tr>
-
-            <tr>
-                <td>Fizzy Drink</td>
-                <td>+1 Dexterity until the next Long Rest.</td>
-            </tr>
-
-        </table>
-
-        <p>
-            Persistent food effects do not stack. Consuming a new
-            persistent food replaces the previous persistent effect.
-        </p>
-
-        <h3>Short Rest</h3>
-
-        <p>
-            Shuffle all cards back into your deck.
-        </p>
-
-        <h3>Long Rest</h3>
-
-        <p>
-            Recover HP and shuffle all cards back into your deck.
-        </p>
-
-    </section>
-
-
-    <!-- =================================================
-         PLAYSTYLE REMINDER
-         ================================================= -->
-
-    <section class="quick-section">
-
-        <h2>12. PLAYTEST MINDSET</h2>
-
-        <div class="callout">
-
-            <strong>Your Hand Is Your Toolbox.</strong>
-
-            <p>
-                You are not expected to save every good card.
-                Spending cards creates more opportunities to act.
-            </p>
-
-            <p>
-                Powerful abilities may require you to burn valuable
-                resources. Decide when the moment is worth it.
-            </p>
-
-        </div>
-
-        <ul>
-
-            <li>
-                Ask what your character can accomplish with the
-                cards you have.
-            </li>
-
-            <li>
-                Look for opportunities to match suits with weapons,
-                abilities, and spells.
-            </li>
-
-            <li>
-                Do not be afraid to spend your entire hand.
-            </li>
-
-            <li>
-                Coordinate card-based abilities with your allies.
-            </li>
-
-            <li>
-                Tell the GM when you want to attempt something
-                creative—the rules are intended to support heroic
-                fantasy rather than restrict it.
-            </li>
-
-        </ul>
-
-    </section>
-
-
+<iframe src="..\header.html" class="site-header-frame" title="Realm & Rune navigation"></iframe>
+<main class="quick-start">
+
+<section class="page">
+<header class="qs-header"><h1>Realm & Rune</h1><p><strong>Quick Start Guide</strong> — Player Playtest Edition</p></header>
+
+<h2>1. Make Your Character</h2>
+<ol>
+<li><strong>Choose an Ancestry</strong> and two Ancestry Feats.</li>
+<li><strong>Choose a Background</strong> and gain its two skill proficiencies and minor ability.</li>
+<li><strong>Choose a Class</strong> and apply Level 1 features.</li>
+<li><strong>Set Attributes:</strong> Might, Spirit, Dexterity, Cunning.</li>
+<li><strong>Choose equipment</strong> and prepare your starting deck.</li>
+</ol>
+<div class="box"><strong class="title">Starting Attributes</strong>
+<strong>Standard Array:</strong> −1, 0, +1, +2.
+<strong>Allocation:</strong> Start all at −1 and distribute 6 points; maximum +2 in any attribute.</div>
+
+<h3>Core Attributes & Suit Affinity</h3>
+<table><tr><th>Attribute</th><th>Suit</th><th>Use</th></tr>
+<tr><td><b>Might</b></td><td>♠ Spades</td><td>Strength, endurance, melee combat.</td></tr>
+<tr><td><b>Spirit</b></td><td>♥ Hearts</td><td>Courage, leadership, healing, social actions.</td></tr>
+<tr><td><b>Dexterity</b></td><td>♣ Clubs</td><td>Agility, precision, movement, risk.</td></tr>
+<tr><td><b>Cunning</b></td><td>♦ Diamonds</td><td>Knowledge, investigation, magical prowess.</td></tr></table>
+
+<h2>2. Your Cards</h2>
+<div class="columns">
+<div><div class="box"><strong class="title">Deck</strong>Each player has a personal deck. Normally 52 cards; Jokers are optional.</div>
+<div class="box"><strong class="title">Hand</strong>Your available cards. At the start of a scene, draw to your maximum hand size. At the start of your turn, draw 1.</div></div>
+<div><div class="box"><strong class="title">Shuffle Pile</strong>Ordinary actions, attacks, reactions, and skill checks go here.</div>
+<div class="box"><strong class="title">Burn Pile</strong>Cards used by effects that say <b>Burn</b> leave normal circulation until recovered by resting.</div></div>
+</div>
+<table><tr><th>Card</th><th>Value</th><th>Rule</th></tr>
+<tr><td>2–10</td><td>Printed value</td><td>Normal card.</td></tr>
+<tr><td>J / Q / K</td><td>10</td><td>Face cards can trigger special effects.</td></tr>
+<tr><td>Ace</td><td>1</td><td>Enables <b>Gobble</b>.</td></tr>
+<tr><td>Joker</td><td>Optional</td><td>Optional critical-fumble rule.</td></tr></table>
+<div class="formula">Play → Shuffle Pile &nbsp; | &nbsp; Burn → Burn Pile</div>
+<p>When your deck is empty, shuffle the Shuffle Pile into a new deck. Burned cards remain unavailable.</p>
+
+<h2>3. Checks</h2>
+<div class="formula">Check Total = Card Value + Attribute Modifier</div>
+<p>The GM sets the Difficulty. <b>Meets it, beats it:</b> equal to or higher succeeds.</p>
+<table><tr><th>Training</th><th>Procedure</th></tr>
+<tr><td><b>Untrained</b></td><td>Disadvantage on the check.</td></tr>
+<tr><td><b>Proficient</b></td><td>Play 1 card and add the skill's attribute modifier.</td></tr>
+<tr><td><b>Expertise</b></td><td>Play up to 2 cards. If two are played, the second must match the skill's suit affinity. Add both card values and the attribute modifier.</td></tr></table>
+<div class="columns">
+<div class="box"><strong class="title">Advantage</strong>Play a card from your hand, draw and play the top card of your deck, then use the <b>most favorable</b> result.</div>
+<div class="box"><strong class="title">Disadvantage</strong>Play a card from your hand, draw and play the top card of your deck, then use the <b>least favorable</b> result.</div>
 </div>
 
+<h2>4. Hand Size & Turns</h2>
+<table><tr><th>Level</th><th>Maximum Hand</th></tr><tr><td>1–2</td><td>2</td></tr><tr><td>3–4</td><td>3</td></tr><tr><td>5</td><td>4</td></tr></table>
+<p><b>On your turn:</b> Draw 1 card → take 1 Move (no card required) → play cards for Actions as desired. You may spend your whole hand if you want to.</p>
 
-<div class="footer-note">
+<div class="box"><strong class="title">Remember</strong>
+Your cards are both your randomizer and your resources. A powerful card spent now is a card you may not have later. Decide when to push your luck, when to conserve, and when to burn a card for something extraordinary.</div>
+<br>
 
-    Realm &amp; Rune — Playtest Edition |
-    Full rules: core-rules.html |
-    Combat: combat.html |
-    Magic: magic.html
+<div class="footer-note">Realm & Rune Quick Start — Page 1 of 2</div>
+</section>
 
+<section class="page">
+<header class="qs-header"><h1>Realm & Rune</h1><p><strong>Quick Start Guide</strong> — Combat, Magic & Survival</p></header>
+
+<h2>5. Combat</h2>
+<p><b>Flip for Initiative:</b> play the top card of your deck and add Dexterity.</p>
+<div class="formula">Initiative = Card Value + Dexterity</div>
+<p>Highest acts first. Players win ties against enemies. If your Initiative card is a face card, you may Burn it for <b>Acceleration</b>: draw 1 additional card at the beginning of your first turn.</p>
+
+<h3>Armor & Attacks</h3>
+<div class="formula">Attack Total = Card Value + Relevant Attribute Modifier</div>
+<p>If the Attack Total equals or exceeds AC, the attack hits.</p>
+<table><tr><th>Armor</th><th>AC</th></tr><tr><td>Unarmored</td><td>5 + Dexterity</td></tr><tr><td>Light</td><td>6 + Dexterity</td></tr><tr><td>Medium</td><td>7</td></tr><tr><td>Heavy</td><td>8 or 9</td></tr><tr><td>Shield</td><td>+1</td></tr></table>
+
+<div class="combat-grid">
+<div class="action"><h4>Might Strike — Action</h4>Play 1 card. Might attack. Hit: 1 HP. Matching weapon suit: 2 HP.</div>
+<div class="action"><h4>Ranged Strike — Action</h4>Play 1 card. Dexterity attack. Hit: 1 HP. Matching weapon suit: 2 HP.</div>
+<div class="action"><h4>Defend — Action</h4>Play 1 card. Add its value to AC until your next turn.</div>
+<div class="action"><h4>Dodge — Reaction</h4>Play 1 card when hit to negate 1 HP. Burn a face card to negate all damage from one source.</div>
+<div class="action"><h4>Shield Bash — Action</h4>Play a Spade. Hit: 1 HP and push or knock prone. Burn a face-card Spade to do both.</div>
+<div class="action"><h4>Rallying Cry — Action</h4>Play a Heart. One ally draws 1. Burn a face-card Heart: two allies each draw 1.</div>
+<div class="action"><h4>Arcane Insight — Action</h4>Play a Diamond. Reveal useful information about an enemy. Burn a face-card Diamond to affect two.</div>
+<div class="action"><h4>Backstab</h4>Use the Rogue ability and follow the current Rogue class page.</div>
 </div>
 
-
+<h2>6. Magic</h2>
+<table><tr><th>Domain</th><th>Suit</th><th>Theme</th></tr>
+<tr><td>Arcane</td><td>♦</td><td>Elements, force, magical manipulation.</td></tr>
+<tr><td>Divine</td><td>♥</td><td>Healing, protection, blessings, judgment.</td></tr>
+<tr><td>Primal</td><td>♣</td><td>Nature, beasts, storms, transformation.</td></tr>
+<tr><td>Occult</td><td>♠</td><td>Secrets, spirits, curses, shadows.</td></tr></table>
+<div class="columns">
+<div class="box"><strong class="title">Tier 0</strong>Free outside combat. In combat, Burn any card to cast it.</div>
+<div class="box"><strong class="title">Tiers 1–5</strong>Burn 1–5 cards of the spell's Resonant Suit.</div>
 </div>
+<div class="box"><strong class="title">Magic Surge</strong>A resonant face card counts as <b>2 cards</b> toward the spell cost. An off-suit face card counts as 1.</div>
+<div class="box"><strong class="title">Combat Casting</strong>The first card Burned supplies its value to the magic attack. Each additional Resonant Suit card adds <b>+1</b> to the attack.</div>
+<div class="box"><strong class="title">Outside Combat</strong>You may search your deck for the Resonant Suit cards needed to pay the spell cost, then Burn them.</div>
+<div class="box"><strong class="title">Channel</strong>After paying the normal cost, some spells let you Burn additional cards to strengthen their effect. Follow the spell's Channel text.</div>
 
+<h2>7. Gobble, HP & Recovery</h2>
+<div class="columns">
+<div class="box"><strong class="title">Gobble — Special Action</strong>Burn an Ace and consume a food, drink, potion, or other consumable. Apply its effect. Only one persistent food effect may be active at once.</div>
+<div class="box"><strong class="title">0 HP</strong>At 0 HP, you fall unconscious and to the ground. You cannot fight or take normal actions. Gain HP from any source and you regain consciousness.</div>
+</div>
+<div class="box"><strong class="title">Helping an Unconscious Ally</strong>Only liquid drinks and potions may be given to another player to assist in recovering HP. If the entire party is unconscious, the GM determines the party's fate.</div>
+
+<h2>8. Advancement</h2>
+<table><tr><th>Level</th><th>Gain</th><th>Hand</th></tr>
+<tr><td>1</td><td>Class identity features</td><td>2</td></tr>
+<tr><td>2</td><td>Subclass feature</td><td>2</td></tr>
+<tr><td>3</td><td>Class identity feature</td><td>3</td></tr>
+<tr><td>4</td><td>Subclass feature</td><td>3</td></tr>
+<tr><td>5</td><td>+1 Core Attribute</td><td>4</td></tr></table>
+<p>Level 5 is the current level cap. After Level 5, characters continue developing through Feat Points rather than gaining additional levels.</p>
+
+
+
+<div class="footer-note">Realm & Rune Quick Start — Page 2 of 2</div>
+</section>
+</main>
 </body>
 </html>

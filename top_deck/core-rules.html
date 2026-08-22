@@ -12,29 +12,31 @@
 
 <body>
 
-<header class="site-header">
-    <div class="header-inner">
-        <div class="game-title">Realm & Rune</div>
-        <div class="game-subtitle">A Card-Driven Fantasy Roleplaying Game</div>
-    </div>
-</header>
+	<header class="site-header">
+		<div class="header-inner">
+			<div class="game-title">Realm & Rune</div>
+			<div class="game-subtitle">A Card-Driven Fantasy Roleplaying Game</div>
+		</div>
+	</header>
 
-<!-- =========================================================
+	<!-- =========================================================
      NAVIGATION
      ========================================================= -->
-<iframe
-    src="header.html"
-    class="site-header-frame"
-    title="Realm & Rune navigation">
-</iframe>
+	<iframe
+		src="header.html"
+		class="site-header-frame"
+		title="Realm & Rune navigation">
+	</iframe>
 
-<main class="page-container">
+	<main class="page-container">
 
-    <!-- =====================================================
-         INTRODUCTION
-         ===================================================== -->
 
-    <section id="overview" class="rule-section">
+    <!-- ========================================================= -->
+    <!-- CORE CONCEPT -->
+    <!-- ========================================================= -->
+
+    <section class="rules-section">
+
         <div class="section-heading">
             <span class="section-number">I</span>
             <h1>Core Rules</h1>
@@ -53,20 +55,18 @@
         </p>
 
         <div class="rule-callout">
-            <strong>Core Design Principle</strong>
-            <p>
-                The game is built around simple arithmetic, meaningful card
-                choices, asymmetric characters, and fast resolution.
-            </p>
+            <strong>Your cards are both your dice and your action economy.</strong>
+            Spending a card gives you an opportunity to act now, but reduces
+            the cards available to you later.
         </div>
+		<p>
+            The game is designed for heroic fantasy adventures, dungeon
+            exploration, dangerous encounters, social scenes, and magical
+            adventures.
+        </p>
     </section>
 
-
-    <!-- =====================================================
-         WHAT YOU NEED
-         ===================================================== -->
-
-    <section id="equipment" class="rule-section">
+   <section id="equipment" class="rule-section">
 
         <div class="section-heading">
             <span class="section-number">II</span>
@@ -90,12 +90,11 @@
 
     </section>
 
+    <!-- ========================================================= -->
+    <!-- CARDS -->
+    <!-- ========================================================= -->
 
-    <!-- =====================================================
-         CARD SYSTEM
-         ===================================================== -->
-
-    <section id="cards" class="rule-section">
+    <section class="rules-section">
 
         <div class="section-heading">
             <span class="section-number">III</span>
@@ -106,6 +105,8 @@
             Every player maintains a personal deck throughout the game.
             Cards move between several zones as they are used.
         </p>
+
+        <h3>Card Values</h3>
 
         <table class="rules-table">
 
@@ -173,8 +174,6 @@
         </table>
 
     </section>
-
-
     <!-- =====================================================
          CARD ZONES
          ===================================================== -->
@@ -222,6 +221,14 @@
 
         </div>
 
+        <h2>Shuffle Pile and Burn Pile</h2>
+
+        <h3>Shuffle Pile</h3>
+
+        <p>
+            Cards normally go to the Shuffle Pile after they are played.
+        </p>
+
         <div class="rule-callout">
             <strong>Deck Depletion</strong>
             <p>
@@ -230,258 +237,39 @@
             </p>
         </div>
 
-    </section>
-
-
-    <!-- =====================================================
-         HAND SIZE
-         ===================================================== -->
-
-    <section id="hand-size" class="rule-section">
-
-        <div class="section-heading">
-            <span class="section-number">V</span>
-            <h2>Hand Size</h2>
-        </div>
+        <h3>Burn Pile</h3>
 
         <p>
-            A character's Hand Size determines how many cards they may
-            retain between turns.
-        </p>
-
-        <table class="rules-table">
-
-            <thead>
-                <tr>
-                    <th>Level</th>
-                    <th>Maximum Hand Size</th>
-                </tr>
-            </thead>
-
-            <tbody>
-                <tr>
-                    <td>1–2</td>
-                    <td>2</td>
-                </tr>
-
-                <tr>
-                    <td>3–4</td>
-                    <td>3</td>
-                </tr>
-
-                <tr>
-                    <td>5</td>
-                    <td>4</td>
-                </tr>
-            </tbody>
-
-        </table>
-
-        <p>
-            Certain ancestry feats, class features, subclass feats, and
-            other abilities may temporarily or permanently modify the
-            number of cards a character can draw or retain.
-        </p>
-
-    </section>
-
-
-    <!-- =====================================================
-         SCENE FLOW
-         ===================================================== -->
-
-    <section id="scenes" class="rule-section">
-
-        <div class="section-heading">
-            <span class="section-number">VI</span>
-            <h2>Scenes</h2>
-        </div>
-
-        <p>
-            The game uses a flexible scene structure rather than requiring
-            every situation to be combat.
-        </p>
-
-        <div class="card-grid">
-
-            <div class="card-panel">
-                <h3>Combat</h3>
-                <p>
-                    Characters fight enemies while managing movement,
-                    attacks, abilities, and card resources.
-                </p>
-            </div>
-
-            <div class="card-panel">
-                <h3>Social Scenes</h3>
-                <p>
-                    Characters use Spirit-based skills and other abilities
-                    to influence NPCs and navigate relationships.
-                </p>
-            </div>
-
-            <div class="card-panel">
-                <h3>Exploration</h3>
-                <p>
-                    Characters investigate locations, overcome obstacles,
-                    discover secrets, and manage resources.
-                </p>
-            </div>
-
-            <div class="card-panel">
-                <h3>Skill Challenges</h3>
-                <p>
-                    Characters use their skills to overcome difficult
-                    situations where failure has meaningful consequences.
-                </p>
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <!-- =====================================================
-         SCENE START
-         ===================================================== -->
-
-    <section id="scene-start" class="rule-section">
-
-        <div class="section-heading">
-            <span class="section-number">VII</span>
-            <h2>Starting a Scene</h2>
-        </div>
-
-        <p>
-            At the beginning of a structured scene, each player draws cards
-            until their Hand reaches their maximum Hand Size.
+            Cards placed in the Burn Pile are removed from normal deck
+            circulation.
         </p>
 
         <p>
-            These cards become the character's available resources for
-            the scene.
+            Spells and other abilities may require cards to be Burned.
+            Burning cards is a meaningful resource cost because those cards
+            are no longer immediately available when the deck is reshuffled.
         </p>
 
         <div class="rule-callout">
-            <strong>Important:</strong>
-            A character does not automatically refill their Hand at the
-            beginning of every turn.
-        </div>
 
-    </section>
+            <strong>Play vs. Burn</strong>
 
-
-    <!-- =====================================================
-         TURN STRUCTURE
-         ===================================================== -->
-
-    <section id="turns" class="rule-section">
-
-        <div class="section-heading">
-            <span class="section-number">VIII</span>
-            <h2>Turn Structure</h2>
-        </div>
-
-        <ol class="numbered-list">
-
-            <li>
-                <strong>Start of Turn:</strong>
-                Draw one card from your Deck.
-            </li>
-
-            <li>
-                <strong>Move:</strong>
-                You may move. Movement does not require a card.
-            </li>
-
-            <li>
-                <strong>Actions:</strong>
-                You may play cards to perform actions.
-                Normally, each card played provides one action.
-            </li>
-
-            <li>
-                <strong>Reactions:</strong>
-                Reactions may be used when their triggering condition occurs.
-                A card must normally be played to trigger a reaction. Players only get <strong>one reaction</strong> per turn.
-            </li>
-
-            <li>
-                <strong>End of Turn:</strong>
-                If you have more cards than your Hand Size,
-                discard cards until you reach your maximum.
-            </li>
-
-        </ol>
-
-        <div class="rule-callout">
-            <strong>Explosive Turns</strong>
             <p>
-                Players are allowed to spend multiple cards during their
-                turn. Drawing additional cards through abilities can create
-                powerful turns, but spending those cards also reduces the
-                player's future options.
+                <strong>Play</strong> normally sends a card to the Shuffle
+                Pile.
             </p>
+
+            <p>
+                <strong>Burn</strong> sends a card to the Burn Pile.
+            </p>
+
         </div>
 
-    </section>
 
 
-    <!-- =====================================================
-         ACTION ECONOMY
-         ===================================================== -->
 
-    <section id="actions" class="rule-section">
-
-        <div class="section-heading">
-            <span class="section-number">IX</span>
-            <h2>Action Economy</h2>
-        </div>
-
-        <table class="rules-table">
-
-            <thead>
-                <tr>
-                    <th>Resource</th>
-                    <th>Cost</th>
-                </tr>
-            </thead>
-
-            <tbody>
-
-                <tr>
-                    <td>Move</td>
-                    <td>No card required.</td>
-                </tr>
-
-                <tr>
-                    <td>Action</td>
-                    <td>Normally one card.</td>
-                </tr>
-
-                <tr>
-                    <td>Reaction</td>
-                    <td>Normally one card. Only one Reaction per turn.</td>
-                </tr>
-
-                <tr>
-                    <td>Free Activity</td>
-                    <td>
-                        Talking to other characters and when specifically allowed by a rule.
-                    </td>
-                </tr>
-
-            </tbody>
-
-        </table>
-
-        <p>
-            Unless an ability says otherwise, every action or reaction
-            requires a card to be played.
-        </p>
 
     </section>
-
 
     <!-- =====================================================
          ATTRIBUTES
@@ -557,6 +345,255 @@
 
     </section>
 
+    <!-- =====================================================
+         HAND SIZE
+         ===================================================== -->
+
+    <section id="hand-size" class="rule-section">
+
+        <div class="section-heading">
+            <span class="section-number">V</span>
+            <h2>Hand Size</h2>
+        </div>
+
+        <p>
+            A character's Hand Size determines how many cards they may
+            retain between turns.
+        </p>
+
+        <table class="rules-table">
+
+            <thead>
+                <tr>
+                    <th>Level</th>
+                    <th>Maximum Hand Size</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>1–2</td>
+                    <td>2</td>
+                </tr>
+
+                <tr>
+                    <td>3–4</td>
+                    <td>3</td>
+                </tr>
+
+                <tr>
+                    <td>5</td>
+                    <td>4</td>
+                </tr>
+            </tbody>
+
+        </table>
+
+        <p>
+            Certain ancestry feats, class features, subclass feats, and
+            other abilities may temporarily or permanently modify the
+            number of cards a character can draw or retain.
+        </p>
+
+    </section>
+
+    <section id="scenes" class="rule-section">
+
+        <div class="section-heading">
+            <span class="section-number">VI</span>
+            <h2>Scenes</h2>
+        </div>
+
+        <p>
+            The game uses a flexible scene structure rather than requiring
+            every situation to be combat.
+        </p>
+
+        <div class="card-grid">
+
+            <div class="card-panel">
+                <h3>Combat</h3>
+                <p>
+                    Characters fight enemies while managing movement,
+                    attacks, abilities, and card resources.
+                </p>
+            </div>
+
+            <div class="card-panel">
+                <h3>Social Scenes</h3>
+                <p>
+                    Characters use Spirit-based skills and other abilities
+                    to influence NPCs and navigate relationships.
+                </p>
+            </div>
+
+            <div class="card-panel">
+                <h3>Exploration</h3>
+                <p>
+                    Characters investigate locations, overcome obstacles,
+                    discover secrets, and manage resources.
+                </p>
+            </div>
+
+            <div class="card-panel">
+                <h3>Skill Challenges</h3>
+                <p>
+                    Characters use their skills to overcome difficult
+                    situations where failure has meaningful consequences.
+                </p>
+            </div>
+
+        </div>
+
+        <h3>Beginning a Scene</h3>
+
+        <p>
+            At the beginning of a scene, draw cards until your hand reaches
+            your maximum hand size.
+        </p>
+
+        <h3>Beginning Your Turn</h3>
+
+        <p>
+            At the beginning of your turn, draw <strong>one</strong> card.
+        </p>
+
+        <h3>Playing Cards</h3>
+
+        <p>
+            You may play as many cards as you are able to use during your
+            turn, subject to your available actions and abilities.
+        </p>
+        <div class="rule-callout">
+            <strong>Explosive Turns</strong>
+            <p>
+                Players are allowed to spend multiple cards during their
+                turn. Drawing additional cards through abilities can create
+                powerful turns, but spending those cards also reduces the
+                player's future options.
+            </p>
+        </div>
+
+        <p>
+            Cards played for ordinary actions, attacks, skill checks, and
+            other abilities are placed into the <strong>Shuffle Pile</strong>
+            unless an ability specifically says that the card is Burned.
+        </p>
+
+        <p>
+            At the end of your turn, if you have more cards than your maximum
+            hand size, play cards until you are back at your maximum.
+        </p>
+
+        <div class="rule-callout">
+
+            <strong>There is no requirement to spend your entire hand.</strong>
+
+            <p>
+                Players must decide whether to spend cards for additional
+                actions now or preserve valuable cards for later turns.
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- =====================================================
+         ACTION ECONOMY
+         ===================================================== -->
+
+    <section id="actions" class="rule-section">
+
+        <div class="section-heading">
+            <span class="section-number">IX</span>
+            <h2>Action Economy</h2>
+        </div>
+
+        <table class="rules-table">
+
+            <thead>
+                <tr>
+                    <th>Resource</th>
+                    <th>Cost</th>
+                </tr>
+            </thead>
+
+            <tbody>
+
+                <tr>
+                    <td>Move</td>
+                    <td>No card required.</td>
+                </tr>
+
+                <tr>
+                    <td>Action</td>
+                    <td>Normally one card.</td>
+                </tr>
+
+                <tr>
+                    <td>Reaction</td>
+                    <td>Normally one card. Only one Reaction per turn.</td>
+                </tr>
+
+                <tr>
+                    <td>Free Activity</td>
+                    <td>
+                        Talking to other characters and when specifically allowed by a rule.
+                    </td>
+                </tr>
+
+            </tbody>
+
+        </table>
+
+        <p>
+            Unless an ability says otherwise, every action or reaction
+            requires a card to be played.
+        </p>
+
+    </section>
+
+	<!-- =========================================================
+		 MOVEMENT
+		 ========================================================= -->
+
+	<section id="movement" class="rule-section">
+
+
+		<div class="section-heading">
+			<span class="section-number">IV</span>
+			<h2>Movement</h2>
+		</div>
+
+		<p>
+			Each character receives one Move each turn.
+		</p>
+
+		<p>
+			Movement does not require a card and does not consume an Action.
+		</p>
+
+		<div class="rule-callout">
+			<strong>Movement Distance</strong>
+			<p>
+				Exact movement distances may use grids, zones, or theater-of-the-mind in combat.
+			</p>
+			<p>
+				<strong>Close:</strong> Right next to you. Touching distance, toe-to-toe in melee combat. Moving to something Close takes zero movement.
+			</p>
+			<p>
+				<strong>Near:</strong> General room distance. Or about 30ft. A standard single movement allows you to travel from Close to Near.
+			</p>
+			<p>
+				<strong>Far:</strong> Across a large room, down the hall, or a long distance away. Reaching a Far target usually takes a full movement plus a bit more or a special effort, putting targets at the edge of ranged weapon capabilities.
+			</p>
+			<p>
+				<strong>Out of Range:</strong> Too far away to interact with or attack until you spend a turn moving close.
+			</p>
+		</div>
+
+
+	</section>
 
     <!-- =====================================================
          CHECKS
@@ -599,22 +636,17 @@
 		
 		<h3> Advantage and Disadvantage</h3>
 		<p>
-		Some circumstance may add favorable or unfortunate circumstances for characters.
+		Some circumstances may add favorable or unfortunate circumstances for characters.
 		</p>
 		<p>
 		<strong>Advantage: </strong>   Play a card from your hand, and if you have Advantage, 
-		draw and play a card from the top of your deck, and take the <strong>MOST</strong> favorable result. This can causing a face card effect to trigger or suit resonance to be applied. 
+		draw and play a card from the top of your deck, and take the <strong>MOST</strong> favorable result. This can cause a face card effect to trigger or suit resonance to be applied. 
 		</p>
 		<p>
 		<strong>Disadvantage: </strong>   Play a card from your hand, and if you have Disadvantage, draw and play a card from the top of your deck, and take the <strong>LEAST </strong> favorable result. This can cause losing a face card effect or losing suit resonance being applied. 
 		</p>
-
-    </section>
-
-
-    <!-- =====================================================
-         SKILLS
-         ===================================================== -->
+		
+		</section>
 
     <section id="skills" class="rule-section">
 
@@ -628,51 +660,47 @@
 			Fishing, Stealth, and Initiative
         </div>
 
-        <h3>Might — ♠</h3>
-        <ul>
-            <li>Athletics</li>
-            <li>Intimidation</li>
-            <li>Survival</li>
-        </ul>
+        <div class="card-grid">
+			<div class="card-panel">
+			<h3>Might — ♠</h3>
+			<ul>
+				<li>Athletics</li>
+				<li>Intimidation</li>
+				<li>Survival</li>
+			</ul>
+			</div>
 
-        <h3>Spirit — ♥</h3>
-        <ul>
-            <li>Insight</li>
-            <li>Persuasion</li>
-            <li>Deception</li>
-            <li>Religion / Occult</li>
-            <li>Performance</li>
-        </ul>
+			<div class="card-panel">
+			<h3>Spirit — ♥</h3>
+			<ul>
+				<li>Insight</li>
+				<li>Persuasion</li>
+				<li>Deception</li>
+				<li>Religion / Occult</li>
+				<li>Performance</li>
+			</ul>
+			</div>
 
-        <h3>Dexterity — ♣</h3>
-        <ul>
-            <li>Acrobatics</li>
-            <li>Thievery</li>
-            <li>Animal Handling</li>
-        </ul>
+			<div class="card-panel">
+			<h3>Dexterity — ♣</h3>
+			<ul>
+				<li>Acrobatics</li>
+				<li>Thievery</li>
+				<li>Animal Handling</li>
+			</ul>
+			</div>
 
-        <h3>Cunning — ♦</h3>
-        <ul>
-            <li>Perception</li>
-            <li>Arcana</li>
-            <li>Investigation</li>
-            <li>Medicine</li>
-            <li>History</li>
-        </ul>
-
-    </section>
-
-
-    <!-- =====================================================
-         TRAINING
-         ===================================================== -->
-
-    <section id="training" class="rule-section">
-
-        <div class="section-heading">
-            <span class="section-number">XIII</span>
-            <h2>Skill Training</h2>
-        </div>
+			<div class="card-panel">
+			<h3>Cunning — ♦</h3>
+			<ul>
+				<li>Perception</li>
+				<li>Arcana</li>
+				<li>Investigation</li>
+				<li>Medicine</li>
+				<li>History</li>
+			</ul>
+			</div>
+		</div>
 
         <table class="rules-table">
 
@@ -723,38 +751,84 @@
 
     </section>
 
+	<!-- =========================================================
+		 WEAPONS
+		 ========================================================= -->
 
-    <!-- =====================================================
-         FACE CARDS
-         ===================================================== -->
-
-    <section id="face-cards" class="rule-section">
-
-        <div class="section-heading">
-            <span class="section-number">XIV</span>
-            <h2>Face Cards</h2>
-        </div>
-
-        <p>
-            Jacks, Queens, and Kings always have a value of <strong>10</strong>.
-        </p>
-
-        <p>
-            In addition to their value, a face card may activate a special
-            effect when an ability specifically references a face card.
-        </p>
-
-        <div class="rule-callout">
-            A face card is therefore both a strong numerical card and a
-            potential source of special effects.
-        </div>
-
-    </section>
+	<section id="weapons" class="rule-section">
 
 
-    <!-- =====================================================
-         COMBAT SUMMARY
-         ===================================================== -->
+		<div class="section-heading">
+			<span class="section-number">VIII</span>
+			<h2>Weapons & Suit Affinity</h2>
+		</div>
+
+		<p>
+			Weapons are divided into four broad categories associated with
+			the four suits.
+		</p>
+
+		<table class="rules-table">
+
+		<thead>
+			<tr>
+				<th>Suit</th>
+				<th>Weapon Theme</th>
+				<th>Example</th>
+			</tr>
+		</thead>
+
+		<tbody>
+
+			<tr>
+				<td class="suit-spades">♠ Spades</td>
+				<td>Melee / martial weapons</td>
+				<td>Swords</td>
+			</tr>
+
+			<tr>
+				<td class="suit-hearts">♥ Hearts</td>
+				<td>Supportive / ceremonial weapons</td>
+				<td>Maces</td>
+			</tr>
+
+			<tr>
+				<td class="suit-clubs">♣ Clubs</td>
+				<td>Agile / precision weapons</td>
+				<td>Daggers, bows</td>
+			</tr>
+
+			<tr>
+				<td class="suit-diamonds">♦ Diamonds</td>
+				<td>Technical / magical weapons</td>
+				<td>Wands</td>
+			</tr>
+
+			</tbody>
+
+		</table>
+
+		<p>
+			Any character may use any weapon unless a rule states otherwise.
+			Characters proficient with a weapon gain its associated benefits.
+		</p>
+
+		<div class="rule-callout">
+			<strong>Weapon Mastery</strong>
+			<p>
+				When you have weapon mastery with a certain suit weapons, you gain resonance with  all cards of that suit instead of just face cards, and you discard the card instead of burning the card. 
+			</p>
+			<p>
+				Weapon Mastery can be gained in each of the 4 suits.
+			</p>
+		</div>
+
+
+	</section>
+
+    <!-- ========================================================= -->
+    <!-- COMBAT -->
+    <!-- ========================================================= -->
 
     <section id="combat-summary" class="rule-section">
 
@@ -763,11 +837,111 @@
             <h2>Combat Summary</h2>
         </div>
 
+        <h3>Starting Combat</h3>
+
         <p>
-            Combat follows the same card mechanics as other scenes.
-            Detailed combat rules are maintained on the dedicated
-            <a href="combat.html">Combat</a> page.
+            When combat begins, each combatant determines Initiative.
         </p>
+		<p>
+		    <strong>"Flip for Initiative"</strong>
+		</p>
+
+        <p>
+            Play the top card of your deck and add your Dexterity modifier.
+        </p>
+
+        <div class="rule-box">
+
+            <strong>Initiative = Card Value + Dexterity</strong>
+
+        </div>
+
+        <p>
+            Players win ties against enemies.
+        </p>
+
+        <p>
+            Initiative cards are placed into the Shuffle Pile after
+            Initiative has been determined.
+        </p>
+ 
+        <div class="rule-callout">
+            <strong>Acceleration</strong><br>
+       <p>
+            If the Initiative card is a face card, the character may burn the face card, and they gain Acceleration. The player draws one additional card at the beginning of their first turn.
+        </p>
+        </div>
+
+		<p>
+			The GM is to determine initiative for all characters in the scene and then the individual with the highest initiative takes their turn. When their move is complete and they have used all the cards they wish to in their hand, then play procedes to the next character in initiative order. 
+		</p>
+		<p>
+			A round is when all characters have taken their turn from the top to the bottom of the initiative order. 
+		</p>
+ 
+    <!-- ========================================================= -->
+    <!-- DEFENSE -->
+    <!-- ========================================================= -->
+
+        <h3>Defense and Armor</h3>
+
+        <p>
+            Armor Class (AC) represents how difficult a character is to hit.
+        </p>
+
+        <table class="rules-table">
+
+            <tr>
+                <th>Armor</th>
+                <th>AC</th>
+            </tr>
+
+            <tr>
+                <td>Unarmored</td>
+                <td>5 + Dexterity</td>
+            </tr>
+
+            <tr>
+                <td>Light Armor</td>
+                <td>6 + Dexterity</td>
+            </tr>
+
+            <tr>
+                <td>Medium Armor</td>
+                <td>7</td>
+            </tr>
+
+            <tr>
+                <td>Heavy Armor</td>
+                <td>8 or 9</td>
+            </tr>
+
+            <tr>
+                <td>Shield</td>
+                <td>+1 AC</td>
+            </tr>
+
+        </table>
+
+        <p>
+            Armor that does not list Dexterity does not add the character's
+            Dexterity modifier to AC.
+        </p>
+        <h3>Examples</h3>
+
+        <ul>
+            <li>Unarmored character with Dexterity +0: <strong>AC 5</strong></li>
+            <li>Unarmored character with Dexterity +3: <strong>AC 8</strong></li>
+            <li>Light Armor with Dexterity +3: <strong>AC 9</strong></li>
+            <li>Medium Armor with Shield: <strong>AC 8</strong></li>
+            <li>Heavy Armor with Shield: <strong>AC 10</strong></li>
+        </ul>
+
+    <!-- ========================================================= -->
+    <!-- BASIC ACTIONS -->
+    <!-- ========================================================= -->
+
+        <h3>Basic Combat Actions</h3>
 
         <div class="formula-box">
             <strong>Attack Total</strong>
@@ -784,200 +958,160 @@
             Face cards have a value of 10 and may activate special effects.
         </p>
 
-    </section>
+        <div class="combat-action">
 
+            <h4>Might Strike</h4>
 
-    <!-- =====================================================
-         DEFENSE
-         ===================================================== -->
+            <p>
+                <strong>Action — Play 1 card.</strong>
+            </p>
 
-    <section id="defense" class="rule-section">
+            <p>
+                Make a Might attack with a weapon in your hand.
+                On a hit, deal 1 HP damage.
+            </p>
 
-        <div class="section-heading">
-            <span class="section-number">XVI</span>
-            <h2>Armor Class</h2>
+            <p>
+                If the played card matches the suit affinity of the weapon,
+                deal 2 HP damage.
+            </p>
+
         </div>
 
-        <table class="rules-table">
+        <div class="combat-action">
 
-            <thead>
-                <tr>
-                    <th>Defense</th>
-                    <th>AC</th>
-                </tr>
-            </thead>
+            <h4>Ranged Strike</h4>
 
-            <tbody>
+            <p>
+                <strong>Action — Play 1 card.</strong>
+            </p>
 
-                <tr>
-                    <td>Unarmored</td>
-                    <td>5 + Dexterity</td>
-                </tr>
+            <p>
+                Make a ranged Dexterity attack with a ranged weapon in your
+                hand.
+            </p>
 
-                <tr>
-                    <td>Light Armor</td>
-                    <td>6 + Dexterity</td>
-                </tr>
+            <p>
+                On a hit, deal 1 HP damage.
+            </p>
 
-                <tr>
-                    <td>Medium Armor</td>
-                    <td>7</td>
-                </tr>
+            <p>
+                If the played card matches the suit affinity of the weapon,
+                deal 2 HP damage.
+            </p>
 
-                <tr>
-                    <td>Heavy Armor</td>
-                    <td>9</td>
-                </tr>
-
-                <tr>
-                    <td>Shield</td>
-                    <td>+1 AC</td>
-                </tr>
-
-            </tbody>
-
-        </table>
-
-        <h3>Examples</h3>
-
-        <ul>
-            <li>Unarmored character with Dexterity +0: <strong>AC 5</strong></li>
-            <li>Unarmored character with Dexterity +3: <strong>AC 8</strong></li>
-            <li>Light Armor with Dexterity +3: <strong>AC 9</strong></li>
-            <li>Medium Armor with Shield: <strong>AC 8</strong></li>
-            <li>Heavy Armor with Shield: <strong>AC 10</strong></li>
-        </ul>
-
-        <p>
-            Most ordinary enemies should generally fall within an AC range
-            of approximately 5–8. AC 9–10 represents strong mundane defense.
-            Higher AC should generally be reserved for exceptional or
-            supernatural defenses.
-        </p>
-
-    </section>
-
-
-    <!-- =====================================================
-         General Actions and Reactions in Combat
-         ===================================================== -->
-
-    <section id="general-actions" class="rule-section">
-
-        <div class="section-heading">
-            <span class="section-number">XVII</span>
-            <h2>General Actions</h2>
         </div>
 
-        <div class="ability-box">
-            <h3>Melee Attack</h3>
+        <div class="combat-action">
+
+            <h4>Defend</h4>
+
             <p>
-                <strong>Action:</strong>
-                On your turn when you are close to an enemy, you may discard a card and add its value and your Might score or Dexterity score depending on the weapon. You do 1hp of damage when you meet or exceed the enemy's AC.
+                <strong>Action — Play 1 card.</strong>
             </p>
 
             <p>
-                The card is placed in the Shuffle Pile.
-            </p>
-        </div>
-
-        <div class="ability-box">
-            <h3>Ranged Attack</h3>
-            <p>
-                <strong>Action:</strong>
-                On your turn when you are within range to an enemy, you may discard a card and add its value and add your Dexterity score. You do 1hp of damage when you meet or exceed the enemy's AC.
-            </p>
-            <p>
-                The card is placed in the Shuffle Pile.
-            </p>
-        </div>
-		
-		<div class="ability-box">
-            <h3>Magic Attack</h3>
-            <p>
-                <strong>Action:</strong>
-                On your turn when you are within range to an enemy, you may burn a card resonating with your spell type and add its value and add your Cunning score. You do 1hp of damage when you meet or exceed the enemy's AC.
-            </p>
-            <p>
-                Card played involving magic are placed in the Burn Pile.
-            </p>
-			<p>
-			    Many Spells will have channel effects and face card effects. 
-			</p>
-        </div>
-		
-        <div class="ability-box">
-            <h3>Defend</h3>
-            <p>
-                <strong>Action:</strong>
-                Discard a card and add its value to your AC until the
+                Add the value of the played card to your AC until the
                 beginning of your next turn.
             </p>
-            <p>
-                The card is placed in the Shuffle Pile.  When using a Face card for the Defend Action, it is place in your Burn Pile.
-            </p>
+
         </div>
-		
-        <div class="ability-box">
-            <h3>Dash</h3>
+
+        <div class="combat-action">
+
+            <h4>Shield Bash</h4>
+
             <p>
-                <strong>Action:</strong>
-                Burn a Face Card and take a second move action on your turn.
+                <strong>Action — Play a Spade.</strong>
             </p>
+
             <p>
-                Some Abilities may reduce the cost of taking the Dash Action.
+                Make an attack using a shield.
             </p>
+
+            <p>
+                On a hit, deal 1 HP damage and either push the target back
+                or knock it prone.
+            </p>
+
+            <p>
+                A player may burn a face card Spade to cause the target to be pushed back and knocked prone.
+            </p>
+
         </div>
-		
-        <div class="ability-box">
-            <h3>Parry</h3>
+
+        <div class="combat-action">
+
+            <h4>Rallying Cry</h4>
+
             <p>
-                <strong>Reaction:</strong>
-                When hit, burn any one card from your hand to negate 1 HP of damage.
+                <strong>Action — Play a Heart.</strong>
+            </p>
+
+            <p>
+                One ally may draw one card.
+            </p>
+
+            <p>
+                A player may burn a face card Heart to cause two allies to each draw one card.
+            </p>
+
+        </div>
+
+        <div class="combat-action">
+
+            <h4>Arcane Insight</h4>
+
+            <p>
+                <strong>Action — Play a Diamond.</strong>
+            </p>
+
+            <p>
+                Reveal a weakness, vulnerability, or useful insight about
+                an enemy.
+            </p>
+
+            <p>
+                A player may burn a face card Diamond and choose two enemies to reveal information about.
+            </p>
+
+        </div>
+
+    <!-- ========================================================= -->
+    <!-- REACTIONS -->
+    <!-- ========================================================= -->
+
+        <h3>Reactions</h3>
+
+        <p>
+            A Reaction may be used outside of your normal turn when its
+            trigger occurs.
+        </p>
+
+        <p>
+            A card must be played to trigger a Reaction unless the ability
+            specifically says otherwise.
+        </p>
+
+        <div class="combat-action">
+
+            <h4>Dodge</h4>
+
+            <p>
+                <strong>Reaction — Play a card from your hand.</strong>
+            </p>
+
+            <p>
+                When you are hit by an attack, play a card to negate
+                1 HP of damage from that attack.
             </p>
 			<p>
-				When Burning a Face Card to parry an attack, negate 2 HP of damage. 
-			</p>
-            <p>
-                When cards are used to Parry an attack, they are always placed in the Burn Pile.
+                A player may burn a face card and negate all incoming damage from a single source.
             </p>
-        </div>
-
-    </section>
-
-
-    <!-- =====================================================
-         REST
-         ===================================================== -->
-
-    <section id="rest" class="rule-section">
-
-        <div class="section-heading">
-            <span class="section-number">XVIII</span>
-            <h2>Rest</h2>
-        </div>
-
-        <div class="card-grid">
-
-            <div class="card-panel">
-                <h3>Short Rest</h3>
-                <p>
-                    Add a number of cards from your burn pile into your shuffle pile equal to your hand size. Shuffle the Shuffle pile and it becomes your new Deck.
-                </p>
-            </div>
-
-            <div class="card-panel">
-                <h3>Long Rest</h3>
-                <p>
-                    Recover HP and shuffle all cards from the Shuffle Pile
-                    and Burn Pile back into the Deck.
-                </p>
-            </div>
 
         </div>
 
     </section>
-
 
     <!-- =====================================================
          MAGIC SUMMARY
@@ -991,8 +1125,7 @@
         </div>
 
         <p>
-            Magic is divided into four domains. Detailed spellcasting rules
-            and spell lists are maintained on the dedicated
+            Magic is divided into four resonantdomains. Detailed spellcasting rules spell lists are maintained on the dedicated
             <a href="magic.html">Magic</a> page.
         </p>
 
@@ -1041,13 +1174,353 @@
             Cards used to cast spells are placed in the
             <strong>Burn Pile</strong>.
         </div>
+        </table>
+
+        <h3>Spell Tiers</h3>
+
+        <p>
+            Spells are divided into Tiers 0 through 5.
+        </p>
+
+        <table class="rules-table">
+
+            <tr>
+                <th>Tier</th>
+                <th>Base Casting Cost</th>
+            </tr>
+
+            <tr>
+                <td>0</td>
+                <td>Free outside combat; any card may be Burned in combat to play a Tier 0 Spell.</td>
+            </tr>
+
+            <tr>
+                <td>1</td>
+                <td>Burn 1 card of the Resonant Suit</td>
+            </tr>
+
+            <tr>
+                <td>2</td>
+                <td>Burn 2 cards of the Resonant Suit</td>
+            </tr>
+
+            <tr>
+                <td>3</td>
+                <td>Burn 3 cards of the Resonant Suit</td>
+            </tr>
+
+            <tr>
+                <td>4</td>
+                <td>Burn 4 cards of the Resonant Suit</td>
+            </tr>
+
+            <tr>
+                <td>5</td>
+                <td>Burn 5 cards of the Resonant Suit</td>
+            </tr>
+
+        </table>
+		<h4>Magic Surge</h4>
+		<p>
+			When paying the cost to cast a spell, if a resonant face card is burned, it counts as 2 cards towards the cost of the spell. 
+		</p>
+		<p>
+			A face card out of resonance may be burned when paying the spell cost, but it will count as one card towards the cost of casting the spell. 
+		</p>
+
+        <div class="rule-box">
+            <strong>Examples:</strong>
+            <p>
+                A Tier 2 Arcane spell requires two cards. The first card
+                provides its normal value to the magic attack. If the second
+                card is a Diamond, it also adds +1 to the check because it
+                resonates with Arcane magic.
+            </p>
+			<p>
+			   A Tier 1 Spell Firebolt has a cost of 1 Diamond. Playing an 8 of Diamonds allows the wizard to cast firebolt and hit the enemy for 1hp of damage. 
+			</p>
+			<p>
+				A Tier 1 Spell Firebolt has a cost of 1 Diamond. Playing an King of Spades allows the wizard to cast firebolt and hit the enemy for 1hp of damage.
+			</p>
+			<p>
+				A Tier 1 Spell Firebolt has a cost of 1 Diamond. Playing an 8 of diamonds allows the wizard to cast firebolt and hit the enemy for 1hp of damage.  The Spell has the channel keyword, so the player burns an additional 2 of Diamonds to add +1 to the attack and to do 1 additional damage. 			
+			</p>
+			<p>
+				A Tier 1 Spell Firebolt has a cost of 1 Diamond. Playing an Jack of diamonds paying the cost of 2 diamonds to cast the spell. This allows the wizard to cast Firebolt and hit the enemy for 2hp of damage due to the channel keyword. 			
+			</p>
+			<p>
+				A Tier 2 Arcane Burst has a cost requiring 2 Diamonds. Playing an King of diamonds is paying the cost of 2 diamonds to cast the spell. This allows the wizard to cast Arcane Burst and hit the enemy for 3hp of damage, due to the channel keyword the player can burn a 5 of Diamonds doing 4 hp of damage. 				
+			</p>
+        </div>
+
+        <h3>Magic in Combat</h3>
+
+        <p>
+            Casting a spell in combat requires the appropriate number of
+            cards to be Burned to cast the spell.
+        </p>
+        <p>
+            The <strong>first</strong> card Burned for the spell contributes its card value to the magic attack.
+        </p>
+        <p>
+            Each additional card that matches the spell's resonant suit
+            adds +1 to the magic attack.
+        </p>
+
+        <h3>Magic Outside Combat</h3>
+        <p>
+            When casting a spell outside combat, the caster may search their
+            deck for the cards needed to pay the spell's cost, provided the
+            cards match the spell's resonant suit.
+        </p>
+        <p>
+            The selected cards are then Burned.
+        </p>
+
+        <h3>Channel</h3>
+
+        <p>
+            Some spells have the Channel property.
+        </p>
+
+        <p>
+            After paying the spell's normal casting cost, the caster may
+            Burn additional cards to strengthen the spell.
+        </p>
+
+        <p>
+            When a Channel effect specifies a resonant suit, each appropriate
+            additional card increases the spell's effect as described by
+            that spell.
+        </p>
 
     </section>
 
+    <!-- ========================================================= -->
+    <!-- GOBBLE -->
+    <!-- ========================================================= -->
 
-    <!-- =====================================================
-         CHARACTER CREATION
-         ===================================================== -->
+    <section class="rule-section">
+
+        <div class="section-heading">
+            <span class="section-number">XX</span>
+            <h2>Gobble, Food, and Potions</h2>
+        </div>
+
+        <p>
+            When a player has an Ace in their hand, they may use the Gobble
+            action.
+        </p>
+
+        <div class="combat-action">
+
+            <h4>Gobble</h4>
+
+            <p>
+                <strong>Special Action — Burn an Ace.</strong>
+            </p>
+
+            <p>
+                Burn an Ace and consume a food, drink, potion, or other
+                consumable item.
+            </p>
+
+            <p>
+                Apply the item's effect.
+            </p>
+
+        </div>
+
+        <div class="rule-box">
+
+            <strong>Persistent Food Effects</strong>
+
+            <p>
+                Only one persistent food effect may be active at a time.
+            </p>
+
+            <p>
+                Consuming a new food item with a persistent effect removes
+                the previous persistent food effect and replaces it with
+                the new one.
+            </p>
+
+        </div>
+		
+		<div class="rule-callout">
+
+			<strong>Example</strong>
+
+			<p>
+				A fighter consumes a Protein Bar and gains +1 Might until
+				their next Long Rest. Later, they consume a Fizzy Drink.
+				The +1 Might effect ends and is replaced by +1 Dexterity.
+			</p>
+
+		</div>
+
+		<h3>Example Consumables</h3>
+
+		<table class="rules-table">
+			<thead>
+				<tr>
+					<th>Item</th>
+					<th>Effect</th>
+				</tr>
+			</thead>
+
+			<tbody>
+
+				<tr>
+					<td>Bread</td>
+					<td>Recover 1 HP.</td>
+				</tr>
+
+				<tr>
+					<td>Health Potion</td>
+					<td>Recover 3 HP.</td>
+				</tr>
+
+				<tr>
+					<td>Protein Bar</td>
+					<td>+1 Might until your next Long Rest.</td>
+				</tr>
+
+				<tr>
+					<td>Fizzy Drink</td>
+					<td>+1 Dexterity until your next Long Rest.</td>
+				</tr>
+
+				<tr>
+					<td>Arcane Tea</td>
+					<td>+1 Cunning until your next Long Rest.</td>
+				</tr>
+
+				<tr>
+					<td>Comfort Stew</td>
+					<td>+1 Spirit until your next Long Rest.</td>
+				</tr>
+
+				<tr>
+					<td>Trail Mix</td>
+					<td>Recover 1 HP and gain +1 Survival until your next Long Rest.</td>
+				</tr>
+
+				<tr>
+					<td>Herbal Tonic</td>
+					<td>Recover 2 HP.</td>
+				</tr>
+
+				<tr>
+					<td>Ironbrew</td>
+					<td>+1 AC until your next Long Rest.</td>
+				</tr>
+
+				<tr>
+					<td>Swiftroot Juice</td>
+					<td>Increase your movement by 1 until your next Long Rest.</td>
+				</tr>
+
+			</tbody>
+		</table>
+    </section>
+
+    <!-- ========================================================= -->
+    <!-- HP -->
+    <!-- ========================================================= -->
+
+    <section class="rule-section">
+
+        <div class="section-heading">
+            <span class="section-number">XX</span>
+            <h2>Hit Points and Defeat</h2>
+        </div>
+
+        <p>
+            Characters and enemies have Hit Points (HP).
+        </p>
+
+        <h3>Reaching 0 HP</h3>
+
+        <p>
+            When a player character reaches 0 HP, they fall unconscious and
+            fall to the ground.
+        </p>
+
+        <p>
+            An unconscious character cannot fight or take normal actions.
+        </p>
+
+        <h3>Recovering Consciousness</h3>
+
+        <p>
+            Whenever an unconscious player character gains HP from any
+            source, they immediately regain consciousness and may fight and act
+            normally.
+        </p>
+
+        <div class="rule-callout">
+            <strong>Unconscious Consumption</strong>
+            Only liquid drinks and potions may be given to another player to assist in recovering their hit points.
+        </div>
+
+        <h3>Party Defeat</h3>
+
+        <p>
+            If the entire party is unconscious, the DM determines the fate
+            of the party.
+        </p>
+
+        <p>
+            This may result in capture, rescue, retreat, consequences from
+            the encounter, or another outcome appropriate to the adventure.
+        </p>
+
+    </section>
+
+    <!-- ========================================================= -->
+    <!-- REST -->
+    <!-- ========================================================= -->
+
+    <section class="rule-section">
+
+        <div class="section-heading">
+            <span class="section-number">XX</span>
+            <h2>Rest</h2>
+        </div>
+
+        <h3>Short Rest</h3>
+
+        <p>
+            A Short Rest is a period of recovery during an adventure.
+            Class abilities and other features that specify Short Rest
+            recovery become available again.
+        </p>
+
+        <p>
+            The exact resource-recovery rules for the Burn Pile and
+            Shuffle Pile remain part of the current playtest rules and
+            should be updated here as playtesting finalizes them.
+        </p>
+
+        <h3>Long Rest</h3>
+
+        <p>
+            A Long Rest represents substantial recovery between adventures
+            or after a safe period of downtime.
+        </p>
+
+        <p>
+            Long Rest recovery includes recovery of HP and restoration of
+            the character's card resources according to the current
+            campaign rules.
+        </p>
+
+    </section>
+
+    <!-- ========================================================= -->
+    <!-- CHARACTER CREATION -->
+    <!-- ========================================================= -->
 
     <section id="character-creation" class="rule-section">
 
@@ -1056,30 +1529,26 @@
             <h2>Character Creation</h2>
         </div>
 
-        <ol class="numbered-list">
+        <ol>
+
+            <li>Choose an Ancestry.</li>
 
             <li>
-                Choose an <strong>Ancestry</strong>.
+                Choose two Ancestry Feats available to that Ancestry.
+            </li>
+
+            <li>Choose a Background.</li>
+
+            <li>
+                Apply the Background's skill proficiencies and minor ability.
             </li>
 
             <li>
-                Choose two available <strong>Ancestry Feats</strong>.
+                Choose a Core Class.
             </li>
 
             <li>
-                Choose a <strong>Background</strong>.
-            </li>
-
-            <li>
-                Apply the Background's skill proficiencies and feature.
-            </li>
-
-            <li>
-                Choose a <strong>Class</strong>.
-            </li>
-
-            <li>
-                Apply the Level 1 class features.
+                Apply the class's Level 1 features.
             </li>
 
             <li>
@@ -1087,200 +1556,100 @@
             </li>
 
             <li>
-                Record starting equipment, weapons, armor, skills,
-                spells, and other abilities.
+                Choose starting equipment.
+            </li>
+
+            <li>
+                Prepare your starting cards according to the current
+                playtest deck rules.
             </li>
 
         </ol>
-
-        <p>
-            Ancestry does not modify core attributes.
-        </p>
         <div class="rule-callout">
             <strong><center>Starting Attributes</center></strong>
 			<br>
             <strong>Standard Array:</strong> -1,0,+1,+2
 			<br>
-			<strong>Allocation:</strong> All Attribubtes start at -1. You have 6 points to allocate to each of the attributes not to exceed +2. 
+			<strong>Allocation:</strong> All Attributes start at -1. You have 6 points to allocate to each of the attributes not to exceed +2. 
 			<br>
-			<strong>GM Discretion:</strong> You Gamemaster may have their own preferred way to determine starting core attributes. 			
+			<strong>GM Discretion:</strong> Your Gamemaster may have their own preferred way to determine starting core attributes. 			
         </div>
-
     </section>
 
+    <!-- ========================================================= -->
+    <!-- ADVANCEMENT -->
+    <!-- ========================================================= -->
 
-    <!-- =====================================================
-         ADVANCEMENT
-         ===================================================== -->
-
-    <section id="advancement" class="rule-section">
+    <section id="character-advancement" class="rule-section">
 
         <div class="section-heading">
-            <span class="section-number">XXI</span>
-            <h2>Advancement</h2>
+            <span class="section-number">XX</span>
+            <h2>Character Advancement</h2>
         </div>
-
-        <p>
-            The maximum character level is <strong>Level 5</strong>.
-        </p>
 
         <table class="rules-table">
 
-            <thead>
-                <tr>
-                    <th>Level</th>
-                    <th>Universal Advancement</th>
-                    <th>Hand Size</th>
-                </tr>
-            </thead>
+            <tr>
+                <th>Level</th>
+                <th>Advancement</th>
+            </tr>
 
-            <tbody>
+            <tr>
+                <td>1</td>
+                <td>
+                    Gain class identity features.
+                    Starting Hand Size: 2.
+                </td>
+            </tr>
 
-                <tr>
-                    <td><strong>1</strong></td>
-                    <td>
-                        Gain class identity features.
-                    </td>
-                    <td>2</td>
-                </tr>
+            <tr>
+                <td>2</td>
+                <td>
+                    Gain a subclass feature.
+                </td>
+            </tr>
 
-                <tr>
-                    <td><strong>2</strong></td>
-                    <td>
-                        Gain a subclass feature.
-                    </td>
-                    <td>2</td>
-                </tr>
+            <tr>
+                <td>3</td>
+                <td>
+                    Gain a class identity feature.
+                    Hand Size increases to 3.
+                </td>
+            </tr>
 
-                <tr>
-                    <td><strong>3</strong></td>
-                    <td>
-                        Gain a class identity feature.
-                    </td>
-                    <td>3</td>
-                </tr>
+            <tr>
+                <td>4</td>
+                <td>
+                    Gain a subclass feature.
+                </td>
+            </tr>
 
-                <tr>
-                    <td><strong>4</strong></td>
-                    <td>
-                        Gain a subclass feature.
-                    </td>
-                    <td>3</td>
-                </tr>
-
-                <tr>
-                    <td><strong>5</strong></td>
-                    <td>
-                        Increase one core attribute by +1.
-                    </td>
-                    <td>4</td>
-                </tr>
-
-            </tbody>
+            <tr>
+                <td>5</td>
+                <td>
+                    Increase one core attribute by +1.
+                    Hand Size increases to 4.
+                </td>
+            </tr>
 
         </table>
 
-        <div class="rule-callout">
-            <strong>Asymmetric Growth</strong>
-            <p>
-                Characters do not need to follow identical development paths.
-                Class identity provides the foundation, while subclass feats
-                and other feats allow characters with the same class to
-                develop substantially different play styles.
-            </p>
-        </div>
-
-    </section>
-
-
-    <!-- =====================================================
-         SUBCLASSES
-         ===================================================== -->
-
-    <section id="subclasses" class="rule-section">
-
-        <div class="section-heading">
-            <span class="section-number">XXII</span>
-            <h2>Subclass Growth</h2>
-        </div>
-
         <p>
-            Subclasses are a major source of asymmetric character growth.
-        </p>
-
-        <p>
-            Rather than requiring every member of a subclass to receive
-            exactly the same feature at the same level, each subclass is
-            designed around a pool of independent subclass feats.
-        </p>
-
-        <div class="rule-callout">
-            <strong>Subclass Design Principle</strong>
-            <p>
-                Each subclass should eventually contain approximately
-                <strong>10 independent features</strong>. Characters choose
-                from those features as they advance, allowing two characters
-                with the same class and subclass to play differently.
-            </p>
-        </div>
-
-        <p>
-            The exact acquisition rules for subclass feats will be defined
-            on the dedicated <a href="feats.html">Feats</a> page.
+            After reaching Level 5, characters continue to develop through
+            Feat Points rather than gaining additional character levels.
         </p>
 
     </section>
 
+    <!-- ========================================================= -->
+    <!-- RULES PHILOSOPHY -->
+    <!-- ========================================================= -->
 
-    <!-- =====================================================
-         LEVEL CAP
-         ===================================================== -->
-
-    <section id="level-cap" class="rule-section">
-
-        <div class="section-heading">
-            <span class="section-number">XXIII</span>
-            <h2>The Level Cap</h2>
-        </div>
-
-        <p>
-            Level 5 represents the end of traditional character leveling.
-            The intent is for characters to become increasingly differentiated
-            through feats rather than continually increasing numerical power.
-        </p>
-
-        <p>
-            Once a character reaches Level 5, future advancement comes from
-            acquiring and spending <strong>Feat Points</strong>.
-        </p>
-
-        <p>
-            Feat Points may eventually be used to purchase:
-        </p>
-
-        <ul>
-            <li>Subclass feats</li>
-            <li>Ancestry feats</li>
-            <li>General feats</li>
-            <li>Additional skill proficiencies</li>
-            <li>Expertise</li>
-            <li>Weapon or armor proficiencies</li>
-            <li>New abilities</li>
-            <li>Other specialized character options</li>
-        </ul>
-
-    </section>
-
-
-    <!-- =====================================================
-         DESIGN PHILOSOPHY
-         ===================================================== -->
-
-    <section id="design-philosophy" class="rule-section">
+    <section id="rules-philosophy" class="rule-section">
 
         <div class="section-heading">
-            <span class="section-number">XXIV</span>
-            <h2>Design Philosophy</h2>
+            <span class="section-number">XX</span>
+            <h2>The Spirit of the Rules</h2>
         </div>
 
         <div class="card-grid">
@@ -1319,72 +1688,40 @@
 
         </div>
 
-    </section>
+        <p>
+            Realm and Rune is intended to be lightweight and fast.
+            Players should have meaningful choices without requiring
+            extensive bookkeeping.
+        </p>
 
+        <p>
+            The card system is designed to reward tactical decisions,
+            resource management, and creative use of abilities.
+        </p>
 
-    <!-- =====================================================
-         DEVELOPMENT STATUS
-         ===================================================== -->
+        <p>
+            When a rule is unclear, the DM should make a reasonable ruling
+            and keep the game moving. Rules can be clarified or changed
+            after the session as part of the playtest process.
+        </p>
 
-    <section id="development" class="rule-section">
+        <div class="rule-box">
 
-        <div class="section-heading">
-            <span class="section-number">XXV</span>
-            <h2>Current Development Status</h2>
+            <strong>Playtest Principle</strong>
+
+            <p>
+                If a rule repeatedly slows down play, causes confusion,
+                or prevents players from doing something fun, record the
+                problem and revisit the rule after the session.
+            </p>
+
         </div>
-
-        <p>
-            Realm & Rune is currently a playtest ruleset. The following
-            systems are established enough for early testing but remain
-            subject to revision:
-        </p>
-
-        <ul>
-
-            <li>
-                Card values and card zones.
-            </li>
-
-            <li>
-                Hand size and card economy.
-            </li>
-
-            <li>
-                Core attributes.
-            </li>
-
-            <li>
-                Skill proficiency and expertise.
-            </li>
-
-            <li>
-                Basic action economy.
-            </li>
-
-            <li>
-                Armor Class.
-            </li>
-
-            <li>
-                Spell resource management.
-            </li>
-
-            <li>
-                Level 1–5 advancement structure.
-            </li>
-
-        </ul>
-
-        <p>
-            Exact balance, starting deck composition, HP scaling,
-            enemy design, spell balance, feat costs, and encounter
-            difficulty require playtesting.
-        </p>
 
     </section>
 
 
 </main>
+
 
 <footer class="site-footer">
 <iframe
@@ -1393,6 +1730,7 @@
     title="Realm & Rune navigation">
 </iframe>
 </footer>
+
 
 </body>
 </html>

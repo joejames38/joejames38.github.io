@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gameplay Guide - Character Hub</title>
+    <title>Gameplay Guide</title>
     <link rel="stylesheet" href="skills-styling.css">
     <script src="skills-common.js" defer></script>
 </head>
@@ -13,91 +13,82 @@
 
     <!-- Main Content -->
     <main>
-        <section>
-            <h1>Gameplay Highlights</h1>
-            <p>
-                This guide provides a quick overview of some core gameplay mechanics. 
-                These rules form the foundation for skills checks, combat, and action management during your game.
-            </p>
-        </section>
+        <section class="slideshow">
+            <!-- Slideshow Steps -->
+            <nav class="slideshow-steps">
+                <ul>
+                    <li><a href="#" data-slide="0">Game Basics</a></li>
+                    <li><a href="#" data-slide="1">Combat</a></li>
+                    <li><a href="#" data-slide="2">Game Progression</a></li>
+                </ul>
+            </nav>
 
-        <!-- Skills Checks -->
-        <section>
-            <h2>Skill Checks</h2>
-            <p>
-                Skill checks determine the success or failure of an action, based on the character's ability scores and proficiency.
-            </p>
-            <ul>
-                <li>
-                    <strong>Rolling a d20:</strong> Roll a 20-sided die (d20) and add the relevant ability modifier 
-                    (e.g., Dexterity for Acrobatics).
-                </li>
-                <li>
-                    <strong>Difficulty Class (DC):</strong> Compare the result to the DC set by the DM to determine success or failure.
-                </li>
-                <li>
-                    <strong>Critical Success/Failure:</strong> For non-attack rolls, rolling a 1 or 20 is not automatically a fail or success 
-                    unless the DM specifies otherwise.
-                </li>
-            </ul>
-        </section>
+            <!-- Slideshow Container -->
+            <div id="slideshow-container">
+                <!-- Slide 1: Game Basics -->
+                <div class="slide">
+                    <h2>Game Basics</h2>
+                    <p><strong>Game Master (GM):</strong> The GM guides the game, describes the world, controls NPCs, and adjudicates rules.</p>
+                    <p><strong>Roleplaying:</strong> Players assume the roles of their characters, making decisions and taking actions based on their character's perspective.</p>
+                    <p><strong>Dice:</strong> Different dice sizes are used:
+                        <ul>
+                            <li>d4 (4-sided)</li>
+                            <li>d6 (6-sided)</li>
+                            <li>d8 (8-sided)</li>
+                            <li>d10 (10-sided)</li>
+                            <li>d12 (12-sided)</li>
+                            <li>d20 (20-sided)</li>
+                        </ul>
+                    </p>
+                    <p><strong>Skill Checks:</strong> Roll a d20, add the relevant modifier, and compare to the DC.</p>
+                    <p><strong>Advantage/Disadvantage:</strong> Roll two d20s:
+                        <ul>
+                            <li>Advantage: Use the higher result.</li>
+                            <li>Disadvantage: Use the lower result.</li>
+                        </ul>
+                    </p>
+                </div>
 
-        <!-- Advantage and Disadvantage -->
-        <section>
-            <h2>Advantage and Disadvantage</h2>
-            <p>
-                Advantage and disadvantage represent favorable or unfavorable circumstances affecting a roll.
-            </p>
-            <ul>
-                <li>
-                    <strong>Advantage:</strong> Roll two d20s and use the higher result.
-                </li>
-                <li>
-                    <strong>Disadvantage:</strong> Roll two d20s and use the lower result.
-                </li>
-                <li>
-                    If both apply, they cancel each other out and you roll normally.
-                </li>
-            </ul>
-        </section>
+                <!-- Slide 2: Combat -->
+                <div class="slide">
+                    <h2>Combat</h2>
+                    <p><strong>Initiative:</strong> Roll a d20 + Dexterity modifier to determine turn order.</p>
+                    <p><strong>Action Economy:</strong> On your turn, you can take:
+                        <ul>
+                            <li>1 Action</li>
+                            <li>1 Bonus Action</li>
+                            <li>1 Reaction (outside of your turn)</li>
+                            <li>Free Actions (simple tasks like speaking)</li>
+                        </ul>
+                    </p>
+                    <p><strong>Ranged Weapons:</strong> Weapons with range may have disadvantage when shooting targets at close range.</p>
+                    <p><strong>Attack of Opportunity:</strong> A melee attack triggered when an enemy leaves your reach without disengaging.</p>
+                    <p><strong>Actions You Can Take:</strong>
+                        <ul>
+                            <li>Attack</li>
+                            <li>Cast a Spell</li>
+                            <li>Dash</li>
+                            <li>Dodge</li>
+                            <li>Disengage</li>
+                            <li>Hide</li>
+                            <li>Ready</li>
+                            <li>Help</li>
+                        </ul>
+                    </p>
+                </div>
 
-        <!-- Combat Rules -->
-        <section>
-            <h2>Combat Rules</h2>
+                <!-- Slide 3: Game Progression -->
+                <div class="slide">
+                    <h2>Game Progression</h2>
+                    <p><strong>Episode-Based Sessions:</strong> Break your campaign into manageable episodes with a clear beginning, middle, and end.</p>
+                    <p><strong>Equipment Selection:</strong> Players should ensure they have the gear necessary for their goals (weapons, armor, tools, etc.).</p>
+                    <p><strong>Character Downtime:</strong> Use downtime for crafting, training, earning money, or pursuing personal goals.</p>
+                </div>
 
-            <!-- Initiative -->
-            <h3>Initiative</h3>
-            <p>
-                At the start of combat, each creature rolls a d20 and adds their Dexterity modifier to determine turn order.
-            </p>
-            <ul>
-                <li>
-                    <strong>Initiative Order:</strong> Players and NPCs take turns in descending order of initiative rolls.
-                </li>
-                <li>
-                    <strong>Ties:</strong> Resolve ties by comparing Dexterity scores; the DM decides if scores are equal.
-                </li>
-            </ul>
-
-            <!-- Action Economy -->
-            <h3>Action Economy</h3>
-            <p>
-                On their turn, a creature can perform actions based on the following categories:
-            </p>
-            <ul>
-                <li>
-                    <strong>Action:</strong> Standard activities like attacking, casting a spell, or using an ability.
-                </li>
-                <li>
-                    <strong>Bonus Action:</strong> Quick actions granted by specific abilities, spells, or features.
-                </li>
-                <li>
-                    <strong>Reaction:</strong> A single response triggered outside your turn, like an opportunity attack.
-                </li>
-                <li>
-                    <strong>Free Actions:</strong> Simple tasks like drawing a weapon or speaking a few words.
-                </li>
-            </ul>
+                <!-- Navigation Buttons -->
+                <button id="prev" class="slideshow-btn">Previous</button>
+                <button id="next" class="slideshow-btn">Next</button>
+            </div>
         </section>
     </main>
 </body>
