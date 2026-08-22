@@ -8,7 +8,7 @@
 @page { size: A4 landscape; margin: 8mm; }
 *{box-sizing:border-box}
 body{margin:0;background:#ddd;color:#17130e;font-family:Georgia,"Times New Roman",serif}
-.sheet{width:350mm;min-height:210mm;margin:auto;padding:5mm;background:#f7f0df;
+.sheet{width:330mm;min-height:210mm;margin:auto;padding:5mm;background:#f7f0df;
 background-image:radial-gradient(#d8c9aa55 1px,transparent 1px);background-size:5px 5px}
 h1,h2,h3{margin:0;text-align:center;font-variant:small-caps}
 h1{font-size:25pt;letter-spacing:2px}.subtitle{text-align:center;font-size:9pt;letter-spacing:3px;margin-bottom:2mm}
@@ -18,18 +18,63 @@ h1{font-size:25pt;letter-spacing:2px}.subtitle{text-align:center;font-size:9pt;l
 .identity{grid-column:1}.attributes{grid-column:2}.defense{grid-column:3}
 .skills{grid-column:1;grid-row:2 / span 2}.gear{grid-column:2}.magic{grid-column:3;grid-row:2 / span 2}
 .features{grid-column:1}.attacks{grid-column:2}.notes{grid-column:3}
-.line{display:inline-block;border-bottom:1px solid #4d4030;height:5mm;vertical-align:bottom;min-width:35mm}
+.line{display:inline-block;border-bottom:1px solid #4d4030;height:5mm;vertical-align:bottom; min-width:max(35px, 50%)}
 .full{display:block;width:100%;margin:1.3mm 0}.small{font-size:8pt}.tiny{font-size:7pt}
 .attr{display:grid;grid-template-columns:repeat(4,1fr);gap:1.5mm;text-align:center}
 .attr b{font-size:9pt}.score{height:15mm;border:1px solid #4d4030;margin:1mm 0}.mod{font-size:8pt}
 .two{display:grid;grid-template-columns:repeat(3,1fr) 1fr;gap:2mm}.shield{font-size:14pt;text-align:center;border:1px solid #4d4030;padding:3mm;margin:2mm auto;width:27mm}
-.hp{font-size:9pt}.skill{display:grid;grid-template-columns:5mm 1fr 11mm 32mm;gap:1mm;align-items:end;margin:1.5mm 0}
-.check{width:4mm;height:4mm;border:1px solid #333}.rule{border-bottom:1px solid #74634b;height:6mm}
+.hp{font-size:9pt}.skill{display:grid;grid-template-columns:5mm 5mm 1fr 32mm;gap:1mm;align-items:end;margin:1.5mm 0}
+.check{width:4mm;height:4mm;border:1px solid #333}.rule{border-bottom:1px solid #74634b;height:7mm}
 .listline{border-bottom:1px solid #74634b;height:6mm;margin:1mm 0}
 table{width:100%;border-collapse:collapse;font-size:7pt}th,td{border-bottom:1px solid #806b4d;padding:1mm;text-align:left}
 .circle{display:inline-block;width:4mm;height:4mm;border:1px solid #333;border-radius:50%}
 .footer{text-align:center;font-size:7.5pt;font-style:italic;margin-top:3mm}
-@media print{body{background:white}.sheet{margin:0;box-shadow:none}}
+@media print {
+  /* 1. Force the physical printer layout to landscape orientation */
+  @page {
+    size: A4 landscape;
+    margin: 0; /* Clears default browser header/footer spacing */
+  }
+
+  /* 2. Reset the page containers to fit the landscape height boundary */
+  html, body {
+    height: 210mm; /* Fixed A4 landscape height */
+    max-height: 210mm;
+    margin: 0;
+    padding: 0;
+    background: none !important;
+    background-color: transparent !important;
+  }
+
+  /* 3. The infinite horizontal canvas */
+  .printable-area {
+    height: 210mm;
+    max-height: 210mm;
+    
+    /* Crucial: Forces width to expand dynamically based on content size */
+    width: max-content; 
+    min-width: 297mm; /* Minimum baseline of a single A4 landscape sheet */
+    
+    /* Strict vertical clipping safety net */
+    overflow-y: hidden; 
+    box-sizing: border-box;
+    padding: 15mm; /* Inward safety margin */
+    
+    /* Background striping */
+    background: none !important;
+    background-color: transparent !important;
+  }
+
+  /* 4. Multi-page horizontal splitting safety */
+  .printable-area * {
+    max-height: 100%;
+    box-sizing: border-box;
+    background: none !important;
+    background-color: transparent !important;
+  }
+}
+
+
 </style>
 </head>
 <body><main class="sheet">
@@ -39,33 +84,33 @@ table{width:100%;border-collapse:collapse;font-size:7pt}th,td{border-bottom:1px 
 
 <div class="box identity"><h2>Identity</h2>
 <div>Character: <span class="line"></span></div>
-<div>Player: <span class="line"></span></div>
-<div>Ancestry: <span class="line" style="min-width:24mm"></span>
-<br> Background: <span class="line" style="min-width:24mm"></span></div>
+<div>Ancestry: <span class="line"></span>
+<br> Background: <span class="line"></span></div>
 <div>Class: <span class="line"></span> Level: <span class="line" style="min-width:12mm"></span></div>
 <div>Subclass: <span class="line"></span></div>
-<div>Feat Points: <span class="line"></span></div>
-<div>Hand Size: <span class="line" style="min-width:15mm"></span></div>
+<div>Hand Size: <span class="line" style="min-width:15mm"></span>Feat Points:<span class="line" style="min-width:15mm"></span></div>
 </div>
 
 <div class="box attributes"><h2>Core Attributes</h2>
 <div class="attr">
-<div><b>Might</b><div class="score"></div><span class="mod">Modifier</span></div>
-<div><b>Spirit</b><div class="score"></div><span class="mod">Modifier</span></div>
-<div><b>Dexterity</b><div class="score"></div><span class="mod">Modifier</span></div>
-<div><b>Cunning</b><div class="score"></div><span class="mod">Modifier</span></div></div>
-<div class="small">Attribute range: −1 to +3</div>
+<div><b>Might</b><div class="score"></div></div>
+<div><b>Spirit</b><div class="score"></div></div>
+<div><b>Dexterity</b><div class="score"></div></div>
+<div><b>Cunning</b><div class="score"></div></div>
+</div>
 <br>
 <div>Food Buff: <span class="line"></span></div>
 </div>
 
-<div class="box defense"><h2>Defense &amp; Health</h2><div class="two">
-<div class="shield">Init<br><br><span class="small">_____</span></div>
-<div class="shield">AC<br><br><span class="small">_____</span></div>
-<div class="shield">MAX HP<br><br><span class="small">_____</span></div>
-<div class="shield">Current<br><br><span class="small">_____</span></div>
+<div class="box defense"><h2>Defense &amp; Health</h2>
+<div class="attr">
+<div><b>Initiative</b><div class="score"></div></div>
+<div><b>AC</b><div class="score"></div></div>
+<div><b>Max HP</b><div class="score"></div></div>
+<div><b>Current</b><div class="score"></div></div>
 </div>
-<div><b>AC: </b> Unarmored 5 + Dex, Light 6 + Dex, Medium 7, Heavy 9<br>Shield +1</div>
+<div class="small"><b>AC: </b> None 5 + Dex, Light 6 + Dex, Medium 7, Heavy 9, Shield +1 <br><br></div>
+<div>Equipped Armor: <span class="line"></span></div>
 </div>
 </div>
 
@@ -73,29 +118,29 @@ table{width:100%;border-collapse:collapse;font-size:7pt}th,td{border-bottom:1px 
 <div class="tiny"><b>Untrained:</b> Disadvantage + Mod<br><b>Proficient:</b> Play 1 hand card + Mod<br><b>Expertise:</b> Play up to 2 hand cards; second must match skill suit + Mod</div>
 
 <h3>Might — ♠</h3>
-<div class="skill"><span class="check"></span><span>Athletics</span><span>P / E</span><span class="rule"></span></div>
-<div class="skill"><span class="check"></span><span>Intimidation</span><span>P / E</span><span class="rule"></span></div>
-<div class="skill"><span class="check"></span><span>Survival</span><span>P / E</span><span class="rule"></span></div>
+<div class="skill"><span class="check">P</span><span class="check">E</span><span>Athletics</span><span class="rule"></span></div>
+<div class="skill"><span class="check">P</span><span class="check">E</span><span>Intimidation</span><span class="rule"></span></div>
+<div class="skill"><span class="check">P</span><span class="check">E</span><span>Survival</span><span class="rule"></span></div>
 
 <h3>Spirit — ♥</h3>
-<div class="skill"><span class="check"></span><span>Animal Handling</span><span>P / E</span><span class="rule"></span></div>
-<div class="skill"><span class="check"></span><span>Deception</span><span>P / E</span><span class="rule"></span></div>
-<div class="skill"><span class="check"></span><span>Insight</span><span>P / E</span><span class="rule"></span></div>
-<div class="skill"><span class="check"></span><span>Performance</span><span>P / E</span><span class="rule"></span></div>
-<div class="skill"><span class="check"></span><span>Persuasion</span><span>P / E</span><span class="rule"></span></div>
-<div class="skill"><span class="check"></span><span>Religion / Occult</span><span>P / E</span><span class="rule"></span></div>
+<div class="skill"><span class="check">P</span><span class="check">E</span><span>Animal Handling</span><span class="rule"></span></div>
+<div class="skill"><span class="check">P</span><span class="check">E</span><span>Deception</span><span class="rule"></span></div>
+<div class="skill"><span class="check">P</span><span class="check">E</span><span>Insight</span><span class="rule"></span></div>
+<div class="skill"><span class="check">P</span><span class="check">E</span><span>Performance</span><span class="rule"></span></div>
+<div class="skill"><span class="check">P</span><span class="check">E</span><span>Persuasion</span><span class="rule"></span></div>
+<div class="skill"><span class="check">P</span><span class="check">E</span><span>Religion / Occult</span><span class="rule"></span></div>
 
 <h3>Dexterity — ♣</h3>
-<div class="skill"><span class="check"></span><span>Acrobatics</span><span>P / E</span><span class="rule"></span></div>
-<div class="skill"><span class="check"></span><span>Sleight of Hand</span><span>P / E</span><span class="rule"></span></div>
-<div class="skill"><span class="check"></span><span>Stealth</span><span>P / E</span><span class="rule"></span></div>
+<div class="skill"><span class="check">P</span><span class="check">E</span><span>Acrobatics</span><span class="rule"></span></div>
+<div class="skill"><span class="check">P</span><span class="check">E</span><span>Sleight of Hand</span><span class="rule"></span></div>
+<div class="skill"><span class="check">P</span><span class="check">E</span><span>Stealth</span><span class="rule"></span></div>
 
 <h3>Cunning — ♦</h3>
-<div class="skill"><span class="check"></span><span>Arcana</span><span>P / E</span><span class="rule"></span></div>
-<div class="skill"><span class="check"></span><span>History</span><span>P / E</span><span class="rule"></span></div>
-<div class="skill"><span class="check"></span><span>Investigation</span><span>P / E</span><span class="rule"></span></div>
-<div class="skill"><span class="check"></span><span>Medicine</span><span>P / E</span><span class="rule"></span></div>
-<div class="skill"><span class="check"></span><span>Perception</span><span>P / E</span><span class="rule"></span></div>
+<div class="skill"><span class="check">P</span><span class="check">E</span><span>Arcana</span><span class="rule"></span></div>
+<div class="skill"><span class="check">P</span><span class="check">E</span><span>History</span><span class="rule"></span></div>
+<div class="skill"><span class="check">P</span><span class="check">E</span><span>Investigation</span><span class="rule"></span></div>
+<div class="skill"><span class="check">P</span><span class="check">E</span><span>Medicine</span><span class="rule"></span></div>
+<div class="skill"><span class="check">P</span><span class="check">E</span><span>Perception</span><span class="rule"></span></div>
 </div>
 
 <div class="box gear">
@@ -109,22 +154,35 @@ table{width:100%;border-collapse:collapse;font-size:7pt}th,td{border-bottom:1px 
 <div class="listline"></div>
 
 <br>
-<h2>Proficiencies &amp; Notes</h2><div class="listline"></div><div class="listline"></div><div class="listline"></div><div class="listline"></div> Languages: <div class="listline"></div>
+<h2>Proficiencies &amp; Notes</h2>
+<div class="listline"></div><div class="listline"></div><div class="listline"></div>
+<div class="listline"></div> Languages: <div class="listline"></div>
 <br>
 
-<h2>Equipment &amp; Gear</h2><div class="listline"></div><div class="listline"></div><div class="listline"></div><div class="listline"></div><div class="listline"></div><div class="listline"></div><div class="listline"></div><div class="listline"></div><div class="listline"></div><div class="listline"></div>
+<h2>Equipment &amp; Gear</h2>
+<div class="listline"></div><div class="listline"></div><div class="listline"></div>
+<div class="listline"></div><div class="listline"></div><div class="listline"></div>
+<div class="listline"></div><div class="listline"></div><div class="listline"></div>
+<div class="listline"></div><div class="listline"></div><div class="listline"></div>
 
 </div>
 
 <div class="box magic">
-<h2>Class Features</h2><div class="listline"></div><div class="listline"></div><div class="listline"></div><div class="listline"></div><div class="listline"></div><div class="listline"></div><div class="listline"></div><div class="listline"></div><div class="listline"></div>
+<h2>Class Features</h2>
+<div class="listline"></div><div class="listline"></div><div class="listline"></div>
+<div class="listline"></div><div class="listline"></div><div class="listline"></div>
+<div class="listline"></div><div class="listline"></div><div class="listline"></div>
+<div class="listline"></div><div class="listline"></div>
 <br>
 <h2>Spellcasting - Known Spells</h2>
-<div class="listline"></div><div class="listline"></div><div class="listline"></div><div class="listline"></div><div class="listline"></div><div class="listline"></div><div class="listline"></div><div class="listline"></div><div class="listline"></div><div class="listline"></div><div class="listline"></div>
+<div class="listline"></div><div class="listline"></div><div class="listline"></div>
+<div class="listline"></div><div class="listline"></div><div class="listline"></div>
+<div class="listline"></div><div class="listline"></div><div class="listline"></div>
+<div class="listline"></div><div class="listline"></div><div class="listline"></div>
+
 <h3 class="small">Domains</h3><div class="tiny">♦ Arcane — Diamond &nbsp; ♥ Divine — Heart &nbsp; ♣ Primal — Club &nbsp; ♠ Occult — Spade</div>
 
 </div>
 
 </section>
-<div class="footer">Spell cards go to the Burn Pile. All cards used for actions and skill checks go to the Shuffle Pile. Resting returns cards to the Deck.</div>
 </main></body></html>
