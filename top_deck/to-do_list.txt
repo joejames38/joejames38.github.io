@@ -1,20 +1,12 @@
 Must fix
-Define Reserve.
+
 Resolve matching-suit weapon damage.
-Define Initiative Bonus.
-Define 0 HP.
 Finalize Short/Long Rest.
 Resolve the skill check/Advantage system.
-Fix Primal/Occult class access.
-Fix the malformed combat HTML.
-Remove/clearly archive obsolete core rules.
-Standardize "discard" vs. "Shuffle Pile."
 
 Strongly recommended
 Define conditions.
-Define exact Close/Near/Far mechanics.
 Define Weapon Mastery precisely.
-Define how Reserve interacts with rests.
 Define how temporary HP/AC/attribute modifiers interact with the +3 attribute cap.
 
 
