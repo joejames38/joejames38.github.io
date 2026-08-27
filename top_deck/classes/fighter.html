@@ -1,1352 +1,589 @@
 <!DOCTYPE html>
-
 <html lang="en">
-
-<head>
-
-
-<meta charset="UTF-8">
-
-<meta name="viewport"
-      content="width=device-width, initial-scale=1.0">
-
-<title>Realm &amp; Rune — Fighter</title>
-
-<link rel="stylesheet"
-      href="../realm-and-rune.css">
-
-
-<style>
-
-    /*
-     * =====================================================
-     * CLASS PAGE
-     * =====================================================
-     */
-
-    .site-header-frame,
-    .site-footer-frame {
-
-        display: block;
-
-        width: 100%;
-
-        border: none;
-
-    }
-
-    .class-title {
-        margin-bottom: 0.5rem;
-    }
-
-
-    .class-subtitle {
-
-        font-style: italic;
-
-        margin-bottom: 2rem;
-
-    }
-
-
-    .class-summary {
-
-        display: grid;
-
-        grid-template-columns:
-            repeat(auto-fit, minmax(180px, 1fr));
-
-        gap: 1rem;
-
-        margin: 1.5rem 0;
-
-    }
-
-
-    .summary-box {
-
-        border: 1px solid
-            var(--border-color, #777);
-
-        padding: 1rem;
-
-        border-radius: 6px;
-
-        background:
-            var(--panel-background,
-            rgba(0, 0, 0, 0.03));
-
-    }
-
-
-    .summary-box strong {
-
-        display: block;
-
-        margin-bottom: 0.25rem;
-
-    }
-
-
-    .level-table {
-
-        width: 100%;
-
-        border-collapse: collapse;
-
-        margin: 1.5rem 0;
-
-    }
-
-
-    .level-table th,
-    .level-table td {
-
-        border: 1px solid
-            var(--border-color, #777);
-
-        padding: 0.75rem;
-
-        vertical-align: top;
-
-        text-align: left;
-
-    }
-
-
-    .level-table th {
-
-        font-weight: bold;
-
-    }
-
-
-    .subclass-grid {
-
-        display: grid;
-
-        grid-template-columns:
-            repeat(auto-fit, minmax(320px, 1fr));
-
-        gap: 1.5rem;
-
-        margin-top: 1.5rem;
-
-    }
-
-
-    .subclass-card {
-
-        border: 1px solid
-            var(--border-color, #777);
-
-        border-radius: 6px;
-
-        padding: 1.25rem;
-
-    }
-
-
-    .subclass-card h3 {
-
-        margin-top: 0;
-
-    }
-
-
-    .subclass-feature {
-
-        margin-bottom: 1.25rem;
-
-    }
-
-
-    .subclass-feature h4 {
-
-        margin-bottom: 0.25rem;
-
-    }
-
-
-    .class-note {
-
-        border-left: 4px solid
-            var(--border-color, #777);
-
-        padding: 0.75rem 1rem;
-
-        margin: 1rem 0;
-
-    }
-
-
-    .feat-list {
-
-        display: grid;
-
-        grid-template-columns:
-            repeat(auto-fit, minmax(280px, 1fr));
-
-        gap: 1rem;
-
-    }
-
-
-    .feat-card {
-
-        border: 1px solid
-            var(--border-color, #777);
-
-        padding: 1rem;
-
-        border-radius: 6px;
-
-    }
-
-
-    .feat-card h4 {
-
-        margin-top: 0;
-
-        margin-bottom: 0.5rem;
-
-    }
-
-
-    @media print {
-
-        .subclass-card,
-        .feat-card {
-
-            break-inside: avoid;
-
-        }
-
-    }
-
-</style>
-
-
-</head>
-
-<body>
-<header class="site-header">
-    <div class="header-inner">
-        <div class="game-title">Realm & Rune</div>
-        <div class="game-subtitle">Fighter</div>
-    </div>
-</header>
-<!-- =========================================================
-     SHARED HEADER
-     ========================================================= -->
-
-<iframe
-    src="../header.html"
-    class="site-header-frame"
-    title="Realm & Rune navigation">
-</iframe>
-
-<main class="page-container">
-
-
-<!-- =====================================================
-     CLASS INTRODUCTION
-     ===================================================== -->
-
-<section class="rule-section">
-
-    <h1 class="class-title">
-        Fighter
-    </h1>
-
-    <p class="class-subtitle">
-        Masters of weapons and armor who turn every card
-        into an opportunity for decisive action.
-    </p>
-
-
-    <div class="class-summary">
-
-        <div class="summary-box">
-
-            <strong>Primary Attribute</strong>
-
-            Might
-
-        </div>
-
-
-        <div class="summary-box">
-
-            <strong>Resonant Suit</strong>
-
-            Spades
-
-        </div>
-
-
-        <div class="summary-box">
-
-            <strong>Armor</strong>
-
-            All Armor
-
-        </div>
-
-
-        <div class="summary-box">
-
-            <strong>Weapons</strong>
-
-            All Weapons
-
-        </div>
-
-
-        <div class="summary-box">
-
-            <strong>Role</strong>
-
-            Warrior / Defender / Striker
-
-        </div>
-
-    </div>
-
-
-    <p>
-
-        Fighters are the most broadly trained combatants in
-        Realm &amp; Rune. They can use every weapon, every
-        armor type, and shields, allowing them to adapt to
-        almost any battlefield.
-
-    </p>
-
-
-    <div class="rule-callout">
-
-        <strong>Fighter Identity</strong>
-
-        <p>
-
-            Fighters are defined by reliability, durability,
-            and tactical flexibility.
-
-            Their large selection of equipment allows them
-            to change their approach without changing their
-            fundamental class.
-
-        </p>
-
-    </div>
-
-</section>
-
-
-
-<!-- =====================================================
-     PROFICIENCIES
-     ===================================================== -->
-
-<section class="rule-section">
-
-    <div class="section-heading">
-
-        <span class="section-number">I</span>
-
-        <h2>Starting Proficiencies</h2>
-
-    </div>
-
-
-    <ul>
-
-        <li>
-            <strong>Weapons:</strong>
-            All weapons
-        </li>
-
-        <li>
-            <strong>Armor:</strong>
-            Light, Medium, and Heavy Armor
-        </li>
-
-        <li>
-            <strong>Shields:</strong>
-            Shields
-        </li>
-
-        <li>
-            <strong>Skills:</strong>
-            Choose any 2 skills
-        </li>
-
-    </ul>
-
-
-    <p>
-
-        Fighters are trained to operate effectively with
-        almost any conventional weapon or armor.
-
-    </p>
-
-</section>
-
-
-
-<!-- =====================================================
-     CLASS LEVEL PROGRESSION
-     ===================================================== -->
-
-<section class="rule-section">
-
-    <div class="section-heading">
-
-        <span class="section-number">II</span>
-
-        <h2>Fighter Level Progression</h2>
-
-    </div>
-
-
-    <p>
-
-        Characters reach a maximum level of 5.
-
-        Further development comes through Feat Points,
-        equipment, weapon mastery, and other campaign rewards.
-
-    </p>
-
-
-    <table class="level-table">
-
-        <thead>
-
-            <tr>
-
-                <th>Level</th>
-
-                <th>HP</th>
-
-                <th>Hand Size</th>
-
-                <th>Features</th>
-
-            </tr>
-
-        </thead>
-
-
-        <tbody>
-
-            <tr>
-
-                <td><strong>1</strong></td>
-
-                <td>+1</td>
-
-                <td>2</td>
-
-                <td>
-
-                    Gain proficiency in all weapons,
-                    armor, and shields.<br><br>
-
-                    Gain proficiency in any 2 skills.<br><br>
-
-                    Gain a Weapon Mastery feat.<br><br>
-
-                    Gain Second Wind.
-
-                </td>
-
-            </tr>
-
-
-            <tr>
-
-                <td><strong>2</strong></td>
-
-                <td>+1</td>
-
-                <td>2</td>
-
-                <td>
-
-                    Choose a Fighter subclass feature.
-
-                </td>
-
-            </tr>
-
-
-            <tr>
-
-                <td><strong>3</strong></td>
-
-                <td>+1</td>
-
-                <td>3</td>
-
-                <td>
-
-                    Gain Action Surge.
-
-                </td>
-
-            </tr>
-
-
-            <tr>
-
-                <td><strong>4</strong></td>
-
-                <td>+1</td>
-
-                <td>3</td>
-
-                <td>
-
-                    Choose a Fighter subclass feature.
-
-                </td>
-
-            </tr>
-
-
-            <tr>
-
-                <td><strong>5</strong></td>
-
-                <td>+1</td>
-
-                <td>4</td>
-
-                <td>
-
-                    Increase one Core Attribute by +1.
-
-                </td>
-
-            </tr>
-
-        </tbody>
-
-    </table>
-
-</section>
-
-
-
-<!-- =====================================================
-     FIGHTER CORE FEATURES
-     ===================================================== -->
-
-<section class="rule-section">
-
-    <div class="section-heading">
-
-        <span class="section-number">III</span>
-
-        <h2>Fighter Features</h2>
-
-    </div>
-
-
-    <div class="class-note">
-
-        <strong>Second Wind</strong>
-
-        <p>
-
-            Once per short rest, discard one card to recover
-            1 HP.
-
-        </p>
-
-        <p>
-
-            Second Wind represents the Fighter's ability to
-            push through exhaustion and continue fighting.
-
-        </p>
-
-    </div>
-
-
-    <div class="class-note">
-
-        <strong>Action Surge</strong>
-
-        <p>
-
-            Once per short rest, discard any face card and
-            draw cards until you reach your current hand size.
-
-        </p>
-
-        <p>
-
-            Action Surge does not provide an additional action
-            by itself. Instead, it refreshes the Fighter's
-            available cards, allowing them to continue taking
-            actions during their turn.
-
-        </p>
-
-    </div>
-
-
-    <div class="class-note">
-
-        <strong>Weapon Mastery</strong>
-
-        <p>
-
-            At level 1, the Fighter gains a Weapon Mastery
-            feat.
-
-            Weapon Mastery feats represent specialized
-            training with a particular weapon category.
-
-        </p>
-
-        <p>
-
-            A weapon's suit affinity may provide an additional
-            damage effect or tactical property when the
-            matching card is played.
-
-        </p>
-
-    </div>
-
-
-    <div class="rule-callout">
-
-        <strong>Fighter and Card Economy</strong>
-
-        <p>
-
-            Fighters have more opportunities than most
-            classes to convert cards into combat actions.
-
-            Weaponmaster features further emphasize this
-            relationship by allowing the Fighter to make
-            deliberate choices about when to spend, retain,
-            or manipulate cards.
-
-        </p>
-
-    </div>
-
-</section>
-
-
-
-<!-- =====================================================
-     WEAPONMASTER
-     ===================================================== -->
-
-<section class="rule-section">
-
-    <div class="section-heading">
-
-        <span class="section-number">IV</span>
-
-        <h2>Weaponmaster</h2>
-
-    </div>
-
-
-    <p>
-
-        Weaponmasters are students of the battlefield who
-        believe every weapon has a purpose.
-
-        Rather than committing to a single fighting style,
-        they switch weapons and techniques to exploit the
-        situation in front of them.
-
-    </p>
-
-
-    <div class="class-note">
-
-        <strong>Play Style:</strong>
-
-        Weapon versatility, card manipulation, melee
-        flexibility, tactical reactions, and exploiting
-        weapon suit affinities.
-
-    </div>
-
-
-    <div class="subclass-grid">
-
-
-        <div class="subclass-card">
-
-            <h3>
-                Weaponmaster Features
-            </h3>
-
-
-            <div class="subclass-feature">
-
-                <h4>Versatile Training</h4>
-
-                <p>
-
-                    When you equip a weapon, you may treat
-                    one weapon property associated with that
-                    weapon's suit as a Weaponmaster technique.
-
-                </p>
-
-            </div>
-
-
-            <div class="subclass-feature">
-
-                <h4>Weapon Swap</h4>
-
-                <p>
-
-                    Once per turn, you may equip or stow a
-                    weapon as part of your Move action.
-
-                </p>
-
-                <p>
-
-                    This allows you to change weapons without
-                    spending your Action.
-
-                </p>
-
-            </div>
-
-
-            <div class="subclass-feature">
-
-                <h4>Perfect Match</h4>
-
-                <p>
-
-                    When you play a card matching your weapon's
-                    suit affinity, you may treat the attack as
-                    having its weapon mastery effect even if
-                    the weapon normally requires a different
-                    condition.
-
-                </p>
-
-            </div>
-
-
-            <div class="subclass-feature">
-
-                <h4>Combat Rhythm</h4>
-
-                <p>
-
-                    If you successfully hit with two different
-                    weapon categories during the same scene,
-                    draw one card.
-
-                </p>
-
-            </div>
-
-
-            <div class="subclass-feature">
-
-                <h4>Riposte</h4>
-
-                <p>
-
-                    When an enemy misses you with a melee
-                    attack, you may burn a matching weapon-suit
-                    card to make a basic melee attack against
-                    that enemy.
-
-                </p>
-
-            </div>
-
-
-            <div class="subclass-feature">
-
-                <h4>Heavy Blow</h4>
-
-                <p>
-
-                    When wielding a weapon associated with
-                    Spades, you may burn an additional Spade
-                    after a successful Might Strike to deal
-                    +1 damage.
-
-                </p>
-
-            </div>
-
-
-            <div class="subclass-feature">
-
-                <h4>Shield Master</h4>
-
-                <p>
-
-                    When using a shield, your Shield Bash
-                    deals +1 damage.
-
-                </p>
-
-            </div>
-
-
-            <div class="subclass-feature">
-
-                <h4>Weapon Specialist</h4>
-
-                <p>
-
-                    Choose one weapon category.
-
-                    Once per turn, when using that category,
-                    you may treat a number card as a face card
-                    for determining its weapon effect.
-
-                </p>
-
-            </div>
-
-        </div>
-
-
-    </div>
-
-</section>
-
-
-
-<!-- =====================================================
-     BOWMASTER
-     ===================================================== -->
-
-<section class="rule-section">
-
-    <div class="section-heading">
-
-        <span class="section-number">V</span>
-
-        <h2>Bowmaster</h2>
-
-    </div>
-
-
-    <p>
-
-        Bowmasters specialize in ranged combat, battlefield
-        awareness, and supporting their allies from a
-        distance.
-
-        They use positioning and careful observation rather
-        than relying exclusively on raw damage.
-
-    </p>
-
-
-    <div class="class-note">
-
-        <strong>Play Style:</strong>
-
-        Ranged attacks, stealth, scouting, tactical support,
-        and controlling the battlefield from a distance.
-
-    </div>
-
-
-    <div class="subclass-grid">
-
-
-        <div class="subclass-card">
-
-            <h3>
-                Bowmaster Features
-            </h3>
-
-
-            <div class="subclass-feature">
-
-                <h4>Bow Training</h4>
-
-                <p>
-
-                    Gain proficiency with bows.
-
-                    When making a Ranged Strike with a bow,
-                    you may use your Dexterity modifier.
-
-                </p>
-
-            </div>
-
-
-            <div class="subclass-feature">
-
-                <h4>Called Shot</h4>
-
-                <p>
-
-                    Before making a ranged attack, declare a
-                    specific target location or object.
-
-                    On a successful hit, you may apply a minor
-                    tactical effect appropriate to the target.
-
-                </p>
-
-                <p>
-
-                    Examples include forcing an enemy to drop
-                    an object, pinning clothing to a surface,
-                    breaking a fragile object, or cutting a
-                    rope.
-
-                </p>
-
-            </div>
-
-
-            <div class="subclass-feature">
-
-                <h4>Covering Fire</h4>
-
-                <p>
-
-                    Play a ranged attack card without dealing
-                    damage.
-
-                    Until the beginning of your next turn,
-                    an ally moving through the affected area
-                    gains +1 AC against ranged attacks.
-
-                </p>
-
-            </div>
-
-
-            <div class="subclass-feature">
-
-                <h4>Hunter's Mark</h4>
-
-                <p>
-
-                    Play a card to mark one enemy you can see.
-
-                    The next ally to successfully attack that
-                    enemy deals +1 damage.
-
-                </p>
-
-            </div>
-
-
-            <div class="subclass-feature">
-
-                <h4>Silent Archer</h4>
-
-                <p>
-
-                    Gain advantage on Stealth checks made while
-                    carrying or using a bow.
-
-                </p>
-
-            </div>
-
-
-            <div class="subclass-feature">
-
-                <h4>Hidden Shot</h4>
-
-                <p>
-
-                    When you successfully attack from Hide
-                    with a bow, you may immediately attempt
-                    another Stealth check to remain hidden.
-
-                </p>
-
-            </div>
-
-
-            <div class="subclass-feature">
-
-                <h4>Warning Shot</h4>
-
-                <p>
-
-                    Fire a non-damaging shot to create a
-                    distraction.
-
-                    One creature within Near range must
-                    succeed on an appropriate check or become
-                    distracted until the beginning of your
-                    next turn.
-
-                </p>
-
-            </div>
-
-
-            <div class="subclass-feature">
-
-                <h4>Guiding Arrow</h4>
-
-                <p>
-
-                    When you hit an enemy with a bow, choose
-                    one ally.
-
-                    That ally gains +1 to their next attack
-                    against the same enemy.
-
-                </p>
-
-            </div>
-
-        </div>
-
-
-    </div>
-
-</section>
-
-
-
-<!-- =====================================================
-     FIGHTER FEATS
-     ===================================================== -->
-
-<section class="rule-section">
-
-    <div class="section-heading">
-
-        <span class="section-number">VI</span>
-
-        <h2>Fighter Feats</h2>
-
-    </div>
-
-
-    <p>
-
-        These feats provide additional development for
-        Fighters after reaching level 5.
-
-    </p>
-
-
-    <div class="feat-list">
-
-
-        <article class="feat-card">
-
-            <h4>
-                Weapon Specialist
-            </h4>
-
-            <p>
-                <strong>Cost:</strong>
-                2 Feat Points
-            </p>
-
-            <p>
-                <strong>Prerequisite:</strong>
-                Fighter
-            </p>
-
-            <p>
-
-                Gain proficiency with one weapon category
-                and gain its associated Weapon Mastery effect.
-
-            </p>
-
-        </article>
-
-
-        <article class="feat-card">
-
-            <h4>
-                Martial Adept
-            </h4>
-
-            <p>
-                <strong>Cost:</strong>
-                3 Feat Points
-            </p>
-
-            <p>
-                <strong>Prerequisite:</strong>
-                Fighter
-            </p>
-
-            <p>
-
-                Learn two additional Weapon Mastery feats.
-
-            </p>
-
-        </article>
-
-
-        <article class="feat-card">
-
-            <h4>
-                Battle Hardened
-            </h4>
-
-            <p>
-                <strong>Cost:</strong>
-                2 Feat Points
-            </p>
-
-            <p>
-                <strong>Prerequisite:</strong>
-                Fighter
-            </p>
-
-            <p>
-
-                Once per scene, when reduced to 0 HP, discard
-                a card to remain at 1 HP.
-
-            </p>
-
-        </article>
-
-
-        <article class="feat-card">
-
-            <h4>
-                Shield Expert
-            </h4>
-
-            <p>
-                <strong>Cost:</strong>
-                2 Feat Points
-            </p>
-
-            <p>
-                <strong>Prerequisite:</strong>
-                Shield proficiency
-            </p>
-
-            <p>
-
-                When using Defend with a shield, increase the
-                AC bonus provided by the discarded card by +1.
-
-            </p>
-
-        </article>
-
-
-        <article class="feat-card">
-
-            <h4>
-                Tactical Draw
-            </h4>
-
-            <p>
-                <strong>Cost:</strong>
-                2 Feat Points
-            </p>
-
-            <p>
-                <strong>Prerequisite:</strong>
-                Fighter
-            </p>
-
-            <p>
-
-                Once per short rest, after successfully
-                completing an attack, draw one card.
-
-            </p>
-
-        </article>
-
-
-        <article class="feat-card">
-
-            <h4>
-                Longshot
-            </h4>
-
-            <p>
-                <strong>Cost:</strong>
-                2 Feat Points
-            </p>
-
-            <p>
-                <strong>Prerequisite:</strong>
-                Bowmaster
-            </p>
-
-            <p>
-
-                Your bow attacks can treat Far range as
-                Near range for the purpose of attack penalties
-                or other range-based effects.
-
-            </p>
-
-        </article>
-
-
-        <article class="feat-card">
-
-            <h4>
-                Tactical Commander
-            </h4>
-
-            <p>
-                <strong>Cost:</strong>
-                3 Feat Points
-            </p>
-
-            <p>
-                <strong>Prerequisite:</strong>
-                Fighter
-            </p>
-
-            <p>
-
-                Once per scene, when you successfully hit an
-                enemy, choose an ally.
-
-                That ally may immediately draw one card.
-
-            </p>
-
-        </article>
-
-
-        <article class="feat-card">
-
-            <h4>
-                Master of Arms
-            </h4>
-
-            <p>
-                <strong>Cost:</strong>
-                3 Feat Points
-            </p>
-
-            <p>
-                <strong>Prerequisite:</strong>
-                Weaponmaster
-            </p>
-
-            <p>
-
-                Once per turn, when you switch weapons,
-                the next attack you make with the new weapon
-                gains +1 to its attack check.
-
-            </p>
-
-        </article>
-
-
-    </div>
-
-</section>
-
-
-
-<!-- =====================================================
-     PLAYTEST NOTES
-     ===================================================== -->
-
-<section class="rule-section">
-
-    <div class="section-heading">
-
-        <span class="section-number">VII</span>
-
-        <h2>Playtest Notes</h2>
-
-    </div>
-
-
-    <p>
-
-        The Fighter is intended to be the easiest class for
-        a new player to understand while still having a large
-        amount of room for mastery.
-
-        Equipment choice should provide meaningful tactical
-        decisions without requiring a different class build.
-
-    </p>
-
-
-    <p>
-
-        Weaponmaster should be tested for whether switching
-        weapons and exploiting suit affinities provides enough
-        value to compete with more specialized subclasses.
-
-    </p>
-
-
-    <p>
-
-        Bowmaster should remain useful even when another
-        character is capable of dealing greater ranged damage.
-
-        Its primary distinction should be positioning,
-        scouting, stealth, and party support.
-
-    </p>
-
-
-    <p>
-
-        Action Surge is particularly important to test because
-        the Fighter's fundamental resource is the hand of
-        cards.
-
-        Refreshing the hand rather than granting a separate
-        action keeps the mechanic within the existing card
-        economy.
-
-    </p>
-
-</section>
-
-
-</main>
-
-<!-- =========================================================
-     SHARED FOOTER
-     ========================================================= -->
-
-<iframe
-    src="../footer.html"
-    class="site-footer-frame"
-    title="Realm & Rune footer">
-</iframe>
-
-</body>
-
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport"
+		content="width=device-width, initial-scale=1.0">
+		<title>Realm &amp; Rune — Fighter</title>
+		<link rel="stylesheet"
+		href="../realm-and-rune.css">
+	</head>
+	<body>
+		<header class="site-header">
+			<div class="header-inner">
+				<div class="game-title">Realm & Rune</div>
+				<div class="game-subtitle">Fighter</div>
+			</div>
+		</header>
+		<!-- SHARED HEADER -->
+		<iframe
+		src="../header.html"
+		class="site-header-frame"
+		title="Realm & Rune navigation">
+		</iframe>
+		<main class="page-container">
+			<!-- CLASS INTRODUCTION -->
+			<section class="rule-section">
+				<h1 class="class-title">
+					Fighter
+				</h1>
+				<p class="class-subtitle">
+					Masters of weapons and armor who turn every card
+					into an opportunity for decisive action.
+				</p>
+				<div class="class-summary">
+					<div class="summary-box">
+						<strong>Primary Attribute</strong>
+						Might
+					</div>
+					<div class="summary-box">
+						<strong>Resonant Suit</strong>
+						Spades
+					</div>
+					<div class="summary-box">
+						<strong>Armor</strong>
+						All Armor and Shields
+					</div>
+					<div class="summary-box">
+						<strong>Weapons</strong>
+						Spade, Heart, and Club Weapons
+					</div>
+					<div class="summary-box">
+						<strong>Role</strong>
+						Warrior / Defender / Striker
+					</div>
+				</div>
+				<p>
+					Fighters are the most broadly trained combatants in
+					Realm &amp; Rune. They can use every weapon, every
+					armor type, and shields, allowing them to adapt to
+					almost any battlefield.
+				</p>
+				<div class="rule-callout">
+					<strong>Fighter Identity</strong>
+					<p>
+						Fighters are defined by reliability, durability,
+						and tactical flexibility.
+						Their large selection of equipment allows them
+						to change their approach without changing their
+						fundamental class.
+					</p>
+				</div>
+			</section>
+			<!-- =====================================================
+				PROFICIENCIES
+			===================================================== -->
+			<section class="rule-section">
+				<div class="section-heading">
+					<span class="section-number">I</span>
+					<h2>Starting Proficiencies</h2>
+				</div>
+				<ul>
+					<li>
+						<strong>Weapons:</strong>
+						All weapons
+					</li>
+					<li>
+						<strong>Armor:</strong>
+						Light, Medium, and Heavy Armor
+					</li>
+					<li>
+						<strong>Shields:</strong>
+						Shields
+					</li>
+					<li>
+						<strong>Skills:</strong>
+						Choose any 2 skills
+					</li>
+				</ul>
+				<p>
+					Fighters are trained to operate effectively with
+					almost any conventional weapon or armor.
+				</p>
+			</section>
+			<!-- CLASS LEVEL PROGRESSION -->
+			<section class="rule-section">
+				<div class="section-heading">
+					<span class="section-number">II</span>
+					<h2>Fighter Level Progression</h2>
+				</div>
+				<p>
+					Characters reach a maximum level of 5.
+					Further development comes through Feat Points,
+					equipment, weapon mastery, and other campaign rewards.
+				</p>
+				<table class="level-table">
+					<thead>
+						<tr>
+							<th>Level</th>
+							<th>HP</th>
+							<th>Hand Size</th>
+							<th>Features</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td><strong>1</strong></td>
+							<td>+1</td>
+							<td>2</td>
+							<td>
+								Gain proficiency in all weapons,
+								armor, and shields.<br><br>
+								Gain proficiency in any 2 skills.<br><br>
+								Gain a Weapon Mastery feat.<br><br>
+								Gain Second Wind.
+							</td>
+						</tr>
+						<tr>
+							<td><strong>2</strong></td>
+							<td>+1</td>
+							<td>2</td>
+							<td>
+								Choose a Fighter subclass feature.
+							</td>
+						</tr>
+						<tr>
+							<td><strong>3</strong></td>
+							<td>+1</td>
+							<td>3</td>
+							<td>
+								Gain Action Surge.
+							</td>
+						</tr>
+						<tr>
+							<td><strong>4</strong></td>
+							<td>+1</td>
+							<td>3</td>
+							<td>
+								Choose a Fighter subclass feature.
+							</td>
+						</tr>
+						<tr>
+							<td><strong>5</strong></td>
+							<td>+1</td>
+							<td>4</td>
+							<td>
+								Increase one Core Attribute by +1.
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</section>
+			<!-- FIGHTER CORE FEATURES -->
+			<section class="rule-section">
+				<div class="section-heading">
+					<span class="section-number">III</span>
+					<h2>Fighter Features</h2>
+				</div>
+				<div class="class-note">
+					<strong>Second Wind</strong>
+					<p>
+						Once per short rest, discard one card to recover
+						1 HP.
+					</p>
+					<p>
+						Second Wind represents the Fighter's ability to
+						push through exhaustion and continue fighting.
+					</p>
+				</div>
+				<div class="class-note">
+					<strong>Action Surge</strong>
+					<p>
+						Once per short rest, discard any face card and
+						draw cards until you reach your current hand size.
+					</p>
+					<p>
+						Action Surge does not provide an additional action
+						by itself. Instead, it refreshes the Fighter's
+						available cards, allowing them to continue taking
+						actions during their turn.
+					</p>
+				</div>
+				<div class="class-note">
+					<strong>Weapon Mastery</strong>
+					<p>
+						At level 1, the Fighter gains a Weapon Mastery
+						feat.
+						Weapon Mastery feats represent specialized
+						training with a particular weapon category.
+					</p>
+					<p>
+						A weapon's suit affinity may provide an additional
+						damage effect or tactical property when the
+						matching card is played.
+					</p>
+				</div>
+				<div class="rule-callout">
+					<strong>Fighter and Card Economy</strong>
+					<p>
+						Fighters have more opportunities than most
+						classes to convert cards into combat actions.
+						Weaponmaster features further emphasize this
+						relationship by allowing the Fighter to make
+						deliberate choices about when to spend, retain,
+						or manipulate cards.
+					</p>
+				</div>
+			</section>
+			<!--WEAPONMASTER -->
+			<section class="rule-section">
+				<div class="section-heading">
+					<span class="section-number">IV</span>
+					<h2>Weaponmaster</h2>
+				</div>
+				<p>
+					Weaponmasters are students of the battlefield who
+					believe every weapon has a purpose.
+					Rather than committing to a single fighting style,
+					they switch weapons and techniques to exploit the
+					situation in front of them.
+				</p>
+				<div class="class-note">
+					<strong>Play Style:</strong>
+					Weapon versatility, card manipulation, melee
+					flexibility, tactical reactions, and exploiting
+					weapon suit affinities.
+				</div>
+				<div class="subclass-grid">
+					<div class="subclass-card">
+						<h3>
+							Weaponmaster Features
+						</h3>
+						<div class="subclass-feature">
+							<h4>Versatile Training</h4>
+							<p>
+								When you equip a weapon, you may treat
+								one weapon property associated with that
+								weapon's suit as a Weaponmaster technique.
+							</p>
+						</div>
+						<div class="subclass-feature">
+							<h4>Weapon Swap</h4>
+							<p>
+								Once per turn, you may equip or stow a
+								weapon as part of your Move action.
+							</p>
+							<p>
+								This allows you to change weapons without
+								spending your Action.
+							</p>
+						</div>
+						<div class="subclass-feature">
+							<h4>Perfect Match</h4>
+							<p>
+								When you play a card matching your weapon's
+								suit affinity, you may treat the attack as
+								having its weapon mastery effect even if
+								the weapon normally requires a different
+								condition.
+							</p>
+						</div>
+						<div class="subclass-feature">
+							<h4>Combat Rhythm</h4>
+							<p>
+								If you successfully hit with two different
+								weapon categories during the same scene,
+								draw one card.
+							</p>
+						</div>
+						<div class="subclass-feature">
+							<h4>Riposte</h4>
+							<p>
+								When an enemy misses you with a melee
+								attack, you may burn a matching weapon-suit
+								card to make a basic melee attack against
+								that enemy.
+							</p>
+						</div>
+						<div class="subclass-feature">
+							<h4>Heavy Blow</h4>
+							<p>
+								When wielding a weapon associated with
+								Spades, you may burn an additional Spade
+								after a successful Might Strike to deal
+								+1 damage.
+							</p>
+						</div>
+						<div class="subclass-feature">
+							<h4>Shield Master</h4>
+							<p>
+								When using a shield, your Shield Bash
+								deals +1 damage.
+							</p>
+						</div>
+						<div class="subclass-feature">
+							<h4>Weapon Specialist</h4>
+							<p>
+								Choose one weapon category.
+								Once per turn, when using that category,
+								you may treat a number card as a face card
+								for determining its weapon effect.
+							</p>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- BOWMASTER -->
+			<section class="rule-section">
+				<div class="section-heading">
+					<span class="section-number">V</span>
+					<h2>Bowmaster</h2>
+				</div>
+				<p>
+					Bowmasters specialize in ranged combat, battlefield
+					awareness, and supporting their allies from a
+					distance.
+					They use positioning and careful observation rather
+					than relying exclusively on raw damage.
+				</p>
+				<div class="class-note">
+					<strong>Play Style:</strong>
+					Ranged attacks, stealth, scouting, tactical support,
+					and controlling the battlefield from a distance.
+				</div>
+				<div class="subclass-grid">
+					<div class="subclass-card">
+						<h3>
+							Bowmaster Features
+						</h3>
+						<div class="subclass-feature">
+							<h4>Bow Training</h4>
+							<p>
+								Gain proficiency with bows.
+								When making a Ranged Strike with a bow,
+								you may use your Dexterity modifier.
+							</p>
+						</div>
+						<div class="subclass-feature">
+							<h4>Called Shot</h4>
+							<p>
+								Before making a ranged attack, declare a
+								specific target location or object.
+								On a successful hit, you may apply a minor
+								tactical effect appropriate to the target.
+							</p>
+							<p>
+								Examples include forcing an enemy to drop
+								an object, pinning clothing to a surface,
+								breaking a fragile object, or cutting a
+								rope.
+							</p>
+						</div>
+						<div class="subclass-feature">
+							<h4>Covering Fire</h4>
+							<p>
+								Play a ranged attack card without dealing
+								damage.
+								Until the beginning of your next turn,
+								an ally moving through the affected area
+								gains +1 AC against ranged attacks.
+							</p>
+						</div>
+						<div class="subclass-feature">
+							<h4>Hunter's Mark</h4>
+							<p>
+								Play a card to mark one enemy you can see.
+								The next ally to successfully attack that
+								enemy deals +1 damage.
+							</p>
+						</div>
+						<div class="subclass-feature">
+							<h4>Silent Archer</h4>
+							<p>
+								Gain advantage on Stealth checks made while
+								carrying or using a bow.
+							</p>
+						</div>
+						<div class="subclass-feature">
+							<h4>Hidden Shot</h4>
+							<p>
+								When you successfully attack from Hide
+								with a bow, you may immediately attempt
+								another Stealth check to remain hidden.
+							</p>
+						</div>
+						<div class="subclass-feature">
+							<h4>Warning Shot</h4>
+							<p>
+								Fire a non-damaging shot to create a
+								distraction.
+								One creature within Near range must
+								succeed on an appropriate check or become
+								distracted until the beginning of your
+								next turn.
+							</p>
+						</div>
+						<div class="subclass-feature">
+							<h4>Guiding Arrow</h4>
+							<p>
+								When you hit an enemy with a bow, choose
+								one ally.
+								That ally gains +1 to their next attack
+								against the same enemy.
+							</p>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- FIGHTER FEATS -->
+			<section class="rule-section">
+				<div class="section-heading">
+					<span class="section-number">VI</span>
+					<h2>Fighter Feats</h2>
+				</div>
+				<p>
+					These feats provide additional development for
+					Fighters after reaching level 5.
+				</p>
+				<div class="feat-list">
+					<article class="feat-card">
+						<h4>
+							Weapon Specialist
+						</h4>
+						<p>
+							<strong>Cost:</strong>
+							2 Feat Points
+						</p>
+						<p>
+							<strong>Prerequisite:</strong>
+							Fighter
+						</p>
+						<p>
+							Gain proficiency with one weapon category
+							and gain its associated Weapon Mastery effect.
+						</p>
+					</article>
+					<article class="feat-card">
+						<h4>
+							Martial Adept
+						</h4>
+						<p>
+							<strong>Cost:</strong>
+							3 Feat Points
+						</p>
+						<p>
+							<strong>Prerequisite:</strong>
+							Fighter
+						</p>
+						<p>
+							Learn two additional Weapon Mastery feats.
+						</p>
+					</article>
+					<article class="feat-card">
+						<h4>
+							Battle Hardened
+						</h4>
+						<p>
+							<strong>Cost:</strong>
+							2 Feat Points
+						</p>
+						<p>
+							<strong>Prerequisite:</strong>
+							Fighter
+						</p>
+						<p>
+							Once per scene, when reduced to 0 HP, discard
+							a card to remain at 1 HP.
+						</p>
+					</article>
+					<article class="feat-card">
+						<h4>
+							Shield Expert
+						</h4>
+						<p>
+							<strong>Cost:</strong>
+							2 Feat Points
+						</p>
+						<p>
+							<strong>Prerequisite:</strong>
+							Shield proficiency
+						</p>
+						<p>
+							When using Defend with a shield, increase the
+							AC bonus provided by the discarded card by +1.
+						</p>
+					</article>
+					<article class="feat-card">
+						<h4>
+							Tactical Draw
+						</h4>
+						<p>
+							<strong>Cost:</strong>
+							2 Feat Points
+						</p>
+						<p>
+							<strong>Prerequisite:</strong>
+							Fighter
+						</p>
+						<p>
+							Once per short rest, after successfully
+							completing an attack, draw one card.
+						</p>
+					</article>
+					<article class="feat-card">
+						<h4>
+							Longshot
+						</h4>
+						<p>
+							<strong>Cost:</strong>
+							2 Feat Points
+						</p>
+						<p>
+							<strong>Prerequisite:</strong>
+							Bowmaster
+						</p>
+						<p>
+							Your bow attacks can treat Far range as
+							Near range for the purpose of attack penalties
+							or other range-based effects.
+						</p>
+					</article>
+					<article class="feat-card">
+						<h4>
+							Tactical Commander
+						</h4>
+						<p>
+							<strong>Cost:</strong>
+							3 Feat Points
+						</p>
+						<p>
+							<strong>Prerequisite:</strong>
+							Fighter
+						</p>
+						<p>
+							Once per scene, when you successfully hit an
+							enemy, choose an ally.
+							That ally may immediately draw one card.
+						</p>
+					</article>
+					<article class="feat-card">
+						<h4>
+							Master of Arms
+						</h4>
+						<p>
+							<strong>Cost:</strong>
+							3 Feat Points
+						</p>
+						<p>
+							<strong>Prerequisite:</strong>
+							Weaponmaster
+						</p>
+						<p>
+							Once per turn, when you switch weapons,
+							the next attack you make with the new weapon
+							gains +1 to its attack check.
+						</p>
+					</article>
+				</div>
+			</section>
+		</main>
+		<!-- =========================================================
+			SHARED FOOTER
+		========================================================= -->
+		<iframe
+		src="../footer.html"
+		class="site-footer-frame"
+		title="Realm & Rune footer">
+		</iframe>
+	</body>
 </html>

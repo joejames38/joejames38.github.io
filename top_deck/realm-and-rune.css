@@ -1181,6 +1181,213 @@ li {
 
 }
 
+    /*
+     * =====================================================
+     * CLASS PAGE
+     * =====================================================
+     */
+
+    .site-header-frame,
+    .site-footer-frame {
+
+        display: block;
+
+        width: 100%;
+
+        border: none;
+
+    }
+
+    .class-title {
+
+        margin-bottom: 0.5rem;
+
+    }
+
+
+    .class-subtitle {
+
+        font-style: italic;
+
+        margin-bottom: 2rem;
+
+    }
+
+
+    .class-summary {
+
+        display: grid;
+
+        grid-template-columns:
+            repeat(auto-fit, minmax(180px, 1fr));
+
+        gap: 1rem;
+
+        margin: 1.5rem 0;
+
+    }
+
+
+    .summary-box {
+
+        border: 1px solid
+            var(--border-color, #777);
+
+        padding: 1rem;
+
+        border-radius: 6px;
+
+        background:
+            var(--panel-background,
+            rgba(0, 0, 0, 0.03));
+
+    }
+
+
+    .summary-box strong {
+
+        display: block;
+
+        margin-bottom: 0.25rem;
+
+    }
+
+
+    .level-table {
+
+        width: 100%;
+
+        border-collapse: collapse;
+
+        margin: 1.5rem 0;
+
+    }
+
+
+    .level-table th,
+    .level-table td {
+
+        border: 1px solid
+            var(--border-color, #777);
+
+        padding: 0.75rem;
+
+        vertical-align: top;
+
+        text-align: left;
+
+    }
+
+
+    .level-table th {
+
+        font-weight: bold;
+
+    }
+
+
+    .subclass-grid {
+
+        display: grid;
+
+        grid-template-columns:
+            repeat(auto-fit, minmax(320px, 1fr));
+
+        gap: 1.5rem;
+
+        margin-top: 1.5rem;
+
+    }
+
+
+    .subclass-card {
+
+        border: 1px solid
+            var(--border-color, #777);
+
+        border-radius: 6px;
+
+        padding: 1.25rem;
+
+    }
+
+
+    .subclass-card h3 {
+
+        margin-top: 0;
+
+    }
+
+
+    .subclass-card h4 {
+
+        margin-bottom: 0.25rem;
+
+    }
+
+
+    .subclass-feature {
+
+        margin-bottom: 1.25rem;
+
+    }
+
+
+    .feat-list {
+
+        display: grid;
+
+        grid-template-columns:
+            repeat(auto-fit, minmax(280px, 1fr));
+
+        gap: 1rem;
+
+    }
+
+
+    .feat-card {
+
+        border: 1px solid
+            var(--border-color, #777);
+
+        padding: 1rem;
+
+        border-radius: 6px;
+
+    }
+
+
+    .feat-card h4 {
+
+        margin-top: 0;
+
+        margin-bottom: 0.5rem;
+
+    }
+
+
+    .class-note {
+
+        border-left: 4px solid
+            var(--border-color, #777);
+
+        padding: 0.75rem 1rem;
+
+        margin: 1rem 0;
+
+    }
+
+
+    @media print {
+
+        .subclass-card,
+        .feat-card {
+
+            break-inside: avoid;
+
+        }
+
+    }
 
 
 /* =========================================================

@@ -1,1175 +1,496 @@
 <!DOCTYPE html>
-
 <html lang="en">
-
-<head>
-
-
-<meta charset="UTF-8">
-
-<meta name="viewport"
-      content="width=device-width, initial-scale=1.0">
-
-<title>Realm &amp; Rune — Cleric</title>
-
-<link rel="stylesheet"
-      href="../realm-and-rune.css">
-
-
-<style>
-
-    /*
-     * =====================================================
-     * CLASS PAGE
-     * =====================================================
-     */
-
-    .site-header-frame,
-    .site-footer-frame {
-
-        display: block;
-
-        width: 100%;
-
-        border: none;
-
-    }
-
-    .class-title {
-
-        margin-bottom: 0.5rem;
-
-    }
-
-
-    .class-subtitle {
-
-        font-style: italic;
-
-        margin-bottom: 2rem;
-
-    }
-
-
-    .class-summary {
-
-        display: grid;
-
-        grid-template-columns:
-            repeat(auto-fit, minmax(180px, 1fr));
-
-        gap: 1rem;
-
-        margin: 1.5rem 0;
-
-    }
-
-
-    .summary-box {
-
-        border: 1px solid
-            var(--border-color, #777);
-
-        padding: 1rem;
-
-        border-radius: 6px;
-
-        background:
-            var(--panel-background,
-            rgba(0, 0, 0, 0.03));
-
-    }
-
-
-    .summary-box strong {
-
-        display: block;
-
-        margin-bottom: 0.25rem;
-
-    }
-
-
-    .level-table {
-
-        width: 100%;
-
-        border-collapse: collapse;
-
-        margin: 1.5rem 0;
-
-    }
-
-
-    .level-table th,
-    .level-table td {
-
-        border: 1px solid
-            var(--border-color, #777);
-
-        padding: 0.75rem;
-
-        vertical-align: top;
-
-        text-align: left;
-
-    }
-
-
-    .level-table th {
-
-        font-weight: bold;
-
-    }
-
-
-    .subclass-grid {
-
-        display: grid;
-
-        grid-template-columns:
-            repeat(auto-fit, minmax(320px, 1fr));
-
-        gap: 1.5rem;
-
-        margin-top: 1.5rem;
-
-    }
-
-
-    .subclass-card {
-
-        border: 1px solid
-            var(--border-color, #777);
-
-        border-radius: 6px;
-
-        padding: 1.25rem;
-
-    }
-
-
-    .subclass-card h3 {
-
-        margin-top: 0;
-
-    }
-
-
-    .subclass-card h4 {
-
-        margin-bottom: 0.25rem;
-
-    }
-
-
-    .subclass-feature {
-
-        margin-bottom: 1.25rem;
-
-    }
-
-
-    .feat-list {
-
-        display: grid;
-
-        grid-template-columns:
-            repeat(auto-fit, minmax(280px, 1fr));
-
-        gap: 1rem;
-
-    }
-
-
-    .feat-card {
-
-        border: 1px solid
-            var(--border-color, #777);
-
-        padding: 1rem;
-
-        border-radius: 6px;
-
-    }
-
-
-    .feat-card h4 {
-
-        margin-top: 0;
-
-        margin-bottom: 0.5rem;
-
-    }
-
-
-    .class-note {
-
-        border-left: 4px solid
-            var(--border-color, #777);
-
-        padding: 0.75rem 1rem;
-
-        margin: 1rem 0;
-
-    }
-
-
-    @media print {
-
-        .subclass-card,
-        .feat-card {
-
-            break-inside: avoid;
-
-        }
-
-    }
-
-</style>
-
-
-</head>
-
-<body>
-<header class="site-header">
-    <div class="header-inner">
-        <div class="game-title">Realm & Rune</div>
-        <div class="game-subtitle">Cleric</div>
-    </div>
-</header>
-<!-- =========================================================
-     SHARED HEADER
-     ========================================================= -->
-
-<iframe
-    src="../header.html"
-    class="site-header-frame"
-    title="Realm & Rune navigation">
-</iframe>
-
-<main class="page-container">
-
-
-<!-- =====================================================
-     CLASS INTRODUCTION
-     ===================================================== -->
-
-<section class="rule-section">
-
-    <h1 class="class-title">
-        Cleric
-    </h1>
-
-    <p class="class-subtitle">
-        Divine magic, conviction, healing, and the power
-        to shape the battlefield through faith.
-    </p>
-
-
-    <div class="class-summary">
-
-        <div class="summary-box">
-
-            <strong>Primary Attribute</strong>
-
-            Spirit
-
-        </div>
-
-
-        <div class="summary-box">
-
-            <strong>Resonant Suit</strong>
-
-            Hearts
-
-        </div>
-
-
-        <div class="summary-box">
-
-            <strong>Armor</strong>
-
-            Light, Medium, Shields
-
-        </div>
-
-
-        <div class="summary-box">
-
-            <strong>Weapons</strong>
-
-            Heart Weapons
-
-        </div>
-
-
-        <div class="summary-box">
-
-            <strong>Spell Tradition</strong>
-
-            Divine
-
-        </div>
-
-    </div>
-
-
-    <p>
-
-        Clerics channel divine power through Hearts.
-        Their abilities emphasize healing, protection,
-        leadership, conviction, and supernatural knowledge.
-
-    </p>
-
-
-    <div class="rule-callout">
-
-        <strong>Cleric Identity</strong>
-
-        <p>
-
-            Clerics are versatile divine spellcasters who can
-            support allies, protect the party, and confront
-            supernatural threats.
-
-        </p>
-
-        <p>
-
-            A Cleric's choice of domain determines how their
-            divine power manifests.
-
-        </p>
-
-    </div>
-
-</section>
-
-
-
-<!-- =====================================================
-     PROFICIENCIES
-     ===================================================== -->
-
-<section class="rule-section">
-
-    <div class="section-heading">
-
-        <span class="section-number">I</span>
-
-        <h2>Starting Proficiencies</h2>
-
-    </div>
-
-
-    <ul>
-
-        <li>
-            <strong>Weapons:</strong>
-            Heart weapons
-        </li>
-
-        <li>
-            <strong>Armor:</strong>
-            Light Armor and Medium Armor
-        </li>
-
-        <li>
-            <strong>Shields:</strong>
-            Shields
-        </li>
-
-        <li>
-            <strong>Skills:</strong>
-            Choose any 2 skills
-        </li>
-
-        <li>
-            <strong>Magic:</strong>
-            Divine spellcasting
-        </li>
-
-    </ul>
-
-</section>
-
-
-
-<!-- =====================================================
-     CLASS LEVEL PROGRESSION
-     ===================================================== -->
-
-<section class="rule-section">
-
-    <div class="section-heading">
-
-        <span class="section-number">II</span>
-
-        <h2>Cleric Level Progression</h2>
-
-    </div>
-
-
-    <p>
-
-        Characters reach a maximum level of 5.
-        Further character development comes through
-        Feat Points and other campaign rewards.
-
-    </p>
-
-
-    <table class="level-table">
-
-        <thead>
-
-            <tr>
-
-                <th>Level</th>
-
-                <th>Features</th>
-
-                <th>Hand Size</th>
-
-            </tr>
-
-        </thead>
-
-
-        <tbody>
-
-            <tr>
-
-                <td><strong>1</strong></td>
-
-                <td>
-
-                    Divine Spellcasting.<br>
-
-                    Proficiency with Heart weapons,
-                    Light Armor, Medium Armor, and Shields.<br>
-
-                    Gain proficiency in any 2 skills.<br>
-
-                    Gain access to all Tier 1 Divine spells.
-
-                </td>
-
-                <td>2</td>
-
-            </tr>
-
-
-            <tr>
-
-                <td><strong>2</strong></td>
-
-                <td>
-
-                    Choose one Cleric subclass feature.
-
-                </td>
-
-                <td>2</td>
-
-            </tr>
-
-
-            <tr>
-
-                <td><strong>3</strong></td>
-
-                <td>
-
-                    Gain access to all Tier 2 Divine spells.
-
-                </td>
-
-                <td>3</td>
-
-            </tr>
-
-
-            <tr>
-
-                <td><strong>4</strong></td>
-
-                <td>
-
-                    Choose one Cleric subclass feature.
-
-                </td>
-
-                <td>3</td>
-
-            </tr>
-
-
-            <tr>
-
-                <td><strong>5</strong></td>
-
-                <td>
-
-                    Increase one Core Attribute by +1.<br>
-
-                    Gain access to all Tier 3 Divine spells.
-
-                </td>
-
-                <td>4</td>
-
-            </tr>
-
-        </tbody>
-
-    </table>
-
-</section>
-
-
-
-<!-- =====================================================
-     DIVINE SPELLCASTING
-     ===================================================== -->
-
-<section class="rule-section">
-
-    <div class="section-heading">
-
-        <span class="section-number">III</span>
-
-        <h2>Divine Spellcasting</h2>
-
-    </div>
-
-
-    <p>
-
-        Clerics use <strong>Hearts</strong> as their
-        resonant suit for Divine magic.
-
-    </p>
-
-
-    <p>
-
-        When casting a spell during combat, burn the required
-        number of cards. The first card is added to the
-        spell's magic attack check.
-
-    </p>
-
-
-    <p>
-
-        Additional cards used to pay the casting cost do not
-        normally contribute to the attack check.
-
-        However, each additional card that matches the spell's
-        resonant suit provides <strong>+1</strong> to the check.
-
-    </p>
-
-
-    <p>
-
-        Spells with the <strong>Channel</strong> property may
-        burn additional resonant cards after the spell's
-        initial casting cost has been paid.
-
-        Channel cards increase the spell's effect according
-        to the spell's description.
-
-    </p>
-
-
-    <div class="rule-callout">
-
-        <strong>Divine Spell Access</strong>
-
-        <p>
-
-            Clerics gain access to the complete Divine spell
-            list appropriate to their level.
-
-        </p>
-
-        <p>
-
-            Tier 1 at level 1,
-            Tier 2 at level 3,
-            and Tier 3 at level 5.
-
-        </p>
-
-    </div>
-
-</section>
-
-
-
-<!-- =====================================================
-     KNOWLEDGE DOMAIN
-     ===================================================== -->
-
-<section class="rule-section">
-
-    <div class="section-heading">
-
-        <span class="section-number">IV</span>
-
-        <h2>Knowledge Domain</h2>
-
-    </div>
-
-
-    <p>
-
-        Clerics of the Knowledge Domain seek understanding
-        above all else. Their divine gifts reveal secrets,
-        expose weaknesses, and allow them to understand
-        creatures, artifacts, and forgotten places.
-
-    </p>
-
-
-    <div class="class-note">
-
-        <strong>Play Style:</strong>
-
-        Investigation, information gathering, magical
-        knowledge, and exploiting enemy weaknesses.
-
-    </div>
-
-
-    <div class="subclass-grid">
-
-
-        <div class="subclass-card">
-
-            <h3>
-                Knowledge Domain Features
-            </h3>
-
-
-            <div class="subclass-feature">
-
-                <h4>Divine Scholar</h4>
-
-                <p>
-
-                    Gain proficiency in Arcana, History,
-                    or Investigation.
-
-                </p>
-
-            </div>
-
-
-            <div class="subclass-feature">
-
-                <h4>Revelation</h4>
-
-                <p>
-
-                    When you successfully use
-                    <strong>Arcane Insight</strong>,
-                    you may ask one additional question about
-                    the target.
-
-                </p>
-
-            </div>
-
-
-            <div class="subclass-feature">
-
-                <h4>Shared Knowledge</h4>
-
-                <p>
-
-                    When you reveal an enemy's weakness,
-                    choose one ally who can immediately draw
-                    one card.
-
-                </p>
-
-            </div>
-
-
-            <div class="subclass-feature">
-
-                <h4>Read the Enemy</h4>
-
-                <p>
-
-                    Once per scene, after observing an enemy,
-                    you may ask the GM which of its known
-                    attacks or abilities is most dangerous.
-
-                </p>
-
-            </div>
-
-
-            <div class="subclass-feature">
-
-                <h4>Forbidden Lore</h4>
-
-                <p>
-
-                    Gain proficiency in Religion/Occult
-                    if you do not already have it.
-
-                    When investigating supernatural
-                    phenomena, you may treat a 2 as a 3
-                    for the purpose of determining the result
-                    of the check.
-
-                </p>
-
-            </div>
-
-
-            <div class="subclass-feature">
-
-                <h4>Divine Memory</h4>
-
-                <p>
-
-                    Once per scene, when making an
-                    Arcana, History, or Investigation check,
-                    you may discard a card to draw one
-                    additional card before resolving the check.
-
-                </p>
-
-            </div>
-
-        </div>
-
-
-    </div>
-
-</section>
-
-
-
-<!-- =====================================================
-     WAR DOMAIN
-     ===================================================== -->
-
-<section class="rule-section">
-
-    <div class="section-heading">
-
-        <span class="section-number">V</span>
-
-        <h2>War Domain</h2>
-
-    </div>
-
-
-    <p>
-
-        Clerics of the War Domain channel divine power
-        through strength, discipline, and righteous battle.
-        They stand among their allies rather than behind them.
-
-    </p>
-
-
-    <div class="class-note">
-
-        <strong>Play Style:</strong>
-
-        Front-line combat, weapon attacks, protection,
-        battlefield leadership, and aggressive use of
-        divine power.
-
-    </div>
-
-
-    <div class="subclass-grid">
-
-
-        <div class="subclass-card">
-
-            <h3>
-                War Domain Features
-            </h3>
-
-
-            <div class="subclass-feature">
-
-                <h4>War Priest</h4>
-
-                <p>
-
-                    Gain proficiency with one additional
-                    weapon set.
-
-                </p>
-
-            </div>
-
-
-            <div class="subclass-feature">
-
-                <h4>Divine Strike</h4>
-
-                <p>
-
-                    Once per turn when you hit with a
-                    Heart weapon, you may burn an additional
-                    Heart to deal +1 damage.
-
-                </p>
-
-            </div>
-
-
-            <div class="subclass-feature">
-
-                <h4>Battle Prayer</h4>
-
-                <p>
-
-                    Before making a weapon attack, you may
-                    discard a Heart to gain +1 to the attack.
-
-                </p>
-
-            </div>
-
-
-            <div class="subclass-feature">
-
-                <h4>Hold the Line</h4>
-
-                <p>
-
-                    When an adjacent ally is hit, you may
-                    burn a Heart as a reaction to reduce the
-                    damage they take by 1 HP.
-
-                </p>
-
-            </div>
-
-
-            <div class="subclass-feature">
-
-                <h4>Righteous Fury</h4>
-
-                <p>
-
-                    When you reduce an enemy to 0 HP,
-                    you may immediately draw one card.
-
-                </p>
-
-            </div>
-
-
-            <div class="subclass-feature">
-
-                <h4>War Cry</h4>
-
-                <p>
-
-                    When using Rallying Cry, you may choose
-                    to give one affected ally +1 to their next
-                    attack instead of allowing them to draw
-                    a card.
-
-                </p>
-
-            </div>
-
-        </div>
-
-
-    </div>
-
-</section>
-
-
-
-<!-- =====================================================
-     DOMAIN FEATS
-     ===================================================== -->
-
-<section class="rule-section">
-
-    <div class="section-heading">
-
-        <span class="section-number">VI</span>
-
-        <h2>Domain Feats</h2>
-
-    </div>
-
-
-    <p>
-
-        These feats are designed to support characters who
-        want to continue developing their domain identity
-        after reaching level 5.
-
-    </p>
-
-
-    <div class="feat-list">
-
-
-        <!-- KNOWLEDGE FEATS -->
-
-        <article class="feat-card">
-
-            <h4>
-                Expanded Knowledge
-            </h4>
-
-            <p>
-
-                <strong>Cost:</strong>
-                2 Feat Points
-
-            </p>
-
-            <p>
-
-                <strong>Prerequisite:</strong>
-                Knowledge Domain
-
-            </p>
-
-            <p>
-
-                Gain proficiency in two of the following:
-                Arcana, History, Investigation, or
-                Religion/Occult.
-
-            </p>
-
-        </article>
-
-
-        <article class="feat-card">
-
-            <h4>
-                Master of Secrets
-            </h4>
-
-            <p>
-
-                <strong>Cost:</strong>
-                2 Feat Points
-
-            </p>
-
-            <p>
-
-                <strong>Prerequisite:</strong>
-                Knowledge Domain
-
-            </p>
-
-            <p>
-
-                When you successfully use Arcane Insight,
-                you may ask one additional question.
-
-            </p>
-
-        </article>
-
-
-        <article class="feat-card">
-
-            <h4>
-                Divine Researcher
-            </h4>
-
-            <p>
-
-                <strong>Cost:</strong>
-                2 Feat Points
-
-            </p>
-
-            <p>
-
-                <strong>Prerequisite:</strong>
-                Knowledge Domain
-
-            </p>
-
-            <p>
-
-                Once per scene, you may discard a card to
-                reroll a failed Arcana, History, Investigation,
-                or Religion/Occult check.
-
-            </p>
-
-        </article>
-
-
-        <!-- WAR FEATS -->
-
-        <article class="feat-card">
-
-            <h4>
-                Martial Blessing
-            </h4>
-
-            <p>
-
-                <strong>Cost:</strong>
-                2 Feat Points
-
-            </p>
-
-            <p>
-
-                <strong>Prerequisite:</strong>
-                War Domain
-
-            </p>
-
-            <p>
-
-                Gain proficiency with one weapon set.
-
-            </p>
-
-        </article>
-
-
-        <article class="feat-card">
-
-            <h4>
-                Divine Champion
-            </h4>
-
-            <p>
-
-                <strong>Cost:</strong>
-                3 Feat Points
-
-            </p>
-
-            <p>
-
-                <strong>Prerequisite:</strong>
-                War Domain
-
-            </p>
-
-            <p>
-
-                Once per turn when you hit with a weapon,
-                you may burn a Heart to deal +1 damage.
-
-            </p>
-
-        </article>
-
-
-        <article class="feat-card">
-
-            <h4>
-                Guardian of the Faithful
-            </h4>
-
-            <p>
-
-                <strong>Cost:</strong>
-                3 Feat Points
-
-            </p>
-
-            <p>
-
-                <strong>Prerequisite:</strong>
-                War Domain
-
-            </p>
-
-            <p>
-
-                When an adjacent ally takes damage, you may
-                burn a Heart as a reaction to reduce the damage
-                by 1 HP.
-
-            </p>
-
-        </article>
-
-
-    </div>
-
-</section>
-
-
-
-<!-- =====================================================
-     DESIGN NOTES
-     ===================================================== -->
-
-<section class="rule-section">
-
-    <div class="section-heading">
-
-        <span class="section-number">VII</span>
-
-        <h2>Playtest Notes</h2>
-
-    </div>
-
-
-    <p>
-
-        This class page is intentionally designed as a living
-        rules document. Subclass features may be added,
-        removed, or rewritten as playtesting reveals which
-        abilities are fun and which create excessive complexity.
-
-    </p>
-
-
-    <p>
-
-        Domain features are not currently tied to specific
-        levels beyond the general subclass feature slots at
-        levels 2 and 4. This preserves the asymmetrical growth
-        model and allows two Clerics of the same domain to
-        develop differently.
-
-    </p>
-
-</section>
-
-
-</main>
-
-<!-- =========================================================
-     SHARED FOOTER
-     ========================================================= -->
-
-<iframe
-    src="../footer.html"
-    class="site-footer-frame"
-    title="Realm & Rune footer">
-</iframe>
-
-</body>
-
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Realm &amp; Rune — Cleric</title>
+		<link rel="stylesheet" href="../realm-and-rune.css">
+	</head>
+	
+	<body>
+		<header class="site-header">
+			<div class="header-inner">
+				<div class="game-title">Realm & Rune</div>
+				<div class="game-subtitle">Cleric</div>
+			</div>
+		</header>
+		<iframe src="../header.html" class="site-header-frame" title="Realm & Rune navigation">
+		</iframe>
+		<main class="page-container">
+			<section class="rule-section">
+				<h1 class="class-title">
+					Cleric
+				</h1>
+				<p class="class-subtitle">
+					Divine magic, conviction, healing, and the power
+					to shape the battlefield through faith.
+				</p>
+				<div class="class-summary">
+					<div class="summary-box">
+						<strong>Primary Attribute</strong>
+						Spirit
+					</div>
+					<div class="summary-box">
+						<strong>Resonant Suit</strong>
+						Hearts
+					</div>
+					<div class="summary-box">
+						<strong>Armor</strong>
+						Light, Medium, Shields
+					</div>
+					<div class="summary-box">
+						<strong>Weapons</strong>
+						Heart Weapons
+					</div>
+					<div class="summary-box">
+						<strong>Spell Tradition</strong>
+						Divine
+					</div>
+				</div>
+				<p>
+					Clerics channel divine power through Hearts.
+					Their abilities emphasize healing, protection,
+					leadership, conviction, and supernatural knowledge.
+				</p>
+				<div class="rule-callout">
+					<strong>Cleric Identity</strong>
+					<p>
+						Clerics are versatile divine spellcasters who can
+						support allies, protect the party, and confront
+						supernatural threats.
+					</p>
+					<p>
+						A Cleric's choice of domain determines how their
+						divine power manifests.
+					</p>
+				</div>
+			</section>
+			<!-- PROFICIENCIES -->
+			<section class="rule-section">
+				<div class="section-heading">
+					<span class="section-number">I</span>
+					<h2>Starting Proficiencies</h2>
+				</div>
+				<ul>
+					<li>
+						<strong>Weapons:</strong>
+						Heart weapons
+					</li>
+					<li>
+						<strong>Armor:</strong>
+						Light Armor and Medium Armor
+					</li>
+					<li>
+						<strong>Shields:</strong>
+						Shields
+					</li>
+					<li>
+						<strong>Skills:</strong>
+						Choose any 2 skills
+					</li>
+					<li>
+						<strong>Magic:</strong>
+						Divine spellcasting
+					</li>
+				</ul>
+			</section>
+			<!-- CLASS LEVEL PROGRESSION -->
+			<section class="rule-section">
+				<div class="section-heading">
+					<span class="section-number">II</span>
+					<h2>Cleric Level Progression</h2>
+				</div>
+				<p>
+					Characters reach a maximum level of 5.
+					Further character development comes through
+					Feat Points and other campaign rewards.
+				</p>
+				<table class="level-table">
+					<thead>
+						<tr>
+							<th>Level</th>
+							<th>HP</th>
+							<th>Hand Size</th>
+							<th>Features</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>
+								<strong>1</strong>
+							</td>
+							<td> 4 + Might</td>
+							<td> 2 </td>
+							<td>
+								Divine Spellcasting.<br>
+								Proficiency with Heart weapons,
+								Light Armor, Medium Armor, and Shields.<br>
+								Gain proficiency in any 2 skills.<br>
+								Gain access to all Tier 1 Divine spells.
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<strong>2</strong>
+							</td>
+							<td> +0 </td>
+							<td> 2 </td>
+							<td>
+								Choose one Cleric subclass feature.
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<strong>3</strong>
+							</td>
+							<td> +1 </td>
+							<td> 3 </td>
+							<td>
+								Gain access to all Tier 2 Divine spells.
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<strong>4</strong>
+							</td>
+							<td> +0 </td>
+							<td> 3 </td>
+							<td>
+								Choose one Cleric subclass feature.
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<strong>5</strong>
+							</td>
+							<td> +1 </td>
+							<td> 4 </td>
+							<td>
+								Increase one Core Attribute by +1.<br>
+								Gain access to all Tier 3 Divine spells.
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</section>
+			<!-- DIVINE SPELLCASTING -->
+			<section class="rule-section">
+				<div class="section-heading">
+					<span class="section-number">III</span>
+					<h2>Cleric Features</h2>
+				</div>
+				<div class="class-note">
+				<strong>Divine Spell Casting</strong>
+				<p>
+					Clerics use <strong>Hearts</strong> as their
+					resonant suit for Divine magic.
+				</p>
+				<p>
+					When casting a spell during combat, burn the required
+					number of cards. The first card is added to the
+					spell's magic attack check.
+				</p>
+				<p>
+					Additional cards used to pay the casting cost do not
+					normally contribute to the attack check.
+					However, each additional card that matches the spell's
+					resonant suit provides <strong>+1</strong> to the check.
+				</p>
+				<p>
+					Spells with the <strong>Channel</strong> property may
+					burn additional resonant cards after the spell's
+					initial casting cost has been paid.
+					Channel cards increase the spell's effect according
+					to the spell's description.
+				</p>
+				<div class="rule-callout">
+					<strong>Divine Spell Access</strong>
+					<p>
+						Clerics gain access to the complete Divine spell
+						list appropriate to their level.
+					</p>
+					<p>
+						Tier 1 at level 1,
+						Tier 2 at level 3,
+						and Tier 3 at level 5.
+					</p>
+				</div>
+				<div>
+			</section>
+			<!-- KNOWLEDGE DOMAIN -->
+			<section class="rule-section">
+				<div class="section-heading">
+					<span class="section-number">IV</span>
+					<h2>Knowledge Domain</h2>
+				</div>
+				<p>
+					Clerics of the Knowledge Domain seek understanding
+					above all else. Their divine gifts reveal secrets,
+					expose weaknesses, and allow them to understand
+					creatures, artifacts, and forgotten places.
+				</p>
+				<div class="class-note">
+					<strong>Play Style:</strong>
+					Investigation, information gathering, magical
+					knowledge, and exploiting enemy weaknesses.
+				</div>
+				<div class="subclass-grid">
+					<div class="subclass-card">
+						<h3>
+							Knowledge Domain Features
+						</h3>
+						<div class="subclass-feature">
+							<h4>Divine Scholar</h4>
+							<p>
+								Gain proficiency in Arcana, History,
+								or Investigation.
+							</p>
+						</div>
+						<div class="subclass-feature">
+							<h4>Revelation</h4>
+							<p>
+								When you successfully use
+								<strong>Arcane Insight</strong>,
+								you may ask one additional question about
+								the target.
+							</p>
+						</div>
+						<div class="subclass-feature">
+							<h4>Shared Knowledge</h4>
+							<p>
+								When you reveal an enemy's weakness,
+								choose one ally who can immediately draw
+								one card.
+							</p>
+						</div>
+						<div class="subclass-feature">
+							<h4>Read the Enemy</h4>
+							<p>
+								Once per scene, after observing an enemy,
+								you may ask the GM which of its known
+								attacks or abilities is most dangerous.
+							</p>
+						</div>
+						<div class="subclass-feature">
+							<h4>Forbidden Lore</h4>
+							<p>
+								Gain proficiency in Religion/Occult
+								if you do not already have it.
+								When investigating supernatural
+								phenomena, you may treat a 2 as a 3
+								for the purpose of determining the result
+								of the check.
+							</p>
+						</div>
+						<div class="subclass-feature">
+							<h4>Divine Memory</h4>
+							<p>
+								Once per scene, when making an
+								Arcana, History, or Investigation check,
+								you may discard a card to draw one
+								additional card before resolving the check.
+							</p>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- =====================================================
+				WAR DOMAIN
+			===================================================== -->
+			<section class="rule-section">
+				<div class="section-heading">
+					<span class="section-number">V</span>
+					<h2>War Domain</h2>
+				</div>
+				<p>
+					Clerics of the War Domain channel divine power
+					through strength, discipline, and righteous battle.
+					They stand among their allies rather than behind them.
+				</p>
+				<div class="class-note">
+					<strong>Play Style:</strong>
+					Front-line combat, weapon attacks, protection,
+					battlefield leadership, and aggressive use of
+					divine power.
+				</div>
+				<div class="subclass-grid">
+					<div class="subclass-card">
+						<h3>
+							War Domain Features
+						</h3>
+						<div class="subclass-feature">
+							<h4>War Priest</h4>
+							<p>
+								Gain proficiency with one additional
+								weapon set.
+							</p>
+						</div>
+						<div class="subclass-feature">
+							<h4>Divine Strike</h4>
+							<p>
+								Once per turn when you hit with a
+								Heart weapon, you may burn an additional
+								Heart to deal +1 damage.
+							</p>
+						</div>
+						<div class="subclass-feature">
+							<h4>Battle Prayer</h4>
+							<p>
+								Before making a weapon attack, you may
+								discard a Heart to gain +1 to the attack.
+							</p>
+						</div>
+						<div class="subclass-feature">
+							<h4>Hold the Line</h4>
+							<p>
+								When an adjacent ally is hit, you may
+								burn a Heart as a reaction to reduce the
+								damage they take by 1 HP.
+							</p>
+						</div>
+						<div class="subclass-feature">
+							<h4>Righteous Fury</h4>
+							<p>
+								When you reduce an enemy to 0 HP,
+								you may immediately draw one card.
+							</p>
+						</div>
+						<div class="subclass-feature">
+							<h4>War Cry</h4>
+							<p>
+								When using Rallying Cry, you may choose
+								to give one affected ally +1 to their next
+								attack instead of allowing them to draw
+								a card.
+							</p>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- =====================================================
+				DOMAIN FEATS
+			===================================================== -->
+			<section class="rule-section">
+				<div class="section-heading">
+					<span class="section-number">VI</span>
+					<h2>Domain Feats</h2>
+				</div>
+				<p>
+					These feats are designed to support characters who
+					want to continue developing their domain identity
+					after reaching level 5.
+				</p>
+				<div class="feat-list">
+					<!-- KNOWLEDGE FEATS -->
+					<article class="feat-card">
+						<h4>
+							Expanded Knowledge
+						</h4>
+						<p>
+							<strong>Cost:</strong>
+							2 Feat Points
+						</p>
+						<p>
+							<strong>Prerequisite:</strong>
+							Knowledge Domain
+						</p>
+						<p>
+							Gain proficiency in two of the following:
+							Arcana, History, Investigation, or
+							Religion/Occult.
+						</p>
+					</article>
+					<article class="feat-card">
+						<h4>
+							Master of Secrets
+						</h4>
+						<p>
+							<strong>Cost:</strong>
+							2 Feat Points
+						</p>
+						<p>
+							<strong>Prerequisite:</strong>
+							Knowledge Domain
+						</p>
+						<p>
+							When you successfully use Arcane Insight,
+							you may ask one additional question.
+						</p>
+					</article>
+					<article class="feat-card">
+						<h4>
+							Divine Researcher
+						</h4>
+						<p>
+							<strong>Cost:</strong>
+							2 Feat Points
+						</p>
+						<p>
+							<strong>Prerequisite:</strong>
+							Knowledge Domain
+						</p>
+						<p>
+							Once per scene, you may discard a card to
+							reroll a failed Arcana, History, Investigation,
+							or Religion/Occult check.
+						</p>
+					</article>
+					<!-- WAR FEATS -->
+					<article class="feat-card">
+						<h4>
+							Martial Blessing
+						</h4>
+						<p>
+							<strong>Cost:</strong>
+							2 Feat Points
+						</p>
+						<p>
+							<strong>Prerequisite:</strong>
+							War Domain
+						</p>
+						<p>
+							Gain proficiency with one weapon set.
+						</p>
+					</article>
+					<article class="feat-card">
+						<h4>
+							Divine Champion
+						</h4>
+						<p>
+							<strong>Cost:</strong>
+							3 Feat Points
+						</p>
+						<p>
+							<strong>Prerequisite:</strong>
+							War Domain
+						</p>
+						<p>
+							Once per turn when you hit with a weapon,
+							you may burn a Heart to deal +1 damage.
+						</p>
+					</article>
+					<article class="feat-card">
+						<h4>
+							Guardian of the Faithful
+						</h4>
+						<p>
+							<strong>Cost:</strong>
+							3 Feat Points
+						</p>
+						<p>
+							<strong>Prerequisite:</strong>
+							War Domain
+						</p>
+						<p>
+							When an adjacent ally takes damage, you may
+							burn a Heart as a reaction to reduce the damage
+							by 1 HP.
+						</p>
+					</article>
+				</div>
+			</section>
+		</main>
+		<iframe src="../footer.html" class="site-footer-frame" title="Realm & Rune footer">
+		</iframe>
+	</body>
 </html>
