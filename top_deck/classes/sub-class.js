@@ -198,7 +198,7 @@ function displaySubclassFeats(feats) {
 
     container.innerHTML = feats.map(feat => `
 
-        <article class="feat-card subclass-feat-card">
+        <article class="feat-card">
 
             <h3>${feat.name}</h3>
 
