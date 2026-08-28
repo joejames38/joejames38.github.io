@@ -1,0 +1,189 @@
+[
+    {
+        "name": "Goblin Fighter",
+        "type": "Goblinoid",
+        "suit": "Spades",
+        "level": "2",
+        "hp": 3,
+        "ac": 7,
+        "handSize": 2,
+        "might": 1,
+        "spirit": 0,
+        "dexterity": 1,
+        "cunning": 0,
+        "abilities": [
+            {
+                "name": "Might Strike",
+                "description": "Play a card to make a melee attack. On a hit, deal 1 HP."
+            },
+            {
+                "name": "Dirty Fighter",
+                "description": "When using a Spade card for an attack, deal 2 HP instead."
+            }
+        ]
+    },
+
+    {
+        "name": "Goblin Warchief",
+        "type": "Goblinoid",
+        "suit": "Spades",
+        "level": "J",
+        "hp": 8,
+        "ac": 9,
+        "handSize": 3,
+        "might": 2,
+        "spirit": 2,
+        "dexterity": 1,
+        "cunning": 1,
+        "abilities": [
+            {
+                "name": "Might Strike",
+                "description": "Play a card to make a melee attack. On a hit, deal 1 HP."
+            },
+            {
+                "name": "Rally the Goblins",
+                "description": "Play a Heart card. Another goblin may draw a card."
+            },
+            {
+                "name": "Brutal Strike",
+                "description": "When a face card is used for a melee attack, deal an additional 1 HP."
+            }
+        ]
+    },
+
+    {
+        "name": "Goblin Shaman",
+        "type": "Goblinoid",
+        "suit": "Spades",
+        "level": "Q",
+        "hp": 6,
+        "ac": 7,
+        "handSize": 3,
+        "might": 0,
+        "spirit": 2,
+        "dexterity": 1,
+        "cunning": 2,
+        "abilities": [
+            {
+                "name": "Hex",
+                "description": "Burn a card to make a magical attack. On a hit, deal 1 HP."
+            },
+            {
+                "name": "Goblin Blessing",
+                "description": "An allied goblin gains a bonus determined by the GM."
+            },
+            {
+                "name": "Trickster Magic",
+                "description": "The shaman may use magical effects to distract or confuse enemies."
+            }
+        ]
+    },
+
+    {
+        "name": "Kobold",
+        "type": "Reptilian",
+        "suit": "Diamonds",
+        "level": "2",
+        "hp": 2,
+        "ac": 7,
+        "handSize": 2,
+        "might": 0,
+        "spirit": 0,
+        "dexterity": 1,
+        "cunning": 1,
+        "abilities": [
+            {
+                "name": "Quick Strike",
+                "description": "Play a card to make a melee or ranged attack."
+            },
+            {
+                "name": "Cunning Escape",
+                "description": "The kobold may retreat or reposition after attacking."
+            }
+        ]
+    },
+
+    {
+        "name": "Lizardfolk Caster",
+        "type": "Reptilian",
+        "suit": "Diamonds",
+        "level": "J",
+        "hp": 7,
+        "ac": 8,
+        "handSize": 3,
+        "might": 1,
+        "spirit": 1,
+        "dexterity": 1,
+        "cunning": 2,
+        "abilities": [
+            {
+                "name": "Arcane Strike",
+                "description": "Burn a Diamond card to make a magical attack."
+            },
+            {
+                "name": "Mystic Ward",
+                "description": "Use magic to protect an ally from harm."
+            },
+            {
+                "name": "Arcane Insight",
+                "description": "Reveal a weakness or useful insight about an enemy."
+            }
+        ]
+    },
+
+    {
+        "name": "Dragonborn Warlord",
+        "type": "Reptilian",
+        "suit": "Diamonds",
+        "level": "K",
+        "hp": 12,
+        "ac": 10,
+        "handSize": 4,
+        "might": 3,
+        "spirit": 2,
+        "dexterity": 1,
+        "cunning": 2,
+        "abilities": [
+            {
+                "name": "Mighty Strike",
+                "description": "Make a powerful melee attack. On a hit, deal 2 HP."
+            },
+            {
+                "name": "Command",
+                "description": "An allied creature may immediately reposition or make an appropriate action."
+            },
+            {
+                "name": "Draconic Breath",
+                "description": "Once per encounter, unleash a devastating area attack."
+            }
+        ]
+    },
+
+    {
+        "name": "Werewolf",
+        "type": "Humanoid",
+        "suit": "Clubs",
+        "level": "K",
+        "hp": 10,
+        "ac": 9,
+        "handSize": 3,
+        "might": 3,
+        "spirit": 1,
+        "dexterity": 2,
+        "cunning": 1,
+        "abilities": [
+            {
+                "name": "Claw and Bite",
+                "description": "Make a melee attack. On a hit, deal 2 HP."
+            },
+            {
+                "name": "Predator",
+                "description": "The werewolf gains an advantage when pursuing a wounded enemy."
+            },
+            {
+                "name": "Regeneration",
+                "description": "The GM may allow the werewolf to recover HP under appropriate conditions."
+            }
+        ]
+    }
+]
