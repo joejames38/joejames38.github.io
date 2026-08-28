@@ -1,0 +1,99 @@
+/* =========================================
+   SUBCLASS FEAT CARD GRID
+   ========================================= */
+
+#subclass-feats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.25rem;
+    margin-top: 1.25rem;
+    align-items: start;
+}
+
+
+/* Individual feat cards */
+
+.subclass-feat-card {
+    box-sizing: border-box;
+    padding: 1rem 1.15rem;
+
+    border: 1px solid var(--border-color, #8b7355);
+    border-radius: 8px;
+
+    background: var(--card-background, #f7f1df);
+
+    box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.15);
+
+    height: 100%;
+}
+
+
+/* Feat name */
+
+.subclass-feat-card h3 {
+    margin-top: 0;
+    margin-bottom: 0.25rem;
+
+    font-size: 1.25rem;
+}
+
+
+/* Subclass/type label */
+
+.subclass-feat-card .feat-type {
+    margin-top: 0;
+    margin-bottom: 0.75rem;
+
+    font-style: italic;
+    font-weight: bold;
+}
+
+
+/* Card paragraphs */
+
+.subclass-feat-card p {
+    margin: 0.45rem 0;
+    line-height: 1.4;
+}
+
+
+/* =========================================
+   FILTER AREA
+   ========================================= */
+
+#subclass-filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+
+    align-items: center;
+
+    margin-bottom: 1rem;
+}
+
+#subclass-filters label {
+    font-weight: bold;
+}
+
+#subclass-filters select,
+#subclass-filters input {
+    padding: 0.45rem 0.6rem;
+
+    border: 1px solid #999;
+    border-radius: 5px;
+
+    font-size: 0.95rem;
+}
+
+
+/* =========================================
+   MOBILE
+   ========================================= */
+
+@media (max-width: 650px) {
+
+    #subclass-feats {
+        grid-template-columns: 1fr;
+    }
+
+}
