@@ -1,0 +1,143 @@
+[
+    {
+        "name": "Studied Mind",
+        "type": "Knowledge",
+        "cost": 2,
+        "prerequisite": "Cleric",
+        "description": "Gain proficiency in Investigation or History. If you already have proficiency, gain expertise instead."
+    },
+    {
+        "name": "Divine Lore",
+        "type": "Knowledge",
+        "cost": 2,
+        "prerequisite": "Cleric",
+        "description": "When you successfully research a creature, location, religion, or historical subject, ask the GM one additional question about the information discovered."
+    },
+    {
+        "name": "Read the Signs",
+        "type": "Knowledge",
+        "cost": 2,
+        "prerequisite": "Cleric",
+        "description": "Once per scene, when using Insight, Investigation, History, or Religion/Occult, you may draw an additional card and use it for the check."
+    },
+    {
+        "name": "Sacred Scholar",
+        "type": "Knowledge",
+        "cost": 2,
+        "prerequisite": "Cleric",
+        "description": "Learn one Tier 1 Divine spell. This spell is added to the spells available to your character."
+    },
+    {
+        "name": "Arcane Theology",
+        "type": "Knowledge",
+        "cost": 3,
+        "prerequisite": "Cleric",
+        "description": "When identifying or researching a magical effect, you may use Religion/Occult instead of Arcana when the subject has a divine or supernatural connection."
+    },
+    {
+        "name": "Keeper of Secrets",
+        "type": "Knowledge",
+        "cost": 3,
+        "prerequisite": "Cleric",
+        "description": "Once per scene, when you uncover information about an enemy, you may reveal one additional useful weakness, resistance, motivation, or capability."
+    },
+    {
+        "name": "Divine Channel",
+        "type": "Knowledge",
+        "cost": 3,
+        "prerequisite": "Cleric",
+        "description": "When casting a Divine spell, you may burn an additional Heart after paying the spell's normal cost. The additional Heart provides its normal resonant bonus."
+    },
+    {
+        "name": "Prophetic Insight",
+        "type": "Knowledge",
+        "cost": 4,
+        "prerequisite": "Cleric",
+        "description": "Once per short rest, ask the GM a single question about an immediate danger, creature, or situation. The GM must provide a truthful but appropriately limited answer."
+    },
+    {
+        "name": "Master of Lore",
+        "type": "Knowledge",
+        "cost": 4,
+        "prerequisite": "Cleric",
+        "description": "Gain expertise in one of the following skills: Arcana, History, Investigation, or Religion/Occult."
+    },
+    {
+        "name": "Ancient Knowledge",
+        "type": "Knowledge",
+        "cost": 5,
+        "prerequisite": "Cleric; Master of Lore",
+        "description": "When you successfully research a subject, the GM may provide a deeper connection to the world: a forgotten weakness, lost location, ancient name, hidden faction, or other significant revelation."
+    },
+
+    {
+        "name": "Divine Warrior",
+        "type": "War",
+        "cost": 2,
+        "prerequisite": "Cleric",
+        "description": "Gain proficiency with Spade weapons."
+    },
+    {
+        "name": "Armored Faith",
+        "type": "War",
+        "cost": 2,
+        "prerequisite": "Cleric",
+        "description": "Gain proficiency with Heavy Armor."
+    },
+    {
+        "name": "Battle Prayer",
+        "type": "War",
+        "cost": 2,
+        "prerequisite": "Cleric",
+        "description": "Before making a Might attack, you may burn a Heart instead of another card. If the attack hits, deal 1 additional HP."
+    },
+    {
+        "name": "Shield of Faith",
+        "type": "War",
+        "cost": 2,
+        "prerequisite": "Cleric; Shield proficiency",
+        "description": "When you use Dodge, you may protect an adjacent ally instead of yourself."
+    },
+    {
+        "name": "Holy Strike",
+        "type": "War",
+        "cost": 3,
+        "prerequisite": "Cleric",
+        "description": "When you make a Might Strike with a Heart card, deal 1 additional HP on a hit."
+    },
+    {
+        "name": "Battlefield Chaplain",
+        "type": "War",
+        "cost": 3,
+        "prerequisite": "Cleric",
+        "description": "When an ally within close range reaches 0 HP, you may immediately use an appropriate Divine ability or spell that restores HP if you can pay its cost."
+    },
+    {
+        "name": "Rallying Faith",
+        "type": "War",
+        "cost": 3,
+        "prerequisite": "Cleric",
+        "description": "When you use Rallying Cry, one of the affected allies may also recover 1 HP."
+    },
+    {
+        "name": "Divine Retribution",
+        "type": "War",
+        "cost": 4,
+        "prerequisite": "Cleric",
+        "description": "Once per short rest, when an enemy damages you, you may burn a Heart to make an immediate Divine attack against that enemy."
+    },
+    {
+        "name": "Unbreakable Faith",
+        "type": "War",
+        "cost": 4,
+        "prerequisite": "Cleric",
+        "description": "When you would be reduced to 0 HP, burn a Heart. You remain at 1 HP instead. Once used, this feat cannot be used again until a Long Rest."
+    },
+    {
+        "name": "Champion of War",
+        "type": "War",
+        "cost": 5,
+        "prerequisite": "Cleric; Divine Warrior",
+        "description": "When you make a melee attack using a weapon associated with your proficient suit, you may treat a face card as a powerful special attack. The GM determines an appropriate additional combat effect."
+    }
+]

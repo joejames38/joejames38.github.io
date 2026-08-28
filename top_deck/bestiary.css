@@ -1,0 +1,225 @@
+/* =========================================
+   BESTIARY ENEMY CARDS
+   Physical playing-card proportions:
+   2.5in × 3.5in
+   ========================================= */
+
+#bestiary {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+.enemy-card {
+    box-sizing: border-box;
+
+    width: 2.5in;
+    height: 3.5in;
+
+    position: relative;
+    overflow: hidden;
+
+    padding: 0.16in;
+
+    background: #f7f1df;
+    color: #241b14;
+
+    border: 3px solid #241b14;
+    border-radius: 0.12in;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    box-shadow: 3px 4px 8px rgba(0,0,0,0.25);
+
+    flex: 0 0 2.5in;
+}
+
+
+/* Card corners */
+
+.card-corner {
+    position: absolute;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+
+    font-size: 0.15in;
+    line-height: 1;
+}
+
+.card-corner.top-left {
+    top: 0.08in;
+    left: 0.10in;
+}
+
+.card-corner.bottom-right {
+    right: 0.10in;
+    bottom: 0.08in;
+
+    transform: rotate(180deg);
+}
+
+
+/* Header */
+
+.enemy-card-header {
+    text-align: center;
+
+    margin: 0.04in 0.25in 0.04in;
+
+    padding-bottom: 0.03in;
+
+    border-bottom: 1px solid #241b14;
+}
+
+.enemy-card-header h2 {
+    font-size: 0.17in;
+    margin: 0;
+
+    line-height: 1.05;
+}
+
+.enemy-card-header p {
+    font-size: 0.10in;
+
+    margin: 0.025in 0 0;
+
+    font-style: italic;
+}
+
+
+/* Large card value */
+
+.enemy-card-level {
+    text-align: center;
+
+    font-size: 0.24in;
+    font-weight: bold;
+
+    line-height: 1;
+
+    margin: 0.03in 0;
+}
+
+
+/* HP / AC / Hand */
+
+.enemy-stats {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    border-top: 1px solid #241b14;
+    border-bottom: 1px solid #241b14;
+
+    margin-bottom: 0.05in;
+}
+
+.stat {
+    text-align: center;
+
+    padding: 0.025in;
+
+    border-right: 1px solid #241b14;
+}
+
+.stat:last-child {
+    border-right: none;
+}
+
+.stat span {
+    display: block;
+
+    font-size: 0.075in;
+    text-transform: uppercase;
+}
+
+.stat strong {
+    display: block;
+
+    font-size: 0.14in;
+}
+
+
+/* Attributes */
+
+.attribute-grid {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 0.025in;
+
+    margin-bottom: 0.04in;
+}
+
+.attribute-grid div {
+    display: flex;
+
+    justify-content: space-between;
+
+    border-bottom: 1px dotted #777;
+
+    font-size: 0.075in;
+}
+
+.attribute-grid strong {
+    font-size: 0.085in;
+}
+
+
+/* Abilities */
+
+.abilities {
+    border-top: 1px solid #241b14;
+
+    padding-top: 0.025in;
+}
+
+.abilities h3 {
+    margin: 0 0 0.025in;
+
+    text-align: center;
+
+    font-size: 0.10in;
+
+    text-transform: uppercase;
+}
+
+.ability {
+    margin-bottom: 0.025in;
+}
+
+.ability strong {
+    display: block;
+
+    font-size: 0.075in;
+}
+
+.ability p {
+    margin: 0;
+
+    font-size: 0.065in;
+
+    line-height: 1.1;
+}
+
+
+/* Printing */
+
+@media print {
+
+    .enemy-card {
+        box-shadow: none;
+
+        break-inside: avoid;
+        page-break-inside: avoid;
+    }
+
+    #bestiary {
+        gap: 0.15in;
+    }
+}
