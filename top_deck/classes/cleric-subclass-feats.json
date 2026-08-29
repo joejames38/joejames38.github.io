@@ -8,7 +8,7 @@
     },
     {
         "name": "Divine Lore",
-        "type": "Knowledge",
+        "type": "Cleric - All",
         "cost": 2,
         "prerequisite": "Cleric",
         "description": "When you successfully research a creature, location, religion, or historical subject, ask the GM one additional question about the information discovered."
@@ -18,7 +18,7 @@
         "type": "Knowledge",
         "cost": 2,
         "prerequisite": "Cleric",
-        "description": "Once per scene, when using Insight, Investigation, History, or Religion, you may draw an additional card and add it for the check."
+        "description": "Once per short rest, when using Insight, Investigation, History, or Religion, you may draw an additional card and add it for the check."
     },
     {
         "name": "Sacred Scholar",
@@ -39,7 +39,7 @@
         "type": "Knowledge",
         "cost": 2,
         "prerequisite": "Cleric",
-        "description": "Once per scene, when you uncover information about an enemy using Arcane Insight, you may reveal one additional useful weakness, resistance, motivation, or capability."
+        "description": "Once per short rest, when you uncover information about an enemy using Arcane Insight, you may reveal one additional useful weakness, resistance, motivation, or capability."
     },
     {
         "name": "Empowered Divine Magic",
@@ -57,10 +57,10 @@
     },
     {
         "name": "Master of Lore",
-        "type": "Knowledge",
+        "type": "Cleric - All",
         "cost": 3,
         "prerequisite": "Cleric",
-        "description": "Gain expertise in one of the following skills: Arcana, History, Investigation, or Religion."
+        "description": "Gain expertise in one of the following skills that you are proficient: Arcana, History, Investigation, or Religion."
     },
     {
         "name": "Ancient Knowledge",
@@ -79,7 +79,7 @@
     },
     {
         "name": "Armored Faith",
-        "type": "War",
+        "type": "Cleric - All",
         "cost": 2,
         "prerequisite": "Cleric",
         "description": "Gain proficiency with Heavy Armor."
@@ -130,8 +130,8 @@
         "name": "Paragorn of War",
         "type": "War",
         "cost": 5,
-        "prerequisite": "Cleric; Divine Warrior",
-        "description": "All Face cards are also Hearts in additional to their shown suit. When determining the outcome of an effect, the card"
+        "prerequisite": "Cleric; Divine Warrior Feat",
+        "description": "All Face cards are also Hearts in additional to their shown suit. When determining the outcome of an effect, the card can only use one suit."
     },
 	{
         "name": "Channel Divinity: Knowledge of the Ancients",

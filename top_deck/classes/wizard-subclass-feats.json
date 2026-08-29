@@ -1,31 +1,24 @@
 [
     {
-        "name": "Empowered Evocation",
-        "type": "Evoker",
-        "cost": 2,
-        "prerequisite": "Wizard; Evoker",
-        "description": "When you cast a damaging Arcane spell, you may burn an additional Diamond after paying the spell's normal casting cost. If the spell hits, it deals 1 additional HP of damage."
-    },
-    {
         "name": "Elemental Adaptation",
         "type": "Evoker",
         "cost": 2,
         "prerequisite": "Wizard; Evoker",
-        "description": "When casting a damaging Arcane spell, you may change its damage type to another appropriate elemental type. The GM determines whether the new damage type is appropriate for the spell."
+        "description": "When casting a damaging Arcane spell, you may burn any card to change its damage type to another appropriate elemental type."
     },
     {
         "name": "Potent Cantrip",
         "type": "Evoker",
         "cost": 2,
         "prerequisite": "Wizard; Evoker",
-        "description": "When you cast a Tier 0 damaging cantrip in combat, you may burn a card to enhance the spell. If the spell hits, it deals 1 HP of damage."
+        "description": "When you cast a Tier 0 damaging spell in combat, you may burn any card to enhance the spell. If the spell hits, it deals 1 additional HP of damage."
     },
     {
-        "name": "Resonant Power",
+        "name": "Dark Resonance",
         "type": "Evoker",
-        "cost": 3,
+        "cost": 5,
         "prerequisite": "Wizard; Evoker",
-        "description": "When casting an Arcane spell, you may burn an additional Diamond after paying the spell's normal cost. The additional Diamond provides its normal +1 resonant bonus and, if the spell deals damage, adds 1 HP to its damage."
+        "description": "All Face cards are also Diamonds in additional to their shown suit. When determining the outcome of an effect, the card can only use one suit."
     },
     {
         "name": "Spell Shaping",
@@ -39,7 +32,7 @@
         "type": "Evoker",
         "cost": 3,
         "prerequisite": "Wizard; Evoker",
-        "description": "Once per short rest, when casting a damaging Arcane spell, you may burn one additional card to increase the spell's damage by 1 HP."
+        "description": "When casting a damaging Arcane spell, you may burn up to two additional cards of any suit to increase the spell's damage by +1 HP per card."
     },
     {
         "name": "Arcane Penetration",
@@ -53,7 +46,7 @@
         "type": "Evoker",
         "cost": 4,
         "prerequisite": "Wizard; Evoker",
-        "description": "When you cast an Arcane spell requiring a magic attack, you may burn an additional Diamond to reroll the attack card before determining whether the spell hits."
+        "description": "Once per Short Rest when you cast an Arcane spell requiring a magic attack, you may attack at advantage before determining whether the spell hits."
     },
     {
         "name": "Master of Elements",
@@ -67,58 +60,44 @@
         "type": "Evoker",
         "cost": 5,
         "prerequisite": "Wizard; Evoker",
-        "description": "Once per long rest, when casting an Arcane spell of Tier 3 or higher, you may reduce the spell's casting cost by 1 card. The remaining cards must still be paid normally."
+        "description": "Once per short rest, when casting an Arcane spell of Tier 3 or higher, you may reduce the spell's casting cost by 1 card. The remaining cards must still be paid normally."
     },
 
 
-    {
-        "name": "Minor Illusion",
-        "type": "Illusionist",
-        "cost": 2,
-        "prerequisite": "Wizard; Illusionist",
-        "description": "You can create a small sensory illusion without spending a spell slot or burning a card when used outside combat. The illusion must be simple and localized."
-    },
     {
         "name": "Distracting Illusion",
         "type": "Illusionist",
         "cost": 2,
         "prerequisite": "Wizard; Illusionist",
-        "description": "Create an illusion that distracts an enemy. The GM may impose an appropriate disadvantage or distraction when the illusion is convincing."
+        "description": "Create an illusion that distracts an enemy. When an illusion is close to an enemy it has disadvantage on its next attack."
     },
     {
         "name": "Illusory Disguise",
         "type": "Illusionist",
         "cost": 2,
         "prerequisite": "Wizard; Illusionist",
-        "description": "Create a magical disguise that changes your apparent appearance. The disguise lasts until the end of the scene or until closely examined."
-    },
-    {
-        "name": "Flexible Illusion",
-        "type": "Illusionist",
-        "cost": 3,
-        "prerequisite": "Wizard; Illusionist",
-        "description": "When casting an illusion spell, you may alter its appearance, sound, or presentation without changing its basic mechanical effect."
+        "description": "Burn any card, create a magical disguise that changes your apparent appearance. The disguise lasts until the end of the scene or until closely examined."
     },
     {
         "name": "Phantom Double",
         "type": "Illusionist",
         "cost": 3,
         "prerequisite": "Wizard; Illusionist",
-        "description": "Create an illusory duplicate of yourself. Until the end of the scene, the duplicate may be used to distract enemies or create uncertainty about your position."
+        "description": "Extend the distance of your Illusory Twin and you don't need to remain within sight."
     },
     {
         "name": "Illusory Terrain",
         "type": "Illusionist",
-        "cost": 3,
+        "cost": 2,
         "prerequisite": "Wizard; Illusionist",
-        "description": "Create an illusion that changes the apparent appearance of an area. The illusion can conceal doors, create apparent obstacles, disguise paths, or make an area appear dangerous."
+        "description": "Burn any card and create an illusion that changes the apparent appearance of an area. The illusion can conceal doors, create apparent obstacles, disguise paths, or make an area appear dangerous."
     },
     {
         "name": "Misdirection",
         "type": "Illusionist",
         "cost": 4,
         "prerequisite": "Wizard; Illusionist",
-        "description": "When an enemy targets you with an attack, you may burn a card to create a momentary illusion. The GM may redirect the attack, impose a disadvantage, or allow you to reposition depending on the circumstances."
+        "description": "When an enemy targets you with an attack, as a reaction you may burn a card to create a momentary illusion to redirect the attack, imposing a disadvantage."
     },
     {
         "name": "Illusory Escape",
@@ -128,17 +107,24 @@
         "description": "Once per short rest, when you would be hit by an attack, you may burn a card to create an illusion of yourself in your current position and move to a nearby location."
     },
     {
-        "name": "Master of Deception",
+        "name": "Reality Swap",
         "type": "Illusionist",
         "cost": 4,
+        "prerequisite": "Wizard; Illusionist; Phantom Double Feat",
+        "description": "Burn a Face Card to Swap Positions with your Illusory Twin."
+    },
+    {
+        "name": "Master of Deception",
+        "type": "Illusionist",
+        "cost": 2,
         "prerequisite": "Wizard; Illusionist",
-        "description": "Gain expertise in Deception or Stealth. If you already have expertise in both, gain proficiency in another skill."
+        "description": "Gain proficiency in Deception or Stealth."
     },
     {
         "name": "Grand Illusion",
         "type": "Illusionist",
         "cost": 5,
-        "prerequisite": "Wizard; Illusionist",
+        "prerequisite": "Wizard; Illusionist; Illusory Terrain",
         "description": "Once per long rest, create a powerful illusion capable of affecting an entire scene. The illusion may disguise a location, create convincing creatures or hazards, or radically alter how the area appears. The GM determines its exact limits."
     }
 ]

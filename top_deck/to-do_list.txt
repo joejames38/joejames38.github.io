@@ -1,19 +1,7 @@
-Must fix
-
-Resolve matching-suit weapon damage.
-Finalize Short/Long Rest.
-Resolve the skill check/Advantage system.
-
-Strongly recommended
 Define conditions.
 Define Weapon Mastery precisely.
 Define how temporary HP/AC/attribute modifiers interact with the +3 attribute cap.
-
-
 Complete combat rules
-Conditions
-Rest rules
-Card system reference
 Exploration/dungeon rules
 GM rules
 Monster creation rules
