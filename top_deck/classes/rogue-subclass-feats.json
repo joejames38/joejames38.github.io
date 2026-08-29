@@ -1,0 +1,143 @@
+[
+    {
+        "name": "Deadly Precision",
+        "type": "Assassin",
+        "cost": 2,
+        "prerequisite": "Rogue; Assassin",
+        "description": "When you make a Backstab against a creature that has not yet acted in the current combat, deal 1 additional HP on a hit."
+    },
+    {
+        "name": "Killer's Instinct",
+        "type": "Assassin",
+        "cost": 2,
+        "prerequisite": "Rogue; Assassin",
+        "description": "Gain proficiency in Initiative. If you already have proficiency, gain expertise instead."
+    },
+    {
+        "name": "Silent Approach",
+        "type": "Assassin",
+        "cost": 2,
+        "prerequisite": "Rogue; Assassin",
+        "description": "Gain proficiency in Stealth. If you already have proficiency, gain expertise instead."
+    },
+    {
+        "name": "Poisoner",
+        "type": "Assassin",
+        "cost": 2,
+        "prerequisite": "Rogue; Assassin",
+        "description": "You can prepare and apply simple poisons to appropriate weapons. The GM determines the ingredients, availability, and effects of poisons."
+    },
+    {
+        "name": "Ambush",
+        "type": "Assassin",
+        "cost": 3,
+        "prerequisite": "Rogue; Assassin",
+        "description": "When you successfully begin combat from a hidden position, you may immediately draw one card before taking your first turn."
+    },
+    {
+        "name": "Executioner",
+        "type": "Assassin",
+        "cost": 3,
+        "prerequisite": "Rogue; Assassin",
+        "description": "When you hit a wounded enemy with Backstab, deal 1 additional HP."
+    },
+    {
+        "name": "Vanish",
+        "type": "Assassin",
+        "cost": 3,
+        "prerequisite": "Rogue; Assassin",
+        "description": "After successfully hitting an enemy with Backstab, you may discard a card to immediately Hide."
+    },
+    {
+        "name": "Assassin's Mark",
+        "type": "Assassin",
+        "cost": 4,
+        "prerequisite": "Rogue; Assassin",
+        "description": "At the beginning of a combat, designate one enemy as your mark. Your first successful Backstab against that enemy deals 1 additional HP."
+    },
+    {
+        "name": "Death from the Shadows",
+        "type": "Assassin",
+        "cost": 4,
+        "prerequisite": "Rogue; Assassin; Silent Approach",
+        "description": "When you attack from a hidden position, you may burn an additional card after the attack hits to deal 2 additional HP."
+    },
+    {
+        "name": "Master Assassin",
+        "type": "Assassin",
+        "cost": 5,
+        "prerequisite": "Rogue; Assassin; Executioner",
+        "description": "Once per short rest, when you successfully hit an enemy with Backstab during the first round of combat, you may treat one additional card played for the attack as a matching suit for the purpose of triggering a weapon or ability effect."
+    },
+
+    {
+        "name": "Tactical Insight",
+        "type": "Mastermind",
+        "cost": 2,
+        "prerequisite": "Rogue; Mastermind",
+        "description": "Gain proficiency in Insight or Investigation. If you already have proficiency in the chosen skill, gain expertise instead."
+    },
+    {
+        "name": "Battlefield Analysis",
+        "type": "Mastermind",
+        "cost": 2,
+        "prerequisite": "Rogue; Mastermind",
+        "description": "At the beginning of combat, choose one visible enemy. Ask the GM one useful question about that creature's abilities, defenses, tactics, or weaknesses."
+    },
+    {
+        "name": "Distracting Strike",
+        "type": "Mastermind",
+        "cost": 2,
+        "prerequisite": "Rogue; Mastermind",
+        "description": "When you hit an enemy, you may burn a card to distract it. The next ally who attacks that enemy gains an appropriate bonus determined by the GM."
+    },
+    {
+        "name": "Helpful Advice",
+        "type": "Mastermind",
+        "cost": 2,
+        "prerequisite": "Rogue; Mastermind",
+        "description": "When an ally within near range makes a skill check, you may burn a card to provide useful advice. The ally may use the card as part of the check."
+    },
+    {
+        "name": "Coordinated Attack",
+        "type": "Mastermind",
+        "cost": 3,
+        "prerequisite": "Rogue; Mastermind",
+        "description": "When you hit an enemy, choose one ally who can see the target. That ally may immediately reposition or gain an appropriate combat benefit."
+    },
+    {
+        "name": "Exploit Weakness",
+        "type": "Mastermind",
+        "cost": 3,
+        "prerequisite": "Rogue; Mastermind",
+        "description": "After successfully identifying an enemy's weakness, you may share that information with your allies. The GM may grant an appropriate bonus when an ally exploits the revealed weakness."
+    },
+    {
+        "name": "Cunning Distraction",
+        "type": "Mastermind",
+        "cost": 3,
+        "prerequisite": "Rogue; Mastermind",
+        "description": "Burn a card to distract an enemy within near range. Until the start of your next turn, the enemy may suffer an appropriate penalty when attacking anyone other than you."
+    },
+    {
+        "name": "Manipulate the Battlefield",
+        "type": "Mastermind",
+        "cost": 4,
+        "prerequisite": "Rogue; Mastermind",
+        "description": "Once per short rest, burn a card to cause an enemy to reposition, hesitate, reveal itself, or otherwise alter its tactics. The exact effect is determined by the GM based on the situation."
+    },
+    {
+        "name": "Master Tactician",
+        "type": "Mastermind",
+        "cost": 4,
+        "prerequisite": "Rogue; Mastermind",
+        "description": "At the beginning of combat, choose one ally. That ally may draw one card before the first round begins."
+    },
+    {
+        "name": "Grandmastermind",
+        "type": "Mastermind",
+        "cost": 5,
+        "prerequisite": "Rogue; Mastermind",
+        "description": "Once per short rest, when an ally within near range makes an attack or skill check, you may burn up to two cards and allow the ally to add those cards to the check, following the normal rules for playing additional cards."
+    }
+]
