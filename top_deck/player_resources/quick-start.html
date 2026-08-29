@@ -6,181 +6,463 @@
 <title>Realm & Rune — Quick Start</title>
 <link rel="stylesheet" href="../realm-and-rune.css">
 <style>
-    /*
-     * Quick Start — two-column printer layout
-     */
-    .quick-start-page {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 1.25rem;
-        align-items: start;
-    }
-    .quick-start-column {
-        min-width: 0;
-    }
-    .quick-start-title {
-        grid-column: 1 / -1;
-    }
-    .quick-start-page .rules-section {
-        margin-bottom: .2rem;
-    }
-    .quick-start-page .section-heading {
-        margin-bottom: 0.2rem;
-    }
-    .quick-start-page h1 {
-        margin-top: 0;
-    }
-    .quick-start-page h2 {
-        margin-top: 0.08rem;
-        margin-bottom: 0.08rem;
-    }
-    .quick-start-page h3 {
-        margin-top: 0.08rem;
-        margin-bottom: 0.08rem;
-    }
-    .quick-start-page p {
-        margin-top: 0.08rem;
-        margin-bottom: 0.08rem;
-    }
-    .quick-start-page ul,
-    .quick-start-page ol {
-        margin-top: 0.08rem;
-        margin-bottom: 0.08rem;
-    }
-    .quick-start-page li {
-        margin-bottom: 0.2rem;
-    }
-    .quick-start-page .rules-table {
-        width: 100%;
-        margin: 0.35rem 0 0.5rem 0;
-        font-size: 0.9em;
-    }
-    .quick-start-page .rules-table th,
-    .quick-start-page .rules-table td {
-        padding: 4px 5px;
-    }
-    .quick-start-page .rule-callout,
-    .quick-start-page .rule-box,
-    .quick-start-page .combat-action,
-    .quick-start-page .card-panel {
-        margin: 0.35rem 0;
-        padding: 0.5rem;
-    }
-    .quick-start-page .card-grid {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 0.2rem;
-    }
-    /*
-     * Printing
-     */
-    @media print {
-        @page {
-            size: Letter portrait;
-            margin: 0.4in;
-        }
-        html,
-        body {
-            margin: 0;
-            padding: 0;
-        }
-        body {
-            font-size: 8.8pt;
-            line-height: 1.15;
-        }
-        .site-header-frame,
-        .site-footer,
-        .site-footer-frame,
-        nav {
-            display: none !important;
-        }
-        .page-container {
-            max-width: none !important;
-            width: 100% !important;
-            margin: 0 !important;
-            padding: 0 !important;
-        }
-        /*
-         * Each quick-start page occupies exactly one
-         * printed page.
-         */
-        .quick-start-page {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            column-gap: 0.25in;
-            row-gap: 0;
-            width: 100%;
-            min-height: 9.8in;
-            page-break-after: always;
-            break-after: page;
-            align-items: start;
-        }
-        .quick-start-page:last-child {
-            page-break-after: auto;
-            break-after: auto;
-        }
-        .quick-start-page .rules-section {
-            margin-bottom: 0.2rem;
-            break-inside: avoid;
-        }
-        .quick-start-page h1 {
-            font-size: 17pt;
-        }
-        .quick-start-page h2 {
-            font-size: 11.5pt;
-        }
-        .quick-start-page h3 {
-            font-size: 9.5pt;
-        }
-        .quick-start-page h4 {
-            font-size: 9pt;
-        }
-        .quick-start-page p {
-            margin-top: 0.08rem;
-            margin-bottom: 0.08rem;
-        }
-        .quick-start-page ul,
-        .quick-start-page ol {
-            padding-left: 1.1rem;
-            margin-top: 0.08rem;
-            margin-bottom: 0.08rem;
-        }
-        .quick-start-page li {
-            margin-bottom: 0.06rem;
-        }
-        .quick-start-page .rules-table {
-            font-size: 7.8pt;
-            margin: 0.2rem 0 0.3rem 0;
-        }
-        .quick-start-page .rules-table th,
-        .quick-start-page .rules-table td {
-            padding: 2px 3px;
-        }
-        .quick-start-page .rule-callout,
-        .quick-start-page .rule-box,
-        .quick-start-page .combat-action,
-        .quick-start-page .card-panel {
-            padding: 4px 5px;
-            margin: 0.2rem 0;
-        }
-        .quick-start-page .card-grid {
-            gap: 3px;
-        }
-        .section-heading {
-            margin-bottom: 0.15rem;
-        }
-        .section-number {
-            font-size: 0.9em;
-        }
-    }
+/* =========================================================
+   REALM & RUNE — COMPACT RULEBOOK STYLING
+   ========================================================= */
+
+/* ---------- BASE ---------- */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.05rem;
+    line-height: 1.42;
+    background: #f5f1e8;
+    color: #24201b;
+}
+
+/* ---------- HEADER ---------- */
+
+.site-header {
+    padding: 0.65rem 1rem;
+    text-align: center;
+}
+
+.header-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.game-title {
+    font-size: 2rem;
+    font-weight: bold;
+    line-height: 1.05;
+}
+
+.game-subtitle {
+    font-size: 1rem;
+    margin-top: 0.15rem;
+}
+
+/* IFRAME NAVIGATION */
+
+.site-header-frame {
+    width: 100%;
+    height: 48px;
+    border: 0;
+    display: block;
+    margin: 0;
+}
+
+/* ---------- MAIN PAGE ---------- */
+
+.page-container {
+    width: min(1200px, 96%);
+    margin: 0 auto;
+    padding: 0.5rem 0 1rem;
+}
+
+/* ---------- SECTIONS ---------- */
+
+.rules-section,
+.rule-section {
+    margin: 0 0 1.1rem;
+    padding: 0 0 0.6rem;
+}
+
+.section-heading {
+    display: flex;
+    align-items: center;
+    gap: 0.55rem;
+
+    margin: 0 0 0.45rem;
+    padding: 0.3rem 0;
+
+    border-bottom: 2px solid #555;
+}
+
+.section-heading h1,
+.section-heading h2 {
+    margin: 0;
+    line-height: 1.15;
+}
+
+.section-heading h1 {
+    font-size: 1.65rem;
+}
+
+.section-heading h2 {
+    font-size: 1.45rem;
+}
+
+.section-number {
+    font-weight: bold;
+    font-size: 1.1rem;
+    min-width: 1.8rem;
+}
+
+/* ---------- HEADINGS ---------- */
+
+h1,
+h2,
+h3,
+h4 {
+    color: #241b13;
+}
+
+h3 {
+    font-size: 1.2rem;
+    margin: 0.7rem 0 0.25rem;
+}
+
+h4 {
+    font-size: 1.05rem;
+    margin: 0.5rem 0 0.2rem;
+}
+
+p {
+    margin: 0.35rem 0 0.55rem;
+}
+
+ul,
+ol {
+    margin-top: 0.3rem;
+    margin-bottom: 0.55rem;
+    padding-left: 1.4rem;
+}
+
+li {
+    margin-bottom: 0.15rem;
+}
+
+/* ---------- CALLOUTS ---------- */
+
+.rule-callout,
+.rule-box,
+.formula-box {
+    margin: 0.55rem 0;
+    padding: 0.55rem 0.75rem;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    background: #eee9dd;
+}
+
+.rule-callout p,
+.rule-box p {
+    margin: 0.25rem 0;
+}
+
+.formula-box {
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+/* ---------- CARD / INFORMATION GRID ---------- */
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 0.65rem;
+    margin: 0.55rem 0;
+}
+
+.card-panel {
+    padding: 0.6rem 0.7rem;
+    border: 1px solid #999;
+    border-radius: 5px;
+    background: #faf7ef;
+}
+
+.card-panel h3 {
+    margin: 0 0 0.25rem;
+}
+
+.card-panel p {
+    margin: 0;
+}
+
+/* ---------- COMBAT ACTIONS ---------- */
+
+.combat-action {
+    margin: 0.55rem 0;
+    padding: 0.55rem 0.7rem;
+    border-left: 4px solid #777;
+    background: #eee9dd;
+}
+
+.combat-action h3,
+.combat-action h4 {
+    margin-top: 0;
+}
+
+.combat-action p:last-child {
+    margin-bottom: 0;
+}
+
+/* ---------- TABLES ---------- */
+
+.rules-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0.55rem 0 0.75rem;
+    font-size: 0.98rem;
+}
+
+.rules-table th,
+.rules-table td {
+    border: 1px solid #999;
+    padding: 0.35rem 0.5rem;
+    text-align: left;
+    vertical-align: top;
+}
+
+.rules-table th {
+    font-weight: bold;
+    background: #e5dfd2;
+}
+
+.rules-table tr:nth-child(even) td {
+    background: rgba(0, 0, 0, 0.025);
+}
+
+/* ---------- SUITS ---------- */
+
+.suit-spades {
+    font-weight: bold;
+}
+
+.suit-hearts {
+    font-weight: bold;
+}
+
+.suit-clubs {
+    font-weight: bold;
+}
+
+.suit-diamonds {
+    font-weight: bold;
+}
+
+.suit-all {
+    font-weight: bold;
+}
+
+/* ---------- LINKS ---------- */
+
+a {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+/* ---------- FOOTER ---------- */
+
+.site-footer {
+    margin-top: 0.5rem;
+}
+
+.site-footer-frame {
+    width: 100%;
+    height: 60px;
+    border: 0;
+    display: block;
+}
+
+/* =========================================================
+   TWO-COLUMN RULEBOOK LAYOUT
+   Use on pages that benefit from compact presentation.
+   ========================================================= */
+
+.two-column {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    gap: 1rem;
+    align-items: start;
+}
+
+.two-column > * {
+    min-width: 0;
+}
+
+/* Prevent a section from becoming awkwardly split */
+.two-column .rules-section,
+.two-column .rule-section {
+    break-inside: avoid;
+}
+
+/* =========================================================
+   PRINT
+   ========================================================= */
+
 @media print {
+
+    @page {
+        margin: 0.35in 0.4in;
+    }
+
+    html {
+        font-size: 12pt;
+    }
+
+    body {
+        background: white;
+        color: black;
+        font-size: 12pt;
+        line-height: 1.25;
+    }
+
+    /* Hide web navigation/header/footer */
     .site-header,
     .site-header-frame,
     .site-footer,
     .site-footer-frame {
         display: none !important;
     }
+
+    .page-container {
+        width: 100%;
+        max-width: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .rules-section,
+    .rule-section {
+        margin-bottom: 0.55rem;
+        padding-bottom: 0.25rem;
+    }
+
+    .section-heading {
+        margin-bottom: 0.3rem;
+        padding: 0.15rem 0;
+    }
+
+    .section-heading h1 {
+        font-size: 17pt;
+    }
+
+    .section-heading h2 {
+        font-size: 15pt;
+    }
+
+    h3 {
+        font-size: 12.5pt;
+        margin-top: 0.45rem;
+        margin-bottom: 0.15rem;
+    }
+
+    h4 {
+        font-size: 11.5pt;
+        margin-top: 0.35rem;
+    }
+
+    p {
+        margin: 0.2rem 0 0.35rem;
+    }
+
+    ul,
+    ol {
+        margin-top: 0.15rem;
+        margin-bottom: 0.35rem;
+    }
+
+    li {
+        margin-bottom: 0.05rem;
+    }
+
+    .rule-callout,
+    .rule-box,
+    .formula-box {
+        margin: 0.3rem 0;
+        padding: 0.35rem 0.5rem;
+        break-inside: avoid;
+    }
+
+    .combat-action,
+    .card-panel {
+        padding: 0.4rem 0.5rem;
+        margin: 0.3rem 0;
+        break-inside: avoid;
+    }
+
+    .card-grid {
+        gap: 0.4rem;
+        margin: 0.3rem 0;
+    }
+
+    .rules-table {
+        margin: 0.3rem 0 0.45rem;
+        font-size: 10.5pt;
+    }
+
+    .rules-table th,
+    .rules-table td {
+        padding: 0.22rem 0.35rem;
+    }
+
+    /* Two-column printing */
+    .two-column {
+        grid-template-columns: 1fr 1fr;
+        gap: 0.55in;
+    }
+
+    /* Keep major blocks together */
+    .combat-action,
+    .rule-callout,
+    .rule-box,
+    .formula-box,
+    .card-panel,
+    tr {
+        break-inside: avoid;
+    }
 }
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media screen and (max-width: 750px) {
+
+    body {
+        font-size: 1rem;
+    }
+
+    .page-container {
+        width: 94%;
+    }
+
+    .two-column {
+        grid-template-columns: 1fr;
+    }
+
+    .card-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .rules-table {
+        font-size: 0.9rem;
+    }
+
+    .rules-table th,
+    .rules-table td {
+        padding: 0.3rem;
+    }
+
+    .game-title {
+        font-size: 1.6rem;
+    }
+}
+```
+
 </style>
 </head>
 <body>
@@ -201,7 +483,8 @@
 <!-- =========================================================
      PRINTED PAGE ONE
      ========================================================= -->
-<div class="quick-start-page">
+<div class="two-column">
+	<div class="quick-start-page">
 <!-- =========================
      LEFT COLUMN
      ========================= -->
@@ -225,7 +508,6 @@
             <li>One standard 52-card deck per player.</li>
             <li>A character sheet.</li>
             <li>Pencils or another writing tool.</li>
-            <li>A way to track HP and temporary effects.</li>
         </ul>
     </section>
     <section class="rules-section">
@@ -244,9 +526,7 @@
         </ol>
         <h3>Starting Attributes</h3>
         <p>
-            All Attributes begin at <strong>-1</strong>. You have
-            <strong>6 points</strong> to distribute among them, with no
-            Attribute exceeding <strong>+2</strong>.
+            Assign attributes scores using the Standard Array: -1,0,+1,+2
         </p>
         <h3>Core Attributes</h3>
         <table class="rules-table">
@@ -342,41 +622,6 @@
             Draw one card.
         </div>
     </section>
-    <section class="rules-section">
-        <div class="section-heading">
-            <h2>Card Zones</h2>
-        </div>
-        <div class="card-grid">
-            <div class="card-panel">
-                <h3>Deck</h3>
-                <p>
-                    Your active draw pile.
-                </p>
-            </div>
-            <div class="card-panel">
-                <h3>Hand</h3>
-                <p>
-                    Cards available to play.
-                </p>
-            </div>
-            <div class="card-panel">
-                <h3>Shuffle Pile</h3>
-                <p>
-                    Played cards normally go here.
-                </p>
-            </div>
-            <div class="card-panel">
-                <h3>Burn Pile</h3>
-                <p>
-                    Permanently unavailable until a Long Rest.
-                </p>
-            </div>
-        </div>
-        <p>
-            When the Deck is empty, shuffle the Shuffle Pile into a
-            new Deck. Burned cards remain unavailable.
-        </p>
-    </section>
 </div>
 <!-- =========================
      RIGHT COLUMN
@@ -399,33 +644,6 @@
             If the total equals or exceeds the Difficulty, you succeed.
             <strong>Meets it, Beats it.</strong>
         </p>
-        <h3>Advantage & Disadvantage</h3>
-        <table class="rules-table">
-            <thead>
-                <tr>
-                    <th>Situation</th>
-                    <th>Procedure</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Normal</td>
-                    <td>Play one card.</td>
-                </tr>
-                <tr>
-                    <td>Advantage</td>
-                    <td>
-                        Draw 2; use the more favorable result.
-                    </td>
-                </tr>
-                <tr>
-                    <td>Disadvantage</td>
-                    <td>
-                        Draw 2; use the less favorable result.
-                    </td>
-                </tr>
-            </tbody>
-        </table>
         <h3>Skill Training</h3>
         <table class="rules-table">
             <thead>
@@ -481,7 +699,6 @@
             <li>Take one Move.</li>
             <li>Use Actions by playing cards.</li>
             <li>Use a Reaction if its trigger occurs.</li>
-            <li>Return to maximum Hand Size at the end of your turn.</li>
         </ol>
         <table class="rules-table">
             <thead>
@@ -556,37 +773,6 @@
                 </p>
             </div>
         </div>
-        <h3>Armor Class</h3>
-        <table class="rules-table">
-            <thead>
-                <tr>
-                    <th>Armor</th>
-                    <th>AC</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Unarmored</td>
-                    <td>5 + Dexterity</td>
-                </tr>
-                <tr>
-                    <td>Light</td>
-                    <td>6 + Dexterity</td>
-                </tr>
-                <tr>
-                    <td>Medium</td>
-                    <td>7</td>
-                </tr>
-                <tr>
-                    <td>Heavy</td>
-                    <td>8 or 9</td>
-                </tr>
-                <tr>
-                    <td>Shield</td>
-                    <td>+1 AC</td>
-                </tr>
-            </tbody>
-        </table>
     </section>
 </div>
 </div>
@@ -905,10 +1091,6 @@
             unconscious and fall to the ground.
         </p>
         <p>
-            An unconscious character cannot fight, move, or take
-            normal actions.
-        </p>
-        <p>
             Whenever an unconscious character gains HP from any
             source, they immediately regain consciousness and may
             act normally.
@@ -941,44 +1123,8 @@
             <li>Return Burn and Shuffle Piles to the Deck.</li>
             <li>Persistent food effects expire.</li>
         </ul>
-        <h3>Levels</h3>
-        <table class="rules-table">
-            <thead>
-                <tr>
-                    <th>Level</th>
-                    <th>Gain</th>
-                    <th>Hand</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>1</td>
-                    <td>Class identity</td>
-                    <td>2</td>
-                </tr>
-                <tr>
-                    <td>2</td>
-                    <td>Subclass feature</td>
-                    <td>2</td>
-                </tr>
-                <tr>
-                    <td>3</td>
-                    <td>Class identity</td>
-                    <td>3</td>
-                </tr>
-                <tr>
-                    <td>4</td>
-                    <td>Subclass feature</td>
-                    <td>3</td>
-                </tr>
-                <tr>
-                    <td>5</td>
-                    <td>+1 Core Attribute</td>
-                    <td>4</td>
-                </tr>
-            </tbody>
-        </table>
     </section>
+</div>
 </div>
 </div>
 </main>
