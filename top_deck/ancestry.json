@@ -1,0 +1,118 @@
+[
+    {
+        "name": "Human",
+        "feats": [
+            {
+                "name": "Skilled",
+                "cost": 0,
+                "prerequisite": "Human",
+                "description": "Gain Proficiency in one skill of your choice."
+            },
+            {
+                "name": "Shielder",
+                "cost": 0,
+                "prerequisite": "Human",
+                "description": "Gain Proficiency with shields."
+            },
+            {
+                "name": "Adaptable",
+                "cost": 0,
+                "prerequisite": "Human",
+                "description": "Once per long rest, after drawing cards for a skill check, you may discard one card and draw a replacement card."
+            },
+            {
+                "name": "Determined",
+                "cost": 0,
+                "prerequisite": "Human",
+                "description": "Once per short rest, when you fail a skill check, you may burn one card to attempt the check again."
+            }
+        ]
+    },
+    {
+        "name": "Elf",
+        "feats": [
+            {
+                "name": "Spell Weaver",
+                "cost": 0,
+                "prerequisite": "Elf",
+                "description": "Learn one Tier 1 spell of your choice that your character is otherwise capable of learning or casting."
+            },
+            {
+                "name": "Nimble Weapons",
+                "cost": 0,
+                "prerequisite": "Elf",
+                "description": "Gain Proficiency with Club weapons."
+            },
+            {
+                "name": "Elven Grace",
+                "cost": 0,
+                "prerequisite": "Elf",
+                "description": "Gain Proficiency in Acrobatics or Stealth."
+            },
+            {
+                "name": "Keen Senses",
+                "cost": 0,
+                "prerequisite": "Elf",
+                "description": "Gain Proficiency in Perception or Investigation."
+            }
+        ]
+    },
+    {
+        "name": "Dwarf",
+        "feats": [
+            {
+                "name": "Strong Fighter",
+                "cost": 0,
+                "prerequisite": "Dwarf",
+                "description": "Gain Proficiency with Spade weapons."
+            },
+            {
+                "name": "Dwarven Health",
+                "cost": 0,
+                "prerequisite": "Dwarf",
+                "description": "Gain +1 HP."
+            },
+            {
+                "name": "Stonewise",
+                "cost": 0,
+                "prerequisite": "Dwarf",
+                "description": "Gain Proficiency in History or Investigation. When examining stonework, masonry, tunnels, or underground structures, you may ask the GM one additional useful question."
+            },
+            {
+                "name": "Iron Stomach",
+                "cost": 0,
+                "prerequisite": "Dwarf",
+                "description": "You have advantage when resisting mundane poison, spoiled food, or similar harmful substances."
+            }
+        ]
+    },
+    {
+        "name": "Halfling",
+        "feats": [
+            {
+                "name": "Lucky",
+                "cost": 0,
+                "prerequisite": "Halfling",
+                "description": "When you draw an Ace, you may redraw it. The redrawn card replaces the Ace for resolving the action or check. If you keep the Ace, it follows the normal Ace and Gobble rules."
+            },
+            {
+                "name": "Cheerful",
+                "cost": 0,
+                "prerequisite": "Halfling",
+                "description": "When you use Rallying Cry, the ally receiving the benefit draws one additional card."
+            },
+            {
+                "name": "Nimble",
+                "cost": 0,
+                "prerequisite": "Halfling",
+                "description": "Gain Proficiency in Acrobatics or Stealth."
+            },
+            {
+                "name": "Friendly Face",
+                "cost": 0,
+                "prerequisite": "Halfling",
+                "description": "Gain Proficiency in Persuasion or Insight."
+            }
+        ]
+    }
+]
