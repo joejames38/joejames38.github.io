@@ -18,13 +18,13 @@
                 "name": "Adaptable",
                 "cost": 0,
                 "prerequisite": "Human",
-                "description": "Once per long rest, after drawing cards for a skill check, you may discard one card and draw a replacement card."
+                "description": "Once per long rest, at the start of combat, you may discard your opening hand and redraw to your hand size."
             },
             {
                 "name": "Determined",
                 "cost": 0,
                 "prerequisite": "Human",
-                "description": "Once per short rest, when you fail a skill check, you may burn one card to attempt the check again."
+                "description": "Once per short rest, when you fail a skill check, you may try again without consequence."
             }
         ]
     },
@@ -35,7 +35,7 @@
                 "name": "Spell Weaver",
                 "cost": 0,
                 "prerequisite": "Elf",
-                "description": "Learn one Tier 1 spell of your choice that your character is otherwise capable of learning or casting."
+                "description": "Learn one Tier 1 spell of your choice that your character is otherwise capable of learning or casting. You use cunning for your magic attack."
             },
             {
                 "name": "Nimble Weapons",
@@ -76,7 +76,7 @@
                 "name": "Stonewise",
                 "cost": 0,
                 "prerequisite": "Dwarf",
-                "description": "Gain Proficiency in History or Investigation. When examining stonework, masonry, tunnels, or underground structures, you may ask the GM one additional useful question."
+                "description": "Gain Proficiency in History or Investigation. When examining stonework, masonry, tunnels, or underground structures, make these checks at advantage."
             },
             {
                 "name": "Iron Stomach",
@@ -90,16 +90,16 @@
         "name": "Halfling",
         "feats": [
             {
-                "name": "Lucky",
+                "name": "Second Breakfast",
                 "cost": 0,
                 "prerequisite": "Halfling",
-                "description": "When you draw an Ace, you may redraw it. The redrawn card replaces the Ace for resolving the action or check. If you keep the Ace, it follows the normal Ace and Gobble rules."
+                "description": "When you draw an Ace, draw an additional card."
             },
             {
                 "name": "Cheerful",
                 "cost": 0,
                 "prerequisite": "Halfling",
-                "description": "When you use Rallying Cry, the ally receiving the benefit draws one additional card."
+                "description": "When you use Rallying Cry, the one ally receiving the benefit draws one additional card."
             },
             {
                 "name": "Nimble",

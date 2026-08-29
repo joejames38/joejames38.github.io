@@ -1,24 +1,17 @@
 [
     {
-        "name": "Weapon Specialist",
+        "name": "Cunning Weapons",
         "type": "Weaponmaster",
         "cost": 2,
         "prerequisite": "Fighter",
-        "description": "Gain proficiency with one weapon set. When using a weapon from a proficient weapon set, gain its associated weapon mastery effect."
+        "description": "Gain proficiency with diamond weapon set. Gain access to the Tier 0 spell Thwip."
     },
     {
-        "name": "Quick Draw",
+        "name": "Shield Draw",
         "type": "Weaponmaster",
         "cost": 2,
         "prerequisite": "Fighter",
-        "description": "You may draw, stow, or switch between weapons without using your Move action."
-    },
-    {
-        "name": "Versatile Fighter",
-        "type": "Weaponmaster",
-        "cost": 2,
-        "prerequisite": "Fighter",
-        "description": "When making a Might Strike, you may use the special property of the weapon set associated with the card you played, provided you are wielding an appropriate weapon."
+        "description": "You may draw, stow, or switch between weapons and Shields without using your Move action."
     },
     {
         "name": "Combat Adaptation",
@@ -32,24 +25,24 @@
         "type": "Weaponmaster",
         "cost": 3,
         "prerequisite": "Fighter",
-        "description": "When you hit with a melee weapon using a card matching the weapon's suit, deal 1 additional HP."
+        "description": "When you hit with a melee weapon using a face card deal 1 additional damage."
     },
     {
         "name": "Guard Breaker",
         "type": "Weaponmaster",
         "cost": 3,
         "prerequisite": "Fighter",
-        "description": "When you hit an enemy with a melee attack, you may sacrifice the weapon's additional damage or mastery effect to force the target to lose its defensive advantage or appropriate guard."
+        "description": "When you hit an enemy with a melee attack, you may can reduce the damage by 1 to reduce the enemies AC by 2 until the beginning of your next turn. This applies to additional attacks on  your turn. This effect cannot stack."
     },
     {
         "name": "Riposte",
         "type": "Weaponmaster",
         "cost": 3,
         "prerequisite": "Fighter",
-        "description": "When an enemy misses you with a melee attack, you may burn a card to make an immediate melee attack against that enemy."
+        "description": "As a reaction, when an enemy misses you with a melee attack, you may burn the top card of your deck to make an immediate melee attack against that enemy."
     },
     {
-        "name": "Card Fighter",
+        "name": "Quick Fighter",
         "type": "Weaponmaster",
         "cost": 4,
         "prerequisite": "Fighter",
@@ -58,45 +51,38 @@
     {
         "name": "Master of Arms",
         "type": "Weaponmaster",
-        "cost": 4,
-        "prerequisite": "Fighter; Weapon Specialist",
-        "description": "You may use the mastery effect of any weapon set you are proficient with, allowing you to choose between additional damage or the weapon's special effect when appropriate."
+        "cost": 2,
+        "prerequisite": "Fighter;",
+        "description": "Gain Another Weapon Mastery Feat."
     },
     {
-        "name": "Weaponmaster",
+        "name": "Dual Resonance",
         "type": "Weaponmaster",
         "cost": 5,
         "prerequisite": "Fighter; Master of Arms",
-        "description": "Once per turn, when you make a weapon attack, you may treat the card played as matching the suit of your weapon for the purpose of triggering its weapon mastery effect."
+        "description": "Choose two suits. When making a might attack, those two suits can now add resonance with their associated weapon."
     },
 
-    {
-        "name": "Bow Training",
-        "type": "Bowmaster",
-        "cost": 2,
-        "prerequisite": "Fighter",
-        "description": "Gain proficiency with Clubs weapons. When using a bow, you may use Dexterity for your attack."
-    },
     {
         "name": "Steady Aim",
         "type": "Bowmaster",
         "cost": 2,
         "prerequisite": "Fighter; Bow Training",
-        "description": "If you do not use your Move action during your turn, your next ranged attack gains an appropriate bonus determined by the GM."
+        "description": "If you don't move on your turn, add +1 to your attack."
     },
     {
         "name": "Hunter's Eye",
         "type": "Bowmaster",
         "cost": 2,
         "prerequisite": "Fighter",
-        "description": "Gain proficiency in Perception or Survival. When tracking or observing a creature from a distance, you may ask the GM one additional useful question."
+        "description": "Gain proficiency in Perception or Survival. If you already have proficiency, gain expertisein that skill instead."
     },
     {
         "name": "Skirmisher",
         "type": "Bowmaster",
         "cost": 2,
         "prerequisite": "Fighter",
-        "description": "After making a ranged attack, you may move a short distance without provoking an appropriate reaction from the target."
+        "description": "When an enemy gets close to you, you can use your reaction to burn one card and move without provoking any additional side effects."
     },
     {
         "name": "Called Shot",
@@ -110,21 +96,28 @@
         "type": "Bowmaster",
         "cost": 3,
         "prerequisite": "Fighter; Bow Training",
-        "description": "Burn an additional card when making a ranged attack to affect a second nearby target. Make a separate attack check against the second target."
+        "description": "Burn a card when making a ranged attack to affect a second nearby target. Use the first cards modifiers to attack a second target."
     },
     {
         "name": "Covering Fire",
         "type": "Bowmaster",
-        "cost": 3,
+        "cost": 2,
         "prerequisite": "Fighter; Bow Training",
-        "description": "Burn a card to create a zone of threatening ranged fire. The first enemy that moves through the area before your next turn may trigger a ranged attack from you."
+        "description": "When attacking an enemy that is next to an ally, give your ally +2 AC until your next turn."
     },
     {
         "name": "Hidden Archer",
         "type": "Bowmaster",
-        "cost": 4,
+        "cost": 2,
         "prerequisite": "Fighter; Bow Training",
-        "description": "Gain proficiency in Stealth. When attacking from a hidden position, you may gain an appropriate bonus or additional effect determined by the GM."
+        "description": "Gain proficiency in Stealth or expertise if already proficient."
+    },
+    {
+        "name": "Invisible Archer",
+        "type": "Bowmaster",
+        "cost": 5,
+        "prerequisite": "Fighter; Hidden Archer",
+        "description": "When attacking from a hidden position, you may burn the top card of your deck to remain hidden."
     },
     {
         "name": "Party Scout",
@@ -138,6 +131,6 @@
         "type": "Bowmaster",
         "cost": 5,
         "prerequisite": "Fighter; Hidden Archer",
-        "description": "When making a ranged attack from a hidden position, you may treat the card played as matching the suit of your bow for the purpose of triggering its weapon mastery effect."
+        "description": "When making a ranged attack from a hidden position, you may treat the card played as matching the suit of your bow for the purpose of weapon resonance."
     }
 ]
