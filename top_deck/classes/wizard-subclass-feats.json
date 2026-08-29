@@ -126,5 +126,40 @@
         "cost": 5,
         "prerequisite": "Wizard; Illusionist; Illusory Terrain",
         "description": "Once per long rest, create a powerful illusion capable of affecting an entire scene. The illusion may disguise a location, create convincing creatures or hazards, or radically alter how the area appears. The GM determines its exact limits."
+    },
+    {
+        "name": "Basic Spells",
+        "type": "Wizard - All",
+        "cost": 1,
+        "prerequisite": "Wizard",
+        "description": "Learn 2 Tier 1 Spells. If you take this feat again, it costs an additional Feat Point."
+    },
+    {
+        "name": "Intermediate Spells",
+        "type": "Wizard - All",
+        "cost": 2,
+        "prerequisite": "Wizard",
+        "description": "Learn 2 Tier 2 Spells. If you take this feat again, it costs an additional Feat Point."
+    },
+    {
+        "name": "Advanced Spells",
+        "type": "Wizard - All",
+        "cost": 3,
+        "prerequisite": "Wizard",
+        "description": "Learn 2 Tier 3 Spells. If you take this feat again, it costs an additional Feat Point."
+    },
+    {
+        "name": "Expert Spells",
+        "type": "Wizard - All",
+        "cost": 4,
+        "prerequisite": "Wizard",
+        "description": "Learn 2 Tier 4 Spells. If you take this feat again, it costs an additional Feat Point."
+    },
+    {
+        "name": "Master Spells",
+        "type": "Wizard - All",
+        "cost": 5,
+        "prerequisite": "Wizard",
+        "description": "Learn 2 Tier 5 Spells. If you take this feat again, it costs an additional Feat Point."
     }
 ]

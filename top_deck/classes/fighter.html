@@ -5,8 +5,8 @@
 		<meta name="viewport"
 		content="width=device-width, initial-scale=1.0">
 		<title>Realm &amp; Rune — Fighter</title>
-		<link rel="stylesheet"
-		href="../realm-and-rune.css">
+		<link rel="stylesheet" href="../realm-and-rune.css">
+		<link rel="stylesheet" href="subclass-feat-style.css">
 	</head>
 	<body>
 		<header class="site-header">
@@ -178,8 +178,7 @@
 				<div class="class-note">
 					<strong>Second Wind</strong>
 					<p>
-						Once per short rest, discard one card to recover
-						1 HP.
+						Burn a 2 and recover 2 hp.
 					</p>
 					<p>
 						Second Wind represents the Fighter's ability to
@@ -250,14 +249,6 @@
 							Weaponmaster Features
 						</h3>
 						<div class="subclass-feature">
-							<h4>Versatile Training</h4>
-							<p>
-								When you equip a weapon, you may treat
-								one weapon property associated with that
-								weapon's suit as a Weaponmaster technique.
-							</p>
-						</div>
-						<div class="subclass-feature">
 							<h4>Weapon Swap</h4>
 							<p>
 								Once per turn, you may equip or stow a
@@ -266,58 +257,6 @@
 							<p>
 								This allows you to change weapons without
 								spending your Action.
-							</p>
-						</div>
-						<div class="subclass-feature">
-							<h4>Perfect Match</h4>
-							<p>
-								When you play a card matching your weapon's
-								suit affinity, you may treat the attack as
-								having its weapon mastery effect even if
-								the weapon normally requires a different
-								condition.
-							</p>
-						</div>
-						<div class="subclass-feature">
-							<h4>Combat Rhythm</h4>
-							<p>
-								If you successfully hit with two different
-								weapon categories during the same scene,
-								draw one card.
-							</p>
-						</div>
-						<div class="subclass-feature">
-							<h4>Riposte</h4>
-							<p>
-								When an enemy misses you with a melee
-								attack, you may burn a matching weapon-suit
-								card to make a basic melee attack against
-								that enemy.
-							</p>
-						</div>
-						<div class="subclass-feature">
-							<h4>Heavy Blow</h4>
-							<p>
-								When wielding a weapon associated with
-								Spades, you may burn an additional Spade
-								after a successful Might Strike to deal
-								+1 damage.
-							</p>
-						</div>
-						<div class="subclass-feature">
-							<h4>Shield Master</h4>
-							<p>
-								When using a shield, your Shield Bash
-								deals +1 damage.
-							</p>
-						</div>
-						<div class="subclass-feature">
-							<h4>Weapon Specialist</h4>
-							<p>
-								Choose one weapon category.
-								Once per turn, when using that category,
-								you may treat a number card as a face card
-								for determining its weapon effect.
 							</p>
 						</div>
 					</div>
@@ -351,235 +290,28 @@
 							<p>
 								Gain proficiency with bows.
 								When making a Ranged Strike with a bow,
-								you may use your Dexterity modifier.
-							</p>
-						</div>
-						<div class="subclass-feature">
-							<h4>Called Shot</h4>
-							<p>
-								Before making a ranged attack, declare a
-								specific target location or object.
-								On a successful hit, you may apply a minor
-								tactical effect appropriate to the target.
-							</p>
-							<p>
-								Examples include forcing an enemy to drop
-								an object, pinning clothing to a surface,
-								breaking a fragile object, or cutting a
-								rope.
-							</p>
-						</div>
-						<div class="subclass-feature">
-							<h4>Covering Fire</h4>
-							<p>
-								Play a ranged attack card without dealing
-								damage.
-								Until the beginning of your next turn,
-								an ally moving through the affected area
-								gains +1 AC against ranged attacks.
-							</p>
-						</div>
-						<div class="subclass-feature">
-							<h4>Hunter's Mark</h4>
-							<p>
-								Play a card to mark one enemy you can see.
-								The next ally to successfully attack that
-								enemy deals +1 damage.
-							</p>
-						</div>
-						<div class="subclass-feature">
-							<h4>Silent Archer</h4>
-							<p>
-								Gain advantage on Stealth checks made while
-								carrying or using a bow.
-							</p>
-						</div>
-						<div class="subclass-feature">
-							<h4>Hidden Shot</h4>
-							<p>
-								When you successfully attack from Hide
-								with a bow, you may immediately attempt
-								another Stealth check to remain hidden.
-							</p>
-						</div>
-						<div class="subclass-feature">
-							<h4>Warning Shot</h4>
-							<p>
-								Fire a non-damaging shot to create a
-								distraction.
-								One creature within Near range must
-								succeed on an appropriate check or become
-								distracted until the beginning of your
-								next turn.
-							</p>
-						</div>
-						<div class="subclass-feature">
-							<h4>Guiding Arrow</h4>
-							<p>
-								When you hit an enemy with a bow, choose
-								one ally.
-								That ally gains +1 to their next attack
-								against the same enemy.
+								you may use your Dexterity or Might modifier.
 							</p>
 						</div>
 					</div>
 				</div>
 			</section>
-			<!-- FIGHTER FEATS -->
-			<section class="rule-section">
-				<div class="section-heading">
-					<span class="section-number">VI</span>
-					<h2>Fighter Feats</h2>
+
+			<!-- Subclass FEATS -->
+			<section class="subclass-section">
+				<h2>Subclass Feats</h2>
+				<div id="subclass-filters">
+					<!-- Filters created by sub-class.js -->
 				</div>
-				<p>
-					These feats provide additional development for
-					Fighters after reaching level 5.
-				</p>
-				<div class="feat-list">
-					<article class="feat-card">
-						<h4>
-							Weapon Specialist
-						</h4>
-						<p>
-							<strong>Cost:</strong>
-							2 Feat Points
-						</p>
-						<p>
-							<strong>Prerequisite:</strong>
-							Fighter
-						</p>
-						<p>
-							Gain proficiency with one weapon category
-							and gain its associated Weapon Mastery effect.
-						</p>
-					</article>
-					<article class="feat-card">
-						<h4>
-							Martial Adept
-						</h4>
-						<p>
-							<strong>Cost:</strong>
-							3 Feat Points
-						</p>
-						<p>
-							<strong>Prerequisite:</strong>
-							Fighter
-						</p>
-						<p>
-							Learn two additional Weapon Mastery feats.
-						</p>
-					</article>
-					<article class="feat-card">
-						<h4>
-							Battle Hardened
-						</h4>
-						<p>
-							<strong>Cost:</strong>
-							2 Feat Points
-						</p>
-						<p>
-							<strong>Prerequisite:</strong>
-							Fighter
-						</p>
-						<p>
-							Once per scene, when reduced to 0 HP, discard
-							a card to remain at 1 HP.
-						</p>
-					</article>
-					<article class="feat-card">
-						<h4>
-							Shield Expert
-						</h4>
-						<p>
-							<strong>Cost:</strong>
-							2 Feat Points
-						</p>
-						<p>
-							<strong>Prerequisite:</strong>
-							Shield proficiency
-						</p>
-						<p>
-							When using Defend with a shield, increase the
-							AC bonus provided by the discarded card by +1.
-						</p>
-					</article>
-					<article class="feat-card">
-						<h4>
-							Tactical Draw
-						</h4>
-						<p>
-							<strong>Cost:</strong>
-							2 Feat Points
-						</p>
-						<p>
-							<strong>Prerequisite:</strong>
-							Fighter
-						</p>
-						<p>
-							Once per short rest, after successfully
-							completing an attack, draw one card.
-						</p>
-					</article>
-					<article class="feat-card">
-						<h4>
-							Longshot
-						</h4>
-						<p>
-							<strong>Cost:</strong>
-							2 Feat Points
-						</p>
-						<p>
-							<strong>Prerequisite:</strong>
-							Bowmaster
-						</p>
-						<p>
-							Your bow attacks can treat Far range as
-							Near range for the purpose of attack penalties
-							or other range-based effects.
-						</p>
-					</article>
-					<article class="feat-card">
-						<h4>
-							Tactical Commander
-						</h4>
-						<p>
-							<strong>Cost:</strong>
-							3 Feat Points
-						</p>
-						<p>
-							<strong>Prerequisite:</strong>
-							Fighter
-						</p>
-						<p>
-							Once per scene, when you successfully hit an
-							enemy, choose an ally.
-							That ally may immediately draw one card.
-						</p>
-					</article>
-					<article class="feat-card">
-						<h4>
-							Master of Arms
-						</h4>
-						<p>
-							<strong>Cost:</strong>
-							3 Feat Points
-						</p>
-						<p>
-							<strong>Prerequisite:</strong>
-							Weaponmaster
-						</p>
-						<p>
-							Once per turn, when you switch weapons,
-							the next attack you make with the new weapon
-							gains +1 to its attack check.
-						</p>
-					</article>
+				<div
+				id="subclass-feats"
+				data-source="fighter-subclass-feats.json">
+					<p>Loading subclass feats...</p>
 				</div>
 			</section>
+			<script src="sub-class.js"></script>
 		</main>
-		<!-- =========================================================
-			SHARED FOOTER
-		========================================================= -->
+		<!-- SHARED FOOTER -->
 		<iframe
 		src="../footer.html"
 		class="site-footer-frame"

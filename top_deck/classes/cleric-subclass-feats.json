@@ -85,6 +85,20 @@
         "description": "Gain proficiency with Heavy Armor."
     },
     {
+        "name": "High Faith",
+        "type": "Cleric - All",
+        "cost": 4,
+        "prerequisite": "Cleric",
+        "description": "Gain access to all Tier 4 Cleric Spells."
+    },
+    {
+        "name": "Master Faith",
+        "type": "Cleric - All",
+        "cost": 5,
+        "prerequisite": "Cleric; High Faith Feat",
+        "description": "Gain access to all Tier 5 Cleric Spells."
+    },
+    {
         "name": "Battle Prayer",
         "type": "War",
         "cost": 2,

@@ -1,0 +1,143 @@
+[
+    {
+        "name": "Weapon Specialist",
+        "type": "Weaponmaster",
+        "cost": 2,
+        "prerequisite": "Fighter",
+        "description": "Gain proficiency with one weapon set. When using a weapon from a proficient weapon set, gain its associated weapon mastery effect."
+    },
+    {
+        "name": "Quick Draw",
+        "type": "Weaponmaster",
+        "cost": 2,
+        "prerequisite": "Fighter",
+        "description": "You may draw, stow, or switch between weapons without using your Move action."
+    },
+    {
+        "name": "Versatile Fighter",
+        "type": "Weaponmaster",
+        "cost": 2,
+        "prerequisite": "Fighter",
+        "description": "When making a Might Strike, you may use the special property of the weapon set associated with the card you played, provided you are wielding an appropriate weapon."
+    },
+    {
+        "name": "Combat Adaptation",
+        "type": "Weaponmaster",
+        "cost": 2,
+        "prerequisite": "Fighter",
+        "description": "Once per turn, after playing a card for an attack, you may change the weapon used for the attack before determining its final effect."
+    },
+    {
+        "name": "Powerful Strike",
+        "type": "Weaponmaster",
+        "cost": 3,
+        "prerequisite": "Fighter",
+        "description": "When you hit with a melee weapon using a card matching the weapon's suit, deal 1 additional HP."
+    },
+    {
+        "name": "Guard Breaker",
+        "type": "Weaponmaster",
+        "cost": 3,
+        "prerequisite": "Fighter",
+        "description": "When you hit an enemy with a melee attack, you may sacrifice the weapon's additional damage or mastery effect to force the target to lose its defensive advantage or appropriate guard."
+    },
+    {
+        "name": "Riposte",
+        "type": "Weaponmaster",
+        "cost": 3,
+        "prerequisite": "Fighter",
+        "description": "When an enemy misses you with a melee attack, you may burn a card to make an immediate melee attack against that enemy."
+    },
+    {
+        "name": "Card Fighter",
+        "type": "Weaponmaster",
+        "cost": 4,
+        "prerequisite": "Fighter",
+        "description": "Once per short rest, when you play a card for a melee attack, you may immediately draw one card after the attack resolves."
+    },
+    {
+        "name": "Master of Arms",
+        "type": "Weaponmaster",
+        "cost": 4,
+        "prerequisite": "Fighter; Weapon Specialist",
+        "description": "You may use the mastery effect of any weapon set you are proficient with, allowing you to choose between additional damage or the weapon's special effect when appropriate."
+    },
+    {
+        "name": "Weaponmaster",
+        "type": "Weaponmaster",
+        "cost": 5,
+        "prerequisite": "Fighter; Master of Arms",
+        "description": "Once per turn, when you make a weapon attack, you may treat the card played as matching the suit of your weapon for the purpose of triggering its weapon mastery effect."
+    },
+
+    {
+        "name": "Bow Training",
+        "type": "Bowmaster",
+        "cost": 2,
+        "prerequisite": "Fighter",
+        "description": "Gain proficiency with Clubs weapons. When using a bow, you may use Dexterity for your attack."
+    },
+    {
+        "name": "Steady Aim",
+        "type": "Bowmaster",
+        "cost": 2,
+        "prerequisite": "Fighter; Bow Training",
+        "description": "If you do not use your Move action during your turn, your next ranged attack gains an appropriate bonus determined by the GM."
+    },
+    {
+        "name": "Hunter's Eye",
+        "type": "Bowmaster",
+        "cost": 2,
+        "prerequisite": "Fighter",
+        "description": "Gain proficiency in Perception or Survival. When tracking or observing a creature from a distance, you may ask the GM one additional useful question."
+    },
+    {
+        "name": "Skirmisher",
+        "type": "Bowmaster",
+        "cost": 2,
+        "prerequisite": "Fighter",
+        "description": "After making a ranged attack, you may move a short distance without provoking an appropriate reaction from the target."
+    },
+    {
+        "name": "Called Shot",
+        "type": "Bowmaster",
+        "cost": 3,
+        "prerequisite": "Fighter; Bow Training",
+        "description": "When making a ranged attack, you may declare a specific target such as a hand, weapon, leg, or exposed object. On a hit, the GM may apply an appropriate secondary effect instead of the normal weapon mastery effect."
+    },
+    {
+        "name": "Volley",
+        "type": "Bowmaster",
+        "cost": 3,
+        "prerequisite": "Fighter; Bow Training",
+        "description": "Burn an additional card when making a ranged attack to affect a second nearby target. Make a separate attack check against the second target."
+    },
+    {
+        "name": "Covering Fire",
+        "type": "Bowmaster",
+        "cost": 3,
+        "prerequisite": "Fighter; Bow Training",
+        "description": "Burn a card to create a zone of threatening ranged fire. The first enemy that moves through the area before your next turn may trigger a ranged attack from you."
+    },
+    {
+        "name": "Hidden Archer",
+        "type": "Bowmaster",
+        "cost": 4,
+        "prerequisite": "Fighter; Bow Training",
+        "description": "Gain proficiency in Stealth. When attacking from a hidden position, you may gain an appropriate bonus or additional effect determined by the GM."
+    },
+    {
+        "name": "Party Scout",
+        "type": "Bowmaster",
+        "cost": 4,
+        "prerequisite": "Fighter",
+        "description": "During exploration, you may designate yourself as the party's scout. Gain an advantage or other appropriate benefit when detecting ambushes, tracking creatures, or identifying distant threats."
+    },
+    {
+        "name": "Master Archer",
+        "type": "Bowmaster",
+        "cost": 5,
+        "prerequisite": "Fighter; Hidden Archer",
+        "description": "When making a ranged attack from a hidden position, you may treat the card played as matching the suit of your bow for the purpose of triggering its weapon mastery effect."
+    }
+]
