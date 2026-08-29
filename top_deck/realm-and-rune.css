@@ -1388,7 +1388,25 @@ li {
         }
 
     }
-	
+/* =========================================
+   CONDITIONS
+   ========================================= */
+
+#conditions .rule-card {
+    margin-bottom: 1rem;
+}
+
+#conditions .rule-card h3 {
+    margin-top: 0;
+}
+
+#conditions .rule-card ul {
+    padding-left: 1.5rem;
+}
+
+#conditions .rule-card li {
+    margin-bottom: 0.35rem;
+}	
 
 
 /* =========================================================

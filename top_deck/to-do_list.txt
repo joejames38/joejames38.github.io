@@ -1,7 +1,4 @@
 Define conditions.
-Define Weapon Mastery precisely.
-Define how temporary HP/AC/attribute modifiers interact with the +3 attribute cap.
-Complete combat rules
 Exploration/dungeon rules
 GM rules
 Monster creation rules

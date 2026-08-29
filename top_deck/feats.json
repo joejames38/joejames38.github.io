@@ -21,11 +21,39 @@
 "description": "You can add a ranged effect to your club weapons."
 },
 {
+"name": "Weapon Mastery: Hearts",
+"type": "combat",
+"cost": 2,
+"prerequisite": "Proficiency with Heart Weapons",
+"description": "When you use a face card while attacking with a Heart Weapon, the enemy discards 1 card from their hand prior to taking any reaction."
+},
+{
+"name": "Weapon Mastery: Diamonds",
+"type": "combat",
+"cost": 2,
+"prerequisite": "Proficiency with Diamond Weapons",
+"description": "You double the range of Tier 0 spells."
+},
+{
+"name": "Weapon Mastery: Shields",
+"type": "combat",
+"cost": 2,
+"prerequisite": "Proficiency with Shields",
+"description": "While wielding a shield, when you use the Parry ability, increase the blocked damage to 2."
+},
+{
 "name": "Combat Medic",
 "type": "combat",
 "cost": 2,
 "prerequisite": "Proficiency in Medicine",
 "description": "Once per Short Rest, discard a card to heal an ally 1HP. You may burn a face card to heal 2hp instead."
+},
+{
+"name": "Alert",
+"type": "combat",
+"cost": 3,
+"prerequisite": "Dexterity +1",
+"description": "Add +3 to your initiative checks. You can't be surprised."
 },
 {
 "name": "Quick Reflexes",
