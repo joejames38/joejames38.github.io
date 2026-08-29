@@ -7,32 +7,39 @@
 "description": "Gain proficiency with one additional weapon set."
 },
 {
-"name": "Shield Master",
+"name": "Weapon Mastery: Spades",
 "type": "combat",
 "cost": 2,
-"prerequisite": "Shield proficiency",
-"description": "When you use Shield Bash, you may choose to push the target farther instead of knocking it prone."
+"prerequisite": "Proficiency with Spade Weapons",
+"description": "You can use two-handed Spade Weapons. When using two-handed Spade weapons your base Might Strike damage is 2.  You cannot use shields while wielding a two-handed weapon."
 },
 {
-"name": "Second Wind",
+"name": "Weapon Mastery: Clubs",
 "type": "combat",
 "cost": 2,
-"prerequisite": "None",
-"description": "Once per Short Rest, discard a card to recover 1 HP."
+"prerequisite": "Proficiency with Club Weapons",
+"description": "You can add a ranged effect to your club weapons."
+},
+{
+"name": "Combat Medic",
+"type": "combat",
+"cost": 2,
+"prerequisite": "Proficiency in Medicine",
+"description": "Once per Short Rest, discard a card to heal an ally 1HP. You may burn a face card to heal 2hp instead."
 },
 {
 "name": "Quick Reflexes",
 "type": "combat",
-"cost": 2,
+"cost": 4,
 "prerequisite": "Dexterity +1",
-"description": "Once per round, you may draw a card when combat begins before the normal scene draw."
+"description": "Once per short rest, you may draw an additional card when combat begins as part of the normal scene draw."
 },
 {
 "name": "Tough",
 "type": "combat",
 "cost": 2,
 "prerequisite": "None",
-"description": "Increase your maximum HP by 1."
+"description": "Increase your maximum HP by 2."
 },
 {
 "name": "Skilled",
@@ -44,14 +51,14 @@
 {
 "name": "Skill Training",
 "type": "skill",
-"cost": 2,
-"prerequisite": "Proficiency in the chosen skill",
+"cost": 3,
+"prerequisite": "Skilled",
 "description": "Gain proficiency in one additional skill."
 },
 {
 "name": "Expertise",
 "type": "skill",
-"cost": 2,
+"cost": 3,
 "prerequisite": "Proficiency in the chosen skill",
 "description": "Gain Expertise in one skill."
 },
@@ -60,20 +67,20 @@
 "type": "skill",
 "cost": 2,
 "prerequisite": "Cunning +1",
-"description": "Gain a bonus when making Perception checks to notice hidden creatures, objects, or hazards."
+"description": "Gain expertise in Perception."
 },
 {
 "name": "Silver Tongue",
 "type": "social",
 "cost": 2,
 "prerequisite": "Spirit +1",
-"description": "Once per scene, after failing a Persuasion or Deception check, you may discard a card to attempt the check again."
+"description": "Once per scene, after failing a Persuasion or Deception check, you may burn the top card of your deck to attempt the check again using the new value."
 },
 {
 "name": "Iron Will",
 "type": "social",
 "cost": 2,
-"prerequisite": "Spirit +1",
+"prerequisite": "None",
 "description": "Gain an advantage when resisting intimidation, fear, or magical effects that attempt to influence your behavior."
 },
 {
@@ -102,14 +109,14 @@
 "type": "exploration",
 "cost": 2,
 "prerequisite": "None",
-"description": "Gain an advantage when detecting or avoiding mundane traps and hazards inside a dungeon."
+"description": "Gain an advantage when detecting or avoiding mundane traps and hazards inside a dungeon. And Gain advantage on saving throws against those traps."
 },
 {
 "name": "Pathfinder",
 "type": "exploration",
 "cost": 2,
 "prerequisite": "Survival proficiency",
-"description": "When traveling through wilderness, your group can move at normal pace while you actively navigate."
+"description": "When traveling through wilderness, your group can move at normal pace while you actively navigate and gain advantage on checks to prevent getting lost."
 },
 {
 "name": "Fast Hands",
