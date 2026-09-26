@@ -11,6 +11,8 @@ Content expansion
 Damage Types
 Physical Damage
 
+
+
 Light
 
 Spades - Air/Force
@@ -20,3 +22,47 @@ Diamond - Fire/Lightning/Energy
 
 Dark
 
+
+Phase 1 — Rules cleanup
+
+Core Rules → terminology → card economy → combat → magic → conditions
+
+Phase 2 — Playtest
+
+Level 1 → Level 3 → Level 5
+
+Test all four classes against sseveral enemy types.
+
+Phase 3 — Character options
+
+Ancestry → Backgrounds → Classes → Subclasses → Feats
+
+Make all schemas consistent.
+
+Phase 4 — Equipment & economy
+
+Weapons → Armor → Gear → Food → Potions → Currency
+
+Phase 5 — Noncombat gameplay
+
+Fishing → Foraging → Cooking → Research → Socializing → Side Jobs
+
+Phase 6 — GM tools
+
+DCs → Encounter Building → Bestiary → NPCs → Treasure → Adventure guidelines
+
+Phase 7 — Presentation
+
+Quick Start → Character Sheet → GM Quick Reference → printable tables/cards
+
+One particularly important design question
+
+The project has reached the point where I'd stop asking “What other mechanics should we add?” and start asking:
+
+“What experience do we want a player to have during a typical 3-hour session?”
+
+You already have enough mechanics to create a complete loop:
+
+Explore → encounter → spend cards → fight → recover → gather food/resources → socialize/research → advance → face stronger enemies.
+
+That loop is where the next round of playtesting should concentrate. The biggest opportunity now is probably cohesion and refinement, rather than adding another major subsystem.

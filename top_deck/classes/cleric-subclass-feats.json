@@ -152,13 +152,27 @@
         "type": "Knowledge",
         "cost": 3,
         "prerequisite": "Cleric",
-        "description": "Gain a new way to use your channel divinity feature. Burning a 2 allows you to gain expertise in a skill until the next short rest."
+        "description": "Gain a new way to use your channel divinity feature. Burning a 2 allows you to gain expertise in 2 skills until the next short rest."
     },
     {
         "name": "Channel Divinity: Arcane Infusion",
         "type": "War",
         "cost": 3,
         "prerequisite": "Cleric",
-        "description": "Change the damage type of your weapon to that of your choosing. The damage type lasts until the next short rest or use this feature again."
+        "description": "Your weapon does an additional +1 damage until the end of combat. Additionally, you may change the damage type of your weapon to that of your choice. You may only have one instead of the effect active at one time."
+    },
+	{
+        "name": "Channel Divinity: Greater Healing",
+        "type": "All",
+        "cost": 3,
+        "prerequisite": "Cleric",
+        "description": "When Using Healing Light, all Near allies now regain 3hp instead of 1."
+    },
+	{
+        "name": "Channel Divinity: Light of Retribution",
+        "type": "All",
+        "cost": 3,
+        "prerequisite": "Cleric",
+        "description": "Gain a new way to use your channel divinity feature. Burning a 2 forces all enemies within a Near range to make a Spirit Saving throw equal to the the cleric's spell save DC. On a fail, they take 3 HP of damage and on a success they take 1 hp of damage."
     }
 ]
