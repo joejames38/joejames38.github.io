@@ -103,7 +103,7 @@
         "type": "War",
         "cost": 2,
         "prerequisite": "Cleric",
-        "description": "Before making a Might attack, you may burn any card additional card to add +1 to the attack."
+        "description": "Before making any attack, you may burn any card additional card to add +1 to the attack."
     },
     {
         "name": "Phalanx Shielding",
@@ -141,7 +141,7 @@
         "description": "When you would be reduced to 0 HP, burn a Heart. You remain at 1 HP instead. Once used, this feat cannot be used again until a Long Rest."
     },
     {
-        "name": "Paragorn of War",
+        "name": "Paragon of War",
         "type": "War",
         "cost": 5,
         "prerequisite": "Cleric; Divine Warrior Feat",

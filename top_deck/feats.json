@@ -67,7 +67,7 @@
 "type": "combat",
 "cost": 2,
 "prerequisite": "None",
-"description": "Increase your maximum HP by 2."
+"description": "Increase your maximum HP by 2. You can take this feat multiple times."
 },
 {
 "name": "Skilled",

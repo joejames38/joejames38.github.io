@@ -11,7 +11,7 @@
         "type": "Assassin",
         "cost": 2,
         "prerequisite": "Rogue; Assassin",
-        "description": "Gain proficiency in Initiative. If you already have proficiency, gain expertise instead."
+        "description": "Gain Advantage on Initiative checks."
     },
     {
         "name": "Silent Approach",
