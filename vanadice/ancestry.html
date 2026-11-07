@@ -62,7 +62,7 @@
             </div>
         </section>
 
-        <!-- SPECIES SEARCH -->
+        <!-- ANCESTRY DATABASE -->
         <section class="content-section">
             <h2>Available Ancestries</h2>
 
@@ -90,171 +90,23 @@
                 Loading ancestries...
             </p>
 
-            <!-- JSON CONTENT LOADS HERE -->
             <div id="ancestryContainer" class="card-grid">
-
                 <p>Loading ancestry information...</p>
-
             </div>
 
         </section>
 
     </main>
 
-    <!-- ANCESTRY JSON SCRIPT -->
-    <script>
+    <!-- EXTERNAL JAVASCRIPT -->
+    <script src="ancestry.js" defer></script>
 
-        let ancestryData = [];
+</body>
 
-        const container = document.getElementById("ancestryContainer");
-        const searchInput = document.getElementById("ancestrySearch");
-        const sizeFilter = document.getElementById("sizeFilter");
-        const countDisplay = document.getElementById("ancestryCount");
-
-        // Load ancestry data
-        async function loadAncestries() {
-
-            try {
-
-                const response = await fetch("ancestry.json");
-
-                if (!response.ok) {
-                    throw new Error("Unable to load ancestry.json");
-                }
-
-                ancestryData = await response.json();
-
-                renderAncestries();
-
-            } catch (error) {
-
-                console.error("Ancestry loading error:", error);
-
-                container.innerHTML = `
-                    <div class="rule-note">
-                        Unable to load ancestry information.
-                        Please verify that ancestry.json exists
-                        and contains valid JSON.
-                    </div>
-                `;
-
-                countDisplay.textContent = "Ancestries unavailable.";
-
-            }
-
-        }
-
-        // Display ancestry cards
-        function renderAncestries() {
-
-            const searchTerm = searchInput.value.toLowerCase();
-            const selectedSize = sizeFilter.value;
-
-            const filteredAncestries = ancestryData.filter(ancestry => {
-
-                const matchesSearch =
-                    ancestry.name.toLowerCase().includes(searchTerm) ||
-                    ancestry.description.toLowerCase().includes(searchTerm) ||
-                    ancestry.specialTraits.some(trait =>
-                        trait.name.toLowerCase().includes(searchTerm) ||
-                        trait.description.toLowerCase().includes(searchTerm)
-                    );
-
-                const matchesSize =
-                    selectedSize === "all" ||
-                    ancestry.size === selectedSize;
-
-                return matchesSearch && matchesSize;
-
-            });
-
-            countDisplay.textContent =
-                `Showing ${filteredAncestries.length} of ${ancestryData.length} ancestries`;
-
-            if (filteredAncestries.length === 0) {
-
-                container.innerHTML = `
-                    <div class="rule-note">
-                        No ancestries match your search.
-                    </div>
-                `;
-
-                return;
-
-            }
-
-            container.innerHTML = filteredAncestries.map(ancestry => `
-
-                <article class="rule-card ancestry-card">
-
-                    <h3>${escapeHTML(ancestry.name)}</h3>
-
-                    <p class="ancestry-description">
-                        ${escapeHTML(ancestry.description)}
-                    </p>
-
-                    <div class="ancestry-stats">
-
-                        <span>
-                            <strong>Size:</strong>
-                            ${escapeHTML(ancestry.size)}
-                        </span>
-
-                        <span>
-                            <strong>Speed:</strong>
-                            ${escapeHTML(String(ancestry.speed))} ft.
-                        </span>
-
-                    </div>
-
-                    <h4>Special Traits</h4>
-
-                    <ul class="ancestry-traits">
-
-                        ${ancestry.specialTraits.map(trait => `
-
-                            <li>
-                                <strong>${escapeHTML(trait.name)}:</strong>
-                                ${escapeHTML(trait.description)}
-                            </li>
-
-                        `).join("")}
-
-                    </ul>
-
-                </article>
-
-            `).join("");
-
-        }
-
-        // Escape JSON text before inserting it into HTML
-        function escapeHTML(value) {
-
-            return String(value).replace(/[&<>"']/g, character => ({
-                "&": "&amp;",
-                "<": "&lt;",
-                ">": "&gt;",
-                '"': "&quot;",
-                "'": "&#039;"
-            })[character]);
-
-        }
-
-        // Search and filter events
-        searchInput.addEventListener("input", renderAncestries);
-        sizeFilter.addEventListener("change", renderAncestries);
-
-        // Initial load
-        loadAncestries();
-
-    </script>
-
-
-		<iframe
-		src="footer.html"
-		class="site-footer-frame"
-		title="VANADICE">
-		</iframe>
+	<iframe
+	src="footer.html"
+	class="site-footer-frame"
+	title="VANADICE">
+	</iframe>
 </body>
 </html>
