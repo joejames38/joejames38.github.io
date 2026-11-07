@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>VANADICE</title>
+		<!-- Common stylesheet shared by all Realm & Rune pages -->
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Ancestries</h1>
+                <p class="hero-subtitle">
+                    The Peoples of Vanadice
+                </p>
+                <p>
+                    The world of Vanadice is home to many unique
+                    peoples, each with their own cultures, traditions,
+                    physical characteristics, and natural talents.
+                    Choose an ancestry that reflects your character's
+                    heritage and origins.
+                </p>
+            </div>
+        </section>
+		<!-- =========================================================
+			NAVIGATION
+		========================================================= -->
+		<iframe
+		src="header.html"
+		class="site-header-frame"
+		title="VANADICE">
+		</iframe>
+    <main class="container">
+
+        <!-- PAGE INTRO -->
+
+
+        <!-- INTRODUCTION -->
+        <section class="content-section">
+            <h2>Choosing an Ancestry</h2>
+
+            <p>
+                Your ancestry represents your character's species
+                and biological heritage. Each ancestry provides
+                special traits that distinguish its members.
+            </p>
+
+            <p>
+                Ancestry determines your character's size,
+                movement speed, and unique racial characteristics.
+                Your ancestry does not determine your character's
+                profession, personality, background, or class.
+            </p>
+
+            <div class="rule-note">
+                <strong>Ability Scores:</strong>
+                Vanadice does not assign ability score increases
+                through ancestry. Ability score improvements are
+                determined through the character creation and
+                advancement rules.
+            </div>
+        </section>
+
+        <!-- SPECIES SEARCH -->
+        <section class="content-section">
+            <h2>Available Ancestries</h2>
+
+            <div class="ancestry-controls">
+
+                <input
+                    type="search"
+                    id="ancestrySearch"
+                    placeholder="Search ancestries..."
+                    aria-label="Search ancestries">
+
+                <select
+                    id="sizeFilter"
+                    aria-label="Filter by size">
+
+                    <option value="all">All Sizes</option>
+                    <option value="Small">Small</option>
+                    <option value="Medium">Medium</option>
+
+                </select>
+
+            </div>
+
+            <p id="ancestryCount" class="ancestry-count">
+                Loading ancestries...
+            </p>
+
+            <!-- JSON CONTENT LOADS HERE -->
+            <div id="ancestryContainer" class="card-grid">
+
+                <p>Loading ancestry information...</p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- ANCESTRY JSON SCRIPT -->
+    <script>
+
+        let ancestryData = [];
+
+        const container = document.getElementById("ancestryContainer");
+        const searchInput = document.getElementById("ancestrySearch");
+        const sizeFilter = document.getElementById("sizeFilter");
+        const countDisplay = document.getElementById("ancestryCount");
+
+        // Load ancestry data
+        async function loadAncestries() {
+
+            try {
+
+                const response = await fetch("ancestry.json");
+
+                if (!response.ok) {
+                    throw new Error("Unable to load ancestry.json");
+                }
+
+                ancestryData = await response.json();
+
+                renderAncestries();
+
+            } catch (error) {
+
+                console.error("Ancestry loading error:", error);
+
+                container.innerHTML = `
+                    <div class="rule-note">
+                        Unable to load ancestry information.
+                        Please verify that ancestry.json exists
+                        and contains valid JSON.
+                    </div>
+                `;
+
+                countDisplay.textContent = "Ancestries unavailable.";
+
+            }
+
+        }
+
+        // Display ancestry cards
+        function renderAncestries() {
+
+            const searchTerm = searchInput.value.toLowerCase();
+            const selectedSize = sizeFilter.value;
+
+            const filteredAncestries = ancestryData.filter(ancestry => {
+
+                const matchesSearch =
+                    ancestry.name.toLowerCase().includes(searchTerm) ||
+                    ancestry.description.toLowerCase().includes(searchTerm) ||
+                    ancestry.specialTraits.some(trait =>
+                        trait.name.toLowerCase().includes(searchTerm) ||
+                        trait.description.toLowerCase().includes(searchTerm)
+                    );
+
+                const matchesSize =
+                    selectedSize === "all" ||
+                    ancestry.size === selectedSize;
+
+                return matchesSearch && matchesSize;
+
+            });
+
+            countDisplay.textContent =
+                `Showing ${filteredAncestries.length} of ${ancestryData.length} ancestries`;
+
+            if (filteredAncestries.length === 0) {
+
+                container.innerHTML = `
+                    <div class="rule-note">
+                        No ancestries match your search.
+                    </div>
+                `;
+
+                return;
+
+            }
+
+            container.innerHTML = filteredAncestries.map(ancestry => `
+
+                <article class="rule-card ancestry-card">
+
+                    <h3>${escapeHTML(ancestry.name)}</h3>
+
+                    <p class="ancestry-description">
+                        ${escapeHTML(ancestry.description)}
+                    </p>
+
+                    <div class="ancestry-stats">
+
+                        <span>
+                            <strong>Size:</strong>
+                            ${escapeHTML(ancestry.size)}
+                        </span>
+
+                        <span>
+                            <strong>Speed:</strong>
+                            ${escapeHTML(String(ancestry.speed))} ft.
+                        </span>
+
+                    </div>
+
+                    <h4>Special Traits</h4>
+
+                    <ul class="ancestry-traits">
+
+                        ${ancestry.specialTraits.map(trait => `
+
+                            <li>
+                                <strong>${escapeHTML(trait.name)}:</strong>
+                                ${escapeHTML(trait.description)}
+                            </li>
+
+                        `).join("")}
+
+                    </ul>
+
+                </article>
+
+            `).join("");
+
+        }
+
+        // Escape JSON text before inserting it into HTML
+        function escapeHTML(value) {
+
+            return String(value).replace(/[&<>"']/g, character => ({
+                "&": "&amp;",
+                "<": "&lt;",
+                ">": "&gt;",
+                '"': "&quot;",
+                "'": "&#039;"
+            })[character]);
+
+        }
+
+        // Search and filter events
+        searchInput.addEventListener("input", renderAncestries);
+        sizeFilter.addEventListener("change", renderAncestries);
+
+        // Initial load
+        loadAncestries();
+
+    </script>
+
+
+		<iframe
+		src="footer.html"
+		class="site-footer-frame"
+		title="VANADICE">
+		</iframe>
+</body>
+</html>

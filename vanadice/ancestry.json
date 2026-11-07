@@ -1,0 +1,185 @@
+
+{
+  "ancestries": [
+    {
+      "name": "Hume",
+      "description": "Humes are the most widespread and adaptable people of Vana'diel. Found throughout nearly every region, they are known for their versatility, ambition, and ability to thrive in a wide variety of professions and cultures.",
+      "size": "Medium",
+      "speed": 30,
+      "specialTraits": [
+        {
+          "name": "Versatile",
+          "description": "Gain proficiency in one skill of your choice."
+        },
+        {
+          "name": "Resourceful",
+          "description": "When you fail an ability check, you can add 1d4 to the roll, potentially turning failure into success. Once used, this trait recharges after a Long Rest."
+        }
+      ]
+    },
+    {
+      "name": "Elvaan",
+      "description": "The Elvaan are a proud and noble people, traditionally associated with the kingdoms of San d'Oria. Tall and imposing, they are known for their physical strength, discipline, honor, and strong cultural traditions.",
+      "size": "Medium",
+      "speed": 30,
+      "specialTraits": [
+        {
+          "name": "Keen Senses",
+          "description": "You have proficiency in the Perception skill."
+        },
+        {
+          "name": "Elvaan Resolve",
+          "description": "You have Advantage on saving throws made to avoid or end the Frightened condition."
+        }
+      ]
+    },
+    {
+      "name": "Tarutaru",
+      "description": "The Tarutaru are a small and magically gifted people originating from the Federation of Windurst. Their curiosity, intelligence, and natural affinity for magical studies have made them renowned scholars and spellcasters.",
+      "size": "Small",
+      "speed": 25,
+      "specialTraits": [
+        {
+          "name": "Arcane Affinity",
+          "description": "You know one cantrip of your choice from the Wizard spell list. Intelligence is your spellcasting ability for it."
+        },
+        {
+          "name": "Small and Nimble",
+          "description": "You can move through the space of a creature that is at least one size larger than you, but cannot end your movement there."
+        }
+      ]
+    },
+    {
+      "name": "Mithra",
+      "description": "The Mithra are an agile and adventurous people, most commonly found in the Federation of Windurst and their ancestral homeland of the Near East. They are renowned hunters, trackers, and skilled combatants.",
+      "size": "Medium",
+      "speed": 35,
+      "specialTraits": [
+        {
+			"name": "Hunter's Instinct",
+          "description": "You have proficiency in the Survival skill."
+        },
+        {
+          "name": "Darkvision",
+          "description": "You have Darkvision with a range of 60 feet."
+        }
+      ]
+    },
+    {
+      "name": "Galka",
+      "description": "The Galka are a powerful and resilient people traditionally associated with the industrial city of Bastok. Their imposing builds, great endurance, and communal traditions make them formidable adventurers and defenders.",
+      "size": "Medium",
+      "speed": 30,
+      "specialTraits": [
+        {
+          "name": "Powerful Build",
+          "description": "You count as one size larger when determining your carrying capacity and the weight you can push, drag, or lift."
+        },
+        {
+          "name": "Enduring Constitution",
+          "description": "When you roll a Hit Point Die to regain hit points during a Short Rest, you can reroll one die that rolls a 1. You must use the new result."
+        }
+      ]
+    },
+    {
+      "name": "Moogle",
+      "description": "Moogles are small, friendly, and curious creatures often found in peaceful settlements and secluded forests. Recognizable by their wings, pom-poms, and cheerful personalities, they are resourceful companions with an affinity for crafting and exploration.",
+      "size": "Small",
+      "speed": 25,
+      "specialTraits": [
+        {
+          "name": "Moogle Flight",
+          "description": "You have a flying speed of 15 feet. You cannot fly while wearing Medium or Heavy armor."
+        },
+        {
+          "name": "Helpful Nature",
+          "description": "You know the Guidance cantrip. Wisdom is your spellcasting ability for it."
+        },
+        {
+          "name": "Craftsman's Instinct",
+          "description": "You have proficiency with one set of Artisan's Tools of your choice."
+        }
+      ]
+    },
+    {
+      "name": "Poroggo",
+      "description": "Poroggos are frog-like humanoids known for their mysterious magical traditions and eccentric personalities. Often associated with ancient ruins, enchanted wetlands, and forgotten arcane knowledge, they possess unusual natural abilities.",
+      "size": "Small",
+      "speed": 25,
+      "specialTraits": [
+        {
+          "name": "Amphibious",
+          "description": "You can breathe air and water, and you have a swimming speed equal to your walking speed."
+        },
+        {
+          "name": "Natural Mimicry",
+          "description": "You have proficiency in the Deception skill."
+        },
+        {
+          "name": "Arcane Curiosity",
+          "description": "You know the Minor Illusion cantrip. Intelligence is your spellcasting ability for it."
+        }
+      ]
+    },
+    {
+      "name": "Yagudo",
+      "description": "The Yagudo are an avian humanoid people with a proud warrior culture and deeply rooted religious traditions. Their society is organized around strict hierarchies, martial discipline, and spiritual devotion.",
+      "size": "Medium",
+      "speed": 30,
+      "specialTraits": [
+        {
+          "name": "Keen Sight",
+          "description": "You have proficiency in the Perception skill."
+        },
+        {
+          "name": "Natural Acrobat",
+          "description": "You have proficiency in the Acrobatics skill."
+        },
+        {
+          "name": "Gliding Descent",
+          "description": "When falling, you can use your reaction to spread your feathers and reduce falling damage by an amount equal to five times your character level. You can move horizontally up to your character level in feet for every 10 feet you descend."
+        }
+      ]
+    },
+    {
+      "name": "Goblin",
+      "description": "Goblins are clever, opportunistic, and inventive humanoids found throughout the world. Known for their scavenging, craftsmanship, and unpredictable nature, they are capable of adapting to nearly any environment or profession.",
+      "size": "Small",
+      "speed": 30,
+      "specialTraits": [
+        {
+          "name": "Darkvision",
+          "description": "You have Darkvision with a range of 60 feet."
+        },
+        {
+          "name": "Scavenger",
+          "description": "You have proficiency in the Investigation skill."
+        },
+        {
+          "name": "Nimble Escape",
+          "description": "You can take the Disengage action as a Bonus Action."
+        }
+      ]
+    },
+    {
+      "name": "Qiqirn",
+      "description": "The Qiqirn are small, rodent-like humanoids known for their sharp senses, resourcefulness, and talent for trade and scavenging. They are natural opportunists who excel at navigating dangerous environments and finding valuable resources.",
+      "size": "Small",
+      "speed": 30,
+      "specialTraits": [
+        {
+          "name": "Keen Smell",
+          "description": "You have Advantage on Wisdom (Perception) checks that rely on smell."
+        },
+        {
+          "name": "Quick Hands",
+          "description": "You have proficiency in the Sleight of Hand skill."
+        },
+        {
+          "name": "Resourceful Scavenger",
+          "description": "You have proficiency in the Investigation skill."
+        }
+      ]
+    }
+  ]
+}
