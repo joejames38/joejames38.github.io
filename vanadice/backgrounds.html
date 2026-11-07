@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vanadice | Backgrounds</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+        <section class="hero">
+            <div class="hero-content">
+                <p class="eyebrow">Character Creation</p>
+                <h1>Backgrounds</h1>
+                <p class="hero-subtitle">
+                    Your past shapes your skills, talents, and the abilities
+                    you bring to your adventures.
+                </p>
+            </div>
+        </section>
+		
+		<iframe
+		src="header.html"
+		class="site-header-frame"
+		title="VANADICE">
+		</iframe>
+
+    <main class="container">
+
+
+
+        <section class="content-section">
+            <h2>Choosing a Background</h2>
+
+            <p>
+                Your background represents your character's life and
+                experiences before becoming an adventurer. It determines
+                three ability score options, an Origin feat, two skill
+                proficiencies, and one tool proficiency.
+            </p>
+
+            <div class="rule-note">
+                <h3>Ability Score Increases</h3>
+                <p>
+                    Each background lists three eligible abilities.
+                    Choose one of the following options:
+                </p>
+                <ul>
+                    <li>
+                        <strong>Option 1:</strong> Increase one listed
+                        ability by 2 and another listed ability by 1.
+                    </li>
+                    <li>
+                        <strong>Option 2:</strong> Increase all three
+                        listed abilities by 1.
+                    </li>
+                </ul>
+                <p>
+                    These increases cannot raise an ability score above 20.
+                    Apply these increases during character creation.
+                </p>
+            </div>
+
+            <div class="rule-note">
+                <h3>Background Benefits</h3>
+                <ul>
+                    <li>
+                        <strong>Origin Feat:</strong> You gain the
+                        listed Origin feat.
+                    </li>
+                    <li>
+                        <strong>Skill Proficiencies:</strong> You gain
+                        proficiency in both listed skills.
+                    </li>
+                    <li>
+                        <strong>Tool Proficiency:</strong> You gain
+                        proficiency with the listed tool or tool category.
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <h2>Available Backgrounds</h2>
+
+            <div class="ancestry-controls">
+                <input
+                    type="search"
+                    id="backgroundSearch"
+                    placeholder="Search backgrounds, skills, feats, or tools..."
+                    aria-label="Search backgrounds">
+
+                <select id="backgroundFeatFilter" aria-label="Filter by Origin feat">
+                    <option value="all">All Origin Feats</option>
+                </select>
+            </div>
+
+            <p id="backgroundCount" class="ancestry-count">
+                Loading backgrounds...
+            </p>
+
+            <div
+                id="backgroundContainer"
+                class="card-grid">
+            </div>
+        </section>
+
+    </main>
+
+    <script src="backgrounds.js" defer></script>
+
+		<iframe
+		src="footer.html"
+		class="site-footer-frame"
+		title="VANADICE">
+		</iframe>
+</body>
+</html>

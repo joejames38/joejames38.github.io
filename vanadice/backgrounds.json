@@ -1,0 +1,132 @@
+{
+  "backgrounds": [
+    {
+      "name": "Acolyte",
+      "description": "You spent your early life in service to a temple, religious order, or spiritual organization. Your duties may have included tending sacred spaces, assisting clergy, and studying religious traditions.",
+      "abilityOptions": ["Intelligence", "Wisdom", "Charisma"],
+      "originFeat": "Magic Initiate (Cleric)",
+      "skillProficiencies": ["Insight", "Religion"],
+      "toolProficiency": "Calligrapher's Supplies"
+    },
+    {
+      "name": "Artisan",
+      "description": "You trained under a master craftsperson or developed a trade of your own. Your work may have supplied a village, outfitted an adventuring company, or served the needs of a powerful guild.",
+      "abilityOptions": ["Strength", "Dexterity", "Intelligence"],
+      "originFeat": "Crafter",
+      "skillProficiencies": ["Investigation", "Persuasion"],
+      "toolProficiency": "One type of Artisan's Tools"
+    },
+    {
+      "name": "Charlatan",
+      "description": "You survived through deception, disguises, false identities, and carefully constructed schemes. You know how to read people and exploit what they want to believe.",
+      "abilityOptions": ["Dexterity", "Constitution", "Charisma"],
+      "originFeat": "Skilled",
+      "skillProficiencies": ["Deception", "Sleight of Hand"],
+      "toolProficiency": "Forgery Kit"
+    },
+    {
+      "name": "Criminal",
+      "description": "You lived outside the law, working as a thief, smuggler, burglar, or member of an organized criminal group. You learned to move quietly and recognize opportunities.",
+      "abilityOptions": ["Dexterity", "Constitution", "Intelligence"],
+      "originFeat": "Alert",
+      "skillProficiencies": ["Sleight of Hand", "Stealth"],
+      "toolProficiency": "Thieves' Tools"
+    },
+    {
+      "name": "Entertainer",
+      "description": "You earned your living performing for others. Whether through music, dance, storytelling, or spectacle, you learned how to capture an audience and hold its attention.",
+      "abilityOptions": ["Strength", "Dexterity", "Charisma"],
+      "originFeat": "Musician",
+      "skillProficiencies": ["Acrobatics", "Performance"],
+      "toolProficiency": "One type of Musical Instrument"
+    },
+    {
+      "name": "Farmer",
+      "description": "You worked the land, raised livestock, or helped maintain a rural community. Hard work and the demands of the natural world taught you patience and endurance.",
+      "abilityOptions": ["Strength", "Constitution", "Wisdom"],
+      "originFeat": "Tough",
+      "skillProficiencies": ["Animal Handling", "Nature"],
+      "toolProficiency": "Carpenter's Tools"
+    },
+    {
+      "name": "Guard",
+      "description": "You served as a sentry, city watch member, or protector of a settlement. You learned to remain alert, recognize threats, and stand your ground when danger appeared.",
+      "abilityOptions": ["Strength", "Intelligence", "Wisdom"],
+      "originFeat": "Alert",
+      "skillProficiencies": ["Athletics", "Perception"],
+      "toolProficiency": "One type of Gaming Set"
+    },
+    {
+      "name": "Guide",
+      "description": "You guided travelers through wilderness, dangerous roads, and unfamiliar territory. You learned to navigate natural hazards and remain unseen when necessary.",
+      "abilityOptions": ["Dexterity", "Constitution", "Wisdom"],
+      "originFeat": "Magic Initiate (Druid)",
+      "skillProficiencies": ["Stealth", "Survival"],
+      "toolProficiency": "Cartographer's Tools"
+    },
+    {
+      "name": "Hermit",
+      "description": "You lived apart from ordinary society, seeking solitude, spiritual understanding, or knowledge. Your isolation gave you time to study and develop a deeper understanding of yourself and the world.",
+      "abilityOptions": ["Constitution", "Wisdom", "Charisma"],
+      "originFeat": "Healer",
+      "skillProficiencies": ["Medicine", "Religion"],
+      "toolProficiency": "Herbalism Kit"
+    },
+    {
+      "name": "Merchant",
+      "description": "You traded goods between settlements, managed a shop, or traveled with a merchant caravan. You understand commerce, negotiation, and the value of a well-made deal.",
+      "abilityOptions": ["Constitution", "Intelligence", "Charisma"],
+      "originFeat": "Lucky",
+      "skillProficiencies": ["Animal Handling", "Persuasion"],
+      "toolProficiency": "Navigator's Tools"
+    },
+    {
+      "name": "Noble",
+      "description": "You were raised among the wealthy and influential, learning the customs of high society and the responsibilities of status. You may be an heir, a courtier, or a member of a respected family.",
+      "abilityOptions": ["Strength", "Intelligence", "Charisma"],
+      "originFeat": "Skilled",
+      "skillProficiencies": ["History", "Persuasion"],
+      "toolProficiency": "One type of Gaming Set"
+    },
+    {
+      "name": "Sage",
+      "description": "You devoted years to studying ancient knowledge, magical theory, history, or the natural world. Your education may have taken place in a library, academy, or under a learned mentor.",
+      "abilityOptions": ["Constitution", "Intelligence", "Wisdom"],
+      "originFeat": "Magic Initiate (Wizard)",
+      "skillProficiencies": ["Arcana", "History"],
+      "toolProficiency": "Calligrapher's Supplies"
+    },
+    {
+      "name": "Sailor",
+      "description": "You spent your life aboard ships, traveling waterways and distant shores. You learned to handle difficult conditions, work as part of a crew, and watch for danger.",
+      "abilityOptions": ["Strength", "Dexterity", "Wisdom"],
+      "originFeat": "Tavern Brawler",
+      "skillProficiencies": ["Acrobatics", "Perception"],
+      "toolProficiency": "Navigator's Tools"
+    },
+    {
+      "name": "Scribe",
+      "description": "You worked with written records, correspondence, maps, or official documents. Your attention to detail and familiarity with written information made you a valuable resource to scholars and organizations.",
+      "abilityOptions": ["Dexterity", "Intelligence", "Wisdom"],
+      "originFeat": "Skilled",
+      "skillProficiencies": ["Investigation", "Perception"],
+      "toolProficiency": "Calligrapher's Supplies"
+    },
+    {
+      "name": "Soldier",
+      "description": "You served in a military organization, mercenary company, or local militia. You learned discipline, physical endurance, and how to function under pressure.",
+      "abilityOptions": ["Strength", "Dexterity", "Constitution"],
+      "originFeat": "Savage Attacker",
+      "skillProficiencies": ["Athletics", "Intimidation"],
+      "toolProficiency": "One type of Gaming Set"
+    },
+    {
+      "name": "Wayfarer",
+      "description": "You spent your life traveling from place to place, relying on your instincts and resourcefulness to survive. You may have been a wanderer, explorer, or someone without a permanent home.",
+      "abilityOptions": ["Dexterity", "Wisdom", "Charisma"],
+      "originFeat": "Lucky",
+      "skillProficiencies": ["Insight", "Stealth"],
+      "toolProficiency": "Thieves' Tools"
+    }
+  ]
+}
