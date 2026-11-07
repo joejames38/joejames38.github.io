@@ -349,7 +349,7 @@ li {
     display: grid;
     grid-template-columns: repeat(
         auto-fit,
-        minmax(230px, 1fr)
+        minmax(500px, 1fr)
     );
     gap: 18px;
     margin: 25px 0;
