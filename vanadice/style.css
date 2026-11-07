@@ -622,7 +622,7 @@ img {
 
 .ancestry-card {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
 }
 
 .ancestry-card h4 {
