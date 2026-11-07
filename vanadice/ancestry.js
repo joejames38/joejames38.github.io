@@ -126,11 +126,11 @@ function renderAncestries() {
             <article class="rule-card ancestry-card">
 
                 <h3>${escapeHTML(ancestry.name || "Unnamed Ancestry")}</h3>
-
+				<br>
                 <p class="ancestry-description">
                     ${escapeHTML(ancestry.description || "No description available.")}
                 </p>
-
+				<br>
                 <div class="ancestry-stats">
 
                     <span>
@@ -145,9 +145,9 @@ function renderAncestries() {
                     </span>
 
                 </div>
-
+				<br>
                 <h4>Special Traits</h4>
-
+				<br>
                 <ul class="ancestry-traits">
                     ${traitHTML || "<li>No special traits listed.</li>"}
                 </ul>
