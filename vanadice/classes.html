@@ -1,0 +1,126 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classes | Vanadice</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+        <section class="hero">
+            <div class="hero-content">
+            <h1>Classes</h1>
+			<p class="hero-subtitle">
+				The Heroic Jobs of Vanadice
+			</p>
+            <p>
+                Choose your path and master the abilities of your chosen job.
+                Each class represents a distinct approach to combat,
+                exploration, and adventure.
+            </p>
+			</div>
+        </section>
+		<!-- =========================================================
+			NAVIGATION
+		========================================================= -->
+		<iframe
+		src="header.html"
+		class="site-header-frame"
+		title="VANADICE">
+		</iframe>
+
+    <main class="container">
+
+
+
+        <section class="content-section">
+            <h2>Job Overview</h2>
+            <div id="class-grid" class="card-grid">
+                <p>Loading classes...</p>
+            </div>
+        </section>
+
+        <section class="content-section" id="class-details">
+            <h2 id="class-name">Select a Job</h2>
+            <p id="class-description">
+                Select a class above to view its abilities and progression.
+            </p>
+
+            <div class="card-grid" id="class-statistics">
+
+                <div class="rule-card">
+                    <h3>Primary Ability</h3>
+                    <p id="primary-ability">—</p>
+                </div>
+
+                <div class="rule-card">
+                    <h3>Hit Point Die</h3>
+                    <p id="hit-die">—</p>
+                </div>
+
+                <div class="rule-card">
+                    <h3>Saving Throws</h3>
+                    <p id="saving-throws">—</p>
+                </div>
+
+                <div class="rule-card">
+                    <h3>Weapon Proficiency</h3>
+                    <p id="weapon-proficiency">—</p>
+                </div>
+
+                <div class="rule-card">
+                    <h3>Armor Training</h3>
+                    <p id="armor-training">—</p>
+                </div>
+
+                <div class="rule-card">
+                    <h3>Multiclass Requirement</h3>
+                    <p id="multiclass-requirement">—</p>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="content-section" id="level-progression">
+            <h2>Level Progression</h2>
+            <p>
+                Your job develops as you gain experience. Subclass features
+                become available at levels 3, 6, and 9.
+            </p>
+
+            <div id="progression-table" class="table-wrapper">
+                <p>Select a job to view its level progression.</p>
+            </div>
+        </section>
+
+        <section class="content-section" id="subclass-section">
+            <h2>Subclasses</h2>
+            <div id="subclass-grid" class="card-grid">
+                <p>Select a job to view its available subclasses.</p>
+            </div>
+        </section>
+
+        <div class="rule-note">
+            <h3>Multiclassing</h3>
+            <p>
+                Characters may develop a second job through multiclassing.
+                Unless the Dungeon Master allows otherwise, characters
+                may have a maximum of two classes.
+            </p>
+        </div>
+
+    </main>
+
+
+    <script src="warrior.js"></script>
+    <script src="class.js"></script>
+
+
+		<iframe
+		src="footer.html"
+		class="site-footer-frame"
+		title="VANADICE">
+		</iframe>
+</body>
+</html>

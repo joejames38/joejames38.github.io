@@ -1,0 +1,42 @@
+{
+    "classes": [
+        {
+            "id": "warrior",
+            "name": "Warrior",
+            "description": "Warriors are masters of physical combat who rely on overwhelming strength, martial discipline, and relentless aggression. They excel at dealing damage, enduring punishment, and controlling the battlefield through sheer force.",
+            "primaryAbility": "Strength",
+            "hitDie": "d12",
+            "savingThrows": [
+                "Strength",
+                "Constitution"
+            ],
+            "weaponProficiency": [
+                "Simple Weapons",
+                "Martial Weapons"
+            ],
+            "armorTraining": [
+                "Light Armor",
+                "Medium Armor",
+                "Shields"
+            ],
+            "multiclassRequirement": "Strength 13",
+            "subclasses": [
+                {
+                    "id": "berserker",
+                    "name": "Berserker",
+                    "description": "A ferocious combatant who channels fury into devastating attacks."
+                },
+                {
+                    "id": "champion",
+                    "name": "Champion",
+                    "description": "A disciplined martial warrior who excels through physical prowess and weapon mastery."
+                },
+                {
+                    "id": "wildheart",
+                    "name": "Wildheart",
+                    "description": "A warrior who draws upon primal instincts and the power of nature."
+                }
+            ]
+        }
+    ]
+}
