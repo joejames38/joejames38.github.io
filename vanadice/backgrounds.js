@@ -133,7 +133,7 @@ function renderBackgrounds() {
 
         const abilityHTML = abilityOptions
             .map(ability => `<span>${escapeHTML(ability)}</span>`)
-            .join("");
+            .join(" ");
 
         const skillHTML = skills
             .map(skill => `<li>${escapeHTML(skill)}</li>`)
@@ -155,9 +155,6 @@ function renderBackgrounds() {
                     <div class="background-abilities">
                         ${abilityHTML || "<span>Not specified</span>"}
                     </div>
-                    <p class="background-note">
-                        Choose +2/+1 or +1 to each of the three abilities.
-                    </p>
                 </div>
 
                 <div class="background-detail">
