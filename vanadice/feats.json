@@ -1,0 +1,216 @@
+{
+  "feats": [
+    {
+      "name": "Alert",
+      "category": "Origin",
+      "originFeat": "yes",
+      "prerequisites": "None",
+      "description": "You gain a bonus to Initiative rolls equal to your Proficiency Bonus. Immediately after rolling Initiative, you can swap your Initiative with a willing ally in the same combat."
+    },
+    {
+      "name": "Crafter",
+      "category": "Origin",
+      "originFeat": "yes",
+      "prerequisites": "None",
+      "description": "You gain proficiency with three types of Artisan's Tools of your choice. You receive a discount when purchasing nonmagical items and can craft certain items during a Long Rest."
+    },
+    {
+      "name": "Healer",
+      "category": "Origin",
+      "originFeat": "yes",
+      "prerequisites": "None",
+      "description": "You can use a Healer's Kit to help a creature expend a Hit Point Die and regain additional hit points. You can also improve healing from your spells and healing features by rerolling a healing die that rolls a 1."
+    },
+    {
+      "name": "Lucky",
+      "category": "Origin",
+      "originFeat": "yes",
+      "prerequisites": "None",
+      "description": "You gain Luck Points after a Long Rest equal to your Proficiency Bonus. Spend a Luck Point to gain Advantage on a D20 Test or impose Disadvantage on an attack roll made against you."
+    },
+    {
+      "name": "Magic Initiate",
+      "category": "Origin",
+      "originFeat": "yes",
+      "prerequisites": "None",
+      "description": "Choose the Cleric, Druid, or Wizard spell list. Learn two cantrips and one level 1 spell from that list. Choose Intelligence, Wisdom, or Charisma as your spellcasting ability for these spells. You can cast the level 1 spell once per Long Rest without expending a spell slot. You can also cast it using spell slots. You can select this feat more than once, choosing a different spell list each time."
+    },
+    {
+      "name": "Musician",
+      "category": "Origin",
+      "originFeat": "yes",
+      "prerequisites": "None",
+      "description": "You gain proficiency with three Musical Instruments of your choice. At the end of a Short or Long Rest, you can play an instrument to grant Heroic Inspiration to a number of allies equal to your Proficiency Bonus."
+    },
+    {
+      "name": "Savage Attacker",
+      "category": "Origin",
+      "originFeat": "yes",
+      "prerequisites": "None",
+      "description": "Once per turn when you hit a target with a weapon, you can roll the weapon's damage dice twice and use either result."
+    },
+    {
+      "name": "Skilled",
+      "category": "Origin",
+      "originFeat": "yes",
+      "prerequisites": "None",
+      "description": "You gain proficiency in any combination of three skills or tools of your choice. You can select this feat more than once."
+    },
+    {
+      "name": "Tavern Brawler",
+      "category": "Origin",
+      "originFeat": "yes",
+      "prerequisites": "None",
+      "description": "Your Unarmed Strikes can deal increased damage, and you can reroll a 1 on an Unarmed Strike damage die. You gain proficiency with Improvised Weapons. Once per turn when you hit with an Unarmed Strike as part of the Attack action, you can push the target 5 feet."
+    },
+    {
+      "name": "Tough",
+      "category": "Origin",
+      "originFeat": "yes",
+      "prerequisites": "None",
+      "description": "Your Hit Point maximum increases by an amount equal to twice your character level when you first gain this feat. Your Hit Point maximum increases by an additional 2 whenever you gain another character level."
+    },
+
+    {
+      "name": "Charger",
+      "category": "Martial",
+      "originFeat": "no",
+      "prerequisites": "Level 4+",
+      "description": "Increase your Strength or Dexterity by 1. When you move at least 10 feet straight toward a target immediately before hitting it with a melee attack as part of the Attack action, you can deal extra damage or push the target away."
+    },
+    {
+      "name": "Crossbow Expert",
+      "category": "Martial",
+      "originFeat": "no",
+      "prerequisites": "Level 4+",
+      "description": "Increase your Dexterity by 1. Being within 5 feet of an enemy no longer imposes Disadvantage on your ranged attack rolls. You can ignore the Loading property of crossbows with which you are proficient, and you can make an additional attack with a Hand Crossbow under the feat's conditions."
+    },
+    {
+      "name": "Defensive Duelist",
+      "category": "Martial",
+      "originFeat": "no",
+      "prerequisites": "Level 4+; Dexterity 13+",
+      "description": "Increase your Dexterity by 1. When you are holding a Finesse weapon and a creature hits you with a melee attack, you can use your Reaction to add your Proficiency Bonus to your Armor Class against that attack, potentially causing it to miss."
+    },
+    {
+      "name": "Dual Wielder",
+      "category": "Martial",
+      "originFeat": "no",
+      "prerequisites": "Level 4+",
+      "description": "Increase your Strength or Dexterity by 1. You can use two-weapon fighting with weapons that lack the Light property, provided they are not Heavy. You can draw or stow two weapons when you would normally draw or stow one, and gain a bonus to Armor Class while wielding two melee weapons."
+    },
+    {
+      "name": "Great Weapon Master",
+      "category": "Martial",
+      "originFeat": "no",
+      "prerequisites": "Level 4+; Strength 13+",
+      "description": "Increase your Strength by 1. When you hit a creature with a Heavy weapon as part of the Attack action, you can deal additional damage. You can also make a melee attack as a Bonus Action after scoring a Critical Hit or reducing a creature to 0 Hit Points."
+    },
+    {
+      "name": "Mage Slayer",
+      "category": "Martial",
+      "originFeat": "no",
+      "prerequisites": "Level 4+",
+      "description": "Increase your Strength or Dexterity by 1. You have Advantage on saving throws against spells cast by creatures within 5 feet of you. When you succeed on a saving throw against a spell cast by a creature within 5 feet, you can use your Reaction to deal damage to that creature."
+    },
+    {
+      "name": "Polearm Master",
+      "category": "Martial",
+      "originFeat": "no",
+      "prerequisites": "Level 4+",
+      "description": "Increase your Strength or Dexterity by 1. You can make a Bonus Action attack with the opposite end of certain polearms. You can also make an Opportunity Attack when a creature enters your reach with a qualifying weapon."
+    },
+    {
+      "name": "Sentinel",
+      "category": "Martial",
+      "originFeat": "no",
+      "prerequisites": "Level 4+",
+      "description": "When you hit a creature with an Opportunity Attack, its Speed becomes 0 for the rest of the turn. Creatures provoke Opportunity Attacks from you even when they take the Disengage action. When a creature within 5 feet attacks an ally, you can use your Reaction to make a melee attack against it."
+    },
+    {
+      "name": "Sharpshooter",
+      "category": "Martial",
+      "originFeat": "no",
+      "prerequisites": "Level 4+",
+      "description": "Increase your Dexterity by 1. Attacking at long range no longer imposes Disadvantage on your ranged weapon attack rolls. Your ranged weapon attacks ignore Half Cover and Three-Quarters Cover, and you can make ranged attacks while within 5 feet of an enemy without Disadvantage."
+    },
+    {
+      "name": "Shield Master",
+      "category": "Martial",
+      "originFeat": "no",
+      "prerequisites": "Level 4+",
+      "description": "Increase your Strength by 1. When you take the Attack action while holding a Shield, you can use a Bonus Action to attempt to shove a creature within 5 feet. You gain benefits to Dexterity saving throws against effects that target only you, and can use your Reaction to reduce damage from certain Dexterity-save effects."
+    },
+
+    {
+      "name": "Elemental Adept",
+      "category": "Caster",
+      "originFeat": "no",
+      "prerequisites": "Spellcasting or Pact Magic feature",
+      "description": "Choose one damage type: Acid, Cold, Fire, Lightning, or Thunder. Your spells ignore Resistance to that damage type, and you can treat a 1 rolled on a damage die for a spell dealing that type as a 2. You can select this feat again for a different eligible damage type."
+    },
+    {
+      "name": "Fey-Touched",
+      "category": "Caster",
+      "originFeat": "no",
+      "prerequisites": "Level 4+",
+      "description": "Increase your Intelligence, Wisdom, or Charisma by 1. Learn Misty Step and one level 1 spell from the Divination or Enchantment school. You can cast each spell once per Long Rest without expending a spell slot, and can also cast them using spell slots."
+    },
+    {
+      "name": "Inspiring Leader",
+      "category": "Caster",
+      "originFeat": "no",
+      "prerequisites": "Level 4+; Charisma 13+",
+      "description": "Increase your Constitution or Charisma by 1. When you finish a Short or Long Rest, you can give a number of creatures temporary Hit Points by delivering an inspiring speech or other performance. The number of creatures and temporary Hit Points depend on your Proficiency Bonus and level."
+    },
+    {
+      "name": "Resilient",
+      "category": "Caster",
+      "originFeat": "no",
+      "prerequisites": "Level 4+",
+      "description": "Increase one ability score of your choice by 1. You gain proficiency in saving throws using that ability. This is especially useful for spellcasters who want to improve Constitution saving throws to maintain Concentration."
+    },
+    {
+      "name": "Shadow-Touched",
+      "category": "Caster",
+      "originFeat": "no",
+      "prerequisites": "Level 4+",
+      "description": "Increase your Intelligence, Wisdom, or Charisma by 1. Learn Invisibility and one level 1 spell from the Illusion or Necromancy school. You can cast each spell once per Long Rest without expending a spell slot, and can also cast them using spell slots."
+    },
+    {
+      "name": "Spell Sniper",
+      "category": "Caster",
+      "originFeat": "no",
+      "prerequisites": "Level 4+; Spellcasting or Pact Magic feature",
+      "description": "Increase your Intelligence, Wisdom, or Charisma by 1. Your spell attack rolls ignore Half Cover and Three-Quarters Cover. Being within 5 feet of an enemy does not impose Disadvantage on your ranged spell attacks, and the range of qualifying ranged spell attacks increases by 60 feet."
+    },
+    {
+      "name": "Telekinetic",
+      "category": "Caster",
+      "originFeat": "no",
+      "prerequisites": "Level 4+",
+      "description": "Increase your Intelligence, Wisdom, or Charisma by 1. You learn the Mage Hand cantrip, which has improved range and can be invisible. As a Bonus Action, you can attempt to telekinetically shove a creature you can see within 30 feet."
+    },
+    {
+      "name": "Telepathic",
+      "category": "Caster",
+      "originFeat": "no",
+      "prerequisites": "Level 4+",
+      "description": "Increase your Intelligence, Wisdom, or Charisma by 1. You can communicate telepathically with a creature you can see within 60 feet, provided you share a language. You can also cast Detect Thoughts without a spell slot once per Long Rest."
+    },
+    {
+      "name": "War Caster",
+      "category": "Caster",
+      "originFeat": "no",
+      "prerequisites": "Level 4+; Spellcasting or Pact Magic feature",
+      "description": "Increase your Intelligence, Wisdom, or Charisma by 1. You have Advantage on Constitution saving throws to maintain Concentration. You can perform Somatic components while holding weapons or a Shield, and can cast a qualifying spell as a Reaction when a creature provokes an Opportunity Attack from you."
+    },
+    {
+      "name": "Ritual Caster",
+      "category": "Caster",
+      "originFeat": "no",
+      "prerequisites": "Level 4+; Intelligence or Wisdom 13+",
+      "description": "You learn ritual magic and gain a ritual book containing two level 1 spells with the Ritual tag from the Arcane or Divine spell lists. You can cast spells in your ritual book as rituals, and can add additional eligible ritual spells to it as you discover them."
+    }
+  ]
+}

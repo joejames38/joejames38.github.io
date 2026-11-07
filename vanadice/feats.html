@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vanadice | Feats</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <iframe
+        src="header.html"
+        class="header-frame"
+        title="Vanadice Navigation"
+        scrolling="no">
+    </iframe>
+
+    <main class="container">
+
+        <section class="hero">
+            <div class="hero-content">
+                <p class="eyebrow">Character Development</p>
+                <h1>Feats</h1>
+                <p class="hero-subtitle">
+                    Special talents, training, and abilities that
+                    distinguish one adventurer from another.
+                </p>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <h2>Using Feats</h2>
+
+            <p>
+                Feats represent specialized training, natural talent,
+                or extraordinary experience. A feat grants your character
+                benefits that go beyond the features provided by their class.
+            </p>
+
+            <div class="rule-note">
+                <h3>Origin Feats</h3>
+                <p>
+                    Origin feats represent talents developed through a
+                    character's upbringing and background. Characters
+                    typically gain an Origin feat from their background
+                    during character creation.
+                </p>
+            </div>
+
+            <div class="rule-note">
+                <h3>General Feats</h3>
+                <p>
+                    General feats represent additional training and
+                    specialization. Unless otherwise specified, these
+                    feats require character level 4 or higher. A character
+                    must meet all listed prerequisites to gain a feat.
+                </p>
+            </div>
+
+            <div class="rule-note">
+                <h3>Prerequisites</h3>
+                <p>
+                    A character must meet a feat's prerequisites before
+                    selecting it. If a character later loses a prerequisite,
+                    they cannot benefit from that feat until the prerequisite
+                    is met again.
+                </p>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <h2>Feat Library</h2>
+
+            <div class="ancestry-controls">
+                <input
+                    type="search"
+                    id="featSearch"
+                    placeholder="Search feats or descriptions..."
+                    aria-label="Search feats">
+
+                <select id="featCategoryFilter" aria-label="Filter feats">
+                    <option value="all">All Feats</option>
+                    <option value="Origin">Origin Feats</option>
+                    <option value="Martial">Martial Feats</option>
+                    <option value="Caster">Caster Feats</option>
+                </select>
+            </div>
+
+            <p id="featCount" class="ancestry-count">
+                Loading feats...
+            </p>
+
+            <div id="featContainer" class="card-grid"></div>
+        </section>
+
+    </main>
+
+    <iframe
+        src="footer.html"
+        class="footer-frame"
+        title="Vanadice Footer"
+        scrolling="no">
+    </iframe>
+
+    <script src="feats.js" defer></script>
+
+</body>
+</html>

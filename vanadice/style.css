@@ -661,3 +661,52 @@ img {
 .ancestry-traits strong {
     color: var(--blue-dark);
 }
+
+/* ============================================
+   FEAT PAGE
+   ============================================ */
+
+.feat-card {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.feat-card-header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+}
+
+.feat-card-header h3 {
+    margin: 0;
+}
+
+.feat-category {
+    display: inline-block;
+    padding: 4px 10px;
+    border-radius: 20px;
+    background: var(--background-hover);
+    color: var(--gold);
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+.feat-origin,
+.feat-prerequisites {
+    margin: 0;
+    color: var(--text-muted);
+    font-size: 0.9rem;
+}
+
+.feat-description {
+    border-top: 1px solid var(--border);
+    padding-top: 10px;
+}
+
+.feat-description p {
+    margin: 0;
+    line-height: 1.6;
+}
