@@ -710,3 +710,104 @@ img {
     margin: 0;
     line-height: 1.6;
 }
+
+/* ============================================
+   SPELL PAGE
+   ============================================ */
+
+.spell-controls {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 12px;
+}
+
+.spell-card {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.spell-card-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.spell-card-header h3 {
+    margin: 0;
+}
+
+.spell-level-tag,
+.spell-list-tag,
+.spell-element-tag {
+    display: inline-block;
+    padding: 4px 9px;
+    border-radius: 20px;
+    background: var(--background-hover);
+    color: var(--gold);
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+.spell-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+}
+
+.spell-mp {
+    margin: 0;
+    font-weight: bold;
+}
+
+.spell-stat-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+    padding: 12px 0;
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+}
+
+.spell-stat-grid div {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.spell-stat-grid strong {
+    font-size: 0.85rem;
+}
+
+.spell-stat-grid span {
+    color: var(--text-muted);
+    font-size: 0.9rem;
+}
+
+.spell-description h4,
+.spell-upcast h4 {
+    margin-bottom: 5px;
+}
+
+.spell-description p,
+.spell-upcast p {
+    margin: 0;
+    line-height: 1.6;
+}
+
+.spell-upcast {
+    padding-top: 10px;
+    border-top: 1px solid var(--border);
+}
+
+@media (max-width: 760px) {
+    .spell-controls {
+        grid-template-columns: 1fr;
+    }
+
+    .spell-stat-grid {
+        grid-template-columns: 1fr;
+    }
+}

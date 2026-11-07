@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vanadice | Spells</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Spell Library</h1>
+                <p class="hero-subtitle">
+                    Explore the arcane and divine arts, from simple
+                    cantrips to powerful spells.
+                </p>
+            </div>
+        </section>
+
+		<!-- =========================================================
+			NAVIGATION
+		========================================================= -->
+		<iframe
+		src="header.html"
+		class="site-header-frame"
+		title="VANADICE">
+		</iframe>
+		</iframe>
+
+    <main class="container">
+
+
+        <section class="content-section">
+            <h2>Spellcasting and Magic Points</h2>
+
+            <p>
+                Spells are magical abilities that characters learn through
+                study, faith, or innate power. Each spell has a level that
+                determines its Magic Point (MP) cost.
+            </p>
+
+            <div class="rule-note">
+                <h3>Spell Level and MP Cost</h3>
+                <p>
+                    Cantrips are simple spells that require no MP.
+                    Leveled spells consume MP when cast.
+                </p>
+
+                <div class="table-wrapper">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Spell Level</th>
+                                <th>MP Cost</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>Cantrip (0)</td><td>0 MP</td></tr>
+                            <tr><td>1st</td><td>2 MP</td></tr>
+                            <tr><td>2nd</td><td>3 MP</td></tr>
+                            <tr><td>3rd</td><td>5 MP</td></tr>
+                            <tr><td>4th</td><td>6 MP</td></tr>
+                            <tr><td>5th</td><td>7 MP</td></tr>
+                            <tr><td>6th</td><td>9 MP</td></tr>
+                            <tr><td>7th</td><td>10 MP</td></tr>
+                            <tr><td>8th</td><td>11 MP</td></tr>
+                            <tr><td>9th</td><td>13 MP</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="rule-note">
+                <h3>Spell Lists</h3>
+                <ul>
+                    <li>
+                        <strong>Arcane:</strong> Magic gained through
+                        knowledge, study, and manipulation of magical forces.
+                    </li>
+                    <li>
+                        <strong>Divine:</strong> Magic drawn from faith,
+                        spiritual power, or a connection to divine forces.
+                    </li>
+                </ul>
+                A spell can appear on one or both spell lists.
+            </div>
+
+            <div class="rule-note">
+                <h3>Upcasting</h3>
+                <p>
+                    Some spells become more powerful when cast using
+                    additional MP. Their descriptions identify the
+                    benefits gained when cast at a higher spell level.
+                </p>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <h2>Spell Compendium</h2>
+
+            <div class="ancestry-controls spell-controls">
+				
+                <input
+                    type="search"
+                    id="spellSearch"
+                    placeholder="Search spells..."
+                    aria-label="Search spells">
+
+                <select id="spellListFilter" aria-label="Filter by spell list">
+                    <option value="all">All Spell Lists</option>
+                    <option value="Arcane">Arcane</option>
+                    <option value="Divine">Divine</option>
+                </select>
+
+                <select id="spellLevelFilter" aria-label="Filter by spell level">
+                    <option value="all">All Spell Levels</option>
+                    <option value="0">Cantrips</option>
+                    <option value="1">Level 1</option>
+                    <option value="2">Level 2</option>
+                    <option value="3">Level 3</option>
+                    <option value="4">Level 4</option>
+                    <option value="5">Level 5</option>
+                    <option value="6">Level 6</option>
+                    <option value="7">Level 7</option>
+                    <option value="8">Level 8</option>
+                    <option value="9">Level 9</option>
+                </select>
+
+                <select id="spellElementFilter" aria-label="Filter by element">
+                    <option value="all">All Elements</option>
+                    <option value="Fire">Fire</option>
+                    <option value="Ice">Ice</option>
+                    <option value="Wind">Wind</option>
+                    <option value="Earth">Earth</option>
+                    <option value="Thunder">Thunder</option>
+                    <option value="Water">Water</option>
+                    <option value="Light">Light</option>
+                    <option value="Dark">Dark</option>
+                    <option value="None">None</option>
+                </select>
+
+            </div>
+
+            <p id="spellCount" class="ancestry-count">
+                Loading spells...
+            </p>
+
+            <div id="spellContainer" class="card-grid"></div>
+        </section>
+
+    </main>
+
+    <script src="spells.js" defer></script>
+	
+		<iframe
+		src="footer.html"
+		class="site-footer-frame"
+		title="VANADICE">
+		</iframe>
+</body>
+</html>
