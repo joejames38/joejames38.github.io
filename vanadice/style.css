@@ -574,4 +574,90 @@ img {
     .card-grid {
         grid-template-columns: 1fr;
     }
+    .ancestry-description {
+        min-height: auto;
+    }
+
+    .ancestry-controls {
+        flex-direction: column;
+    }
+
+    .ancestry-controls input,
+    .ancestry-controls select {
+        width: 100%;
+    }
+
+}
+.ancestry-controls {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin: 20px 0;
+}
+
+.ancestry-controls input,
+.ancestry-controls select {
+    padding: 12px 15px;
+    border: 1px solid var(--border-dark);
+    border-radius: 4px;
+    background: #ffffff;
+    color: var(--text);
+    font-family: inherit;
+    font-size: 1rem;
+}
+
+.ancestry-controls input {
+    flex: 1;
+    min-width: 220px;
+}
+
+.ancestry-controls select {
+    min-width: 150px;
+}
+
+.ancestry-count {
+    color: var(--text-muted);
+    font-size: 0.9rem;
+}
+
+.ancestry-card {
+    display: flex;
+    flex-direction: column;
+}
+
+.ancestry-card h4 {
+    color: var(--gold-dark);
+    font-size: 1rem;
+    margin: 20px 0 8px;
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 6px;
+}
+
+.ancestry-description {
+    min-height: 110px;
+}
+
+.ancestry-stats {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    padding: 12px 0;
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+    color: var(--blue);
+    font-size: 0.9rem;
+}
+
+.ancestry-traits {
+    padding-left: 20px;
+    margin-bottom: 0;
+}
+
+.ancestry-traits li {
+    margin-bottom: 12px;
+    font-size: 0.92rem;
+}
+
+.ancestry-traits strong {
+    color: var(--blue-dark);
 }

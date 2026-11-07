@@ -1,19 +1,26 @@
 
-document.addEventListener("DOMContentLoaded", () => {
-    loadClasses();
-});
+document.addEventListener("DOMContentLoaded", loadClasses);
 
 async function loadClasses() {
     const classGrid = document.getElementById("class-grid");
+
+    if (!classGrid) {
+        console.error("Class grid element not found.");
+        return;
+    }
 
     try {
         const response = await fetch("class.json");
 
         if (!response.ok) {
-            throw new Error("Unable to load class data.");
+            throw new Error("Unable to load class.json.");
         }
 
         const data = await response.json();
+
+        if (!data.classes || !Array.isArray(data.classes)) {
+            throw new Error("Invalid class data format.");
+        }
 
         classGrid.innerHTML = "";
 
@@ -30,6 +37,7 @@ async function loadClasses() {
             const button = document.createElement("button");
             button.type = "button";
             button.textContent = "View Job";
+
             button.addEventListener("click", () => {
                 displayClass(characterClass);
             });
@@ -40,6 +48,8 @@ async function loadClasses() {
 
         if (data.classes.length > 0) {
             displayClass(data.classes[0]);
+        } else {
+            classGrid.textContent = "No classes available.";
         }
 
     } catch (error) {
@@ -49,31 +59,36 @@ async function loadClasses() {
 }
 
 function displayClass(characterClass) {
+    if (!characterClass) {
+        console.error("Invalid class selection.");
+        return;
+    }
+
     document.getElementById("class-name").textContent =
-        characterClass.name;
+        characterClass.name || "Unnamed Class";
 
     document.getElementById("class-description").textContent =
-        characterClass.description;
+        characterClass.description || "";
 
     document.getElementById("primary-ability").textContent =
-        characterClass.primaryAbility;
+        characterClass.primaryAbility || "—";
 
     document.getElementById("hit-die").textContent =
-        characterClass.hitDie;
+        characterClass.hitDie || "—";
 
     document.getElementById("saving-throws").textContent =
-        characterClass.savingThrows.join(", ");
+        (characterClass.savingThrows || []).join(", ");
 
     document.getElementById("weapon-proficiency").textContent =
-        characterClass.weaponProficiency.join(", ");
+        (characterClass.weaponProficiency || []).join(", ");
 
     document.getElementById("armor-training").textContent =
-        characterClass.armorTraining.join(", ");
+        (characterClass.armorTraining || []).join(", ");
 
     document.getElementById("multiclass-requirement").textContent =
-        characterClass.multiclassRequirement;
+        characterClass.multiclassRequirement || "—";
 
-    displaySubclasses(characterClass.subclasses);
+    displaySubclasses(characterClass.subclasses || []);
 
     const progression = document.getElementById("progression-table");
 
@@ -82,7 +97,7 @@ function displayClass(characterClass) {
         window.VanadiceWarrior
     ) {
         window.VanadiceWarrior.renderProgression(progression);
-    } else {
+    } else if (progression) {
         progression.textContent =
             "Level progression has not yet been created for this job.";
     }
@@ -96,17 +111,27 @@ function displayClass(characterClass) {
 function displaySubclasses(subclasses) {
     const subclassGrid = document.getElementById("subclass-grid");
 
+    if (!subclassGrid) {
+        return;
+    }
+
     subclassGrid.innerHTML = "";
+
+    if (subclasses.length === 0) {
+        subclassGrid.textContent =
+            "No subclasses currently available.";
+        return;
+    }
 
     subclasses.forEach(subclass => {
         const card = document.createElement("div");
         card.className = "rule-card";
 
         const heading = document.createElement("h3");
-        heading.textContent = subclass.name;
+        heading.textContent = subclass.name || "Unnamed Subclass";
 
         const description = document.createElement("p");
-        description.textContent = subclass.description;
+        description.textContent = subclass.description || "";
 
         card.append(heading, description);
         subclassGrid.appendChild(card);
